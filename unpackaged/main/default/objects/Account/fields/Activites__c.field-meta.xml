@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activites__c</fullName>
+    <externalId>false</externalId>
+    <label>Activité</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Categories__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administration Générale</fullName>
+                <default>false</default>
+                <label>Administration Générale</label>
+            </value>
+            <value>
+                <fullName>Médecine, Chirurgie et Obstétrique (MCO)</fullName>
+                <default>false</default>
+                <label>Médecine, Chirurgie et Obstétrique (MCO)</label>
+            </value>
+            <value>
+                <fullName>Soins de Suite et de Rééducation (SSR)</fullName>
+                <default>false</default>
+                <label>Soins de Suite et de Rééducation (SSR)</label>
+            </value>
+            <value>
+                <fullName>Cliniques Psychiatriques</fullName>
+                <default>false</default>
+                <label>Cliniques Psychiatriques</label>
+            </value>
+            <value>
+                <fullName>Hospitalisation à Domicile</fullName>
+                <default>false</default>
+                <label>Hospitalisation à Domicile</label>
+            </value>
+            <value>
+                <fullName>Maison de Retraite</fullName>
+                <default>false</default>
+                <label>Maison de Retraite</label>
+            </value>
+            <value>
+                <fullName>Centre de Dialyse</fullName>
+                <default>false</default>
+                <label>Centre de Dialyse</label>
+            </value>
+            <value>
+                <fullName>Clinique Vétérinaire</fullName>
+                <default>false</default>
+                <label>Clinique Vétérinaire</label>
+            </value>
+            <value>
+                <fullName>Médecine  Générale</fullName>
+                <default>false</default>
+                <label>Médecine  Générale</label>
+            </value>
+            <value>
+                <fullName>Médecine  de Spécialité</fullName>
+                <default>false</default>
+                <label>Médecine  de Spécialité</label>
+            </value>
+            <value>
+                <fullName>Dentaire</fullName>
+                <default>false</default>
+                <label>Dentaire</label>
+            </value>
+            <value>
+                <fullName>Infirmier</fullName>
+                <default>false</default>
+                <label>Infirmiers</label>
+            </value>
+            <value>
+                <fullName>Sage-Femmes</fullName>
+                <default>false</default>
+                <label>Sage-Femmes</label>
+            </value>
+            <value>
+                <fullName>Vétérinaire</fullName>
+                <default>false</default>
+                <label>Vétérinaire</label>
+            </value>
+            <value>
+                <fullName>Maison et Centre Médical ou Paramédical</fullName>
+                <default>false</default>
+                <label>Maison et Centre Médical ou Paramédical</label>
+            </value>
+            <value>
+                <fullName>Naturopathe</fullName>
+                <default>false</default>
+                <label>Naturopathe</label>
+            </value>
+            <value>
+                <fullName>Diététicien</fullName>
+                <default>false</default>
+                <label>Diététicien</label>
+            </value>
+            <value>
+                <fullName>Cabinet  d&#39;Anapath</fullName>
+                <default>false</default>
+                <label>Cabinet  d&#39;Anapath</label>
+            </value>
+            <value>
+                <fullName>Entreprise</fullName>
+                <default>false</default>
+                <label>Entreprise</label>
+            </value>
+            <value>
+                <fullName>Médecine  du  Travail</fullName>
+                <default>false</default>
+                <label>Médecine  du  Travail</label>
+            </value>
+            <value>
+                <fullName>Pharmacie</fullName>
+                <default>false</default>
+                <label>Pharmacie</label>
+            </value>
+            <value>
+                <fullName>Partenaire</fullName>
+                <default>false</default>
+                <label>Partenaire</label>
+            </value>
+            <value>
+                <fullName>Agent  Export</fullName>
+                <default>false</default>
+                <label>Agent Export</label>
+            </value>
+            <value>
+                <fullName>Association  de  Malades</fullName>
+                <default>false</default>
+                <label>Association  de  Malades</label>
+            </value>
+            <value>
+                <fullName>Elevage</fullName>
+                <default>false</default>
+                <label>Elevage</label>
+            </value>
+            <value>
+                <fullName>Tutelles de Santé</fullName>
+                <default>false</default>
+                <label>Tutelles de Santé</label>
+            </value>
+            <value>
+                <fullName>Club de Sport</fullName>
+                <default>false</default>
+                <label>Club de Sport</label>
+            </value>
+            <value>
+                <fullName>Collectivité</fullName>
+                <default>false</default>
+                <label>Collectivité</label>
+            </value>
+            <value>
+                <fullName>Biologie  Humaine</fullName>
+                <default>false</default>
+                <label>Biologie  Humaine</label>
+            </value>
+            <value>
+                <fullName>Cabinet</fullName>
+                <default>false</default>
+                <label>Cabinet</label>
+            </value>
+            <value>
+                <fullName>Clinique</fullName>
+                <default>false</default>
+                <label>Clinique</label>
+            </value>
+            <value>
+                <fullName>Centre de spécialistes</fullName>
+                <default>false</default>
+                <label>Centre de spécialistes</label>
+            </value>
+            <value>
+                <fullName>CHV</fullName>
+                <default>false</default>
+                <label>CHV</label>
+            </value>
+            <value>
+                <fullName>Laboratoire</fullName>
+                <default>false</default>
+                <label>Laboratoire</label>
+            </value>
+            <value>
+                <fullName>Centre de santé et PMI</fullName>
+                <default>false</default>
+                <label>Centre de santé et PMI</label>
+            </value>
+            <value>
+                <fullName>Siège / Holding</fullName>
+                <default>false</default>
+                <label>Siège / Holding</label>
+            </value>
+            <value>
+                <fullName>Parc / Zoo</fullName>
+                <default>false</default>
+                <label>Parc / Zoo</label>
+            </value>
+            <value>
+                <fullName>Foyer d&#39;hébergement pour adulte handicapé</fullName>
+                <default>false</default>
+                <label>Foyer d&#39;hébergement pour adulte handicapé</label>
+            </value>
+            <value>
+                <fullName>Assureur</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Assureur</label>
+            </value>
+            <value>
+                <fullName>Biologie vétérinaire</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Biologie vétérinaire</label>
+            </value>
+            <value>
+                <fullName>Centres Hospitaliers</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Centres Hospitaliers</label>
+            </value>
+            <value>
+                <fullName>Courtiers</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Courtiers</label>
+            </value>
+            <value>
+                <fullName>Institution Publique</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Institution Publique</label>
+            </value>
+            <value>
+                <fullName>Intermédiaire  Plateforme  Digitale</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Intermédiaire  Plateforme  Digitale</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Etablissements de Soins Publics</controllingFieldValue>
+            <controllingFieldValue>Etablissement de Santé Privé d’Intérêt Collectif (ESPIC)</controllingFieldValue>
+            <controllingFieldValue>Etablissements de Soins Privé</controllingFieldValue>
+            <valueName>Administration Générale</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Etablissements de Soins Publics</controllingFieldValue>
+            <controllingFieldValue>Etablissement de Santé Privé d’Intérêt Collectif (ESPIC)</controllingFieldValue>
+            <controllingFieldValue>Etablissements de Soins Privé</controllingFieldValue>
+            <valueName>Médecine, Chirurgie et Obstétrique (MCO)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Etablissements de Soins Publics</controllingFieldValue>
+            <controllingFieldValue>Etablissement de Santé Privé d’Intérêt Collectif (ESPIC)</controllingFieldValue>
+            <controllingFieldValue>Etablissements de Soins Privé</controllingFieldValue>
+            <valueName>Soins de Suite et de Rééducation (SSR)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Etablissements de Soins Publics</controllingFieldValue>
+            <controllingFieldValue>Etablissement de Santé Privé d’Intérêt Collectif (ESPIC)</controllingFieldValue>
+            <controllingFieldValue>Etablissements de Soins Privé</controllingFieldValue>
+            <valueName>Cliniques Psychiatriques</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Etablissements de Soins Publics</controllingFieldValue>
+            <controllingFieldValue>Etablissement de Santé Privé d’Intérêt Collectif (ESPIC)</controllingFieldValue>
+            <controllingFieldValue>Etablissements de Soins Privé</controllingFieldValue>
+            <valueName>Hospitalisation à Domicile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Etablissements de Soins Publics</controllingFieldValue>
+            <controllingFieldValue>Etablissement de Santé Privé d’Intérêt Collectif (ESPIC)</controllingFieldValue>
+            <controllingFieldValue>Etablissements de Soins Privé</controllingFieldValue>
+            <valueName>Maison de Retraite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Etablissements de Soins Publics</controllingFieldValue>
+            <controllingFieldValue>Etablissement de Santé Privé d’Intérêt Collectif (ESPIC)</controllingFieldValue>
+            <controllingFieldValue>Etablissements de Soins Privé</controllingFieldValue>
+            <valueName>Centre de Dialyse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Etablissements de Soins Publics</controllingFieldValue>
+            <valueName>Centre de santé et PMI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabinets Médicaux et Paramédicaux</controllingFieldValue>
+            <valueName>Médecine  Générale</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabinets Médicaux et Paramédicaux</controllingFieldValue>
+            <valueName>Médecine  de Spécialité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabinets Médicaux et Paramédicaux</controllingFieldValue>
+            <valueName>Dentaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabinets Médicaux et Paramédicaux</controllingFieldValue>
+            <valueName>Infirmier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabinets Médicaux et Paramédicaux</controllingFieldValue>
+            <valueName>Sage-Femmes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabinets Médicaux et Paramédicaux</controllingFieldValue>
+            <valueName>Maison et Centre Médical ou Paramédical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabinets Médicaux et Paramédicaux</controllingFieldValue>
+            <valueName>Naturopathe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabinets Médicaux et Paramédicaux</controllingFieldValue>
+            <valueName>Diététicien</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabinets Médicaux et Paramédicaux</controllingFieldValue>
+            <valueName>Cabinet  d&#39;Anapath</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entreprises et Institutions</controllingFieldValue>
+            <valueName>Entreprise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entreprises et Institutions</controllingFieldValue>
+            <valueName>Médecine  du  Travail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entreprises et Institutions</controllingFieldValue>
+            <valueName>Pharmacie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entreprises et Institutions</controllingFieldValue>
+            <valueName>Partenaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entreprises et Institutions</controllingFieldValue>
+            <valueName>Agent  Export</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entreprises et Institutions</controllingFieldValue>
+            <valueName>Association  de  Malades</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entreprises et Institutions</controllingFieldValue>
+            <valueName>Elevage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entreprises et Institutions</controllingFieldValue>
+            <valueName>Tutelles de Santé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entreprises et Institutions</controllingFieldValue>
+            <valueName>Club de Sport</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entreprises et Institutions</controllingFieldValue>
+            <valueName>Collectivité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laboratoires</controllingFieldValue>
+            <valueName>Biologie  Humaine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Etablissements de Soins Privé</controllingFieldValue>
+            <valueName>Foyer d&#39;hébergement pour adulte handicapé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Etablissements vétérinaires</controllingFieldValue>
+            <valueName>Cabinet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Etablissements vétérinaires</controllingFieldValue>
+            <valueName>Clinique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Etablissements vétérinaires</controllingFieldValue>
+            <valueName>Centre de spécialistes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Etablissements vétérinaires</controllingFieldValue>
+            <valueName>CHV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Etablissements vétérinaires</controllingFieldValue>
+            <valueName>Laboratoire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Etablissements vétérinaires</controllingFieldValue>
+            <valueName>Siège / Holding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Etablissements vétérinaires</controllingFieldValue>
+            <valueName>Parc / Zoo</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Partage_des_contrats_Cerba_Vet_avec_l_quipe_ADV_L_T</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage des contrats Cerba Vet avec l&#39;équipe ADV/L&amp;T</label>
+        <sharedTo>
+            <group>ADV_L_T_Cerba_et_Cerba_Vet</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Cerba_Vet_direction</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Partage_des_contrats_Cerba_avec_l_quipe_ADV_L_T</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage des contrats Cerba avec l&#39;équipe ADV/L&amp;T</label>
+        <sharedTo>
+            <group>ADV_L_T_Cerba_et_Cerba_Vet</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Cerba_direction</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Partage_des_contrats_Cerballiance_avec_Cerba</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage des contrats Cerballiance avec Cerba</label>
+        <sharedTo>
+            <roleAndSubordinates>Cerba_direction</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Cerballiance_direction</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Partage_des_contrats_Cerballiance_avec_Cerballiance</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage des contrats Cerballiance avec Cerballiance</label>
+        <sharedTo>
+            <roleAndSubordinates>Cerballiance_direction</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Cerballiance_direction</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SR_Contrat_BU_Cerba</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SR.Contrat.BU Cerba</label>
+        <sharedTo>
+            <roleAndSubordinates>Cerba_direction</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Cerba_direction</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SR_Contrat_BU_CerbaVet</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SR.Contrat.BU CerbaVet</label>
+        <sharedTo>
+            <roleAndSubordinates>Cerba_Vet_direction</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Cerba_Vet_direction</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

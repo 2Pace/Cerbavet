@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Laboratoire__c</fullName>
+    <externalId>false</externalId>
+    <label>Laboratoire d&#39;Analyse vétérinaire</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Idexx</fullName>
+                <default>false</default>
+                <label>Idexx</label>
+            </value>
+            <value>
+                <fullName>Vebio</fullName>
+                <default>false</default>
+                <label>Vebio</label>
+            </value>
+            <value>
+                <fullName>CAL</fullName>
+                <default>false</default>
+                <label>CAL</label>
+            </value>
+            <value>
+                <fullName>Orbio</fullName>
+                <default>false</default>
+                <label>Orbio</label>
+            </value>
+            <value>
+                <fullName>Vétodiag</fullName>
+                <default>false</default>
+                <label>Vétodiag</label>
+            </value>
+            <value>
+                <fullName>Vet&#39;Analys</fullName>
+                <default>false</default>
+                <label>Vet&#39;Analys</label>
+            </value>
+            <value>
+                <fullName>Cerba Vet</fullName>
+                <default>false</default>
+                <label>Cerba Vet</label>
+            </value>
+            <value>
+                <fullName>Innovie Vet</fullName>
+                <default>false</default>
+                <label>Innovie Vet</label>
+            </value>
+            <value>
+                <fullName>Labo d&#39;Humaine</fullName>
+                <default>false</default>
+                <label>Labo d&#39;Humaine</label>
+            </value>
+            <value>
+                <fullName>LABOKLIN</fullName>
+                <default>false</default>
+                <label>LABOKLIN</label>
+            </value>
+            <value>
+                <fullName>LHA ( Oniris)</fullName>
+                <default>false</default>
+                <label>LHA ( Oniris)</label>
+            </value>
+            <value>
+                <fullName>Scanelis</fullName>
+                <default>false</default>
+                <label>Scanelis</label>
+            </value>
+            <value>
+                <fullName>Biogénix</fullName>
+                <default>false</default>
+                <label>Biogénix</label>
+            </value>
+            <value>
+                <fullName>Destaing</fullName>
+                <default>false</default>
+                <label>Destaing</label>
+            </value>
+            <value>
+                <fullName>Allergovet</fullName>
+                <default>false</default>
+                <label>Allergovet</label>
+            </value>
+            <value>
+                <fullName>CC Path</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CC Path</label>
+            </value>
+            <value>
+                <fullName>IHP Véto</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IHP Véto</label>
+            </value>
+            <value>
+                <fullName>LAPV Amboise</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAPV Amboise</label>
+            </value>
+            <value>
+                <fullName>LAPVSO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LAPVSO</label>
+            </value>
+            <value>
+                <fullName>Vet Cyt</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vet Cyt</label>
+            </value>
+            <value>
+                <fullName>Vetopath</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vetopath</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

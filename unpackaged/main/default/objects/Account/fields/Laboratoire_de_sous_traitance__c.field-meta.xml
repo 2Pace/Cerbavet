@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Laboratoire_de_sous_traitance__c</fullName>
+    <externalId>false</externalId>
+    <label>Laboratoire d’Anapath vétérinaire</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>IDEXX</fullName>
+                <default>false</default>
+                <label>IDEXX</label>
+            </value>
+            <value>
+                <fullName>IHP VETO</fullName>
+                <default>false</default>
+                <label>IHP VETO</label>
+            </value>
+            <value>
+                <fullName>LAPV AMBOISE/Vet Cyt</fullName>
+                <default>false</default>
+                <label>LAPV AMBOISE/Vet Cyt</label>
+            </value>
+            <value>
+                <fullName>LAPVSO</fullName>
+                <default>false</default>
+                <label>LAPVSO</label>
+            </value>
+            <value>
+                <fullName>VETODIAG</fullName>
+                <default>false</default>
+                <label>VETODIAG</label>
+            </value>
+            <value>
+                <fullName>VET HISTO</fullName>
+                <default>false</default>
+                <label>VET HISTO</label>
+            </value>
+            <value>
+                <fullName>VET DIAGNOSTICS</fullName>
+                <default>false</default>
+                <label>VET DIAGNOSTICS</label>
+            </value>
+            <value>
+                <fullName>VETOPATH</fullName>
+                <default>false</default>
+                <label>VETOPATH</label>
+            </value>
+            <value>
+                <fullName>CPC (MARINE CARLUS)</fullName>
+                <default>false</default>
+                <label>CPC (MARINE CARLUS)</label>
+            </value>
+            <value>
+                <fullName>CCPATH (Catherine LE FOLL)</fullName>
+                <default>false</default>
+                <label>CCPATH (Catherine LE FOLL)</label>
+            </value>
+            <value>
+                <fullName>LPUN (Paul-Henri DUMAS)</fullName>
+                <default>false</default>
+                <label>LPUN (Paul-Henri DUMAS)</label>
+            </value>
+            <value>
+                <fullName>LAPV 57 (Michèle LEMAIRE)</fullName>
+                <default>false</default>
+                <label>LAPV 57 (Michèle LEMAIRE)</label>
+            </value>
+            <value>
+                <fullName>ORBIO</fullName>
+                <default>false</default>
+                <label>ORBIO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comptes_associes_a_ma_BU</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Numero_SFA__c</columns>
+    <columns>Structure_custom_object__c</columns>
+    <columns>Structure_Pole__c</columns>
+    <columns>Structure_BU__c</columns>
+    <columns>Associe_a_ma_BU__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Associe_a_ma_BU__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Comptes associés à ma BU</label>
+</ListView>

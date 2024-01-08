@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Références du client à faire apparaître sur la facture --></help>
+        <label><!-- References Client --></label>
+        <name>References_Client__c</name>
+    </CustomFieldTranslation>

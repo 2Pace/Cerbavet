@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Saisie Salesforce</fullName>
+        <default>true</default>
+        <label>Saisie Salesforce</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Source externe RPPS</fullName>
+        <default>false</default>
+        <label>Source externe RPPS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>GLIMS</fullName>
+        <default>false</default>
+        <label>GLIMS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Interface BI Spé</fullName>
+        <default>false</default>
+        <label>Interface BI Spé</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Interface BI Groupe</fullName>
+        <default>false</default>
+        <label>Interface BI Groupe</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RDDSPE</fullName>
+        <default>false</default>
+        <label>RDDSPE</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,1 @@
+<html><head></head><body>Bonjour {{{Recipient.FirstName}}} {{{Recipient.LastName}}},<br /><br />La requête n°{{{Case.CaseNumber}}} vous a été attribuée par {{{Sender.FirstName}}} {{{Sender.LastName}}}.<br /><br />Merci,<br /><br />Le Service client de {{{Organization.Name}}}</body></html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type de licence --></label>
+        <name>License_type__c</name>
+        <picklistValues>
+            <masterLabel>1-Biologistes et commerciaux sans accès logistique</masterLabel>
+            <translation><!-- 1-Biologistes et commerciaux sans accès logistique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2-Biologistes en licence light et externes</masterLabel>
+            <translation><!-- 2-Biologistes en licence light et externes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3-ADV, Logistique, Management</masterLabel>
+            <translation><!-- 3-ADV, Logistique, Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4-CPQ et Commerciaux CerbaVet</masterLabel>
+            <translation><!-- 4-CPQ et Commerciaux CerbaVet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5-Admin</masterLabel>
+            <translation><!-- 5-Admin --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

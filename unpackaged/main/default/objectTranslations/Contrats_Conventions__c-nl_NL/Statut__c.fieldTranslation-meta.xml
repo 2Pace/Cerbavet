@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Statuut</label>
+        <name>Statut__c</name>
+        <picklistValues>
+            <masterLabel>Archivé/résilié</masterLabel>
+            <translation>Gearchiveerd/opgelost</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En cours</masterLabel>
+            <translation>In uitvoering</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

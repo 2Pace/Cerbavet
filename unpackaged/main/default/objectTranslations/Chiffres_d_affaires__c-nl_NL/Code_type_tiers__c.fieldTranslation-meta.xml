@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- C : Correspondant, M : Médecins, I : Infirmière. --></help>
+        <label><!-- Code type tiers --></label>
+        <name>Code_type_tiers__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Partage_des_factures_directes_l_ADV</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage des factures directes à l&#39;ADV</label>
+        <sharedTo>
+            <group>ADV_L_T_Cerba_et_Cerba_Vet</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Facture directe Laboratoire ou Transporteur</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Partage_des_couts_de_transport_avec_Cerba</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Partage des coûts de transport avec Cerba</label>
+        <sharedTo>
+            <roleAndSubordinates>Cerba_direction</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

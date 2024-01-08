@@ -1,0 +1,1539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email_Relance_Clinics_1</name>
+        <label>Send Email Relance Clinics 1</label>
+        <locationX>2690</locationX>
+        <locationY>888</locationY>
+        <actionName>SendBetterEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Update_Task_R1_Clinics</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>bcc</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_bcc</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_saveAsActivity</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_saveAsTask</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_setTreatTargetObjectAsRecipient</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>contentDocumentAttachments</name>
+            <value>
+                <elementReference>Get_Content_Document_Link_on_invoice_R1_Clinics</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>HTMLbody</name>
+            <value>
+                <elementReference>HTMLBodyRelanceClinics1</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>orgWideEmailAddressId</name>
+            <value>
+                <elementReference>OrganizationWideAddress_Comptabilite_Cerbavet</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>plainTextBody</name>
+            <value>
+                <elementReference>PlainTextBodyRelanceClinics1</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>replyEmailAddress</name>
+            <value>
+                <elementReference>ForT_ReplyEmailAddress</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>saveAsActivity</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>saveAsTask</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>SendBCCthisOneEmailAddress</name>
+            <value>
+                <elementReference>ForT_OverrideEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderDisplayName</name>
+        </inputParameters>
+        <inputParameters>
+            <name>SendTOthisOneEmailAddress</name>
+            <value>
+                <elementReference>ForT_ToEmailClinicsR1</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>setTreatTargetObjectAsRecipient</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <elementReference>ForT_SubjectRelanceClinics1</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>templateTargetObjectId</name>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email_Relance_Proprio_1</name>
+        <label>Send Email Relance Proprio 1</label>
+        <locationX>314</locationX>
+        <locationY>1008</locationY>
+        <actionName>SendBetterEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Update_Task_R1</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>bcc</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_bcc</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_saveAsActivity</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_saveAsTask</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_setTreatTargetObjectAsRecipient</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>contentDocumentAttachments</name>
+            <value>
+                <elementReference>Get_Content_Document_Link_on_invoice_R1</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>HTMLbody</name>
+            <value>
+                <elementReference>HTMLBodyRelanceProprio1</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>orgWideEmailAddressId</name>
+            <value>
+                <elementReference>OrganizationWideAddress_Comptabilite_Cerbavet</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>plainTextBody</name>
+            <value>
+                <elementReference>PlainTextBodyRelanceProprio1</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>replyEmailAddress</name>
+            <value>
+                <elementReference>ForT_ReplyEmailAddress</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>saveAsActivity</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>saveAsTask</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderDisplayName</name>
+            <value>
+                <elementReference>ForT_SenderDisplayName</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>SendTOthisOneEmailAddress</name>
+            <value>
+                <elementReference>ForT_ToEmailProprioR1</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>setTreatTargetObjectAsRecipient</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <elementReference>ForT_SubjectRelanceProprio1</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>templateTargetObjectId</name>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email_Relance_Proprio_2</name>
+        <label>Send Email Relance Proprio 2</label>
+        <locationX>1106</locationX>
+        <locationY>1008</locationY>
+        <actionName>SendBetterEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Update_Task_R2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>bcc</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_bcc</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_saveAsActivity</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_saveAsTask</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_setTreatTargetObjectAsRecipient</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>contentDocumentAttachments</name>
+            <value>
+                <elementReference>Get_Content_Document_Link_on_invoice_R2</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>HTMLbody</name>
+            <value>
+                <elementReference>HTMLBodyRelanceProprio2</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>orgWideEmailAddressId</name>
+            <value>
+                <elementReference>OrganizationWideAddress_Comptabilite_Cerbavet</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>plainTextBody</name>
+            <value>
+                <elementReference>PlainTextBodyRelanceProprio2</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>replyEmailAddress</name>
+            <value>
+                <elementReference>ForT_ReplyEmailAddress</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>saveAsActivity</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>saveAsTask</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderDisplayName</name>
+        </inputParameters>
+        <inputParameters>
+            <name>SendTOthisOneEmailAddress</name>
+            <value>
+                <elementReference>ForT_ToEmailProprioR2</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>setTreatTargetObjectAsRecipient</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <elementReference>ForT_SubjectRelanceProprio2</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>templateTargetObjectId</name>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email_Relance_Proprio_3</name>
+        <label>Send Email Relance Proprio 3</label>
+        <locationX>1898</locationX>
+        <locationY>1008</locationY>
+        <actionName>SendBetterEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Update_Task_R3</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>bcc</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_bcc</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_saveAsActivity</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_saveAsTask</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_setTreatTargetObjectAsRecipient</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>contentDocumentAttachments</name>
+            <value>
+                <elementReference>Get_Content_Document_Link_on_invoice_R3</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>HTMLbody</name>
+            <value>
+                <elementReference>HTMLBodyRelanceProprio3</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>orgWideEmailAddressId</name>
+            <value>
+                <elementReference>OrganizationWideAddress_Comptabilite_Cerbavet</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>plainTextBody</name>
+            <value>
+                <elementReference>PlainTextBodyRelanceProprio3</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>replyEmailAddress</name>
+            <value>
+                <elementReference>ForT_ReplyEmailAddress</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>saveAsActivity</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>saveAsTask</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>SendBCCthisOneEmailAddress</name>
+            <value>
+                <elementReference>ForT_OverrideEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderDisplayName</name>
+        </inputParameters>
+        <inputParameters>
+            <name>SendTOthisOneEmailAddress</name>
+            <value>
+                <elementReference>ForT_SubjectRelanceProprio3</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>setTreatTargetObjectAsRecipient</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <elementReference>ForT_SubjectRelanceProprio3</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>templateTargetObjectId</name>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <constants>
+        <name>OrganizationWideAddress_Comptabilite_Cerbavet</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>0D26N000000blQP</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Is_Email_Clinics_Available_for_R1</name>
+        <label>Is Email Clinics Available for R1 ?</label>
+        <locationX>2558</locationX>
+        <locationY>648</locationY>
+        <defaultConnector>
+            <targetReference>Get_Content_Document_Link_on_invoice_R1_Clinics</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Yes it is available for R1 Clinics</defaultConnectorLabel>
+        <rules>
+            <name>No_it_is_not_available_for_R1_Clinics</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>GetRelatedCollectionPlanR1Clinics.SFBD__Account__r.Adresse_Email__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Comment_that_Email_is_missing_on_Task_R1_Clinics</targetReference>
+            </connector>
+            <label>No it is not available for R1 Clinics</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Email_Proprio_Available_for_R1</name>
+        <label>Is Email Proprio Available for R1 ?</label>
+        <locationX>182</locationX>
+        <locationY>768</locationY>
+        <defaultConnector>
+            <targetReference>Get_Content_Document_Link_on_invoice_R1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Yes it is available for R1</defaultConnectorLabel>
+        <rules>
+            <name>No_it_is_not_available_for_R1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetOrderRelatedtoCollectionPlanR1.Email_Patient__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Comment_that_Email_is_missing_on_Task_R1</targetReference>
+            </connector>
+            <label>No it is not available for R1</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Email_Proprio_Available_for_R2_0</name>
+        <label>Is Email Proprio Available for R2 ?</label>
+        <locationX>974</locationX>
+        <locationY>768</locationY>
+        <defaultConnector>
+            <targetReference>Get_Content_Document_Link_on_invoice_R2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Yes it is available for R2</defaultConnectorLabel>
+        <rules>
+            <name>No_it_is_not_available_for_R2</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>GetOrderRelatedtoCollectionPlanR2.Email_Patient__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Comment_that_Email_is_missing_on_Task_R2_0</targetReference>
+            </connector>
+            <label>No it is not available for R2</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Email_Proprio_Available_for_R3_0</name>
+        <label>Is Email Proprio Available for R3 ?</label>
+        <locationX>1766</locationX>
+        <locationY>768</locationY>
+        <defaultConnector>
+            <targetReference>Get_Content_Document_Link_on_invoice_R3</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Yes it is available for R3</defaultConnectorLabel>
+        <rules>
+            <name>No_it_is_not_available_for_R3</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>GetOrderRelatedtoCollectionPlanR3.Email_Patient__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Comment_that_Email_is_missing_on_Task_R3</targetReference>
+            </connector>
+            <label>No it is not available for R3</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_invoice_Paid_before_sending_R1</name>
+        <label>Is invoice Paid before sending R1 ?</label>
+        <locationX>380</locationX>
+        <locationY>528</locationY>
+        <defaultConnectorLabel>Yes it is paid before R1</defaultConnectorLabel>
+        <rules>
+            <name>No_it_is_not_paid_before_R1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetRelatedCollectionPlanR1.Invoice__r.blng__PaymentStatus__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Unpaid</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetOrderRelatedtoCollectionPlanR1</targetReference>
+            </connector>
+            <label>No it is not paid before R1</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_invoice_Paid_before_sending_R1_Clinics</name>
+        <label>Is invoice Paid before sending R1 Clinics ?</label>
+        <locationX>2756</locationX>
+        <locationY>528</locationY>
+        <defaultConnectorLabel>Yes it is paid before R1 Clinics</defaultConnectorLabel>
+        <rules>
+            <name>No_it_is_not_paid_before_R1_Clinics</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetRelatedCollectionPlanR1Clinics.Invoice__r.blng__PaymentStatus__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Unpaid</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_Email_Clinics_Available_for_R1</targetReference>
+            </connector>
+            <label>No it is not paid before R1 Clinics</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_invoice_Paid_before_sending_R2</name>
+        <label>Is invoice Paid before sending R2 ?</label>
+        <locationX>1172</locationX>
+        <locationY>528</locationY>
+        <defaultConnectorLabel>Yes it is paid before R2</defaultConnectorLabel>
+        <rules>
+            <name>No_it_is_not_paid_before_R2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetRelatedCollectionPlanR2.Invoice__r.blng__PaymentStatus__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Unpaid</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetOrderRelatedtoCollectionPlanR2</targetReference>
+            </connector>
+            <label>No it is not paid before R2</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_invoice_Paid_before_sending_R3</name>
+        <label>Is invoice Paid before sending R3 ?</label>
+        <locationX>1964</locationX>
+        <locationY>528</locationY>
+        <defaultConnectorLabel>Yes it is paid before R3</defaultConnectorLabel>
+        <rules>
+            <name>Yes_it_is_paid_before_R3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetRelatedCollectionPlanR3.Invoice__r.blng__PaymentStatus__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Unpaid</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetOrderRelatedtoCollectionPlanR3</targetReference>
+            </connector>
+            <label>No it is not paid before R3</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Type_de_Relance_Proprio</name>
+        <label>Type de Relance Proprio</label>
+        <locationX>1799</locationX>
+        <locationY>288</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Relance_Proprio_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type_de_creation__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Relance Proprio 1</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetRelatedCollectionPlanR1</targetReference>
+            </connector>
+            <label>Relance Proprio 1</label>
+        </rules>
+        <rules>
+            <name>Relance_Proprio_2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type_de_creation__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Relance Proprio 2</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetRelatedCollectionPlanR2</targetReference>
+            </connector>
+            <label>Relance Proprio 2</label>
+        </rules>
+        <rules>
+            <name>Relance_Proprio_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type_de_creation__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Relance Proprio 3</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetRelatedCollectionPlanR3</targetReference>
+            </connector>
+            <label>Relance Proprio 3</label>
+        </rules>
+        <rules>
+            <name>Relance_Clinique_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type_de_creation__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Relance Clinique 1</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetRelatedCollectionPlanR1Clinics</targetReference>
+            </connector>
+            <label>Relance Clinique 1</label>
+        </rules>
+    </decisions>
+    <description>Scheduled Flow to send email based on task due date and Invoice status
+Date Format FR
+Add Overrride pour email avant MEP
+Sender Display and Reply To
+Lien de paiement R1 R2 R3 Proprio
+Correction format Relance clinique</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Date_Format_FR_Invoice_Posted_Date_R1</name>
+        <dataType>String</dataType>
+        <expression>TEXT( DAY ( {!GetRelatedCollectionPlanR1.Invoice__r.blng__InvoicePostedDate__c} ) )&amp;&quot; &quot;&amp; CASE( MONTH( {!GetRelatedCollectionPlanR1.Invoice__r.blng__InvoicePostedDate__c} ),
+1, &quot;Janvier&quot;,
+2, &quot;Février&quot;,
+3, &quot;Mars&quot;, 
+4, &quot;Avril&quot;, 
+5, &quot;Mai&quot;, 
+6, &quot;Juin&quot;,
+7, &quot;Juillet&quot;,
+8, &quot;Août&quot;,
+9, &quot;Septembre&quot;,
+10, &quot;Octobre&quot;,
+11, &quot;Novembre&quot;,
+12, &quot;Décembre&quot;,
+&quot;Apocalypse&quot;) &amp;&quot; &quot;&amp; TEXT ( YEAR ( {!GetRelatedCollectionPlanR1.Invoice__r.blng__InvoicePostedDate__c} ) )</expression>
+    </formulas>
+    <formulas>
+        <name>Date_Format_FR_Invoice_Posted_Date_R1Clinics</name>
+        <dataType>String</dataType>
+        <expression>TEXT( DAY ( {!GetRelatedCollectionPlanR1Clinics.Invoice__r.blng__InvoicePostedDate__c} ) )&amp;&quot; &quot;&amp; CASE( MONTH( {!GetRelatedCollectionPlanR1Clinics.Invoice__r.blng__InvoicePostedDate__c} ),
+1, &quot;Janvier&quot;,
+2, &quot;Février&quot;,
+3, &quot;Mars&quot;, 
+4, &quot;Avril&quot;, 
+5, &quot;Mai&quot;, 
+6, &quot;Juin&quot;,
+7, &quot;Juillet&quot;,
+8, &quot;Août&quot;,
+9, &quot;Septembre&quot;,
+10, &quot;Octobre&quot;,
+11, &quot;Novembre&quot;,
+12, &quot;Décembre&quot;,
+&quot;Apocalypse&quot;) &amp;&quot; &quot;&amp; TEXT ( YEAR ( {!GetRelatedCollectionPlanR1Clinics.Invoice__r.blng__InvoicePostedDate__c} ) )</expression>
+    </formulas>
+    <formulas>
+        <name>Date_Format_FR_Invoice_Posted_Date_R2</name>
+        <dataType>String</dataType>
+        <expression>TEXT( DAY ( {!GetRelatedCollectionPlanR2.Invoice__r.blng__InvoicePostedDate__c} ) )&amp;&quot; &quot;&amp; CASE( MONTH( {!GetRelatedCollectionPlanR2.Invoice__r.blng__InvoicePostedDate__c} ),
+1, &quot;Janvier&quot;,
+2, &quot;Février&quot;,
+3, &quot;Mars&quot;, 
+4, &quot;Avril&quot;, 
+5, &quot;Mai&quot;, 
+6, &quot;Juin&quot;,
+7, &quot;Juillet&quot;,
+8, &quot;Août&quot;,
+9, &quot;Septembre&quot;,
+10, &quot;Octobre&quot;,
+11, &quot;Novembre&quot;,
+12, &quot;Décembre&quot;,
+&quot;Apocalypse&quot;) &amp;&quot; &quot;&amp; TEXT ( YEAR ( {!GetRelatedCollectionPlanR2.Invoice__r.blng__InvoicePostedDate__c} ) )</expression>
+    </formulas>
+    <formulas>
+        <name>Date_Format_FR_Invoice_Posted_Date_R3</name>
+        <dataType>String</dataType>
+        <expression>TEXT( DAY ( {!GetRelatedCollectionPlanR3.Invoice__r.blng__InvoicePostedDate__c} ) )&amp;&quot; &quot;&amp; CASE( MONTH( {!GetRelatedCollectionPlanR3.Invoice__r.blng__InvoicePostedDate__c} ),
+1, &quot;Janvier&quot;,
+2, &quot;Février&quot;,
+3, &quot;Mars&quot;, 
+4, &quot;Avril&quot;, 
+5, &quot;Mai&quot;, 
+6, &quot;Juin&quot;,
+7, &quot;Juillet&quot;,
+8, &quot;Août&quot;,
+9, &quot;Septembre&quot;,
+10, &quot;Octobre&quot;,
+11, &quot;Novembre&quot;,
+12, &quot;Décembre&quot;,
+&quot;Apocalypse&quot;) &amp;&quot; &quot;&amp; TEXT ( YEAR ( {!GetRelatedCollectionPlanR3.Invoice__r.blng__InvoicePostedDate__c} ) )</expression>
+    </formulas>
+    <formulas>
+        <description>Format date in order to show months in French</description>
+        <name>Date_Format_FR_Task_ActivityDate</name>
+        <dataType>String</dataType>
+        <expression>TEXT( DAY ( {!$Record.ActivityDate} ) )&amp;&quot; &quot;&amp; CASE( MONTH( {!$Record.ActivityDate} ),
+1, &quot;Janvier&quot;,
+2, &quot;Février&quot;,
+3, &quot;Mars&quot;, 
+4, &quot;Avril&quot;, 
+5, &quot;Mai&quot;, 
+6, &quot;Juin&quot;,
+7, &quot;Juillet&quot;,
+8, &quot;Août&quot;,
+9, &quot;Septembre&quot;,
+10, &quot;Octobre&quot;,
+11, &quot;Novembre&quot;,
+12, &quot;Décembre&quot;,
+&quot;Apocalypse&quot;) &amp;&quot; &quot;&amp; TEXT ( YEAR ( {!$Record.ActivityDate} ) )</expression>
+    </formulas>
+    <formulas>
+        <description>2PACE
+Override de l&#39;email pour envoyer les relances à une adresse test</description>
+        <name>ForT_OverrideEmail</name>
+        <dataType>String</dataType>
+        <expression>&#39;comptabilite@cerbavet.com&#39;</expression>
+    </formulas>
+    <formulas>
+        <name>ForT_ReplyEmailAddress</name>
+        <dataType>String</dataType>
+        <expression>&#39;comptabilite@cerbavet.com&#39;</expression>
+    </formulas>
+    <formulas>
+        <name>ForT_SenderDisplayName</name>
+        <dataType>String</dataType>
+        <expression>&#39;comptabilite@cerbavet.com&#39;</expression>
+    </formulas>
+    <formulas>
+        <name>ForT_SubjectRelanceClinics1</name>
+        <dataType>String</dataType>
+        <expression>&#39;CerbaVet: votre facture &#39; &amp;  {!GetRelatedCollectionPlanR1Clinics.Invoice__r.Numero_Facturation_Cerbavet__c} &amp;&#39; du montant de &#39;&amp; TEXT ({!GetRelatedCollectionPlanR1Clinics.Invoice__r.blng__TotalAmount__c}) &amp;&#39; EUR est en attente de règlement&#39;</expression>
+    </formulas>
+    <formulas>
+        <name>ForT_SubjectRelanceProprio1</name>
+        <dataType>String</dataType>
+        <expression>&#39;CerbaVet: Les analyses vétérinaire de votre &#39; &amp; {!GetOrderRelatedtoCollectionPlanR1.Code_Civilite__c}&amp;&#39; &#39;&amp; {!GetOrderRelatedtoCollectionPlanR1.Prenom_Patient__c} &amp;&#39; sont en attente de règlement&#39;</expression>
+    </formulas>
+    <formulas>
+        <name>ForT_SubjectRelanceProprio2</name>
+        <dataType>String</dataType>
+        <expression>&#39;CerbaVet: Deuxième relance, Les analyses vétérinaire de votre &#39;&amp;{!GetOrderRelatedtoCollectionPlanR2.Code_Civilite__c}&amp;&#39; &#39;&amp; {!GetOrderRelatedtoCollectionPlanR2.Prenom_Patient__c} &amp;&#39; sont toujours en attente de règlement&#39;</expression>
+    </formulas>
+    <formulas>
+        <name>ForT_SubjectRelanceProprio3</name>
+        <dataType>String</dataType>
+        <expression>&#39;CerbaVet: 3ème relance, Mise en demeure de règlement. Les analyses vétérinaire de votre &#39; &amp;{!GetOrderRelatedtoCollectionPlanR3.Code_Civilite__c}&amp;&#39; &#39;&amp; {!GetOrderRelatedtoCollectionPlanR3.Prenom_Patient__c} &amp;&#39; ne sont toujours pas réglées&#39;</expression>
+    </formulas>
+    <formulas>
+        <name>ForT_ToEmailClinicsR1</name>
+        <dataType>String</dataType>
+        <expression>{!GetRelatedCollectionPlanR1Clinics.Invoice__r.blng__Account__r.Adresse_Email__c}</expression>
+    </formulas>
+    <formulas>
+        <name>ForT_ToEmailProprioR1</name>
+        <dataType>String</dataType>
+        <expression>{!GetOrderRelatedtoCollectionPlanR1.Email_Patient__c}</expression>
+    </formulas>
+    <formulas>
+        <name>ForT_ToEmailProprioR2</name>
+        <dataType>String</dataType>
+        <expression>{!GetOrderRelatedtoCollectionPlanR2.Email_Patient__c}</expression>
+    </formulas>
+    <formulas>
+        <name>ForT_ToEmailProprioR3</name>
+        <dataType>String</dataType>
+        <expression>{!GetOrderRelatedtoCollectionPlanR3.Email_Patient__c}</expression>
+    </formulas>
+    <formulas>
+        <name>TaskcommentmissingEmail</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Description} &amp;&#39; - &#39;&amp;&#39;Adresse Email manquante pour envoyer la relance&#39;</expression>
+    </formulas>
+    <interviewLabel>Record-Trigger: Task on Creation After Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Record-Trigger: Task on Creation After Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get the related invoice from the collection plan</description>
+        <name>Get_Content_Document_Link_on_invoice_R1</name>
+        <label>Get Content Document Link on invoice R1</label>
+        <locationX>314</locationX>
+        <locationY>888</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Send_Email_Relance_Proprio_1</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LinkedEntityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetRelatedCollectionPlanR1.Invoice__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>ContentDocumentLink</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>ContentDocumentId</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get the related invoice from the collection plan</description>
+        <name>Get_Content_Document_Link_on_invoice_R1_Clinics</name>
+        <label>Get Content Document Link on invoice R1 Clinics</label>
+        <locationX>2690</locationX>
+        <locationY>768</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Send_Email_Relance_Clinics_1</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LinkedEntityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetRelatedCollectionPlanR1Clinics.Invoice__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>ContentDocumentLink</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>ContentDocumentId</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get the related invoice from the collection plan</description>
+        <name>Get_Content_Document_Link_on_invoice_R2</name>
+        <label>Get Content Document Link on invoice R2</label>
+        <locationX>1106</locationX>
+        <locationY>888</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Send_Email_Relance_Proprio_2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LinkedEntityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetRelatedCollectionPlanR2.Invoice__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>ContentDocumentLink</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>ContentDocumentId</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get the related invoice from the collection plan</description>
+        <name>Get_Content_Document_Link_on_invoice_R3</name>
+        <label>Get Content Document Link on invoice R3</label>
+        <locationX>1898</locationX>
+        <locationY>888</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Send_Email_Relance_Proprio_3</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LinkedEntityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetRelatedCollectionPlanR3.Invoice__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>ContentDocumentLink</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>ContentDocumentId</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Order related to CollectionPlan in order to find information regarding the Pet Owner (Proprio)</description>
+        <name>GetOrderRelatedtoCollectionPlanR1</name>
+        <label>GetOrderRelatedtoCollectionPlanR1</label>
+        <locationX>182</locationX>
+        <locationY>648</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Email_Proprio_Available_for_R1</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetRelatedCollectionPlanR1.Invoice__r.blng__Order__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Order</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Order related to CollectionPlan in order to find information regarding the Pet Owner (Proprio)</description>
+        <name>GetOrderRelatedtoCollectionPlanR2</name>
+        <label>GetOrderRelatedtoCollectionPlanR2</label>
+        <locationX>974</locationX>
+        <locationY>648</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Email_Proprio_Available_for_R2_0</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetRelatedCollectionPlanR2.Invoice__r.blng__Order__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Order</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Order related to CollectionPlan in order to find information regarding the Pet Owner (Proprio)</description>
+        <name>GetOrderRelatedtoCollectionPlanR3</name>
+        <label>GetOrderRelatedtoCollectionPlanR3</label>
+        <locationX>1766</locationX>
+        <locationY>648</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Email_Proprio_Available_for_R3_0</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetRelatedCollectionPlanR3.Invoice__r.blng__Order__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Order</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>GetRelatedCollectionPlanR1</name>
+        <label>GetRelatedCollectionPlanR1</label>
+        <locationX>380</locationX>
+        <locationY>408</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_invoice_Paid_before_sending_R1</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.WhatId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SFBD__CollectionsPlan__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>GetRelatedCollectionPlanR1Clinics</name>
+        <label>GetRelatedCollectionPlanR1Clinics</label>
+        <locationX>2756</locationX>
+        <locationY>408</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_invoice_Paid_before_sending_R1_Clinics</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.WhatId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SFBD__CollectionsPlan__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>GetRelatedCollectionPlanR2</name>
+        <label>GetRelatedCollectionPlanR2</label>
+        <locationX>1172</locationX>
+        <locationY>408</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_invoice_Paid_before_sending_R2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.WhatId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SFBD__CollectionsPlan__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>GetRelatedCollectionPlanR3</name>
+        <label>GetRelatedCollectionPlanR3</label>
+        <locationX>1964</locationX>
+        <locationY>408</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_invoice_Paid_before_sending_R3</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.WhatId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SFBD__CollectionsPlan__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Add_Comment_that_Email_is_missing_on_Task_R1</name>
+        <label>Add Comment that Email is missing on Task R1</label>
+        <locationX>50</locationX>
+        <locationY>888</locationY>
+        <connector>
+            <targetReference>Update_Collection_Plan_Adresse_Email_Manquante_R1</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>TaskcommentmissingEmail</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Add_Comment_that_Email_is_missing_on_Task_R1_Clinics</name>
+        <label>Add Comment that Email is missing on Task R1 Clinics</label>
+        <locationX>2426</locationX>
+        <locationY>768</locationY>
+        <connector>
+            <targetReference>Update_Collection_Plan_Adresse_Email_Manquante_R1_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>TaskcommentmissingEmail</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Add_Comment_that_Email_is_missing_on_Task_R2_0</name>
+        <label>Add Comment that Email is missing on Task R2</label>
+        <locationX>842</locationX>
+        <locationY>888</locationY>
+        <connector>
+            <targetReference>Update_Collection_Plan_Adresse_Email_Manquante_R2_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>TaskcommentmissingEmail</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Add_Comment_that_Email_is_missing_on_Task_R3</name>
+        <label>Add Comment that Email is missing on Task R3</label>
+        <locationX>1634</locationX>
+        <locationY>888</locationY>
+        <connector>
+            <targetReference>Update_Collection_Plan_Adresse_Email_Manquante_R3</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>TaskcommentmissingEmail</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Collection_Plan_Adresse_Email_Manquante_R1</name>
+        <label>Update Collection Plan Adresse Email Manquante R1</label>
+        <locationX>50</locationX>
+        <locationY>1008</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetRelatedCollectionPlanR1.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Adresse_Email_manquante__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>SFBD__CollectionsPlan__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Collection_Plan_Adresse_Email_Manquante_R1_0</name>
+        <label>Update Collection Plan Adresse Email Manquante R1</label>
+        <locationX>2426</locationX>
+        <locationY>888</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetRelatedCollectionPlanR1Clinics.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Adresse_Email_manquante__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>SFBD__CollectionsPlan__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Collection_Plan_Adresse_Email_Manquante_R2_0</name>
+        <label>Update Collection Plan Adresse Email Manquante R2</label>
+        <locationX>842</locationX>
+        <locationY>1008</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetRelatedCollectionPlanR2.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Adresse_Email_manquante__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>SFBD__CollectionsPlan__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Collection_Plan_Adresse_Email_Manquante_R3</name>
+        <label>Update Collection Plan Adresse Email Manquante R3</label>
+        <locationX>1634</locationX>
+        <locationY>1008</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetRelatedCollectionPlanR3.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Adresse_Email_manquante__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>SFBD__CollectionsPlan__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Task_R1</name>
+        <label>Update Task R1</label>
+        <locationX>314</locationX>
+        <locationY>1128</locationY>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Terminee</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Task_R1_Clinics</name>
+        <label>Update Task R1 Clinics</label>
+        <locationX>2690</locationX>
+        <locationY>1008</locationY>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Terminee</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Task_R2</name>
+        <label>Update Task R2</label>
+        <locationX>1106</locationX>
+        <locationY>1128</locationY>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Terminee</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Task_R3</name>
+        <label>Update Task R3</label>
+        <locationX>1898</locationX>
+        <locationY>1128</locationY>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Terminee</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>666</locationX>
+        <locationY>0</locationY>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Type_de_creation__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Relance Proprio 1</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type_de_creation__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Relance Proprio 2</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type_de_creation__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Relance Proprio 3</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type_de_creation__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Relance Clinique 1</stringValue>
+            </value>
+        </filters>
+        <object>Task</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <name>Run_on_Due_Date</name>
+            <connector>
+                <targetReference>Type_de_Relance_Proprio</targetReference>
+            </connector>
+            <label>Run on Due Date</label>
+            <maxBatchSize>5</maxBatchSize>
+            <offsetNumber>2</offsetNumber>
+            <offsetUnit>Minutes</offsetUnit>
+            <timeSource>RecordTriggerEvent</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <textTemplates>
+        <name>HTMLBodyRelanceClinics1</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p style=&quot;text-align: left;&quot;&gt;&lt;img src=&quot;https://www.cerbavet.com/files/live/sites/cerba-vet/files/files/01.Header/Logo_cerbavet_numero_300.png&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;{!GetRelatedCollectionPlanR1Clinics.SFBD__Account__r.Raison_sociale__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;{!GetRelatedCollectionPlanR1Clinics.SFBD__Account__r.Name}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;{!GetRelatedCollectionPlanR1Clinics.SFBD__Account__r.BillingStreet}&lt;/p&gt;&lt;p&gt;{!GetRelatedCollectionPlanR1Clinics.SFBD__Account__r.BillingPostalCode} - {!GetRelatedCollectionPlanR1Clinics.SFBD__Account__r.BillingCity}&lt;/p&gt;&lt;p&gt;{!GetRelatedCollectionPlanR1Clinics.SFBD__Account__r.BillingCountry}&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;A Massy, le &lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;{!Date_Format_FR_Task_ActivityDate}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;REF&amp;nbsp;&lt;/u&gt;:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{!GetRelatedCollectionPlanR1Clinics.Invoice__r.Numero_Facturation_Cerbavet__c}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Madame, Monsieur,&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Sauf erreur ou omission de notre part, à ce jour, nous n’avons toujours pas reçu le règlement de la facture &lt;strong&gt;{!GetRelatedCollectionPlanR1Clinics.Invoice__r.Numero_Facturation_Cerbavet__c} &lt;/strong&gt;du &lt;strong&gt;{!Date_Format_FR_Invoice_Posted_Date_R1Clinics}&lt;/strong&gt; d’un montant de &lt;strong&gt;{!GetRelatedCollectionPlanR1Clinics.Invoice__r.blng__TotalAmount__c} &lt;/strong&gt;euros.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;L’échéance étant dépassée, nous sommes soucieux qu’un problème ait pu retarder votre paiement. Si tel était le cas, n’hésitez pas à nous contacter.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Cependant, s’il s’agit d’un simple oubli, nous vous demandons de bien vouloir régulariser cette situation à réception de ce courriel.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Nous vous rappelons que nous pouvons mettre en place le paiement par prélèvement automatique, n’hésitez pas à revenir vers nous si vous le souhaitez.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Dans le cas où votre règlement aurait été adressé entre-temps, nous vous prions de ne pas tenir compte de la présente.&lt;/p&gt;&lt;p&gt;Restant à votre disposition pour tout renseignement complémentaire.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Nous vous remercions par avance et vous prions d&#39;agréer, Madame, Monsieur, l’expression de nos salutations distinguées.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Le service comptabilité&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;mailto:comptabilite@cerbavet.com&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;color: rgb(5, 99, 193);&quot;&gt;comptabilite@cerbavet.com&lt;/a&gt;&lt;/p&gt;&lt;p&gt;01 81 30 00 08 – choix 2&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>HTMLBodyRelanceProprio1</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;img src=&quot;https://www.cerbavet.com/files/live/sites/cerba-vet/files/files/01.Header/Logo_cerbavet_numero_300.png&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;{!GetOrderRelatedtoCollectionPlanR1.Nom_Patient__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;{!GetOrderRelatedtoCollectionPlanR1.Adresse_Patient__c}&lt;/p&gt;&lt;p&gt;{!GetOrderRelatedtoCollectionPlanR1.Code_Postal_Patient__c} - {!GetOrderRelatedtoCollectionPlanR1.Ville_Patient__c}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;A Massy, le &lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;{!Date_Format_FR_Task_ActivityDate}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;REF&amp;nbsp;&lt;/u&gt;:&amp;nbsp;{!GetRelatedCollectionPlanR1.Invoice__r.Numero_Facturation_Cerbavet__c}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Madame, Monsieur,&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Nous avons le plaisir de vous informer que les résultats d’analyses pour votre animal sont disponibles&amp;nbsp;!&lt;/p&gt;&lt;p&gt;Afin de pouvoir les transmettre à votre vétérinaire et poursuivre le suivi médical de votre animal, sauf erreur ou omission de notre part, merci de réaliser le paiement de ces analyses, à savoir&lt;/p&gt;&lt;p&gt;La facture &lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;{!GetRelatedCollectionPlanR1.Invoice__r.Numero_Facturation_Cerbavet__c}&lt;/strong&gt;&lt;strong&gt; &lt;/strong&gt;du &lt;strong&gt;{!Date_Format_FR_Invoice_Posted_Date_R1}&lt;/strong&gt; d’un montant de &lt;strong&gt;{!GetRelatedCollectionPlanR1.Invoice__r.blng__TotalAmount__c} EUR.&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Nous vous prions de trouver ci-joint la facture correspondante.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small; background-color: rgb(255, 255, 255);&quot;&gt;Vous pouvez aussi régler par carte bancaire en ligne via ce lien sécurisé {!GetRelatedCollectionPlanR1.Invoice__r.Lien_Paiement__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;A réception de votre paiement les résultats seront transmis instantanément à votre vétérinaire.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Si cette facture a déjà été réglée et débitée de votre compte, pourriez-vous nous communiquer les informations de ce paiement afin que nous débloquions les résultats au plus vite.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;En vous en remerciant par avance,&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Veuillez agréer Madame, Monsieur, l’expression de nos sincères salutations.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Le service comptabilité&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;mailto:comptabilite@cerbavet.com&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;color: rgb(5, 99, 193);&quot;&gt;comptabilite@cerbavet.com&lt;/a&gt;&lt;/p&gt;&lt;p&gt;01 81 30 00 08 – choix 2&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>HTMLBodyRelanceProprio2</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p style=&quot;text-align: left;&quot;&gt;&lt;img src=&quot;https://www.cerbavet.com/files/live/sites/cerba-vet/files/files/01.Header/Logo_cerbavet_numero_300.png&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;{!GetOrderRelatedtoCollectionPlanR2.Nom_Patient__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;{!GetOrderRelatedtoCollectionPlanR2.Adresse_Patient__c}&lt;/p&gt;&lt;p&gt;{!GetOrderRelatedtoCollectionPlanR2.Code_Postal_Patient__c} - {!GetOrderRelatedtoCollectionPlanR2.Ville_Patient__c}&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;A Massy, le &lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;{!Date_Format_FR_Task_ActivityDate}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;REF&amp;nbsp;&lt;/u&gt;:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{!GetRelatedCollectionPlanR2.Invoice__r.Numero_Facturation_Cerbavet__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Madame, Monsieur,&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Les résultats d’analyses sont toujours bloqués en attente de votre paiement.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Ainsi, sauf erreur de notre part, nous sommes au regret de constater qu’aucun paiement n’a été effectué pour régler cette facture. Nous vous demandons de bien vouloir régulariser cette situation, et procéder au règlement de la somme due.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Afin de pouvoir les transmettre à votre vétérinaire pour interprétation et suivi médical de votre animal. Nous vous demandons de procéder au paiement de la facture :&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;{!GetRelatedCollectionPlanR2.Invoice__r.Numero_Facturation_Cerbavet__c}&lt;/strong&gt; du &lt;strong&gt;{!Date_Format_FR_Invoice_Posted_Date_R2}&lt;/strong&gt; d’un montant de &lt;strong&gt;{!GetRelatedCollectionPlanR2.Invoice__r.blng__TotalAmount__c} EUR.&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Nous vous prions de trouver aussi ci-joint la facture correspondante.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small; background-color: rgb(255, 255, 255);&quot;&gt;Vous pouvez aussi régler par carte bancaire en ligne via ce lien sécurisé {!GetRelatedCollectionPlanR2.Invoice__r.Lien_Paiement__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;A réception de votre paiement les résultats seront transmis instantanément à votre vétérinaire.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Si cette facture a déjà été réglée et débitée de votre compte, pourriez-vous nous communiquer les informations de ce paiement afin que nous débloquions les résultats au plus vite.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;En vous en remerciant par avance,&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Veuillez agréer Madame, Monsieur, l’expression de nos sincères salutations.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Le service comptabilité&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;mailto:comptabilite@cerbavet.com&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;color: rgb(5, 99, 193);&quot;&gt;comptabilite@cerbavet.com&lt;/a&gt;&lt;/p&gt;&lt;p&gt;01 81 30 00 08 – choix 2&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>HTMLBodyRelanceProprio3</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p style=&quot;text-align: left;&quot;&gt;&lt;img src=&quot;https://www.cerbavet.com/files/live/sites/cerba-vet/files/files/01.Header/Logo_cerbavet_numero_300.png&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;{!GetOrderRelatedtoCollectionPlanR3.Nom_Patient__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;{!GetOrderRelatedtoCollectionPlanR3.Adresse_Patient__c}&lt;/p&gt;&lt;p&gt;{!GetOrderRelatedtoCollectionPlanR3.Code_Postal_Patient__c} - {!GetOrderRelatedtoCollectionPlanR3.Ville_Patient__c}&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;A Massy, le &lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;{!Date_Format_FR_Task_ActivityDate}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;3EME RAPPEL – FACTURE IMPAYEE&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;AVANT MISE AU CONTENTIEUX&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;REF&amp;nbsp;&lt;/u&gt;:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{!GetRelatedCollectionPlanR3.Invoice__r.Numero_Facturation_Cerbavet__c}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Madame, Monsieur,&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Malgré nos précédentes relances, sauf erreur de notre part, nous sommes au regret de constater qu’aucun paiement n’a été effectué pour régler cette facture.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Nous vous demandons de bien vouloir régler cette situation, et procéder au règlement de la somme due.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;La facture &lt;strong style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;{!GetRelatedCollectionPlanR3.Invoice__r.Numero_Facturation_Cerbavet__c}&lt;/strong&gt; du &lt;strong&gt;{!Date_Format_FR_Invoice_Posted_Date_R3}&lt;/strong&gt; d’un montant de &lt;strong&gt;{!GetRelatedCollectionPlanR3.Invoice__r.blng__TotalAmount__c} EUR.&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Nous vous prions de trouver ci-joint la facture correspondante.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small; background-color: rgb(255, 255, 255);&quot;&gt;Vous pouvez aussi régler par carte bancaire en ligne via ce lien sécurisé {!GetRelatedCollectionPlanR3.Invoice__r.Lien_Paiement__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;A réception de votre paiement les résultats seront transmis instantanément à votre vétérinaire.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Si cette facture a déjà été réglée et débitée de votre compte, pourriez-vous nous communiquer les informations de ce paiement afin que nous débloquions les résultats au plus vite.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;A défaut de paiement d’ici 8 jours nous transmettrons votre dossier à notre société de recouvrement.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Des pénalités de retard calculées sur la base de 3 fois le taux légal, ainsi que l’indemnité de recouvrement fixé à 40 EUR vous seront facturées en sus de cette créance,&amp;nbsp;selon l’article L.411-6 alinéa 12 du code du commerce.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Veuillez agréer Madame, Monsieur, l’expression de nos sincères salutations.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Le service comptabilité&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;mailto:comptabilite@cerbavet.com&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;color: rgb(5, 99, 193);&quot;&gt;comptabilite@cerbavet.com&lt;/a&gt;&lt;/p&gt;&lt;p&gt;01 81 30 00 08 – choix 2&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>PlainTextBodyRelanceClinics1</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!GetRelatedCollectionPlanR1Clinics.SFBD__Account__r.Raison_sociale__c}
+{!GetRelatedCollectionPlanR1Clinics.SFBD__Account__r.Name}
+
+{!GetRelatedCollectionPlanR1Clinics.SFBD__Account__r.BillingStreet}
+{!GetRelatedCollectionPlanR1Clinics.SFBD__Account__r.BillingPostalCode} - {!GetRelatedCollectionPlanR1Clinics.SFBD__Account__r.BillingCity}
+{!GetRelatedCollectionPlanR1Clinics.SFBD__Account__r.BillingCountry}
+
+A Massy, le {!Date_Format_FR_Task_ActivityDate}
+
+REF :     {!GetRelatedCollectionPlanR1Clinics.Invoice__r.Numero_Facturation_Cerbavet__c}
+
+Madame, Monsieur,
+
+Sauf erreur ou omission de notre part, à ce jour, nous n’avons toujours pas reçu le règlement de notre facture {!GetRelatedCollectionPlanR1Clinics.Invoice__r.Numero_Facturation_Cerbavet__c} du {!Date_Format_FR_Invoice_Posted_Date_R1} d’un montant de {!GetRelatedCollectionPlanR1Clinics.Invoice__r.blng__TotalAmount__c} euros.
+
+L’échéance étant dépassée, nous sommes soucieux qu’un problème ait pu retarder votre paiement. Si tel était le cas, n’hésitez pas à nous contacter.
+
+Cependant, s’il s’agit d’un simple oubli, nous vous demandons de bien vouloir régulariser cette situation à réception de ce courriel.
+
+Nous vous rappelons que nous pouvons mettre en place le paiement par prélèvement automatique, n’hésitez pas à revenir vers nous si vous le souhaitez.
+
+Dans le cas où votre règlement aurait été adressé entre temps, nous vous prions de ne pas tenir compte de la présente.
+
+Restant à votre disposition pour tout renseignement complémentaire.
+
+Nous vous remerciant par avance et vous prions d&#39;agréer, Madame, Monsieur, l’expression de nos salutations distinguées.
+
+Le service comptabilité
+comptabilite@cerbavet.com
+01 81 30 00 08 – choix 2</text>
+    </textTemplates>
+    <textTemplates>
+        <name>PlainTextBodyRelanceProprio1</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!GetOrderRelatedtoCollectionPlanR1.Nom_Patient__c}
+{!GetOrderRelatedtoCollectionPlanR1.Adresse_Patient__c}
+{!GetOrderRelatedtoCollectionPlanR1.Code_Postal_Patient__c} - {!GetOrderRelatedtoCollectionPlanR1.Ville_Patient__c}
+
+A Massy, le {!Date_Format_FR_Task_ActivityDate}
+REF :     {!GetRelatedCollectionPlanR1.Invoice__r.Numero_Facturation_Cerbavet__c}
+
+Madame, Monsieur,
+
+Nous avons le plaisir de vous informer que les résultats d’analyses pour votre animal sont disponibles !
+
+Afin de pouvoir les transmettre à votre vétérinaire et poursuivre le suivi médical de votre animal, sauf erreur ou omission de notre part, merci de réaliser le paiement de ces analyses, à savoir
+
+La facture {!GetRelatedCollectionPlanR1.Invoice__r.Numero_Facturation_Cerbavet__c} du {!Date_Format_FR_Invoice_Posted_Date_R1}  d’un montant de {!GetRelatedCollectionPlanR1.Invoice__r.blng__TotalAmount__c} EUR.
+
+Nous vous prions de trouver aussi ci-joint la facture correspondante.
+Vous pouvez aussi régler par carte bancaire en ligne via ce lien sécurisé {!GetRelatedCollectionPlanR1.Invoice__r.Lien_Paiement__c}
+
+
+A réception de votre paiement les résultats seront transmis instantanément à votre vétérinaire.
+
+Si cette facture a déjà été réglée et débitée de votre compte, pourriez-vous nous communiquer les informations de ce paiement afin que nous débloquions les résultats au plus vite.
+
+En vous en remerciant par avance,
+Veuillez agréer Madame, Monsieur, l’expression de nos sincères salutations.
+
+Le service comptabilité
+comptabilite@cerbavet.com
+01 81 30 00 08 – choix 2</text>
+    </textTemplates>
+    <textTemplates>
+        <name>PlainTextBodyRelanceProprio2</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!GetOrderRelatedtoCollectionPlanR2.Nom_Patient__c}
+{!GetOrderRelatedtoCollectionPlanR2.Adresse_Patient__c}
+{!GetOrderRelatedtoCollectionPlanR2.Code_Postal_Patient__c} - {!GetOrderRelatedtoCollectionPlanR2.Ville_Patient__c}
+A Massy, le {!Date_Format_FR_Task_ActivityDate}
+
+REF:{!GetRelatedCollectionPlanR2.Invoice__r.Numero_Facturation_Cerbavet__c}
+
+Madame, Monsieur,
+
+Les résultats d’analyses sont toujours bloqués en attente de votre paiement. Ainsi, sauf erreur de notre part, nous sommes au regret de constater qu’aucun paiement n’a été effectué pour régler cette facture. Nous vous demandons de bien vouloir régler cette situation, et procéder au règlement de la somme due. 
+Afin de pouvoir les transmettre à votre vétérinaire pour interprétation et suivi médical de votre animal. Nous vous demandons de procéder au paiement de la facture :
+{!GetRelatedCollectionPlanR2.Invoice__r.Numero_Facturation_Cerbavet__c} du {!Date_Format_FR_Invoice_Posted_Date_R2}  d’un montant de {!GetRelatedCollectionPlanR2.Invoice__r.blng__TotalAmount__c} EUR.
+
+Nous vous prions de trouver aussi ci-joint la facture correspondante.
+Vous pouvez aussi régler par carte bancaire en ligne via ce lien sécurisé {!GetRelatedCollectionPlanR2.Invoice__r.Lien_Paiement__c}
+
+
+A réception de votre paiement les résultats seront transmis instantanément à votre vétérinaire. Si cette facture a déjà été réglée et débitée de votre compte, pourriez-vous nous communiquer les informations de ce paiement afin que nous débloquions les résultats au plus vite. En vous en remerciant par avance,
+
+Veuillez agréer Madame, Monsieur, l’expression de nos sincères salutations.
+
+Le service comptabilité
+comptabilite@cerbavet.com
+01 81 30 00 08 – choix 2</text>
+    </textTemplates>
+    <textTemplates>
+        <name>PlainTextBodyRelanceProprio3</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>3EME RAPPEL – FACTURE IMPAYEE
+AVANT MISE AU CONTENTIEUX
+
+{!GetOrderRelatedtoCollectionPlanR3.Nom_Patient__c}
+{!GetOrderRelatedtoCollectionPlanR3.Adresse_Patient__c}
+{!GetOrderRelatedtoCollectionPlanR3.Code_Postal_Patient__c} - {!GetOrderRelatedtoCollectionPlanR3.Ville_Patient__c}
+A Massy, le {!Date_Format_FR_Task_ActivityDate}
+
+REF :     {!GetRelatedCollectionPlanR3.Invoice__r.Numero_Facturation_Cerbavet__c}
+
+Madame, Monsieur, 
+
+Malgré nos précédentes relances, sauf erreur de notre part, nous sommes au regret de constater qu’aucun paiement n’a été effectué pour régler cette facture.
+Nous vous demandons de bien vouloir régler cette situation, et procéder au règlement de la somme due.
+
+La facture {!GetRelatedCollectionPlanR3.Invoice__r.Numero_Facturation_Cerbavet__c} du {!Date_Format_FR_Invoice_Posted_Date_R3} d’un montant de {!GetRelatedCollectionPlanR3.Invoice__r.blng__TotalAmount__c} EUR.
+
+Nous vous prions de trouver aussi ci-joint la facture correspondante.
+Vous pouvez aussi régler par carte bancaire en ligne via ce lien sécurisé {!GetRelatedCollectionPlanR1.Invoice__r.Lien_Paiement__c}
+
+A défaut de paiement d’ici 8 jours nous transmettrons votre dossier à notre société de recouvrement.
+Des pénalités de retard calculées sur la base de 3 fois le taux légal, ainsi que l’indemnité de recouvrement fixé à 40 EUR vous seront facturés en sus de cette créance, selon l’article L.411-6 alinéa 12 du code du commerce.
+
+Nous vous prions d’agréer, Madame, Monsieur, l’assurance de nos salutations les meilleures.
+
+Le service comptabilité
+comptabilite@cerbavet.com
+01 81 30 00 08 – choix 2</text>
+    </textTemplates>
+</Flow>

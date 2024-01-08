@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Activité --></label>
+        <name>Activites__c</name>
+        <picklistValues>
+            <masterLabel>Administration Générale</masterLabel>
+            <translation><!-- Administration Générale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Export</masterLabel>
+            <translation><!-- Agent Export --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Association  de  Malades</masterLabel>
+            <translation><!-- Association  de  Malades --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biologie  Humaine</masterLabel>
+            <translation><!-- Biologie  Humaine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHV</masterLabel>
+            <translation><!-- CHV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabinet</masterLabel>
+            <translation><!-- Cabinet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabinet  d&#39;Anapath</masterLabel>
+            <translation><!-- Cabinet  d&apos;Anapath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centre de Dialyse</masterLabel>
+            <translation><!-- Centre de Dialyse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centre de santé et PMI</masterLabel>
+            <translation><!-- Centre de santé et PMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centre de spécialistes</masterLabel>
+            <translation><!-- Centre de spécialistes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinique</masterLabel>
+            <translation><!-- Clinique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinique Vétérinaire</masterLabel>
+            <translation><!-- Clinique Vétérinaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cliniques Psychiatriques</masterLabel>
+            <translation><!-- Cliniques Psychiatriques --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club de Sport</masterLabel>
+            <translation><!-- Club de Sport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collectivité</masterLabel>
+            <translation><!-- Collectivité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dentaire</masterLabel>
+            <translation><!-- Dentaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diététicien</masterLabel>
+            <translation><!-- Diététicien --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elevage</masterLabel>
+            <translation><!-- Elevage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entreprise</masterLabel>
+            <translation><!-- Entreprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foyer d&#39;hébergement pour adulte handicapé</masterLabel>
+            <translation><!-- Foyer d&apos;hébergement pour adulte handicapé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitalisation à Domicile</masterLabel>
+            <translation><!-- Hospitalisation à Domicile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infirmiers</masterLabel>
+            <translation><!-- Infirmiers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laboratoire</masterLabel>
+            <translation><!-- Laboratoire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maison de Retraite</masterLabel>
+            <translation><!-- Maison de Retraite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maison et Centre Médical ou Paramédical</masterLabel>
+            <translation><!-- Maison et Centre Médical ou Paramédical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Médecine  Générale</masterLabel>
+            <translation><!-- Médecine  Générale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Médecine  de Spécialité</masterLabel>
+            <translation><!-- Médecine  de Spécialité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Médecine  du  Travail</masterLabel>
+            <translation><!-- Médecine  du  Travail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Médecine, Chirurgie et Obstétrique (MCO)</masterLabel>
+            <translation><!-- Médecine, Chirurgie et Obstétrique (MCO) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Naturopathe</masterLabel>
+            <translation><!-- Naturopathe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parc / Zoo</masterLabel>
+            <translation><!-- Parc / Zoo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partenaire</masterLabel>
+            <translation><!-- Partenaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacie</masterLabel>
+            <translation><!-- Pharmacie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sage-Femmes</masterLabel>
+            <translation><!-- Sage-Femmes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Siège / Holding</masterLabel>
+            <translation><!-- Siège / Holding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soins de Suite et de Rééducation (SSR)</masterLabel>
+            <translation><!-- Soins de Suite et de Rééducation (SSR) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutelles de Santé</masterLabel>
+            <translation><!-- Tutelles de Santé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vétérinaire</masterLabel>
+            <translation><!-- Vétérinaire --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

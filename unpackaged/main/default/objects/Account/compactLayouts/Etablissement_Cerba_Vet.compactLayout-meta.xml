@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etablissement_Cerba_Vet</fullName>
+    <fields>Name</fields>
+    <fields>Code_compte_metier__c</fields>
+    <fields>ParentId</fields>
+    <fields>Type_de_compte_icon__c</fields>
+    <fields>Conditions_de_Reglement_Cerbavet__c</fields>
+    <label>Etablissement Cerba Vet</label>
+</CompactLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>FU_CA_MAJ_du_code_de_la_structure_du_lab</fullName>
+        <field>Code_Structure__c</field>
+        <formula>Laboratoire_d_enregistrement__r.Code_Structure__c</formula>
+        <name>FU.CA.MAJ du code de la structure du lab</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_MAJ_TECH_CA_M_decin</fullName>
+        <field>TECH_CA_Medecin__c</field>
+        <literalValue>1</literalValue>
+        <name>FU.MAJ TECH CA Médecin</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>WF%2ECA%2EMAJ TECH CA Médecin quand le CA doit être rattaché à un médecin</fullName>
+        <actions>
+            <name>FU_MAJ_TECH_CA_M_decin</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>NOT(ISBLANK(Code_contact_SGL__c))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF%2ECA%2EMAJ de la hiérarchie concaténée</fullName>
+        <active>true</active>
+        <formula>true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF%2ECA%2EMAJ du code de la structure du laboratoire d%27enregistrement</fullName>
+        <actions>
+            <name>FU_CA_MAJ_du_code_de_la_structure_du_lab</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>NOT(ISBLANK(Laboratoire_d_enregistrement__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

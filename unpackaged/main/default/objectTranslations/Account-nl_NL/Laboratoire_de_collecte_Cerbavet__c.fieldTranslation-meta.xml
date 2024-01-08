@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Cerbavet Collectie Laboratorium</label>
+        <name>Laboratoire_de_collecte_Cerbavet__c</name>
+        <picklistValues>
+            <masterLabel>Alphabio</masterLabel>
+            <translation><!-- Alphabio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anabio Science</masterLabel>
+            <translation><!-- Anabio Science --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analysis</masterLabel>
+            <translation><!-- Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Antagene</masterLabel>
+            <translation><!-- Antagene --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIO 2000</masterLabel>
+            <translation><!-- BIO 2000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIOLIA</masterLabel>
+            <translation><!-- BIOLIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIORHIN</masterLabel>
+            <translation><!-- BIORHIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bio 67</masterLabel>
+            <translation><!-- Bio 67 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BioSantis</masterLabel>
+            <translation><!-- BioSantis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biomag</masterLabel>
+            <translation><!-- Biomag --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bionyval</masterLabel>
+            <translation><!-- Bionyval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CBL Narbonne</masterLabel>
+            <translation><!-- CBL Narbonne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CERBALLIANCE HDF</masterLabel>
+            <translation><!-- CERBALLIANCE HDF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance Alpes Durance</masterLabel>
+            <translation><!-- Cerballiance Alpes Durance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance Artois</masterLabel>
+            <translation><!-- Cerballiance Artois --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance Bourgogne</masterLabel>
+            <translation><!-- Cerballiance Bourgogne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance Bretagne</masterLabel>
+            <translation><!-- Cerballiance Bretagne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance Centre Val de Loire</masterLabel>
+            <translation><!-- Cerballiance Centre Val de Loire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance Charentes</masterLabel>
+            <translation><!-- Cerballiance Charentes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance Dep Rhône</masterLabel>
+            <translation><!-- Cerballiance Dep Rhône --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance Drôme Ardèche</masterLabel>
+            <translation><!-- Cerballiance Drôme Ardèche --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance IDF</masterLabel>
+            <translation><!-- Cerballiance IDF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance Languedoc</masterLabel>
+            <translation><!-- Cerballiance Languedoc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance Loire</masterLabel>
+            <translation><!-- Cerballiance Loire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance Midi Pyrenees</masterLabel>
+            <translation><!-- Cerballiance Midi Pyrenees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance Normandie</masterLabel>
+            <translation><!-- Cerballiance Normandie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance Occitanie</masterLabel>
+            <translation><!-- Cerballiance Occitanie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance Pyrenees</masterLabel>
+            <translation><!-- Cerballiance Pyrenees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance Rhône Alpes</masterLabel>
+            <translation><!-- Cerballiance Rhône Alpes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance Réunion</masterLabel>
+            <translation><!-- Cerballiance Réunion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance Tours</masterLabel>
+            <translation><!-- Cerballiance Tours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESPACE BIO</masterLabel>
+            <translation><!-- ESPACE BIO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geste commercial</masterLabel>
+            <translation><!-- Geste commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hopital de Senlis</masterLabel>
+            <translation><!-- Hopital de Senlis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labm BIO VAL</masterLabel>
+            <translation><!-- Labm BIO VAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labm Bio Mediqual Centre</masterLabel>
+            <translation><!-- Labm Bio Mediqual Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labm COURJAULT</masterLabel>
+            <translation><!-- Labm COURJAULT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labm Croix Blanche</masterLabel>
+            <translation><!-- Labm Croix Blanche --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labm Fontvieille</masterLabel>
+            <translation><!-- Labm Fontvieille --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labm Forestier</masterLabel>
+            <translation><!-- Labm Forestier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labm LESCAROUT</masterLabel>
+            <translation><!-- Labm LESCAROUT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labm Maymat</masterLabel>
+            <translation><!-- Labm Maymat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laboratoire Bonhoure</masterLabel>
+            <translation><!-- Laboratoire Bonhoure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sambourg</masterLabel>
+            <translation><!-- Sambourg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TétraBio</masterLabel>
+            <translation><!-- TétraBio --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

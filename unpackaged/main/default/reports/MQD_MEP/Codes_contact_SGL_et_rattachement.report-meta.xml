@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Code_contact_SGL__c$Name</field>
+    </columns>
+    <columns>
+        <field>Code_contact_SGL__c$Contact__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <criteriaItems>
+            <column>Code_contact_SGL__c$LastModifiedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>admin</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Codes contact SGL et rattachement</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Code_contact_SGL__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Code_contact_SGL__c$LastModifiedDate</dateColumn>
+        <endDate>2019-09-20</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-09-20</startDate>
+    </timeFrameFilter>
+</Report>

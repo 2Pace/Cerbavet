@@ -1,0 +1,1 @@
+<html><head></head><body>Bonjour,<br /><br />Nous avons fermé votre requête n°{{{Case.CaseNumber}}}.<br /><br />Pour la rouvrir, répondez à cet e-mail.<br /><br />Merci,<br /><br />Le Service Client de {{{Organization.Name}}}</body></html>

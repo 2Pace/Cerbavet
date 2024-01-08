@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Toutes_les_commandes_04_07</fullName>
+    <columns>IDDossier__c</columns>
+    <columns>Statut_Compte_Rendu__c</columns>
+    <columns>Facturable__c</columns>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>blng__BillingAccount__c</columns>
+    <columns>ORDERS.TOTAL_AMOUNT</columns>
+    <columns>blng__BilledAmountwithouttax__c</columns>
+    <columns>ORDERS.EFFECTIVE_DATE</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>blng__InvoiceBatch__c</columns>
+    <columns>ORDER.RECORDTYPE</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>ORDERS.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ORDERS.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>7/4/2022 12:00 AM</value>
+    </filters>
+    <label>Toutes les commandes 04/07</label>
+</ListView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Cerba_HC</letterhead>
+    <name>ET-Alerte 1 an avant la date de fin du contrat</name>
+    <style>freeForm</style>
+    <subject>Rappel : le contrat{!Contrats_Conventions__c.Name} expire dans un an</subject>
+    <textOnly>Bonjour {!Contrats_Conventions__c.OwnerFirstName},
+Le contrat du client {!Contrats_Conventions__c.Nom_du_client__c} expire dans a un an.
+Pour voir plus de détails, merci de cliquer sur le lien suivant :
+{!Contrats_Conventions__c.Link}
+
+Cordialement,
+Cerba HealthCare</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appel_d_offres_presentation_compacte</fullName>
+    <fields>Name</fields>
+    <fields>Etablissement__c</fields>
+    <fields>Montant__c</fields>
+    <fields>Mois__c</fields>
+    <fields>Etape__c</fields>
+    <fields>RecordTypeId</fields>
+    <label>Appel d&#39;offres- présentation compacte</label>
+</CompactLayout>

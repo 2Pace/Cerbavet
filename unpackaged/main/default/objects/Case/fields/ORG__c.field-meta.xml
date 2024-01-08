@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ORG__c</fullName>
+    <defaultValue>&#39;DEV&#39;</defaultValue>
+    <description>2PACE</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Dans quelle ORG le case a t&#39;il été fixé</inlineHelpText>
+    <label>🖱️ ORG</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DEV</fullName>
+                <default>false</default>
+                <label>DEV</label>
+            </value>
+            <value>
+                <fullName>PREPROD</fullName>
+                <default>false</default>
+                <label>PREPROD</label>
+            </value>
+            <value>
+                <fullName>PROD</fullName>
+                <default>false</default>
+                <label>PROD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

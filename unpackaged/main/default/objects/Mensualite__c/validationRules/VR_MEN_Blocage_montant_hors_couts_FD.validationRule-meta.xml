@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_MEN_Blocage_montant_hors_couts_FD</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+$User.Tech_By_Pass_VR__c = false, 
+OR(
+ISCHANGED(Montant_facture_TTC__c ),
+ISCHANGED(Statut__c )
+),
+
+OR(
+ISPICKVAL(Cout_de_transport__r.Type_de_cout__c ,&quot;S&quot;),
+ISPICKVAL(Cout_de_transport__r.Type_de_cout__c ,&quot;V&quot;)
+)
+)</errorConditionFormula>
+    <errorMessage>Merci de ne pas saisir le montant facturé ou changer le statut de la mensualité pour les types de coûts hors Factures Directes.</errorMessage>
+</ValidationRule>

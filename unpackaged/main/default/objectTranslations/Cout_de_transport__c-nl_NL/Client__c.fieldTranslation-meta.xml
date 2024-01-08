@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Client --></label>
+        <lookupFilter>
+            <errorMessage><!-- Merci de sélectionner un compte de type Établissement. --></errorMessage>
+        </lookupFilter>
+        <name>Client__c</name>
+        <relationshipLabel>Transportkosten</relationshipLabel>
+    </CustomFieldTranslation>

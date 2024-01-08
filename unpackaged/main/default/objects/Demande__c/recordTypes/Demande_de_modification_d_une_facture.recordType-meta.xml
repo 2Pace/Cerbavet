@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demande_de_modification_d_une_facture</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>CL_DDE_de_modification</compactLayoutAssignment>
+    <label>Demande de modification d&#39;une facture</label>
+    <picklistValues>
+        <picklist>Raison_de_desactivation__c</picklist>
+        <values>
+            <fullName>Fermé</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut__c</picklist>
+        <values>
+            <fullName>En attente d%27approbation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nouvelle</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Rejetée par la direction commerciale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validée par la direction commerciale</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_demande__c</picklist>
+        <values>
+            <fullName>Modification d%27une prestation existante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nouvelle prestation</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Suppression d%27une prestation existante</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Automate --></label>
+        <name>Automate__c</name>
+        <picklistValues>
+            <masterLabel>- Aucun</masterLabel>
+            <translation><!-- - Aucun --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advia 2120</masterLabel>
+            <translation><!-- Advia 2120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cobas</masterLabel>
+            <translation><!-- Cobas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elispeed</masterLabel>
+            <translation><!-- Elispeed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Euroblot one</masterLabel>
+            <translation><!-- Euroblot one --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hydrasis</masterLabel>
+            <translation><!-- Hydrasis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immulite</masterLabel>
+            <translation><!-- Immulite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stago</masterLabel>
+            <translation><!-- Stago --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vidas</masterLabel>
+            <translation><!-- Vidas --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

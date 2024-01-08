@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Syndicat --></label>
+        <name>Syndicat__c</name>
+        <picklistValues>
+            <masterLabel>Association de Biologistes de Midi-Pyrénées</masterLabel>
+            <translation><!-- Association de Biologistes de Midi-Pyrénées --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associations des Biologiste d&#39;Aquitaine</masterLabel>
+            <translation><!-- Associations des Biologiste d&apos;Aquitaine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syndicat National des Biologistes des Hôpitaux</masterLabel>
+            <translation><!-- Syndicat National des Biologistes des Hôpitaux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syndicat National des Biologistes des Hôpitaux Privés</masterLabel>
+            <translation><!-- Syndicat National des Biologistes des Hôpitaux Privés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syndicat National des Médecins Biologistes</masterLabel>
+            <translation><!-- Syndicat National des Médecins Biologistes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syndicat de la Biologie Libérale Européenne</masterLabel>
+            <translation><!-- Syndicat de la Biologie Libérale Européenne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syndicat des Biologistes</masterLabel>
+            <translation><!-- Syndicat des Biologistes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syndicat des Biologistes de Bretagne et de Pays de Loire</masterLabel>
+            <translation><!-- Syndicat des Biologistes de Bretagne et de Pays de Loire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syndicat des Laboratoires de Biologie Clinique</masterLabel>
+            <translation><!-- Syndicat des Laboratoires de Biologie Clinique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syndicats des Laboratoires de Biologie Médicale de PACA</masterLabel>
+            <translation><!-- Syndicats des Laboratoires de Biologie Médicale de PACA --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

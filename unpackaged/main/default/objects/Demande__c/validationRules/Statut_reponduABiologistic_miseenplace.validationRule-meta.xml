@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_reponduABiologistic_miseenplace</fullName>
+    <active>true</active>
+    <description>Possibilité de passer du statut Répondu par Biologistic/En attente de validation Cerba à Mise en place validée par Cerba ou Abandonné uniquement par le profil Cerba</description>
+    <errorConditionFormula>ISPICKVAL(PRIORVALUE(Statut__c),&quot;Répondu/en attente de validation&quot;)
+ &amp;&amp; (ISPICKVAL(Statut__c, &quot;Validée par Cerba&quot;) ||
+  ISPICKVAL(Statut__c, &quot;Abandonné&quot;)) 
+  &amp;&amp; $Profile.Id &lt;&gt; &quot;00e1t000000uQJJ&quot; 
+  &amp;&amp; $User.Tech_By_Pass_VR__c = false</errorConditionFormula>
+    <errorDisplayField>Statut__c</errorDisplayField>
+    <errorMessage>Merci de ne pas passer du statut Répondu par Biologistic/En attente de validation Cerba à Validée par Cerba ou Abandonnée.</errorMessage>
+</ValidationRule>

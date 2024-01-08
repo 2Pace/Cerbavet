@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Date du premier dossier sur tout l&apos;historique --></help>
+        <label><!-- Date 1er dossier sur tout historique BI --></label>
+        <name>Date_1er_dossier_sur_tout_Historique_BI__c</name>
+    </CustomFieldTranslation>

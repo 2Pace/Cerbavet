@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Contact_Fonction_obligatoire</fullName>
+    <active>true</active>
+    <description>Fonction/rôle administratif ou Fonction/rôle médical obligatoire</description>
+    <errorConditionFormula>AND (
+ $User.Tech_By_Pass_VR__c = false,
+ISBLANK( 
+
+TEXT (Fonction_Role_administratif__c)) &amp;&amp; ISBLANK( 
+
+TEXT(Fonction_Role_medical__c)))</errorConditionFormula>
+    <errorMessage>Merci de renseigner le rôle administratif ou le rôle médical de ce contact.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Activiteit</label>
+        <name>Activites__c</name>
+        <picklistValues>
+            <masterLabel>Administration Générale</masterLabel>
+            <translation>Algemene Administratie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Export</masterLabel>
+            <translation>Export agent</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Association  de  Malades</masterLabel>
+            <translation>Patiëntenvereniging</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biologie  Humaine</masterLabel>
+            <translation>Menselijke biologie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHV</masterLabel>
+            <translation><!-- CHV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabinet</masterLabel>
+            <translation>Kabinet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabinet  d&#39;Anapath</masterLabel>
+            <translation>Anapath kabinet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centre de Dialyse</masterLabel>
+            <translation>Dialyse centrum</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centre de santé et PMI</masterLabel>
+            <translation>Gezondheidscentrum en PMI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centre de spécialistes</masterLabel>
+            <translation>Gespecialiseerd centrum</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinique</masterLabel>
+            <translation>Ziekenhuis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinique Vétérinaire</masterLabel>
+            <translation>Dierenkliniek</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cliniques Psychiatriques</masterLabel>
+            <translation>Psychiatrische ziekenhuizen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club de Sport</masterLabel>
+            <translation>Sportclub</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collectivité</masterLabel>
+            <translation>Gemeenschap</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dentaire</masterLabel>
+            <translation>Tandarts</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diététicien</masterLabel>
+            <translation>Diëtist(e)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elevage</masterLabel>
+            <translation>Fokkerij</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entreprise</masterLabel>
+            <translation>Onderneming</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foyer d&#39;hébergement pour adulte handicapé</masterLabel>
+            <translation><!-- Foyer d&apos;hébergement pour adulte handicapé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitalisation à Domicile</masterLabel>
+            <translation>Thuishospitalisatie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infirmiers</masterLabel>
+            <translation>Verpleegkundigen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laboratoire</masterLabel>
+            <translation>Laboratorium</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maison de Retraite</masterLabel>
+            <translation>Rusthuis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maison et Centre Médical ou Paramédical</masterLabel>
+            <translation>WGC of Paramedisch Centrum</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Médecine  Générale</masterLabel>
+            <translation>Algemene Geneeskunde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Médecine  de Spécialité</masterLabel>
+            <translation>Gespecialiseerde Geneeskunde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Médecine  du  Travail</masterLabel>
+            <translation>Arbeidsgeneeskunde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Médecine, Chirurgie et Obstétrique (MCO)</masterLabel>
+            <translation>Geneeskunde, Chirurgie en Verloskunde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Naturopathe</masterLabel>
+            <translation>Natuurgeneeskundige</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parc / Zoo</masterLabel>
+            <translation>Park / Zoo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partenaire</masterLabel>
+            <translation>Partner</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacie</masterLabel>
+            <translation>Apotheek</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sage-Femmes</masterLabel>
+            <translation>Vroedvrouwen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Siège / Holding</masterLabel>
+            <translation>Hoofdkantoor / Holding</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soins de Suite et de Rééducation (SSR)</masterLabel>
+            <translation>Nazorg en Revalidatie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutelles de Santé</masterLabel>
+            <translation>Gezondheidszorg</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vétérinaire</masterLabel>
+            <translation>Dierenarts</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

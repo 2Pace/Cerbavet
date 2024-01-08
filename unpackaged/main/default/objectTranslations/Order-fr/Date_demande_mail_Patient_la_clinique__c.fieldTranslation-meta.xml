@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Date ou on a envoyé un mail de relance à la clinique pour récupérer mail proprio --></help>
+        <label><!-- Date demande mail Patient à la clinique --></label>
+        <name>Date_demande_mail_Patient_la_clinique__c</name>
+    </CustomFieldTranslation>

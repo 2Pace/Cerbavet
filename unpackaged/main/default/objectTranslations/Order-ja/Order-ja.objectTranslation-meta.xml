@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Billing Order Layout</layout>
+        <sections>
+            <label>請求メトリクス</label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label>注文と商談</label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label>納入先および請求先住所</label>
+            <section>Billing Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label>請求先情報</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>日付情報</label>
+            <section>Date Information</section>
+        </sections>
+        <sections>
+            <label>契約情報</label>
+            <section>Price Information</section>
+        </sections>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Quote and Opportunity</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping and Billing Address --></label>
+            <section>Shipping and Billing Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CPQ Order Layout</layout>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- OrderContracting --></label>
+            <section>OrderContracting</section>
+        </sections>
+        <sections>
+            <label><!-- Quote and Opportunity --></label>
+            <section>Quote and Opportunity</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping and Billing Information --></label>
+            <section>Shipping and Billing Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Cerbavet Analyses</layout>
+        <sections>
+            <label>請求先情報</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information Facturation --></label>
+            <section>Information Facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Patient --></label>
+            <section>Informations Patient</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Prix --></label>
+            <section>Informations Prix</section>
+        </sections>
+        <sections>
+            <label><!-- Montants de Facturation --></label>
+            <section>Montants de Facturation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Cerbavet College</layout>
+        <sections>
+            <label>注文と商談</label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label>請求先情報</label>
+            <section>Billing Metrics</section>
+        </sections>
+        <sections>
+            <label>日付情報</label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label>契約情報</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Date Information</section>
+        </sections>
+        <sections>
+            <label><!-- Price Information --></label>
+            <section>Price Information</section>
+        </sections>
+        <sections>
+            <label><!-- Quote and Opportunity --></label>
+            <section>Quote and Opportunity</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping and Billing Address --></label>
+            <section>Shipping and Billing Address</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- 📝 Activer et Contracter la commande --></label>
+        <name>Activer_et_Contracter_la_commande</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 🔀 Conditions de règlement --></label>
+        <name>Conditions_de_reglement</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- 💉 Cerbavet Analyses --></label>
+        <name>Cerbavet_Analyses</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 🎓 Cerbavet College --></label>
+        <name>Cerbavet_College</name>
+    </recordTypes>
+</CustomObjectTranslation>

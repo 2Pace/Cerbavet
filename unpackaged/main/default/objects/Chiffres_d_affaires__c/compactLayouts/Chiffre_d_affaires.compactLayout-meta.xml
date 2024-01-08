@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chiffre_d_affaires</fullName>
+    <fields>Name</fields>
+    <fields>CA_Facturable__c</fields>
+    <fields>CA_Facture__c</fields>
+    <fields>Premier_jour_du_mois__c</fields>
+    <fields>Laboratoire_d_enregistrement__c</fields>
+    <label>Chiffre d&#39;affaires</label>
+</CompactLayout>

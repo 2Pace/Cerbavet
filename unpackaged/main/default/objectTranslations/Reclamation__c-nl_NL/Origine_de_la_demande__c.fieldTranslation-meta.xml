@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Oorsprong van de aanvraag</label>
+        <name>Origine_de_la_demande__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En physique</masterLabel>
+            <translation>Fysiek</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Téléphone</masterLabel>
+            <translation>Telefoon</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation>Online</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

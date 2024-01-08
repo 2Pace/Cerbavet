@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User$Email</field>
+    </columns>
+    <columns>
+        <field>User$MobilePhone</field>
+    </columns>
+    <columns>
+        <field>User*User$Structure__c</field>
+    </columns>
+    <columns>
+        <field>User$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>User$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <field>User$LastModifiedBy</field>
+    </columns>
+    <columns>
+        <field>User$LastLoginDate</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Rapport indiquant les dernières modifications des comptes utilisateurs et les dernières connexions.</description>
+    <filter>
+        <criteriaItems>
+            <column>User$IsActive</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User*User$Structure__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Cerballiance Charentes,Cerballiance Centre Val-de-Loire,Cerballiance Pyrénées,Cerballiance Occitanie,Cerballiance Languedoc</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>GrandOuest_Suivi Utilisateurs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Utilisateurs_avec_des_licences__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User$SuOrgAdminExpirationDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

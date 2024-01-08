@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type de demande --></label>
+        <name>Type_de_demande__c</name>
+        <picklistValues>
+            <masterLabel>Modification d&#39;une prestation existante</masterLabel>
+            <translation><!-- Modification d&apos;une prestation existante --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nouvelle prestation</masterLabel>
+            <translation><!-- Nouvelle prestation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suppression d&#39;une prestation existante</masterLabel>
+            <translation><!-- Suppression d&apos;une prestation existante --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etape__c</fullName>
+    <externalId>false</externalId>
+    <label>Étape</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Qualification</fullName>
+                <default>true</default>
+                <label>Qualification</label>
+            </value>
+            <value>
+                <fullName>Elaboration de la réponse</fullName>
+                <default>false</default>
+                <label>Elaboration de la réponse</label>
+            </value>
+            <value>
+                <fullName>Soumission de l’offre</fullName>
+                <default>false</default>
+                <label>Soumission de l’offre</label>
+            </value>
+            <value>
+                <fullName>Gain</fullName>
+                <default>false</default>
+                <label>Gain</label>
+            </value>
+            <value>
+                <fullName>Perte</fullName>
+                <default>false</default>
+                <label>Perte</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>alix.lewandowski@cerba.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>Cerba_HC_Utilisateurs_avances</sharedTo>
+        <sharedToType>Group</sharedToType>
+    </folderShares>
+    <name>TdB - Pilotage adoption</name>
+</DashboardFolder>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remise_REPLAY_Cerbavet_College__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>2PACE
+Champs pour déterminer si le calcul automatique du discount sur l&#39;abonnement doit être fait sur ce compte.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Remise REPLAY pour le compte</inlineHelpText>
+    <label>🎓 Remise REPLAY Cerbavet College</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

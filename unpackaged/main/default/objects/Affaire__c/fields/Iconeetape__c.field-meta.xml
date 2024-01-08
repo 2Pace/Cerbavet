@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Iconeetape__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF 
+( ISPICKVAL( Etape__c ,&quot;Qualification&quot;) 
+, 
+IMAGE(&quot;/resource/1557482728000/ICONS_Qualification?&quot;, &quot;Qualification&quot;, 30 ,30 ) 
+, 
+
+IF 
+( ISPICKVAL( Etape__c ,&quot;Elaboration de la réponse&quot;) 
+, 
+IMAGE(&quot;/resource/1557425550000/ICONS_Elaboration_de_la_reponse?&quot;, &quot;Elaboration de la réponse&quot;, 30 ,30 ) 
+, 
+
+
+IF 
+( 
+ISPICKVAL( Etape__c , &quot;Soumission de l’offre&quot;) 
+, 
+IMAGE(&quot;/resource/1557483302000/ICONS_Soumission_offre?&quot;, &quot;Soumission de l’offre&quot;, 30 ,30) 
+,
+
+ 
+IF 
+( 
+ISPICKVAL( Etape__c , &quot;Gain&quot;) 
+, 
+IMAGE(&quot;/resource/1557440792000/ICONS_Gain?&quot;, &quot;Gain&quot;, 30, 30) 
+,
+
+ 
+IF 
+( 
+ISPICKVAL( Etape__c , &quot;Perte&quot;) 
+, 
+IMAGE(&quot;/resource/1557441359000/ICONS_PERTE?&quot;, &quot;Perte&quot;, 30, 30) 
+,
+ 
+ 
+&quot;&quot; 
+) 
+) 
+) 
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Icone étape</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

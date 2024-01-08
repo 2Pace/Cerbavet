@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>License_type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type de licence</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1-Biologistes et commerciaux sans accès logistique</fullName>
+                <default>false</default>
+                <label>1-Biologistes et commerciaux sans accès logistique</label>
+            </value>
+            <value>
+                <fullName>2-Biologistes en licence light et externes</fullName>
+                <default>false</default>
+                <label>2-Biologistes en licence light et externes</label>
+            </value>
+            <value>
+                <fullName>3-ADV, Logistique, Management</fullName>
+                <default>false</default>
+                <label>3-ADV, Logistique, Management</label>
+            </value>
+            <value>
+                <fullName>4-CPQ et Commerciaux CerbaVet</fullName>
+                <default>false</default>
+                <label>4-CPQ et Commerciaux CerbaVet</label>
+            </value>
+            <value>
+                <fullName>5-Admin</fullName>
+                <default>false</default>
+                <label>5-Admin</label>
+            </value>
+            <value>
+                <fullName>Lightning Platform - Enterprise Edition (Administrator)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lightning Platform - Enterprise Edition (Administrator)</label>
+            </value>
+            <value>
+                <fullName>Lightning Platform Plus - Enterprise Edition (Restricted Use)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lightning Platform Plus - Enterprise Edition (Restricted Use)</label>
+            </value>
+            <value>
+                <fullName>Lightning Platform Starter - Enterprise Edition</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lightning Platform Starter - Enterprise Edition</label>
+            </value>
+            <value>
+                <fullName>Lightning Sales Cloud - Enterprise Edition</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lightning Sales Cloud - Enterprise Edition</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_Validee_par_Cerba</fullName>
+    <active>true</active>
+    <description>Le statut : &quot;Nouvelle&quot; ne peut passer qu&#39;au statut &quot;Envoyée à Biologistic&quot; ou &quot;Abandonnée&quot;.</description>
+    <errorConditionFormula>ISPICKVAL(PRIORVALUE(Statut__c),&quot;Validée par Cerba&quot;)&amp;&amp; 
+ISCHANGED(Statut__c) &amp;&amp;
+(ISPICKVAL (Statut__c,&quot;Nouvelle&quot;) || 
+ISPICKVAL (Statut__c,&quot;Envoyée à Biologistic&quot;) || 
+ISPICKVAL (Statut__c,&quot;Répondu/en attente de validation&quot;) || 
+ISPICKVAL (Statut__c,&quot;Abandonné&quot;))</errorConditionFormula>
+    <errorMessage>Le statut : &quot;Nouvelle&quot; ne peut passer qu&#39;au statut &quot;Envoyée à Biologistic&quot; ou &quot;Abandonnée&quot;.</errorMessage>
+</ValidationRule>

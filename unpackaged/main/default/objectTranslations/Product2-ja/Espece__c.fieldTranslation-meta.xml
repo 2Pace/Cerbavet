@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Espèce --></label>
+        <name>Espece__c</name>
+        <picklistValues>
+            <masterLabel>- A définir</masterLabel>
+            <translation><!-- - A définir --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ane</masterLabel>
+            <translation><!-- Ane --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bovin</masterLabel>
+            <translation><!-- Bovin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caprin</masterLabel>
+            <translation><!-- Caprin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chat</masterLabel>
+            <translation><!-- Chat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheval</masterLabel>
+            <translation><!-- Cheval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chien</masterLabel>
+            <translation><!-- Chien --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dauphin</masterLabel>
+            <translation><!-- Dauphin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Furet</masterLabel>
+            <translation><!-- Furet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lagomorphe</masterLabel>
+            <translation><!-- Lagomorphe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oiseaux</masterLabel>
+            <translation><!-- Oiseaux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Porc</masterLabel>
+            <translation><!-- Porc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reptiles</masterLabel>
+            <translation><!-- Reptiles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rongeur</masterLabel>
+            <translation><!-- Rongeur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toutes</masterLabel>
+            <translation><!-- Toutes --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

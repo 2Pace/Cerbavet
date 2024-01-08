@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Code_contact_SGL__c$Name</field>
+    </columns>
+    <columns>
+        <field>Code_contact_SGL__c$Id_Externe__c</field>
+    </columns>
+    <columns>
+        <field>Code_contact_SGL__c$Contact__c.Identifiant_national_unique__c</field>
+    </columns>
+    <columns>
+        <field>Code_contact_SGL__c$Contact__c.Type_d_identifiant__c</field>
+    </columns>
+    <columns>
+        <field>Code_contact_SGL__c$Contact__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <format>Tabular</format>
+    <name>Codes contacts SGL modifiés (MQD-21 Mai)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Code_contact_SGL__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Code_contact_SGL__c$LastModifiedDate</dateColumn>
+        <endDate>2019-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-05-21</startDate>
+    </timeFrameFilter>
+</Report>

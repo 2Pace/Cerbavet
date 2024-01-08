@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Compte_SGL_SPE_champs_LS</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$User.Tech_By_Pass_VR__c = false,
+
+
+
+$User.Id &lt;&gt;Owner.Id,
+$User.Id &lt;&gt;Owner.ManagerId,
+
+OR(
+ISCHANGED(Facture_Anonyme__c),
+ISCHANGED(Frais_de_dossier__c),
+ISCHANGED(Periodicite_de_facturation__c),
+ISCHANGED(Adresse_de_facturation_sp_cifique__c),
+ISCHANGED(AdrFact_Nom__c),
+ISCHANGED(AdrFact_Serv__c ),
+ISCHANGED(AdrFact_Rue1__c),
+ISCHANGED(AdrFact_Rue2__c),
+ISCHANGED(AdrFact_CP__c),
+ISCHANGED(AdrFact_Ville__c),
+ISCHANGED(AdrFact_Pays__c)
+),
+
+$Profile.Name &lt;&gt; &quot;CERBA HC- ADV/L&amp;T Cerba - Cerba Vet&quot;
+)</errorConditionFormula>
+    <errorMessage>Merci de ne pas modifier les champs &quot;Facture anonyme&quot;, &quot;Frais de dossier&quot; ou &quot;Périodicité de facturation si vous n&#39;êtes pas ADV/propriétaire/manager du propriétaire de ce compte.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Correspondants_CerbaVet_HEX_119</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Code_compte_metier__c</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>AdrFact_CP__c</columns>
+    <columns>Numero_SFA__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PARENT_NAME</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>startsWith</operation>
+        <value>HEX-119-99</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Compte_Client_SGL_BI_Groupe</value>
+    </filters>
+    <label>Correspondants CerbaVet (HEX-119)</label>
+</ListView>

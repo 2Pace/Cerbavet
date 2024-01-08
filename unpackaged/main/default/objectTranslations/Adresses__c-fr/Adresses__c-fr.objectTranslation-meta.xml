@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Adresse</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Adresses</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Présentation Adresse Active</layout>
+        <sections>
+            <label><!-- Informations complémentaires --></label>
+            <section>Informations complémentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Particularités de l&apos;adresse --></label>
+            <section>Particularités de l&#39;adresse</section>
+        </sections>
+        <sections>
+            <label><!-- Références Biologistic --></label>
+            <section>Références Biologistic</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Adresse Inactive</layout>
+        <sections>
+            <label><!-- Informations complémentaires --></label>
+            <section>Informations complémentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Particularités de l&apos;adresse --></label>
+            <section>Particularités de l&#39;adresse</section>
+        </sections>
+        <sections>
+            <label><!-- Référence Biologistic --></label>
+            <section>Référence Biologistic</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Adresse inactive --></label>
+        <name>Adresse_inactive</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Demande de désactivation d&apos;adresse --></label>
+        <name>Demande_de_d_sactivation_d_adresse</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- MAJ adresse sur compte client SGL --></label>
+        <name>MAJ_adresse_sur_compte_client_SGL</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Adresse Active --></label>
+        <name>Adresse_Active</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Adresse Inactive --></label>
+        <name>Adresse_Inactive</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- La création d&apos;adresse est temporairement impossible, veuillez contacter votre administrateur. --></errorMessage>
+        <name>RV_VISEO_CantCreateAdresses</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas renseigner le nom d&apos;établissement/service s&apos;il ne sont pas particuliers . Si c&apos;est le cas, merci de cocher la case &quot;Noms et service particulier&quot; avant de renseigner ces noms --></errorMessage>
+        <name>VR_ADR_Blocage_etablissement_ou_service</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas renseigner le numéro de bureau/tournée de centralisation s&apos;il ne s&apos;agit pas d&apos;une adresse de centralisation. Si c&apos;est le cas, merci de cocher la case &quot;Est une adresse de centralisation&quot; avant de renseigner ces numéros --></errorMessage>
+        <name>VR_ADR_Blocage_infos_ADR_centralisation</name>
+    </validationRules>
+</CustomObjectTranslation>

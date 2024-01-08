@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type d&apos;annexes --></label>
+        <name>Type_d_annexes__c</name>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation><!-- Autres --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charte qualité</masterLabel>
+            <translation><!-- Charte qualité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat de mise à disposition</masterLabel>
+            <translation><!-- Contrat de mise à disposition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat de partenariat</masterLabel>
+            <translation><!-- Contrat de partenariat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat logistique</masterLabel>
+            <translation><!-- Contrat logistique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat prescription connectée</masterLabel>
+            <translation><!-- Contrat prescription connectée --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Convention d&#39;exercice</masterLabel>
+            <translation><!-- Convention d&apos;exercice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Convention de preuve</masterLabel>
+            <translation><!-- Convention de preuve --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Convention de transport</masterLabel>
+            <translation><!-- Convention de transport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Convention hospitalière</masterLabel>
+            <translation><!-- Convention hospitalière --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mise à disposition</masterLabel>
+            <translation><!-- Mise à disposition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revue de contrat</masterLabel>
+            <translation><!-- Revue de contrat --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

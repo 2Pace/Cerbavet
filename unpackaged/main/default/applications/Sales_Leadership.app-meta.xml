@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>Sales_leadersship</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Monitor sales activity, and guide your team to help them meet and exceed sales targets.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Sales Leadership</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>ADV_Logistique_et_transport_Page_d_accueil</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>CERBA HC- ADV/L&amp;T Cerba - Cerba Vet</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Biologistic_Page_d_accueil</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Externe/Biologistic</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>ADV_Logistique_et_transport_Page_d_accueil</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Lead</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-CollaborationGroup</tabs>
+    <tabs>Chiffres_d_affaires__c</tabs>
+    <tabs>Affaire__c</tabs>
+    <tabs>Contrats_Conventions__c</tabs>
+    <tabs>Mensualite__c</tabs>
+    <tabs>Cout_de_transport__c</tabs>
+    <tabs>Prestation_de_transport__c</tabs>
+    <tabs>Tournee__c</tabs>
+    <tabs>Adresses__c</tabs>
+    <tabs>Reclamation__c</tabs>
+    <tabs>Code_contact_SGL__c</tabs>
+    <tabs>Annexe__c</tabs>
+    <tabs>Demande__c</tabs>
+    <tabs>Paillasse__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Sales_Leadership_UtilityBar</utilityBar>
+</CustomApplication>

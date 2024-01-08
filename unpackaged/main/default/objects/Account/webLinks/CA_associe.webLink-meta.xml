@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_associe</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>CA associé</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>https://eu16.lightning.force.com/lightning/r/Report/00O1t0000076VrFEAU/view?a:t=1487190305660&amp;fv0= {!Account.Id}</url>
+</WebLink>

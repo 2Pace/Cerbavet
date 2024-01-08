@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preleveurs_Paris_et_IDF_HEX_133</fullName>
+    <columns>NAME</columns>
+    <columns>Code_compte_metier__c</columns>
+    <columns>Libelle_contact__c</columns>
+    <columns>Contact__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Contact__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>startsWith</operation>
+        <value>HEX-133</value>
+    </filters>
+    <filters>
+        <field>Prescripteur_Preleveur__c</field>
+        <operation>equals</operation>
+        <value>Preleveur</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>1/8/2020 12:00 AM</value>
+    </filters>
+    <label>Préleveurs IDF (HEX-133)</label>
+</ListView>

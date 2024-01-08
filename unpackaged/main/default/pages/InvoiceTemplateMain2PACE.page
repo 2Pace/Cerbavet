@@ -1,0 +1,1054 @@
+<apex:page renderAs="PDF" standardController="blng__Invoice__c" extensions="GetInvoiceDetailsCpy"
+           showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <head>
+        <script>
+        window.onload = function(){
+            this.test();
+        }
+        function test(){
+            const collection = document.getElementsByClassName("dataCol");
+            for (let i = 0; i < collection.length; i++) {
+                collection[0].style.display  = "none";
+                collection[2].style.display  = "none";
+            }
+        }
+        </script>
+        <style type="text/CSS" >
+            .brdr{
+            border: 2px solid !important;
+            }
+            .txtCntr{
+            text-align: center !important;
+            }
+            .fntChng{
+            font-size: 12px !important;            
+            }
+            .padd6{            
+            font-size: 12px;
+            font-style: italic;            
+            }
+            .fltLft{
+            float: left;
+            }
+            .fltRt{
+            float: right;
+            }
+            .brdrRit{
+            border-right: 1px solid !important;
+            }
+            .brdrLft{
+            border-left: 1px solid !important;
+            }
+            .brdrBotm{
+            border-bottom: 1px solid !important;
+            }
+            .txtUnderline{
+            text-decoration: underline !important;
+            }
+            .fntWt{
+            color: #0070c0;
+            }
+            .paddLft{
+            padding-left: 4px !important;
+            }
+            .txtAlnEnd{
+            text-align: end !important;
+            }
+            .paddBtm{
+            padding-bottom: 2%;
+            }
+            .customWidth{
+            width: 994px !important;
+            }
+            .floatWidth{
+            width: 50%;
+            float: left;
+            }
+            .floatWidth35{
+            width: 50%;
+            float: left;
+            }
+            .floatWidth22{
+            float: left;
+            }
+            .dispFlx{
+            display: flex;
+            }
+            .flx1{
+            flex: 1;
+            }
+            .marginLft{
+            margin-left: 38% !important;
+            }
+            .widthFlt88{
+            width: 62%;
+            float: left;
+            }
+            .widthFlt53{
+            float: right;
+            width: 53%;
+            }
+            table {
+            border-collapse: collapse;
+            }
+            .marginNegative{
+            margin-top: -6%;
+            padding-bottom: 2%;
+            }
+            .mrgn2{
+            margin-bottom: 2%;
+            }
+            .width12{
+            width: 12%;
+            }
+            .width5{
+            width: 5%;
+            }
+            @page {
+                size: A4 portrait;
+                    margin-top: 5mm;
+                    margin-bottom: 35mm;
+                    margin-left: 5mm;
+                    margin-right: 0mm;
+                            @top-center {
+                                    content: element(header);
+                               }
+                            @bottom-center {
+                                    content: element(footer);
+                               }
+                            }
+                                    .header {
+                                    padding: 5px;
+                                    position: running(header);
+                            }
+                                    .footer {
+                                    display: block;                                    
+                                    position: running(footer);
+                        }
+                                     .pagenumber:before {
+                                    content: counter(page);
+                        }
+                                     .pagecount:before {
+                                    content: counter(pages);
+                                    content: counter(page);
+                         }
+        </style>
+    </head>
+
+    <!--College-->
+
+    <apex:outputPanel rendered="{!if((templateName == 'Cerbavet College' ),'true','false')}">
+        <div class="footer">
+            <apex:image id="LogoCornerCropCollege" value="{!$Resource.Cerbavet_Logo_Crop}" style="float:right; position:absolute; top:0%; right:0%; width: 20%;"/>
+            <table width="50%" cellpadding="1px" cellspacing="1px" align="center" style="font-size:11px;">
+                    <tr>
+                        <td>Tel + 331 81 30 00 08</td>
+                        <td>SAS au capital de 61.660€</td>                                  
+                    </tr>
+                    <tr>
+                        <td>comptabilite@cerbavet.com</td>
+                        <td>RCS d'Evry N°814 729 422</td>                                  
+                    </tr>
+                    <tr>
+                        <td>www.cerbavet.com</td>
+                        <td>TVA intracommunautaire FR29814729422</td>                                  
+                    </tr>                                
+                </table>
+                <div style="font-size: 16px; text-align:left;"> 
+                <span class="pagenumber"/> de <span class="pagecount"/>                              
+            </div>
+            </div>
+        <table width="100%" cellpadding="0" cellspacing="0"  align="center"  var="TheENd" >
+            <tr>
+                <th><apex:image width="192px" height="124px" id="theImage" value="{!$Resource.Clg_Logo}"/></th>
+            </tr>
+        </table>
+        <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:12px;">
+            <tr>
+                <th style="text-align:left; font-size:10px;" width="60%">N° Ordinal : 505043</th>
+                <th style="" width=""></th>
+                <th>Code correspondant : {!codeCorresponding}</th>
+                <th style=""></th>
+            </tr>
+        </table>
+        <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px;">
+            <tr>
+                <th style="text-align:left" width="45%">CERBAVET COLLEGE - Organisme de formation</th>
+                <th style="" width=""></th>
+                <th width="55%" style="padding:2px; text-align:center;font-size:11px;">{!accountName}</th>
+            </tr>
+            <tr>
+                <th style="text-align:left" width="45%">N° Enregistrement: 11910836991 </th>
+                <th style="" width=""></th>
+                <th width="55%" style="padding:2px; text-align:center;font-size:11px;">{!billingStreet}</th>
+            </tr>
+            <tr>
+                <th style="text-align:left" width="45%">Email : college@cerbavet.com</th>
+                <th style="" width=""></th>
+                <th width="55%" style="padding:2px; text-align:center;font-size:11px;">{!billingCityCode}</th>
+            </tr>
+        </table>
+        <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px; padding:10px 0px;">
+            <tr>
+                <th style="text-align:left" width="30%"></th>
+                <th style="" width=""></th>
+                <th width="45%">du 
+                    <apex:outputText value="{0, date,  dd-MM-yyyy}">
+                        <apex:param value="{!InvoicePostedDate}" />
+                    </apex:outputText>
+                </th>
+            </tr>
+        </table>
+        <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:14px;">
+            <tr >
+                <th style="text-align:left;">  <span style="color:#0070c0; font-size:16px;"> <b>FACTURE:</b> </span> {!invoiceNumber}</th>
+                <th style="" ></th>
+                <th style="padding:6px 0px;"></th>
+            </tr>
+        </table>
+        <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:11px; padding:10px 0px; ">
+            <tr >
+                <th style="text-align:left; padding-bottom:6px; "> REF FACTURE : {!notes}</th>
+                <th style="" ></th>
+                <th style="padding:6px 0px;"></th>
+            </tr>
+        </table>
+        <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px;">
+            <tr>
+                <th align="center" style="border:2px solid;" >REFERENCE FORMATION</th>
+                <th align="center" style="border:2px solid;" >DATE SESSION</th>
+                <th align="center" style="border:2px solid;" width="10%">Qté</th>
+                <th align="center" style="border:2px solid;">MONTANT H.T.</th>
+            </tr>
+            
+            <apex:repeat value="{!wrp}" var="sbQL">
+                <tr >
+                    <td style="border-right:1px solid; border-left:1px solid; Padding:6px;">{!sbQL.Inline.blng__Product__r.Name}</td>
+                    <td style="border-right:1px solid; border-left:1px solid; text-align:center;">
+                    </td>
+                    <td style="border-right:1px solid; border-left:1px solid; text-align:center;">{!sbQL.Inline.blng__Quantity__c}</td>
+                    <td style="border-right:1px solid; border-left:1px solid; text-align:center;">{!sbQL.Inline.blng__Subtotal__c} {!symbol}</td>
+                </tr>
+                <apex:repeat value="{!sbQL.Qtline}" var="QL">
+                    <tr >
+                        <td style="border-right:1px solid; border-left:1px solid; Padding:6px;">{!QL.SBQQ__ProductName__c}</td>
+                        <td style="border-right:1px solid; border-left:1px solid; text-align:center;">
+                            <apex:outputText value="{0,date,dd/MM/yy}"> <apex:param value="{!QL.Date_Session__c}" /> </apex:outputText> 
+                        </td>
+                        <td style="border-right:1px solid; border-left:1px solid; text-align:center;"></td>
+                        <td style="border-right:1px solid; border-left:1px solid; text-align:center;"></td>
+                    </tr>
+                    <tr >
+                        <td style="border-right:1px solid; border-left:1px solid; Padding:6px;">{!QL.SBQQ__Product__r.Description}</td>
+                        <td style="border-right:1px solid; border-left:1px solid; text-align:center;">
+                        </td>
+                        <td style="border-right:1px solid; border-left:1px solid; text-align:center;"></td>
+                        <td style="border-right:1px solid; border-left:1px solid; text-align:center;"></td>
+                    </tr>
+                </apex:repeat>
+            </apex:repeat>
+            
+            <tr>
+                <td style="border-bottom:1px solid !important;"></td>
+                <td style="border-bottom:1px solid !important;"></td>
+                <td style="border-bottom:1px solid !important;"></td>
+                <td style="border-bottom:1px solid !important;"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style=" border-left:1px solid; border-bottom:1px solid; Padding-left:6px;">MONTANT HORS TAXE</td>
+                <td style="border-right:1px solid; border-bottom:1px solid;"></td>
+                <td style="border:1px solid; text-align: end !important; text-align:center;">{!totalAmount} {!symbol}</td>
+            </tr>
+            <tr>
+                <td ></td>
+                <td style="border-left:1px solid; border-bottom:1px solid; Padding-left:6px;">TVA</td>
+                <td style="border-right:1px solid; border-bottom:1px solid;"></td>
+                <td style="border:1px solid; text-align: end !important; text-align:center;">{!totalAmountWithTVA} {!symbol}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="border-left:1px solid; border-bottom:1px solid; Padding-left:6px;">MONTANT TOTAL TTC</td>
+                <td style="border-bottom:1px solid;"></td>
+                <td style="border:2px solid; font-weight:700; text-align:center;font-size:16px;">{!TVAAmount} {!symbol}</td>
+            </tr>
+        </table>
+        <table width="100%" cellpadding="0" cellspacing="0" align="center" style="font-size:11px;">
+            
+            <tr >
+                <td style="text-decoration: underline !important; padding:12px 0px 4px 0px!important;font-size:14px;" width="20%">
+                    Mode de règlement :
+                </td>
+                <td width="80%" style=" padding:12px 0px 4px 0px!important;font-size:12px;">
+                    Définit au contrat: chèque, virement, prélèvement ou carte bancaire
+                </td>
+            </tr>
+        </table>
+        <table style="font-size:11px;">
+            <tr>
+                <td>
+                    <div style="color: #0070c0; font-weight: 700;">
+                        Règlement par chèque à l'ordre de CerbaVet, à envoyer à l'adresse suivante :
+                    </div>
+                    <div style="color: #0070c0; font-weight: 700;">
+                        CERBAVET
+                    </div>
+                    <div style="color: #0070c0; font-weight: 700;">
+                        ZAC DU MOULIN DE MASSY - 10 RUE DU SAULE TRAPU
+                    </div>
+                    <div style="color: #0070c0; font-weight: 700;">
+                        91300 MASSY
+                    </div>
+                    <div Class="fntChng">
+                        <div style="text-decoration: underline !important; padding-top:4px;">
+                            Par virement bancaire RIB :
+                        </div>
+                        <div style="color: #E44600; font-weight: bold;">
+                            ATTENTION
+                        </div>  
+                        <div style="color: #E44600; font-weight: bold;">
+                            NOUVELLE COORDONNÉE BANCAIRE:
+                        </div>                             
+                        <div Class="fntChng">
+                            LCL
+                        </div>
+                        <div Class="fntChng">
+                            IBAN :  FR21 3000 2056 8400 0007 0220 E72
+                        </div>
+                        <div Class="fntChng">
+                            BIC : CRLYFRPP
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td Class="padd6">
+                    Toute réclamation concernant le contenu de cette facture devra être formulée sous deux mois à date de réception de la facture.<br/>
+                    Aucune réclamation ne pourra être prise en compte après cette date. 
+                </td>
+            </tr>
+            <tr>
+                <td Class="padd6">
+                    En cas de retard, les pénalités seront calculées sur la base de 3 fois le taux légal. Le montant de l'indemnité forfaitaire pour frais de recouvrement prévue à l'article L.411-6 alinéa 12 du code du commerce est fixé à 40 euros.
+                </td>
+            </tr>
+            <tr>
+                <td Class="padd6">
+                    Afin d'éviter toute relance, merci d'indiquer systématiquement la référence de ce courrier dans le libellé de votre réglèment 
+                    ou au dos de votre chèque. 
+                </td>
+            </tr>  
+            
+        </table>
+    </apex:outputPanel>
+    
+    <!--Analysis-->
+    
+    <apex:outputPanel rendered="{!if((templateName == 'Cerbavet Clinics Monthly' ),'true','false')}">        
+            <apex:outputPanel rendered="{!if((billingAccount != TRUE ),'true','false')}">
+
+                    <div class="footer">
+                        <apex:image id="LogoCornerCropAnalysis" value="{!$Resource.Cerbavet_Logo_Crop}" style="float:right; position:absolute; top:0%; right:0%; width: 20%;"/>
+                        <table width="50%" cellpadding="1px" cellspacing="1px" align="center" style="font-size:11px;">
+                                <tr>
+                                    <td>Tel + 331 81 30 00 08</td>
+                                    <td>SAS au capital de 61.660€</td>                                  
+                                </tr>
+                                <tr>
+                                    <td>comptabilite@cerbavet.com</td>
+                                    <td>RCS d'Evry N°814 729 422</td>                                  
+                                </tr>
+                                <tr>
+                                    <td>www.cerbavet.com</td>
+                                    <td>TVA intracommunautaire FR29814729422</td>                                  
+                                </tr>                                
+                            </table>
+                            <div style="font-size: 16px; text-align:left;"> 
+                            <span class="pagenumber"/> de <span class="pagecount"/>                              
+                        </div>
+                        </div>
+                    <table width="100%" cellpadding="0" cellspacing="0"  align="center"  var="TheENd" >
+                        <tr>
+                            <th><apex:image width="192px" height="124px" id="theImageAnalysis" value="{!$Resource.Logo}"/></th>
+                        </tr>
+                    </table>
+                    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px;">
+                        <tr>
+                            <th style="text-align:left; font-size:10px;" width="45%">N° Ordinal : 505043</th>
+                            <th width="45%">Code correspondant : {!codeCorresponding}</th>
+                        </tr>
+                    </table>
+                    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px;">
+                        <tr>
+                            <th style="text-align:left; color: #0070c0;" width="45%">ZAC DU MOULIN DE MASSY</th>
+                            <th width="45%" style="text-align:left;">{!accountName}</th>
+                        </tr>
+                    </table>
+                    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px;">
+                        <tr>
+                            <th style="text-align:left; color: #0070c0;" width="45%">10 RUE DU SAULE TRAPU </th>
+                            <th width="45%" style="text-align:left;">{!billingStreet}</th>
+                        </tr>
+                    </table>
+                    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px; ">
+                        <tr>
+                            <th style="text-align:left; color: #0070c0;" width="45%">91300 MASSY</th>
+                            <th width="45%" style="text-align:left;">{!billingCityCode}</th>
+                        </tr>
+                    </table>
+                    <table  width="100%" align="center" var="opp" style="font-size:13px;">
+                        <tr>
+                            <th style="text-align:left" width="45%"></th>
+                            <th width="45%" style="">du 
+                                <apex:outputText value="{0, date,  dd-MM-yyyy}">
+                                    <apex:param value="{!InvoicePostedDate}" />
+                                </apex:outputText>
+                            </th>
+                        </tr>
+                    </table>
+                    <table  width="100%" align="center" var="opp" style="font-size:12px;">
+                        <tr >
+                            <th style="text-align:left;">
+                                <span style="color:#0070c0;font-size:16px;"> <b>FACTURE:</b> </span>
+                                {!invoiceNumber}</th>
+                            <th width="45%"> REF FACTURE : {!notes}</th>
+                        </tr>
+                    </table>
+                    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px; padding:10px 0px; ">
+                        <tr >
+                            <th style="text-align:left; padding-bottom:6px; "> VOS REFERENCES :</th>
+                            <th width="45%"></th>
+                        </tr>
+                    </table>
+                    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px; padding:10px 0px; ">
+                        <tr >
+                            <th style="text-align:left; padding-bottom:6px; "> Nombre de dossier : {!numberOfOrders}</th>
+                            <th style="" ></th>
+                            <th width="45%"></th>
+                        </tr>
+                    </table>
+                    <table  width="90%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px;">
+                        <tr>
+                            <th align="center" style="border:1px solid;" >NOM DU PROPRIETAIRE</th>
+                            <th align="center" style="border:1px solid;" >ANIMAL</th>
+                            <th align="center" style="border:1px solid;" >N° Dossier</th>
+                            <th align="center" style="border:1px solid;" width="10%">Qté</th>
+                            <th align="center" style="border:1px solid;">Montant Facturé HT</th>
+                        </tr>
+                        
+                        <apex:repeat value="{!wrp}" var="sbQL">
+                            <tr >
+                                <td Class="brdrRit brdrLft fntChng" style="Padding:6px; font-weight:700;">
+                                    <div >
+                                        {!sbQL.Orders.Nom_Patient__c}
+                                    </div>
+                                    <apex:repeat value="{!sbQL.Orders.OrderItems}" var="items" id="theRepeat">
+                                        <div >
+                                            <div style="font-size:9px; font-weight:400;"> -
+                                                <apex:outputText value="{!items.Product2.ProductCode}" /><br/>
+                                            </div>
+                                        </div>
+                                    </apex:repeat>                                                
+                                </td>
+                                <td style="text-align:center; font-weight:700;" Class="brdrRit brdrLft fntChng txtCntr"> {!sbQL.Orders.Animal_Name__c}</td>
+                                <td style="font-weight:700;" Class="brdrRit brdrLft fntChng txtCntr">{!sbQL.Orders.IDDossier__c}</td>
+                                <td  Class="brdrRit brdrLft fntChng txtCntr">1</td>
+                                <td  Class="brdrRit brdrLft fntChng" style="text-align:center;">{!sbQL.OLIAmount} {!symbol}</td>
+                            </tr>  
+                        </apex:repeat>
+                        <!--Romaric Conditional row discount-->
+                        <tr style="display: {!IF(discount=0, 'none', '')}">
+                            <td  Class="brdrRit brdrLft" style="Padding:6px;">Dont remise commerciale inclue</td>
+                            <td  Class="brdrRit brdrLft"></td>
+                            <td  Class="brdrRit brdrLft txtCntr">-</td>
+                            <td  Class="brdrRit brdrLft txtCntr">-</td>
+                            <td  Class="brdrRit brdrLft " style="text-align:center;">-{!discount} {!symbol}</td>
+                        </tr>
+                        <!--Romaric Conditional row discount-->                        
+                        <tr>
+                            <td  Class="brdrRit brdrLft brdrBotm fntChng" style="Padding:6px;"> Frais d'envoi</td>
+                            <td  Class="brdrRit brdrLft brdrBotm"></td>
+                            <td  Class="brdrRit brdrLft brdrBotm"></td>
+                            <td  Class="brdrRit brdrLft brdrBotm fntChng txtCntr">{!NumberofTransports}</td>
+                            <td  Class="brdrRit brdrLft brdrBotm fntChng " style="text-align:center;">{!shippingCost} {!symbol}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td style="border-left:1px solid; border-bottom:1px solid; Padding-left:6px; text-align:right;">MONTANT HORS TAXE</td>
+                            <td style="border-right:1px solid; border-bottom:1px solid;"></td>
+                            <td style="border:1px solid; text-align: end !important; text-align:center;">{!totalAmountWithoutTVA} {!symbol}</td>
+                        </tr>
+                        <tr style="display: {!IF(txCountry='Export','none','')};">
+                            <td ></td>
+                            <td></td>
+                            <td style="border-left:1px solid; border-bottom:1px solid; Padding-left:6px; text-align:right;">TVA</td>
+                            <td style="border-right:1px solid; border-bottom:1px solid;"></td>
+                            <td style="border:1px solid; text-align: end !important; text-align:center;">{!TVAAmount} {!symbol}</td>
+                        </tr>
+                        <tr style="display: {!IF(txCountry='Export','none','')};">
+                            <td></td>
+                            <td></td>
+                            <td style="border-left:1px solid; border-bottom:1px solid; Padding-left:6px; text-align:right;">MONTANT TOTAL TTC</td>
+                            <td style="border-right:1px solid; border-bottom:1px solid;"></td>
+                            <td style="border:2px solid; font-weight:700; text-align:center;font-size:15px;">{!totalAmountWithTVA} {!symbol}</td>
+                        </tr>
+                    </table>
+                    <p></p>
+                    <table width="100%" cellpadding="0" cellspacing="0" align="left">                        
+                            <!--Romaric Conditional row Export-->
+                        <tr >
+                            <td style="display: {!IF(txCountry='Export','','none')}; text-decoration: underline !important; padding:12px 0px 4px 0px!important;" width="50%">
+                                Hors du champs d'application de la TVA Francaise - Article 259.1° du CGI
+                            </td>
+                        </tr>
+                            <!--Romaric Conditional row Export-->
+                        <tr>
+                            <td style="font-size:14px; text-decoration: underline !important;" width="10%">
+                                Conditions de paiement :                              
+                            </td>
+                            <td width="20%">{!PaymentTerms}
+                            </td>
+                        </tr>                        
+                    </table>
+                    <br/>
+                    <br/>
+                    <table width="100%" cellpadding="2px" cellspacing="0" align="left" style="font-size:14px; font-weight:700; display:{!IF(ConditionsDeReglement='Régleur en Prélèvement', '', 'none')};">
+                        <tr>
+                            <td> Le montant de cette facture sera prélevée automatiquement sur le compte {!IBANX} </td>
+                        </tr>
+                    </table>
+                    <table width="100%" cellpadding="0" cellspacing="0" align="center" style="font-size:14px; display:{!IF(ConditionsDeReglement!='Régleur en Prélèvement', '', 'none')};">                        
+                        <tr >
+                            <td style="text-decoration: underline !important; padding:12px 0px 4px 0px!important;" width="20%">
+                                Mode de règlement :
+                            </td>
+                            <td width="80%" style=" padding:12px 0px 4px 0px!important;">
+                                Par chèque ou virement
+                            </td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <table style="font-size:12px; width:100%; display:{!IF(ConditionsDeReglement!='Régleur en Prélèvement', '', 'none')};">
+                        <tr>
+                            <td style="width:60%">
+                                <div>
+                                    Règlement par chèque à l'ordre de CerbaVet, à envoyer à l'adresse suivante :
+                                </div>
+                                <div>
+                                    CERBAVET
+                                </div>
+                                <div>
+                                    ZAC DU MOULIN DE MASSY - 10 RUE DU SAULE TRAPU
+                                </div>
+                                <div>
+                                    91300 MASSY
+                                </div>
+                            </td>
+                            <td>                                
+                                <div style="color: #E44600; font-weight: bold;">
+                                    ATTENTION
+                                </div>  
+                                <div style="color: #E44600; font-weight: bold;">
+                                    NOUVELLE COORDONNÉE BANCAIRE:
+                                </div> 
+                                <div>
+                                    LCL
+                                </div>
+                                <div>
+                                    IBAN :  FR21 3000 2056 8400 0007 0220 E72
+                                </div>
+                                <div>
+                                    BIC : CRLYFRPP                               
+                            </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <p><br/></p>
+                    <table>
+                        <tr>
+                            <td Class="padd6">
+                                Toute réclamation concernant le contenu de cette facture devra être formulée sous deux mois à date de réception de la facture.<br/>
+                                Aucune réclamation ne pourra être prise en compte après cette date. 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td Class="padd6">
+                                En cas de retard, les pénalités seront calculées sur la base de 3 fois le taux légal. Le montant de l'indemnité forfaitaire pour frais de recouvrement prévue à l'article L.411-6 alinéa 12 du code du commerce est fixé à 40 euros.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td Class="padd6">
+                                Afin d'éviter toute relance, merci d'indiquer systématiquement la référence de ce courrier dans le libellé de votre réglèment 
+                                ou au dos de votre chèque. 
+                            </td>
+                        </tr>
+                    </table>
+                </apex:outputPanel>
+            </apex:outputPanel>
+
+            <!--Groupement_Clinique-->
+
+            <apex:outputPanel rendered="{!if((billingAccount == TRUE ),'true','false')}">
+                 <div class="footer">
+                    <apex:image id="LogoCornerCrop4" value="{!$Resource.Cerbavet_Logo_Crop}" style="float:left; position:absolute; top:0%; left:0%; width: 20%;"/>
+                    <table width="50%" cellpadding="1px" cellspacing="1px" align="center" style="font-size:9px;">
+                            <tr>
+                                <td>Tel + 331 81 30 00 08</td>
+                                <td>SAS au capital de 61.660€</td>                                  
+                            </tr>
+                            <tr>
+                                <td>comptabilite@cerbavet.com</td>
+                                <td>RCS d'Evry N°814 729 422</td>                                  
+                            </tr>
+                            <tr>
+                                <td>www.cerbavet.com</td>
+                                <td>TVA intracommunautaire FR29814729422</td>                                  
+                            </tr>                                
+                        </table>
+                        <div style="font-size: 10px; text-align:right;"> 
+                        <span class="pagenumber"/> de <span class="pagecount"/>                              
+                    </div>
+                    </div>
+                    <table width="100%" cellpadding="0" cellspacing="0"  align="center"  var="TheENd" >
+                        <tr>
+                            <th><apex:image width="192px" height="124px" id="theImageAnalysisGroup" value="{!$Resource.Logo}"/></th>
+                        </tr>
+                    </table>
+                    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px;">
+                        <tr>
+                            <th style="text-align:left; font-size:10px;" width="50%">N° Ordinal : 505043</th>
+                            <th style="" width=""></th>
+                            <th style="padding-left: 20px;">Code correspondant : {!codeCorresponding}</th>
+                            <th style=""></th>
+                        </tr>
+                    </table>
+                    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px;">
+                        <tr>
+                            <th style="text-align:left; color: #0070c0;" width="50%">ZAC DU MOULIN DE MASSY</th>
+                            <th style="" width=""></th>
+                            <th width="50%" style="padding:6px; text-align:left;">{!accountName}</th>
+                        </tr>
+                    </table>
+                    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px;">
+                        <tr>
+                            <th style="text-align:left; color: #0070c0;" width="50%">10 RUE DU SAULE TRAPU </th>
+                            <th style="" width=""></th>
+                            <th width="50%" style="padding:6px; text-align:left;">{!billingStreet}</th>
+                        </tr>
+                    </table>
+                    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px; ">
+                        <tr>
+                            <th style="text-align:left; color: #0070c0;" width="50%">91300 MASSY</th>
+                            <th style="" width=""></th>
+                            <th width="50%" style="padding:6px; text-align:left;">{!billingCityCode}</th>
+                        </tr>
+                    </table>
+                    <table  width="100%" cellpadding="20px 20px 20px 0px" align="center" var="opp" style="font-size:13px;">
+                        <tr>
+                            <th style="text-align:left" width="50%"></th>
+                            <th style="" width=""></th>
+                            <th width="50%" style="">du 
+                                <apex:outputText value="{0, date,  dd-MM-yyyy}">
+                                    <apex:param value="{!InvoicePostedDate}" />
+                                </apex:outputText>
+                            </th>
+                        </tr>
+                    </table>
+                    <table  width="100%" cellpadding="25px 25px 25px 0px" align="center" var="opp" style="font-size:11px;">
+                        <tr >
+                            <th style="text-align:left; padding:10px 0px;">
+                                <span style="color:#0070c0;font-size:16px;"> <b>FACTURE:</b> </span> {!invoiceNumber}</th>
+                            <th style="" ></th>
+                            <th width="50%"> REF FACTURE : {!notes}</th>
+                        </tr>
+                    </table>
+                    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px; padding:10px 0px; ">
+                        <tr >
+                            <th style="text-align:left; padding-bottom:6px; "> VOS REFERENCES : {!ReferencesClient}</th>
+                            <th style="" ></th>
+                            <th width="45%" style="padding:6px 0px;"></th>
+                        </tr>
+                    </table>
+                    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px; padding:10px 0px; ">
+                        <tr >
+                            <th style="text-align:left; padding-bottom:6px; "> Nombre de dossier : {!numberOfOrders}</th>
+                            <th style="" ></th>
+                            <th width="45%" style="padding:6px 0px;"></th>
+                        </tr>
+                    </table>
+                <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px;">
+                    <tr>
+                        <th align="center" style="border:1px solid;" > </th>
+                        <th align="center" style="border:1px solid;" >ANIMAL</th>
+                        <th align="center" style="border:1px solid;" >N° Dossier</th>
+                        <th align="center" style="border:1px solid;" width="10%">Qté</th>
+                        <th align="center" style="border:1px solid;">Montant Facturé HT</th>
+                    </tr>
+                    <apex:repeat value="{!mapAccToOrder}" var="wrp">
+                        <tr>
+                            <td Class="fntChng" style="border:1px solid; padding:left:10px; text-align:center;">{!wrp}</td>
+                            <td style="border:1px solid;"></td>
+                            <td style="border:1px solid;"></td>
+                            <td style="border:1px solid;"></td>
+                            <td style="border:1px solid;"></td>
+                        </tr>
+                        <apex:repeat value="{!mapAccToOrder[wrp]}" var="sbQL">
+                            
+                            <tr >
+                                <td Class="brdrRit brdrLft fntChng" style="Padding:6px;">
+                                    <div >
+                                        {!sbQL.Orders.Nom_Patient__c}
+                                    </div>
+                                    <apex:repeat value="{!sbQL.Orders.OrderItems}" var="items" id="theRepeat">
+                                        <div >
+                                            <div > -
+                                                <apex:outputText value="{!items.Product2.ProductCode}" /><br/>
+                                            </div>
+                                        </div>
+                                    </apex:repeat>                                                
+                                </td>
+                                <td style="text-align:center;" Class="brdrRit brdrLft fntChng txtCntr"> {!sbQL.Orders.Animal_Name__c}</td>
+                                <td  Class="brdrRit brdrLft fntChng txtCntr">{!sbQL.Orders.IDDossier__c}</td>
+                                <td  Class="brdrRit brdrLft fntChng txtCntr">1</td>
+                                <td  Class="brdrRit brdrLft fntChng" style="text-align:center;">{!sbQL.Orders.TotalAmount} {!symbol}</td>
+                            </tr>  
+                        </apex:repeat>
+                        <tr>
+                            <td style="border-left:1px solid; border-right:1px solid;"></td>
+                            <td style="border-left:1px solid; border-right:1px solid;"></td>
+                            <td style="border-left:1px solid; border-right:1px solid; text-align:center;">SUB TOTAL</td>
+                            <td style="border-left:1px solid; border-right:1px solid;"></td>
+                            <td style="border-left:1px solid; border-right:1px solid; text-align:center; padding-bottom:12px;">{!mapAccToOrderAmount[wrp]} {!symbol}</td>
+                        </tr>
+                    </apex:repeat>
+                    
+                    
+                    <tr>
+                        <td style="border-top:1px solid;"></td>
+                        <td style="border-top:1px solid;"></td>
+                        <td style="border-top:1px solid; border-left:1px solid; border-bottom:1px solid; Padding-left:6px;">MONTANT HORS TAXE</td>
+                        <td style="border-top:1px solid; border-right:1px solid; border-bottom:1px solid;"></td>
+                        <td style="border-top:1px solid; border:1px solid; text-align: end !important; text-align:center;">{!totalAmountWithoutTVA} {!symbol}</td>
+                    </tr>
+                    <tr>
+                        <td ></td>
+                        <td></td>
+                        <td style="border-left:1px solid; border-bottom:1px solid; Padding-left:6px;">TVA</td>
+                        <td style="border-right:1px solid; border-bottom:1px solid;"></td>
+                        <td style="border:1px solid; text-align: end !important; text-align:center;">{!TVAAmount} {!symbol}</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td style="border-left:1px solid; border-bottom:1px solid; Padding-left:6px;">MONTANT TOTAL TTC</td>
+                        <td style="border-right:1px solid; border-bottom:1px solid;"></td>
+                        <td style="border:2px solid; font-weight:700; text-align:center;font-size:15px;">{!totalAmountWithTVA} {!symbol}</td>
+                    </tr>
+                </table>
+                <table width="100%" cellpadding="0" cellspacing="0" align="center" style="font-size:11px;">                        
+                    <tr >
+                        <td style="font-size:14px; text-decoration: underline !important; padding:12px 0px 4px 0px!important;" width="50%">
+                            Conditions de paiement : {!PaymentTerms}
+                        </td>
+                        <td width="70%" style=" padding:12px 0px 4px 0px!important;">
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" cellpadding="2px" cellspacing="0" align="center" style="font-size:12px; display:{!IF(ConditionsDeReglement='Régleur en Prélèvement', '', 'none')};">
+                    <tr>
+                        <td> Le montant de cette facture sera prélevée automatiquement sur le compte {!IBANX} </td>
+                    </tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" align="center" style="font-size:11px; display:{!IF(ConditionsDeReglement!='Régleur en Prélèvement', '', 'none')};">                        
+                    <tr >
+                        <td style="text-decoration: underline !important; padding:12px 0px 4px 0px!important;" width="20%">
+                            Mode de règlement :
+                        </td>
+                        <td width="80%" style=" padding:12px 0px 4px 0px!important;">
+                            Par chèque, virement, ou carte bancaire
+                        </td>
+                    </tr>
+                </table>
+                <table style="font-size:11px; width:100%; display:{!IF(ConditionsDeReglement!='Régleur en Prélèvement', '', 'none')};">
+                    <tr>
+                        <td style="width:60%">
+                            <div style="color: #0070c0; font-weight: 700;">
+                                Règlement par chèque à l'ordre de CerbaVet, à envoyer à l'adresse suivante :
+                            </div>
+                            <div style="color: #0070c0; font-weight: 700;">
+                                CERBAVET
+                            </div>
+                            <div style="color: #0070c0; font-weight: 700;">
+                                ZAC DU MOULIN DE MASSY - 10 RUE DU SAULE TRAPU
+                            </div>
+                            <div style="color: #0070c0; font-weight: 700;">
+                                91300 MASSY
+                            </div>
+                        </td>
+                        <td>
+                            <div Class="padd6">
+                                <div style="color: #E44600; font-weight: bold;">
+                                    ATTENTION
+                                </div>  
+                                <div style="color: #E44600; font-weight: bold;">
+                                    NOUVELLE COORDONNÉE BANCAIRE:
+                                </div>                            
+                                <div Class="fntChng">
+                                    LCL
+                                </div>
+                                <div Class="fntChng">
+                                    IBAN :  FR21 3000 2056 8400 0007 0220 E72
+                                </div>
+                                <div Class="fntChng">
+                                    BIC : CRLYFRPP
+                                </div>
+                        	</div>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td Class="padd6">
+                            Toute réclamation concernant le contenu de cette facture devra être formulée sous deux mois à date de réception de la facture.<br/>
+                            Aucune réclamation ne pourra être prise en compte après cette date. 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td Class="padd6">
+                            En cas de retard, les pénalités seront calculées sur la base de 3 fois le taux légal. Le montant de l'indemnité forfaitaire pour frais de recouvrement prévue à l'article L.411-6 alinéa 12 du code du commerce est fixé à 40 euros.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td Class="padd6">
+                            Afin d'éviter toute relance, merci d'indiquer systématiquement la référence de ce courrier dans le libellé de votre réglèment 
+                            ou au dos de votre chèque. 
+                        </td>
+                    </tr>
+                </table>
+        </apex:outputPanel>
+         
+    <!--Cerbavet Proprio-->
+    
+    <apex:outputPanel rendered="{!if((templateName == 'Cerbavet Proprio' ),'true','false')}">
+        <div class="footer">
+            <apex:image id="LogoCornerCropProprio" value="{!$Resource.Cerbavet_Logo_Crop}" style="float:right; position:absolute; top:0%; right:0%; width: 20%;"/>
+            <table width="50%" cellpadding="1px" cellspacing="1px" align="center" style="font-size:11px;">
+                    <tr>
+                        <td>Tel + 331 81 30 00 08</td>
+                        <td>SAS au capital de 61.660€</td>                                  
+                    </tr>
+                    <tr>
+                        <td>comptabilite@cerbavet.com</td>
+                        <td>RCS d'Evry N°814 729 422</td>                                  
+                    </tr>
+                    <tr>
+                        <td>www.cerbavet.com</td>
+                        <td>TVA intracommunautaire FR29814729422</td>                                  
+                    </tr>                                
+                </table>
+                <div style="font-size: 16px; text-align:left;"> 
+                <span class="pagenumber"/> de <span class="pagecount"/>                              
+            </div>
+            </div>
+        <table width="100%" cellpadding="0" cellspacing="0"  align="center"  var="TheENd" >
+            <tr>
+                <th><apex:image width="192px" height="124px" id="theImageAnalysisProprio" value="{!$Resource.Logo}"/></th>
+            </tr>
+        </table>
+        <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px;">
+            <tr>
+                <th style="text-align:left; font-size:10px;" width="50%">N° Ordinal : 505043</th>
+                <th style="" width=""></th>
+                <th style="padding-left: 40px;"></th>
+                <th style=""></th>
+            </tr>
+        </table>
+        <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px;">
+            <tr>
+                <th style="text-align:left; color: #0070c0;" width="50%">ZAC DU MOULIN DE MASSY</th>
+                <th style="" width=""></th>
+                <th width="45%" style="padding:0px; text-align:left;">{!patientName}</th>
+            </tr>
+        </table>
+        <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px;">
+            <tr>
+                <th style="text-align:left; color: #0070c0;" width="50%">10 RUE DU SAULE TRAPU </th>
+                <th style="" width=""></th>
+                <th width="45%" style="padding:0px; text-align:left;">{!patientAddress}</th>
+            </tr>
+        </table>
+        <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px; ">
+            <tr>
+                <th style="text-align:left; color: #0070c0;" width="50%">91300 MASSY</th>
+                <th style="" width=""></th>
+                <th width="45%" style="padding:0px; text-align:left;"></th>
+            </tr>
+        </table>
+        <br/>
+        <apex:outputPanel rendered="{!if((invoicePaymentStatus != 'Unpaid' ),'true','false')}">
+            <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px; ">
+                <tr>
+                    <th style="text-align:left; " width="2%">Statut</th>
+                    <th style="color:red; font-size:30px;" width="2%">PAYE</th>
+                    <th width="45%"></th>
+                </tr>
+            </table>
+        </apex:outputPanel>        
+        <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:14px; ">
+            <tr>
+                <th style="text-align:left;">
+                    <span style="color:#0070c0;font-size:16px;"> <b>FACTURE:</b>
+                    </span>
+                    {!invoiceNumber}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;du 
+                    <apex:outputText value="{0, date,  dd-MM-yyyy}">
+                    <apex:param value="{!InvoicePostedDate}"/>
+                    </apex:outputText>
+                </th>
+            </tr>
+            <tr>
+                <td>REFERENCES DOSSIER: &nbsp;{!dossier}
+                    <br/><br/>               
+                </td>
+            </tr>
+        </table>
+        <table  width="90%" cellpadding="0" cellspacing="0" align="center" var="opp" style="font-size:13px; border-collapse:collapse;">
+            <tr>
+                <th align="center" style="border:1px solid;" >Désignation</th>
+                <th align="center" style="border:1px solid;">Quantité</th>
+            </tr>
+            <tr >
+                <td Class="brdrRit brdrLft fntChng" style="Padding:3px;">Nous avons réceptionné des analyses le <apex:outputText value="{0, date,  dd-MM-yyyy}">
+                    <apex:param value="{!startDate}" />
+                    </apex:outputText></td>                
+                <td  Class="brdrRit brdrLft fntChng" style="text-align:center;"></td>
+            </tr>  
+            <tr >
+                <td Class="brdrRit brdrLft fntChng" style="Padding:3px;">prescrites par votre {!parentAccount}</td>                
+                <td  Class="brdrRit brdrLft fntChng" style="text-align:center;"></td>
+            </tr>  
+            <tr >
+                <td Class="brdrRit brdrLft fntChng" style="Padding:3px;">pour le {!petCode} {!petName}</td>                
+                <td  Class="brdrRit brdrLft fntChng" style="text-align:center;"></td>
+            </tr>  
+            <tr >
+                <td Class="brdrRit brdrLft fntChng" style="Padding:3px;">Examens demandés :</td>                
+                <td  Class="brdrRit brdrLft fntChng" style="text-align:center;"></td>
+            </tr> 
+            <apex:repeat value="{!InvoiceLineItem}" var="sbInvL">
+                <tr >
+                    <td Class="brdrRit brdrLft fntChng" style="Padding:6px;">{!sbInvL.blng__Product__r.Name}</td>                    
+                    <td  Class="brdrRit brdrLft fntChng" style="text-align:center;">1</td>
+                </tr> 
+            </apex:repeat>
+            <tr>
+                <td style="border-left:1px solid; border-top:1px solid; border-bottom:1px solid; Padding-left:6px;">MONTANT HORS TAXE</td>                
+                <td style="border:1px solid; border-top:1px solid;  text-align:center;">{!totalAmountWithoutTVA} {!symbol}</td>
+            </tr>
+            <tr>
+                <td style="border-left:1px solid; border-bottom:1px solid; Padding-left:6px;">TVA </td>                
+                <td style="border:1px solid; text-align:center;">{!TVAAmount} {!symbol}</td>
+            </tr>
+            <tr>
+                <td style="border:2px solid; Padding-left:6px;font-size:16px">MONTANT TOTAL TTC</td>                
+                <td style="border:3px solid; font-weight:700; text-align:center;font-size:16px;">{!totalAmountWithTVA} {!symbol}</td>
+            </tr>
+        </table>
+        <table width="100%" cellpadding="0" cellspacing="0" align="center" style="font-size:11px;">
+             <tr >
+                <td style="font-size:18px; padding:12px 0px 4px 0px!important; font-weight:700" width="50%">
+                    Paiement à réception de facture
+                </td>
+                <td width="70%" style=" padding:12px 0px 4px 0px!important;">
+                </td>
+            </tr>
+        </table>        
+        <table width="100%" cellpadding="0px" cellspacing="0" align="center" style="font-size:14px;">
+            <tr >
+                <td style="text-decoration: underline !important; padding:12px 0px 4px 0px!important;" width="20%">
+                    Mode de règlement :
+                </td>
+                <td width="80%" style=" padding:12px 0px 4px 0px!important;">
+                    Par chèque, virement, ou carte bancaire
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <table style="font-size:9px;">
+            <tr>
+                <td Class="padd6">
+                    Toute réclamation concernant le contenu de cette facture devra être formulée sous deux mois à date de réception de la facture.<br/>
+                    Aucune réclamation ne pourra être prise en compte après cette date. 
+                </td>
+            </tr>
+            <tr>
+                <td Class="padd6">
+                    En cas de retard, les pénalités seront calculées sur la base de 3 fois le taux légal. Le montant de l'indemnité forfaitaire pour frais de recouvrement prévue à l'article L.411-6 alinéa 12 du code du commerce est fixé à 40 euros.
+                </td>
+            </tr>
+            <tr>
+                <td Class="padd6">
+                    Afin d'éviter toute relance, merci d'indiquer systématiquement la référence de ce courrier dans le libellé de votre réglèment 
+                    ou au dos de votre chèque. 
+                </td>
+            </tr>            
+        </table>
+    <apex:outputPanel rendered="{!if((NumberInvoiceLines > 5 ),'true','false')}">
+        <p style="page-break-after:always;">
+        </p>
+    </apex:outputPanel>
+    <div style="page-break-inside: avoid;">
+        <p style="text-align:center; font-size:16px;" class="txtCntr fntWt">
+            ******************COUPON REGLEMENT******************</p>
+        <p style="text-align:left; font-size:16px; font-weight=1000">          
+                REFERENCE A RAPPELER : {!invoiceNumber} <br/>                
+        </p>       
+        <apex:image value="https://chart.googleapis.com/chart?chs=150x150&amp;cht=qr&amp;chl={!paymentLink}&amp;choe=UTF-8" style="float:left;"/>
+        <table style="font-size:11px; width:75%;float:right;">
+            <tr>                
+                <th class="fntChng">
+                    REGLEMENT PAR VIREMENT
+                </th>                
+                <th Class="fntChng">
+                    REGLEMENT PAR CHEQUE
+                </th>
+            </tr>            
+            <tr>
+                <td>
+                   <div style="color: #E44600; font-weight: bold;">
+                       Attention nouvelles coordonnées bancaires:
+                    </div>
+                    LCL<br/>
+                    IBAN :  FR21 3000 2056 8400 0007 0220 E72<br/>
+                    BIC : CRLYFRPP<br/>
+                    REFERENCE FACTURE A RAPPELER IMPERATIVEMENT<br/>
+                </td>                
+                <td>
+                    à l'ordre de : CERBA VET<br/>
+                    a l'adresse : CERBA VET<br/>
+                    ZAC DU MOULIN DE MASSY<br/>
+                    10 RUE DU SAULE TRAPU<br/>
+                    91300 MASSY<br/>
+                </td>
+            </tr>            
+        </table>        
+        <table style="font-size:11px; width:75%;float:right;">
+        <tr>                
+            <th style="padding-top: 20px;" class="fntChng">
+                REGLEMENT PAR CARTE BANCAIRE
+            </th>
+        </tr>
+        <tr>
+            <td>                
+                FLASHEZ POUR PAYER PAR CARTE BANCAIRE <br/>
+                ou appeler au 01 81 30 00 08 - choix 2 <br/>
+            </td>
+        </tr>
+    </table>
+</div>
+    </apex:outputPanel>
+</apex:page>

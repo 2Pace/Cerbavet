@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contacts_d_sactiv_s</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Specialite__c</columns>
+    <columns>Fonction_Role_administratif__c</columns>
+    <columns>Fonction_Role_medical__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CA_consolide__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Statut__c</field>
+        <operation>equals</operation>
+        <value>Inactif</value>
+    </filters>
+    <label>Contacts Inactifs</label>
+</ListView>

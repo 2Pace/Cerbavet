@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Cerba_HC</letterhead>
+    <name>DDE.Suppression.Facture.Rejetée</name>
+    <style>freeForm</style>
+    <subject>Demande de suppression de facture rejetée</subject>
+    <textOnly>Bonjour {!Demande__c.OwnerFirstName},
+
+Votre demande de suppression de facture a été rejetée par votre manager.
+Voici son commentaire :
+{!ApprovalRequest.Comments}
+
+Merci de modifier votre demande en cliquant sur le lien suivant : {!Demande__c.Link}
+
+Cordialement.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

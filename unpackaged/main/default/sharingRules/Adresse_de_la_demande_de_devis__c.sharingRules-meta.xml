@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Partage_des_adresses_de_la_demande_de_devis_avec_la_BU_Cerba</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Partage des adresses de la demande de devis avec la BU Cerba</label>
+        <sharedTo>
+            <roleAndSubordinates>Cerba_direction</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

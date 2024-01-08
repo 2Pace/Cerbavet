@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_ID_s_Niv_hierarchie_supplement__c</fullName>
+    <externalId>false</externalId>
+    <formula>Parent.Parent.Parent.Parent.Parent.Tech_ID_compte_et_5_niveaux_superieurs__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tech ID&#39;s Niv. hiérarchie. supplément.</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

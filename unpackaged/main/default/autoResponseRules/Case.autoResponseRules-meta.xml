@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Exemple de règle de réponse automatique à une requête</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>contains</operation>
+                <value>[OBJET DE L&#39;EXEMPLE DE RÈGLE]</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <senderEmail>emmanuel.janny@cerbavet.com.invalid</senderEmail>
+            <senderName>Emmanuel JANNY</senderName>
+            <template>unfiled$public/E_mail_vers_requ_te_exemple_1694935511018</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

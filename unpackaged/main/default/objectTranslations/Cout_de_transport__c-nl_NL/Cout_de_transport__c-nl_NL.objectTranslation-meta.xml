@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Transportkosten</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Transportkosten</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Présentation Facture directe Laboratoire ou Transporteur</layout>
+        <sections>
+            <label><!-- Informations complémentaires de la facture --></label>
+            <section>Informations complémentaires de la facture</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Prestation transport spécifique ou Mise à disposition de véhicules</layout>
+        <sections>
+            <label><!-- Coûts --></label>
+            <section>Coûts</section>
+        </sections>
+        <sections>
+            <label><!-- Détail de la facture --></label>
+            <section>Détail de la facture</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Naam van de transportkosten</nameFieldLabel>
+    <quickActions>
+        <label><!-- Demande de modification --></label>
+        <name>Demande_de_modification</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Demande de suppression --></label>
+        <name>Demande_de_suppression</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Facture directe Laboratoire ou Transporteur --></label>
+        <name>Facture_directe_Laboratoire_ou_Transporteur</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prestation transport spécifique ou Mise à disposition de véhicules --></label>
+        <name>Prestation_transport_specifique_ou_Mise_a_disposition_de_vehicules</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas modifier les champs Coût mensuel attendu TTC, Date de démarrage, Date de fin, TVA applicable, type d&apos;émetteur, type d&apos;enregistrement et type de coût une fois que le statut est validé --></errorMessage>
+        <name>Champs_non_modifiables_statut_valide</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de renseigner le champ Fournisseur. --></errorMessage>
+        <name>VR_CdT_Fournisseur</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de renseigner le champ &quot;Prestation de transport&quot; dans le cadre d&apos;une prestation de transport spécifique --></errorMessage>
+        <name>VR_CdT_Prestation_obligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de renseigner la date de démarrage au premier jour du mois --></errorMessage>
+        <name>VR_CdT_date_de_demarrage_1er</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de renseigner la date de fin au premier jour du mois --></errorMessage>
+        <name>VR_CdT_date_de_fin_1er</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- En_litige --></label>
+        <name>En_litige</name>
+    </webLinks>
+</CustomObjectTranslation>

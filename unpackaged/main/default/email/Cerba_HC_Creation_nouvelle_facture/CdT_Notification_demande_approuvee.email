@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Bonjour&nbsp;{!Cout_de_transport__c.OwnerFirstName},<div><br></div><div>Votre demande concernant la facture :&nbsp;{!Cout_de_transport__c.Link} a été approuvée par votre manager.&nbsp;</div><div>Voici son commentaire : {!ApprovalRequest.Comments}</div><div><br></div><div><font face="arial" style="font-size: 12pt;">Vous pouvez accéder à l'enregistrement en cliquant sur le lien suivant :&nbsp;</font><font face="arial" style="font-size: medium;">{!Cout_de_transport__c.Link}</font></div><div><br></div><div>Cordialement.&nbsp;</div><div><br></div>]]></td>
+</tr>
+</table>

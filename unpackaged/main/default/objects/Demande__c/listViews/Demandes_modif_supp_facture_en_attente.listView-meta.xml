@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demandes_modif_supp_facture_en_attente</fullName>
+    <columns>RECORDTYPE</columns>
+    <columns>NAME</columns>
+    <columns>Statut__c</columns>
+    <columns>Icone_Statut__c</columns>
+    <columns>Proprietaire__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Demande__c.Demande_de_modification_d_une_facture,Demande__c.Demande_de_suppression_d_une_facture</value>
+    </filters>
+    <filters>
+        <field>Statut__c</field>
+        <operation>notEqual</operation>
+        <value>Validée par la direction commerciale,Rejetée par la direction commerciale</value>
+    </filters>
+    <label>Demandes modif/supp facture en attente</label>
+</ListView>

@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="arial"><span style="font-size: 12pt;">Bonjour&nbsp;</span></font>{!Cout_de_transport__c.OwnerFirstName}<font face="arial"><span style="font-size: 12pt;">,</span></font><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Votre demande de mise en place d'un nouveau coût de transport a été rejetée par votre manager.&nbsp;</div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Voici son commentaire :</div><div style=""><font face="arial">{!ApprovalRequest.Comments}</font></div><div style=""><font face="arial"><br></font></div><div style=""><font face="arial">Merci de modifier votre coût de transport en cliquant sur le lien suivant :&nbsp;</font></div><div style="">{!Cout_de_transport__c.Link}</div><div style=""><font face="arial"><br></font></div><div style=""><font face="arial">Cordialement.&nbsp;</font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div>]]></td>
+</tr>
+</table>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mes_demandes_de_d_sactivation_d_adresse</fullName>
+    <columns>NAME</columns>
+    <columns>Statut__c</columns>
+    <columns>Icone_Statut__c</columns>
+    <columns>Proprietaire__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Demande__c.Demande_de_d_sactivation_d_adresse</value>
+    </filters>
+    <label>Mes demandes de désactivation d&#39;adresse</label>
+</ListView>

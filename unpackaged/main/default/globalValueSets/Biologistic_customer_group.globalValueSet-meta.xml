@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Cerba</fullName>
+        <default>true</default>
+        <label>Cerba</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerbavet</fullName>
+        <default>false</default>
+        <label>Cerba Vet</label>
+    </customValue>
+    <masterLabel>Biologistic_customer_group__c</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

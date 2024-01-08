@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Merci de l&apos;indiquer si le service est différent de celui du client de rattachement --></help>
+        <label><!-- Nom service --></label>
+        <name>Nom_service__c</name>
+    </CustomFieldTranslation>

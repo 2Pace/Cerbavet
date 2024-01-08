@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Toutes_les_commandes_en_Brouillon</fullName>
+    <columns>IDDossier__c</columns>
+    <columns>Facturable__c</columns>
+    <columns>Statut_Compte_Rendu__c</columns>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>blng__BillingAccount__c</columns>
+    <columns>ORDERS.TOTAL_AMOUNT</columns>
+    <columns>blng__BilledAmountwithouttax__c</columns>
+    <columns>ORDERS.EFFECTIVE_DATE</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>blng__InvoiceBatch__c</columns>
+    <columns>ORDER.RECORDTYPE</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ORDERS.STATUS</field>
+        <operation>equals</operation>
+        <value>Draft</value>
+    </filters>
+    <filters>
+        <field>ORDER.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Order.Cerbavet_Analyses</value>
+    </filters>
+    <filters>
+        <field>blng__InvoiceBatch__c</field>
+        <operation>equals</operation>
+        <value>Cerbavet Analysis Proprio</value>
+    </filters>
+    <label>Toutes les commandes en Brouillon</label>
+</ListView>

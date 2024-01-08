@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Statut de disponibilité du compte rendu d&apos;analyse dans ECV --></help>
+        <label><!-- Statut Compte Rendu --></label>
+        <name>Statut_Compte_Rendu__c</name>
+        <picklistValues>
+            <masterLabel>✅</masterLabel>
+            <translation><!-- ✅ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>🔴</masterLabel>
+            <translation><!-- 🔴 --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>DR</fullName>
+        <default>false</default>
+        <label>Docteur</label>
+    </customValue>
+    <customValue>
+        <fullName>PR</fullName>
+        <default>false</default>
+        <label>Professeur</label>
+    </customValue>
+    <masterLabel>Titre d&#39;exercice</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commandes_Proprio_sans_Email</fullName>
+    <columns>IDDossier__c</columns>
+    <columns>Conditions_de_Reglement_Cerbavet__c</columns>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>Email_Patient__c</columns>
+    <columns>Mobile_Patient__c</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>ORDERS.TOTAL_AMOUNT</columns>
+    <columns>ORDERS.EFFECTIVE_DATE</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>blng__InvoiceBatch__c</columns>
+    <columns>ORDER.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>blng__InvoiceBatch__c</field>
+        <operation>equals</operation>
+        <value>Cerbavet Analysis Proprio</value>
+    </filters>
+    <filters>
+        <field>Email_Patient__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>ORDERS.STATUS</field>
+        <operation>equals</operation>
+        <value>Draft</value>
+    </filters>
+    <label>Commandes Proprio sans Email</label>
+</ListView>

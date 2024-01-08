@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>(Chiffres_d_affaires__c.CA_Facture__c:SUM - PREVGROUPVAL (Chiffres_d_affaires__c.CA_Facture__c:SUM, Chiffres_d_affaires__c.Premier_jour_du_mois__c)) / PREVGROUPVAL(Chiffres_d_affaires__c.CA_Facture__c:SUM, Chiffres_d_affaires__c.Premier_jour_du_mois__c)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>Account.CompteclientSGL_CA__r$Premier_jour_du_mois__c</downGroupingContext>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% d&#39;évolution CA Facturé</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>(Chiffres_d_affaires__c.CA_Facturable__c:SUM - PREVGROUPVAL
+(Chiffres_d_affaires__c.CA_Facturable__c:SUM,
+Chiffres_d_affaires__c.Premier_jour_du_mois__c)) / PREVGROUPVAL
+(Chiffres_d_affaires__c.CA_Facturable__c:SUM,
+Chiffres_d_affaires__c.Premier_jour_du_mois__c)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <downGroupingContext>Account.CompteclientSGL_CA__r$Premier_jour_du_mois__c</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% d&#39;évolution CA Facturable</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Account.CompteclientSGL_CA__r$CA_Facturable__c</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Account.CompteclientSGL_CA__r$Etablissement_parent__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.CompteclientSGL_CA__r$CA_Facturable__c</field>
+    </columns>
+    <columns>
+        <field>Account$Structure_custom_object__c.Name</field>
+    </columns>
+    <columns>
+        <field>Account$Structure_Pole__c</field>
+    </columns>
+    <columns>
+        <field>Account$Structure_BU__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.CompteclientSGL_CA__r$Compte_client_SGL__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.CompteclientSGL_CA__r$Etablissement_parent__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.CompteclientSGL_CA__r$Etablissement_parent__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>FiscalYear</dateGranularity>
+        <field>Account.CompteclientSGL_CA__r$Premier_jour_du_mois__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Evolution du CA Top Clients en %</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>COMPTES_AVEC_DU_CA__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.CompteclientSGL_CA__r$Premier_jour_du_mois__c</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

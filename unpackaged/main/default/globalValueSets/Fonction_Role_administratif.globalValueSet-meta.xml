@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Associé</fullName>
+        <default>false</default>
+        <label>Associé</label>
+    </customValue>
+    <customValue>
+        <fullName>Cadre de santé</fullName>
+        <default>false</default>
+        <label>Cadre de santé</label>
+    </customValue>
+    <customValue>
+        <fullName>Chargé de clientèle</fullName>
+        <default>false</default>
+        <label>Chargé de clientèle</label>
+    </customValue>
+    <customValue>
+        <fullName>Comptable</fullName>
+        <default>false</default>
+        <label>Comptable</label>
+    </customValue>
+    <customValue>
+        <fullName>Directeur commercial</fullName>
+        <default>false</default>
+        <label>Directeur commercial</label>
+    </customValue>
+    <customValue>
+        <fullName>Directeur de l’innovation</fullName>
+        <default>false</default>
+        <label>Directeur de l’innovation</label>
+    </customValue>
+    <customValue>
+        <fullName>Directeur de pôle</fullName>
+        <default>false</default>
+        <label>Directeur de pôle</label>
+    </customValue>
+    <customValue>
+        <fullName>Directeur des partenariats</fullName>
+        <default>false</default>
+        <label>Directeur des partenariats</label>
+    </customValue>
+    <customValue>
+        <fullName>Directeur des services comptables / financiers</fullName>
+        <default>false</default>
+        <label>Directeur des services comptables / financiers</label>
+    </customValue>
+    <customValue>
+        <fullName>Directeur des services économiques</fullName>
+        <default>false</default>
+        <label>Directeur des services économiques</label>
+    </customValue>
+    <customValue>
+        <fullName>Directeur des soins</fullName>
+        <default>false</default>
+        <label>Directeur des soins</label>
+    </customValue>
+    <customValue>
+        <fullName>Directeur du développement</fullName>
+        <default>false</default>
+        <label>Directeur du développement</label>
+    </customValue>
+    <customValue>
+        <fullName>Directeur du plateau technique</fullName>
+        <default>false</default>
+        <label>Directeur du plateau technique</label>
+    </customValue>
+    <customValue>
+        <fullName>Directeur d’établissement</fullName>
+        <default>false</default>
+        <label>Directeur d’établissement</label>
+    </customValue>
+    <customValue>
+        <fullName>Directeur général</fullName>
+        <default>false</default>
+        <label>Directeur général</label>
+    </customValue>
+    <customValue>
+        <fullName>Directeur marketing</fullName>
+        <default>false</default>
+        <label>Directeur marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Directeur médical</fullName>
+        <default>false</default>
+        <label>Directeur médical</label>
+    </customValue>
+    <customValue>
+        <fullName>Directeur opérationnel</fullName>
+        <default>false</default>
+        <label>Directeur opérationnel</label>
+    </customValue>
+    <customValue>
+        <fullName>Directeur prévention</fullName>
+        <default>false</default>
+        <label>Directeur prévention</label>
+    </customValue>
+    <customValue>
+        <fullName>Directeur santé</fullName>
+        <default>false</default>
+        <label>Directeur santé</label>
+    </customValue>
+    <customValue>
+        <fullName>Hygiéniste</fullName>
+        <default>false</default>
+        <label>Hygiéniste</label>
+    </customValue>
+    <customValue>
+        <fullName>Informaticien(ne)</fullName>
+        <default>false</default>
+        <label>Informaticien(ne)</label>
+    </customValue>
+    <customValue>
+        <fullName>Président</fullName>
+        <default>false</default>
+        <label>Président</label>
+    </customValue>
+    <customValue>
+        <fullName>Président CME</fullName>
+        <default>false</default>
+        <label>Président CME</label>
+    </customValue>
+    <customValue>
+        <fullName>Président du CLIN</fullName>
+        <default>false</default>
+        <label>Président du CLIN</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsable de centre de tri</fullName>
+        <default>false</default>
+        <label>Responsable de centre de tri</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsable de la formation (continue)</fullName>
+        <default>false</default>
+        <label>Responsable de la formation (continue)</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsable des achats</fullName>
+        <default>false</default>
+        <label>Responsable des achats</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsable des affaires juridiques</fullName>
+        <default>false</default>
+        <label>Responsable des affaires juridiques</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsable des envois</fullName>
+        <default>false</default>
+        <label>Responsable des envois</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsable hygiène et sécurité</fullName>
+        <default>false</default>
+        <label>Responsable hygiène et sécurité</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsable logistique</fullName>
+        <default>false</default>
+        <label>Responsable logistique</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsable qualité</fullName>
+        <default>false</default>
+        <label>Responsable qualité</label>
+    </customValue>
+    <customValue>
+        <fullName>Secrétaire</fullName>
+        <default>false</default>
+        <label>Secrétaire</label>
+    </customValue>
+    <customValue>
+        <fullName>Technicien(ne)</fullName>
+        <default>false</default>
+        <label>Technicien(ne)</label>
+    </customValue>
+    <masterLabel>Fonction/Rôle administratif</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

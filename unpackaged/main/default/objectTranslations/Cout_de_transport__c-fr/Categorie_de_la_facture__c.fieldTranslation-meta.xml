@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Catégorie de la facture --></label>
+        <name>Categorie_de_la_facture__c</name>
+        <picklistValues>
+            <masterLabel>International et DOM-TOM</masterLabel>
+            <translation><!-- International et DOM-TOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Métropole</masterLabel>
+            <translation><!-- Métropole --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

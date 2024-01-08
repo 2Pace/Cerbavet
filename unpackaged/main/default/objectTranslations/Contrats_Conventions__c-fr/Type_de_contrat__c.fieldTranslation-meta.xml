@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type de contrat --></label>
+        <name>Type_de_contrat__c</name>
+        <picklistValues>
+            <masterLabel>AO</masterLabel>
+            <translation><!-- AO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat cadre</masterLabel>
+            <translation><!-- Contrat cadre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat d’établissement</masterLabel>
+            <translation><!-- Contrat d’établissement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etude clinique</masterLabel>
+            <translation><!-- Etude clinique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procédure adaptée</masterLabel>
+            <translation><!-- Procédure adaptée --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

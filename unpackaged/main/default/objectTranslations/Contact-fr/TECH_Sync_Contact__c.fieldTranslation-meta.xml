@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Champ mis à jour par 2 règles de workflow. Permet de différencier les contacts à synchroniser vers Outlook via Lightning Sync --></help>
+        <label><!-- TECH_Sync_Contact --></label>
+        <name>TECH_Sync_Contact__c</name>
+    </CustomFieldTranslation>

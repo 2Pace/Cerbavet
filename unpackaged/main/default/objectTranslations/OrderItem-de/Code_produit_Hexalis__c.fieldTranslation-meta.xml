@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Code produit venant d&apos;Hexalis --></help>
+        <label><!-- Code produit Hexalis --></label>
+        <name>Code_produit_Hexalis__c</name>
+    </CustomFieldTranslation>

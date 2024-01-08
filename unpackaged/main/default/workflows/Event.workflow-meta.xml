@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Alerte_1_an_apres_la_derniere_revue_de_contrat</fullName>
+        <description>Alerte 1 an après la dernière revue de contrat</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Contrats/ET_Alerte_1_an_apres_la_derniere_revue_de_contrat</template>
+    </alerts>
+    <alerts>
+        <fullName>EA_Alerte_email_1an_apres_la_derniere_revue_de_contrat</fullName>
+        <description>EA.Alerte email 1an après la dernière revue de contrat</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Contrats/ET_Alerte_1_an_apres_la_derniere_revue_de_contrat</template>
+    </alerts>
+    <alerts>
+        <fullName>Rappel_J_15</fullName>
+        <description>Rappel J-15</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Visites_jointes/Rappel_J_15</template>
+    </alerts>
+    <alerts>
+        <fullName>Rappel_J_1_Compte_rendu</fullName>
+        <description>Rappel J+1 - Compte rendu</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Visites_jointes/Rappel_J_1_CR</template>
+    </alerts>
+    <alerts>
+        <fullName>Rappel_J_1_Compte_rendu2</fullName>
+        <description>Rappel J+1 - Compte rendu</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Visites_jointes/Rappel_J_1_CR</template>
+    </alerts>
+    <alerts>
+        <fullName>WF_Alerte_1_an_apres_la_revue_de_contrat</fullName>
+        <description>WF.Alerte 1 an après la revue de contrat</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Contrats/ET_Alerte_1_an_apres_la_derniere_revue_de_contrat</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>FU_ACT_Mettre_jour_l_objet_evenement</fullName>
+        <field>Subject</field>
+        <formula>TEXT(Objectif_de_la_visite__c ) &amp; &quot; - &quot; &amp; TEXT(Contexte_d_activite__c )</formula>
+        <name>FU.ACT.Mettre à jour l&#39;objet-événement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_TECH_Saisie_SFDC</fullName>
+        <field>TECH_Saisie_SFDC__c</field>
+        <literalValue>1</literalValue>
+        <name>FU.TECH Saisie SFDC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>TECH Event saisie SFDC</fullName>
+        <actions>
+            <name>FU_TECH_Saisie_SFDC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>true</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF%2EACT%2EProcessus des visites jointes</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>User.BU__c</field>
+            <operation>equals</operation>
+            <value>Cerballiance</value>
+        </criteriaItems>
+        <description>J-15 avant le RDV le biologiste a un rappel de son rdv à venir. Le message sera à définir selon le contexte du RDV.
+J+1 nouveau rappel qui lui rappelle de faire un Compte Rendu</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Rappel_J_15</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Event.StartDateTime</offsetFromField>
+            <timeLength>-15</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Rappel_J_1_Compte_rendu</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Event.ActivityDate</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>WF%2EACT%2ERappel à J%2B1 de faire un CR</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.BU__c</field>
+            <operation>equals</operation>
+            <value>Cerballiance</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Rappel_J_1_Compte_rendu2</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Event.EndDate</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>WF%2EACT%2ERenomer l%27objet de l%27activité</fullName>
+        <actions>
+            <name>FU_ACT_Mettre_jour_l_objet_evenement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Event.Contexte_d_activite__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Event.Objectif_de_la_visite__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF%2ERappel à N%2B1 revue de contrat</fullName>
+        <actions>
+            <name>Alerte_1_an_apres_la_derniere_revue_de_contrat</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND 
+( 
+ISPICKVAL(Owner:User.BU__c ,&quot;Cerballiance&quot;), 
+ISPICKVAL(Contexte_d_activite__c,&quot;Revue de contrat&quot;) 
+)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <offsetFromField>Event.StartDateTime</offsetFromField>
+            <timeLength>365</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>WK_UpdateActivityTime</fullName>
+        <active>false</active>
+        <formula>true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

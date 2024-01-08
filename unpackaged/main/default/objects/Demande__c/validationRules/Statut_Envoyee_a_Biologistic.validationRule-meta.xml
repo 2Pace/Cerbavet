@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_Envoyee_a_Biologistic</fullName>
+    <active>true</active>
+    <description>Le statut : &quot;Envoyée à Biologistic&quot; ne peut passer qu&#39;au statut &quot;Répondu par Biologistic/En attente de validation&quot;.</description>
+    <errorConditionFormula>ISPICKVAL(PRIORVALUE(Statut__c),&quot;Envoyée à Biologistic&quot;)&amp;&amp; 
+ISCHANGED(Statut__c) &amp;&amp;
+
+(
+ISPICKVAL (Statut__c,&quot;Nouvelle&quot;) || 
+ISPICKVAL (Statut__c,&quot;Validée par Cerba&quot;)||
+ISPICKVAL (Statut__c,&quot;Confirmée par Biologistic&quot;)||
+ISPICKVAL (Statut__c,&quot;Abandonné&quot;)
+)
+&amp;&amp;  $User.Tech_By_Pass_VR__c = false</errorConditionFormula>
+    <errorMessage>Le statut : &quot;Envoyée à Biologistic&quot; ne peut passer qu&#39;au statut &quot;Répondu par Biologistic/En attente de validation&quot;.</errorMessage>
+</ValidationRule>

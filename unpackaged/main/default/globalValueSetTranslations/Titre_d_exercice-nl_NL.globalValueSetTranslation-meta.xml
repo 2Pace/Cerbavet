@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Docteur</masterLabel>
+        <translation>Dokter</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Professeur</masterLabel>
+        <translation>Professor</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

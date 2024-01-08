@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Il s&#39;agit d&#39;une authorisation utilisée par l&#39;application connectée OCO (Ordonnance Connectée) afin qu&#39;un utilisateur soit utilisé pour le Flow Oauth2 permettant d&#39;utiliser l&#39;API Apex OCO.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>OCO Api Only</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ApiEnabled</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ApiUserOnly</name>
+    </userPermissions>
+</PermissionSet>

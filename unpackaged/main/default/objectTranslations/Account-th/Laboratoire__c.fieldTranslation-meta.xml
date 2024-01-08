@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Laboratoire d&apos;Analyse vétérinaire --></label>
+        <name>Laboratoire__c</name>
+        <picklistValues>
+            <masterLabel>Allergovet</masterLabel>
+            <translation><!-- Allergovet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biogénix</masterLabel>
+            <translation><!-- Biogénix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAL</masterLabel>
+            <translation><!-- CAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerba Vet</masterLabel>
+            <translation><!-- Cerba Vet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Destaing</masterLabel>
+            <translation><!-- Destaing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Idexx</masterLabel>
+            <translation><!-- Idexx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innovie Vet</masterLabel>
+            <translation><!-- Innovie Vet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LABOKLIN</masterLabel>
+            <translation><!-- LABOKLIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LHA ( Oniris)</masterLabel>
+            <translation><!-- LHA ( Oniris) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labo d&#39;Humaine</masterLabel>
+            <translation><!-- Labo d&apos;Humaine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orbio</masterLabel>
+            <translation><!-- Orbio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scanelis</masterLabel>
+            <translation><!-- Scanelis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vebio</masterLabel>
+            <translation><!-- Vebio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vet&#39;Analys</masterLabel>
+            <translation><!-- Vet&apos;Analys --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vétodiag</masterLabel>
+            <translation><!-- Vétodiag --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

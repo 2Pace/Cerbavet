@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Demande</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Demandes</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Demande de désactivation d&#39;adresse</layout>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Demande de désactivation de compte</layout>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Demande de devis</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Demande de modification d&#39;une facture</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Mode de calcul de coût --></label>
+            <section>Mode de calcul de coût</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Présentation Demande de suppression d&#39;une facture</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Ajouter une adresse dans la demande --></label>
+        <name>Ajouter_une_adresse_dans_la_demande</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Demande de désactivation d&apos;adresse --></label>
+        <name>Demande_de_d_sactivation_d_adresse</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Demande de désactivation de compte --></label>
+        <name>Demande_de_desactivation_de_compte</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Demande de devis --></label>
+        <name>Demande_de_devis</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Demande de modification d&apos;une facture --></label>
+        <name>Demande_de_modification_d_une_facture</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Demande de suppression d&apos;une facture --></label>
+        <name>Demande_de_suppression_d_une_facture</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Merci de ne plus changer le statut de cette demande une fois passé à &quot;Abandonnée&quot; --></errorMessage>
+        <name>Statut_Abandonne</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de ne plus changer le statut de cette demande une fois passé à &quot;Abandonnée&quot; --></errorMessage>
+        <name>Statut_Abandonnee</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas changer le statut une fois qu&apos;il est à l&apos;étape Confirmée par Biologistic --></errorMessage>
+        <name>Statut_ConfirmeeparBiologistic</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas passer du statut &quot;Envoyé à Biologistic&quot; à &quot;Répondu/en attente de validation&quot;. Cette transition est réservée uniquement à Biologistic --></errorMessage>
+        <name>Statut_EnvoyeABiologistic_repondupar_att</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le statut : &quot;Envoyée à Biologistic&quot; ne peut passer qu&apos;au statut &quot;Répondu par Biologistic/En attente de validation&quot;. --></errorMessage>
+        <name>Statut_Envoyee_a_Biologistic</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas changer le statut de cette demande. La mise à jour du statut se fera par Biologistic. --></errorMessage>
+        <name>Statut_Envoyee_a_Biologistic_profil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le statut : &quot;Nouvelle&quot; ne peut passer qu&apos;au statut &quot;Envoyée à Biologistic&quot; ou &quot;Abandonnée&quot;. --></errorMessage>
+        <name>Statut_Nouvelle</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas passer du statut &quot;Nouvelle&quot; au statut &quot;Envoyé à Biologistic&quot; ou &quot;Abandonnée&quot; --></errorMessage>
+        <name>Statut_Nouvelle_EnvoyeABiologistic</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le passage du statut : &quot;Nouvelle&quot; à &quot;Envoyée à Biologistic&quot; ou &quot;Abandonnée&quot; est réservé à la BU Cerba uniquement. --></errorMessage>
+        <name>Statut_Nouvelle_Profil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le statut : &quot;Nouvelle&quot; ne peut passer qu&apos;au statut &quot;Envoyée à Biologistic&quot; ou &quot;Abandonnée&quot;. --></errorMessage>
+        <name>Statut_Repondu_par_Biologistic</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le passage du statut : &quot;Envoyée à Biologistic&quot; à &quot;Répondu par Biologistic/en attente de validation&quot; est réservé à Biologistic. --></errorMessage>
+        <name>Statut_Repondu_par_Biologistic_Profil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le statut : &quot;Nouvelle&quot; ne peut passer qu&apos;au statut &quot;Envoyée à Biologistic&quot; ou &quot;Abandonnée&quot;. --></errorMessage>
+        <name>Statut_Validee_par_Cerba</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Le statut : &quot;Validée par Cerba&quot; ne peut passer qu&apos;au statut &quot;Confirmée par Biologistic&quot;. --></errorMessage>
+        <name>Statut_Validee_par_Cerba_Profil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas passer du statut &quot;Validée par Cerba&quot; à &quot;Confirmée par Biologistic&quot;. Cette transition est réservée uniquement à Biologistic. --></errorMessage>
+        <name>Statut_ValideeparCerba_miseenplaceeffect</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas passer du statut Répondu par Biologistic/En attente de validation Cerba à Validée par Cerba ou Abandonnée. --></errorMessage>
+        <name>Statut_reponduABiologistic_miseenplace</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de soumettre pour approbation le coût de transport avant de faire une demande de modification ou de suppression dessus. --></errorMessage>
+        <name>VR_DDE_Coutdetransport_Statut_Vallide</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de renseigner une date de début d&apos;application de la modification au 1er jour du mois. --></errorMessage>
+        <name>VR_DDE_Date_d_application_1er</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de joindre la proposition Biologistic validée à la demande avant que de changer son statut à &quot;Validée par Cerba&quot;. --></errorMessage>
+        <name>validee_par_cerba_sans_proposition_bio</name>
+    </validationRules>
+</CustomObjectTranslation>

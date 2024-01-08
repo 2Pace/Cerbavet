@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Syndicat__c</fullName>
+    <externalId>false</externalId>
+    <label>Syndicat</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Syndicat des Biologistes</fullName>
+                <default>false</default>
+                <label>Syndicat des Biologistes</label>
+            </value>
+            <value>
+                <fullName>Syndicat des Laboratoires de Biologie Clinique</fullName>
+                <default>false</default>
+                <label>Syndicat des Laboratoires de Biologie Clinique</label>
+            </value>
+            <value>
+                <fullName>Syndicat National des Médecins Biologistes</fullName>
+                <default>false</default>
+                <label>Syndicat National des Médecins Biologistes</label>
+            </value>
+            <value>
+                <fullName>Associations des Biologiste d&#39;Aquitaine</fullName>
+                <default>false</default>
+                <label>Associations des Biologiste d&#39;Aquitaine</label>
+            </value>
+            <value>
+                <fullName>Association de Biologistes de Midi-Pyrénées</fullName>
+                <default>false</default>
+                <label>Association de Biologistes de Midi-Pyrénées</label>
+            </value>
+            <value>
+                <fullName>Syndicat des Biologistes de Bretagne et de Pays de Loire</fullName>
+                <default>false</default>
+                <label>Syndicat des Biologistes de Bretagne et de Pays de Loire</label>
+            </value>
+            <value>
+                <fullName>Syndicats des Laboratoires de Biologie Médicale de PACA</fullName>
+                <default>false</default>
+                <label>Syndicats des Laboratoires de Biologie Médicale de PACA</label>
+            </value>
+            <value>
+                <fullName>Syndicat de la Biologie Libérale Européenne</fullName>
+                <default>false</default>
+                <label>Syndicat de la Biologie Libérale Européenne</label>
+            </value>
+            <value>
+                <fullName>Syndicat National des Biologistes des Hôpitaux</fullName>
+                <default>false</default>
+                <label>Syndicat National des Biologistes des Hôpitaux</label>
+            </value>
+            <value>
+                <fullName>Syndicat National des Biologistes des Hôpitaux Privés</fullName>
+                <default>false</default>
+                <label>Syndicat National des Biologistes des Hôpitaux Privés</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

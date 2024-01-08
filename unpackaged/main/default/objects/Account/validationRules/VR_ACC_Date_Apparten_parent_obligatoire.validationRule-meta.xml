@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_ACC_Date_Apparten_parent_obligatoire</fullName>
+    <active>true</active>
+    <description>Si le compte parent change, le champ : &quot;Date de rattachement au parent&quot; est obligatoire. 
+
+Exception faite pour les utilisateurs qui ont la CAC Tech By Pass de cochée sur leur fiche utilisateur, pour les comptes de type labo orga, SGL Groupe &amp; SGL Spé</description>
+    <errorConditionFormula>AND (
+ $User.Tech_By_Pass_VR__c = false,( RecordType.Id = &quot;0121t000000h1LIAAY&quot;),
+
+NOT(ISBLANK(ParentId))
+&amp;&amp;
+ISBLANK(Date_de_rattachement_au_parent__c))</errorConditionFormula>
+    <errorMessage>Merci de renseigner la &quot;Date d&#39;appartenance au parent&quot; suite au changement du compte principal (Parent)</errorMessage>
+</ValidationRule>

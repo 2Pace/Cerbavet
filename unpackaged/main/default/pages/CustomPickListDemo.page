@@ -1,0 +1,31 @@
+<apex:page controller="customPickListInVFDemoController" tabStyle="Account">
+  <apex:form >
+    <apex:pageBlock title="Custom PickList Demo" id="out">
+        <apex:pageBlockButtons >
+            <apex:commandButton value="Save" action="{!save}" rerender="out" status="actStatusId"/>
+            <apex:actionStatus id="actStatusId">
+                <apex:facet name="start">
+                    <img src="/img/loading.gif" />
+                </apex:facet>
+            </apex:actionStatus>
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection title="Custom Picklist Using selectList and selectOption" collapsible="false">
+            <apex:selectList value="{!selectedCountry1}" multiselect="false" size="1">
+                <apex:selectOption itemValue="INDIA" itemLabel="India"/>
+                <apex:selectOption itemValue="USA" itemLabel="USA"/>
+                <apex:selectOption itemValue="United Kingdom" itemLabel="UK"/>
+            </apex:selectList>
+             
+            <apex:outputText value="{!selectedCountry1}" label="You have selected:"/>
+        </apex:pageBlockSection>
+         
+        <apex:pageBlockSection title="Custom Picklist Using selectList and selectOptions" collapsible="false">
+            <apex:selectList value="{!selectedCountry2}" multiselect="false" size="1">
+                <apex:selectOptions value="{!countriesOptions}"/>
+            </apex:selectList>
+             
+            <apex:outputText value="{!selectedCountry2}" label="You have selected:"/>
+        </apex:pageBlockSection>
+      </apex:pageBlock> 
+  </apex:form>
+</apex:page>

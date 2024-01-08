@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Code_contact_SGL__c$Name</field>
+    </columns>
+    <columns>
+        <field>Code_contact_SGL__c$Libelle_contact__c</field>
+    </columns>
+    <columns>
+        <field>Code_contact_SGL__c.CodecontactSGL__r$Name</field>
+    </columns>
+    <columns>
+        <field>Code_contact_SGL__c.CodecontactSGL__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Code_contact_SGL__c.CodecontactSGL__r$CA_Facturable__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>PRELEVEURS AVEC CA SUR Occitanie (HEX-112)</description>
+    <filter>
+        <criteriaItems>
+            <column>Code_contact_SGL__c$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>HEX-112</value>
+        </criteriaItems>
+        <language>fr</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Occitanie_ Code contact SGL avec CA</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Code_contact_SGL_avec_CA__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Code_contact_SGL__c.CodecontactSGL__r$Premier_jour_du_mois__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

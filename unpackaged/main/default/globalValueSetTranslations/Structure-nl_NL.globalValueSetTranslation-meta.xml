@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>CHC Belgium - CRI</masterLabel>
+        <translation><!-- CHC Belgium - CRI --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CHC Belgium - LBS</masterLabel>
+        <translation><!-- CHC Belgium - LBS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CHC Belgium - LBS-AF</masterLabel>
+        <translation><!-- CHC Belgium - LBS-AF --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerba</masterLabel>
+        <translation><!-- Cerba --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerba HC</masterLabel>
+        <translation><!-- Cerba HC --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CerbaVet</masterLabel>
+        <translation><!-- CerbaVet --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Alpes Durance</masterLabel>
+        <translation><!-- Cerballiance Alpes Durance --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Artois</masterLabel>
+        <translation><!-- Cerballiance Artois --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Auvergne Rhône Alpes</masterLabel>
+        <translation><!-- Cerballiance Auvergne Rhône Alpes --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Bourgogne</masterLabel>
+        <translation><!-- Cerballiance Bourgogne --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Centre Val-de-Loire</masterLabel>
+        <translation><!-- Cerballiance Centre Val-de-Loire --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Charentes</masterLabel>
+        <translation><!-- Cerballiance Charentes --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Côte d&#39;Azur</masterLabel>
+        <translation>Cerballiance Côte d&#39;Azur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Côtes d&#39;Armor</masterLabel>
+        <translation>Cerballiance Côtes d&#39;Armor</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Drôme-Ardèche</masterLabel>
+        <translation><!-- Cerballiance Drôme-Ardèche --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Finistère</masterLabel>
+        <translation><!-- Cerballiance Finistère --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Hauts-de-France</masterLabel>
+        <translation><!-- Cerballiance Hauts-de-France --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance IDF Ouest</masterLabel>
+        <translation><!-- Cerballiance IDF Ouest --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance IDF Sud</masterLabel>
+        <translation><!-- Cerballiance IDF Sud --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance La Réunion</masterLabel>
+        <translation><!-- Cerballiance La Réunion --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Languedoc</masterLabel>
+        <translation><!-- Cerballiance Languedoc --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Loire</masterLabel>
+        <translation><!-- Cerballiance Loire --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Normandie Est</masterLabel>
+        <translation><!-- Cerballiance Normandie Est --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Normandie Ouest</masterLabel>
+        <translation><!-- Cerballiance Normandie Ouest --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Occitanie</masterLabel>
+        <translation><!-- Cerballiance Occitanie --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Oise</masterLabel>
+        <translation><!-- Cerballiance Oise --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Paris IDF Est</masterLabel>
+        <translation><!-- Cerballiance Paris IDF Est --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Provence</masterLabel>
+        <translation><!-- Cerballiance Provence --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Pyrénées</masterLabel>
+        <translation><!-- Cerballiance Pyrénées --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerballiance Somme</masterLabel>
+        <translation><!-- Cerballiance Somme --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

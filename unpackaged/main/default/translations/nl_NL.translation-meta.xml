@@ -1,0 +1,2479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <description p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <label><!-- Cerba HC --></label>
+        <name>Cerba_HC</name>
+    </customApplications>
+    <customApplications>
+        <description p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <label><!-- Lead Generation --></label>
+        <name>Lead_Generation</name>
+    </customApplications>
+    <customApplications>
+        <description p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <label><!-- Relationship Management --></label>
+        <name>Relationship_Management</name>
+    </customApplications>
+    <customApplications>
+        <description p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <label><!-- Sales Leadership --></label>
+        <name>Sales_Leadership</name>
+    </customApplications>
+    <customApplications>
+        <description p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <label><!-- Sales Operations --></label>
+        <name>Sales_Operations</name>
+    </customApplications>
+    <customApplications>
+        <description p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <label><!-- CERBA HC --></label>
+        <name>CERBA</name>
+    </customApplications>
+    <customApplications>
+        <description p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <label><!-- Cerba Vet --></label>
+        <name>Cerba_Vet</name>
+    </customApplications>
+    <customApplications>
+        <description p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <label><!-- Cerba Vet --></label>
+        <name>Emmanuel_JANNY</name>
+    </customApplications>
+    <customApplications>
+        <description p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <label><!-- Salesforce CPQ --></label>
+        <name>QuoteQuickly</name>
+    </customApplications>
+    <customApplications>
+        <description p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <label><!-- Cerba Vet Team --></label>
+        <name>Cerba_Vet_Team</name>
+    </customApplications>
+    <customApplications>
+        <description p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <label><!-- Cerbavet Admin --></label>
+        <name>Cerbavet_Admin</name>
+    </customApplications>
+    <customApplications>
+        <description p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <label><!-- Salesforce Billing --></label>
+        <name>QuotetoCash</name>
+    </customApplications>
+    <customApplications>
+        <description p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
+        <label><!-- Salesforce Billing Configuration --></label>
+        <name>SalesforceBillingConfiguration</name>
+    </customApplications>
+    <customLabels>
+        <label>Adressen</label>
+        <name>Adresses</name>
+    </customLabels>
+    <customLabels>
+        <label>Zaak</label>
+        <name>Affaires</name>
+    </customLabels>
+    <customLabels>
+        <label>Verzenden</label>
+        <name>Afficher</name>
+    </customLabels>
+    <customLabels>
+        <label>Bijlagen</label>
+        <name>Annexes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CV_Atel_Codes --></label>
+        <name>CV_Atel_Codes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CV_Default_Pricebook --></label>
+        <name>CV_Default_Pricebook</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CV_Hexalis_Prefix --></label>
+        <name>CV_Hexalis_Prefix</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CV_Recipients_Override --></label>
+        <name>CV_Recipients_Override</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CV_SPEC_TRAN_PRD --></label>
+        <name>CV_SPEC_TRAN_PRD</name>
+    </customLabels>
+    <customLabels>
+        <label>Rekeningen</label>
+        <name>Comptes</name>
+    </customLabels>
+    <customLabels>
+        <label>Contactpersonen</label>
+        <name>Contacts</name>
+    </customLabels>
+    <customLabels>
+        <label>Contracten</label>
+        <name>Contrats</name>
+    </customLabels>
+    <customLabels>
+        <label>Transportkosten</label>
+        <name>Couts_de_transport</name>
+    </customLabels>
+    <customLabels>
+        <label>Bijzonderheden</label>
+        <name>Details</name>
+    </customLabels>
+    <customLabels>
+        <label>Aanspraken</label>
+        <name>Reclamations</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Share button label --></label>
+        <name>SBQQ__Share</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SysAdmin --></label>
+        <name>SysAdmin</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AccessLevel --></label>
+        <name>fsc_AccessLevel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Back --></label>
+        <name>fsc_Back</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ButtonIsNotSupportedMessage --></label>
+        <name>fsc_ButtonIsNotSupportedMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ConditionLogicHelpText --></label>
+        <name>fsc_ConditionLogicHelpText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete --></label>
+        <name>fsc_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FieldIsNotSupportedMessage --></label>
+        <name>fsc_FieldIsNotSupportedMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- fsc_FieldTypeNotSuportedMessage --></label>
+        <name>fsc_FieldTypeNotSuportedMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- For --></label>
+        <name>fsc_For</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Key Label --></label>
+        <name>fsc_Key_Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LackingPermissions --></label>
+        <name>fsc_LackingPermissions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ManagerEmptyMessage --></label>
+        <name>fsc_ManagerEmptyMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MultipleGroupsForRole --></label>
+        <name>fsc_MultipleGroupsForRole</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Name --></label>
+        <name>fsc_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NonePicklistValueLabel --></label>
+        <name>fsc_NonePicklistValueLabel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- OWDReadWrite --></label>
+        <name>fsc_OWDReadWrite</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- OwnerAdminModify --></label>
+        <name>fsc_OwnerAdminModify</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- PublicGroups --></label>
+        <name>fsc_PublicGroups</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Queues --></label>
+        <name>fsc_Queues</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Read --></label>
+        <name>fsc_Read</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ReadWrite --></label>
+        <name>fsc_ReadWrite</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Reason --></label>
+        <name>fsc_Reason</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RelatedUsers --></label>
+        <name>fsc_RelatedUsers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Roles --></label>
+        <name>fsc_Roles</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Search in --></label>
+        <name>fsc_Search</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SearchFor --></label>
+        <name>fsc_SearchFor</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SetAccessLevel --></label>
+        <name>fsc_SetAccessLevel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SupportedAddCapabilitiesEmptyMessage --></label>
+        <name>fsc_SupportedAddCapabilitiesEmptyMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SupportedButtonsEmptyMessage --></label>
+        <name>fsc_SupportedButtonsEmptyMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SupportedEditCapabilitiesEmptyMessage --></label>
+        <name>fsc_SupportedEditCapabilitiesEmptyMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TooManyResultsMessage --></label>
+        <name>fsc_TooManyResultsMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Type --></label>
+        <name>fsc_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UserOrGroup --></label>
+        <name>fsc_UserOrGroup</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Users --></label>
+        <name>fsc_Users</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Value Label --></label>
+        <name>fsc_Value_Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NoSearchResultsMessage --></label>
+        <name>sremailNoSearchResultsMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Search existing Flow resources --></label>
+        <name>sremailSearchMembers</name>
+    </customLabels>
+    <customPageWebLinks>
+        <label><!-- Configure Salesforce CPQ --></label>
+        <name>ConfigureQuoteQuickly</name>
+    </customPageWebLinks>
+    <customPageWebLinks>
+        <label><!-- Billing Configure Link --></label>
+        <name>BillingConfigureLink</name>
+    </customPageWebLinks>
+    <customTabs>
+        <label><!-- Création des valeurs annuelles --></label>
+        <name>Cr_ation_des_valeurs_annuelles</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Demandes --></label>
+        <name>Demandes</name>
+    </customTabs>
+    <flowDefinitions>
+        <flows />
+        <fullName>Record_Trigger_Post_Invoice</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>HTMLBodyRelanceClinics1</name>
+            </textTemplates>
+            <textTemplates>
+                <name>HTMLBodyRelanceProprio1</name>
+            </textTemplates>
+            <textTemplates>
+                <name>HTMLBodyRelanceProprio2</name>
+            </textTemplates>
+            <textTemplates>
+                <name>HTMLBodyRelanceProprio3</name>
+            </textTemplates>
+            <textTemplates>
+                <name>PlainTextBodyRelanceClinics1</name>
+            </textTemplates>
+            <textTemplates>
+                <name>PlainTextBodyRelanceProprio1</name>
+            </textTemplates>
+            <textTemplates>
+                <name>PlainTextBodyRelanceProprio2</name>
+            </textTemplates>
+            <textTemplates>
+                <name>PlainTextBodyRelanceProprio3</name>
+            </textTemplates>
+        </flows>
+        <fullName>Record_Trigger_Task_on_Creation_After_Save</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>S_1f175971_fc93_47a3_89ca_ed00dfec01a7</name>
+            </choices>
+            <choices>
+                <name>S_2624cd26_b348_4179_8398_3f14fbf134e3</name>
+            </choices>
+            <choices>
+                <name>S_52ab89d1_df93_497f_8b10_c54f6ae78fa5</name>
+            </choices>
+            <choices>
+                <name>S_c84d1870_3ca4_4797_8b2d_686b1fcf4b57</name>
+            </choices>
+            <choices>
+                <name>S_cdc6b40a_5316_452b_8e19_c9d4ea7d41d3</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>q_1a468f64_356d_4e44_8ac6_2b2cd04dde57</name>
+                </fields>
+                <fields>
+                    <name>q_d4a1e5b0_c651_4d9b_895a_f7cf1c2cfc08</name>
+                </fields>
+                <name>surveyQuestionPage</name>
+            </screens>
+            <textTemplates>
+                <name>thankYouDescriptionTextTemplate</name>
+            </textTemplates>
+            <textTemplates>
+                <name>thankYouLabelTextTemplate</name>
+            </textTemplates>
+        </flows>
+        <fullName>satisfaction_du_client</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>q_4cdb63fc_4b13_4c7b_9cf8_484934f46eb4</name>
+                </fields>
+                <fields>
+                    <name>q_63bbb0eb_37db_4252_96be_d646a0109dcf</name>
+                </fields>
+                <name>surveyQuestionPage</name>
+            </screens>
+            <textTemplates>
+                <name>thankYouDescriptionTextTemplate</name>
+            </textTemplates>
+            <textTemplates>
+                <name>thankYouLabelTextTemplate</name>
+            </textTemplates>
+        </flows>
+        <fullName>taux_de_recommandation_net</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>Resultats_de_la_recherche</name>
+                </fields>
+                <name>Choix_des_comptes_cibles</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>CompteMAJ</name>
+                </fields>
+                <fields>
+                    <name>Je_souhaite_relancer_le_processus</name>
+                </fields>
+                <name>Ecran_de_confirmation</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Pour_cloner_les_adresses_de_ce_compte_veuillez_saisir_le_nom_du_compte_cible</name>
+                </fields>
+                <name>Selection_du_compte</name>
+            </screens>
+        </flows>
+        <fullName>Cloner_les_adresses</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_ACC_MAJ_de_la_remise_max_sur_le_compte</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_DDE_Demande_de_devis_envoye_a_Biologistic</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_DDE_Demande_de_devis_pour_prestation</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_DDE_MAJ_des_dates_de_passage</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>Raison_de_d_sactivation</name>
+                </fields>
+                <name>Merci_de_renseigner_la_raison_de_d_sactivation</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Texte</name>
+                </fields>
+                <name>TEXTE2</name>
+            </screens>
+        </flows>
+        <fullName>Record_type_compte_desactive</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>Annuler</name>
+            </choices>
+            <choices>
+                <name>Non</name>
+            </choices>
+            <choices>
+                <name>Oui</name>
+            </choices>
+            <choices>
+                <name>Ouicreeradressecollecte</name>
+            </choices>
+            <choices>
+                <name>Ouienvoimateriel</name>
+            </choices>
+            <choices>
+                <name>Specifieruneadressedefacturationspecifique</name>
+            </choices>
+            <choices>
+                <name>Valider</name>
+            </choices>
+            <choices>
+                <name>noncreeradressecollecte</name>
+            </choices>
+            <choices>
+                <name>nonenvoimateriel</name>
+            </choices>
+            <choices>
+                <name>parametrermodesetadresses</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>Collecte_une_adresse_differente_du_CRU</name>
+                </fields>
+                <name>Collecte_adresse_differente_du_CRU</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>textincompatibilite2</name>
+                </fields>
+                <name>Incompatibilite_entre_une_collecte_directe</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>textincompatibilite</name>
+                </fields>
+                <name>Incompatibilite_mode_recuperation_envoi</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>quevoulezvousfaire</name>
+                </fields>
+                <fields>
+                    <name>textadressefactu</name>
+                </fields>
+                <name>Parametrage_adresses_transport_init</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>L_assistant_est_termine_Validez_vous_les_informations_saisies</name>
+                </fields>
+                <fields>
+                    <name>textcollecteadressedifferenteCRUfin</name>
+                </fields>
+                <fields>
+                    <name>textcollecteafin</name>
+                </fields>
+                <fields>
+                    <name>textdeposeresultatafin</name>
+                </fields>
+                <fields>
+                    <name>textdistributionmaterielafin</name>
+                </fields>
+                <fields>
+                    <name>textenvoimaterielaadressedifferentedesresultatsfin</name>
+                </fields>
+                <fields>
+                    <name>textenvoimaterielaladressedecollecte</name>
+                </fields>
+                <fields>
+                    <name>textfactureafin</name>
+                </fields>
+                <fields>
+                    <name>textmodeenvoiresultatsfin</name>
+                </fields>
+                <fields>
+                    <name>textmoyenderecuperationdesprelevementsfin</name>
+                </fields>
+                <name>Parametrage_des_adresses_de_transport_confirmation</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Envoi_du_materiel_a_l_adresse_de_collecte</name>
+                </fields>
+                <name>Saisie_envoi_du_materiel_a_l_adresse_de_collecte</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Envoi_du_materiel_l_adresse_de_collecte2</name>
+                </fields>
+                <name>Saisie_envoi_du_materiel_l_adresse_de_collecte2</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>isRequired</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectType</name>
+                        <value />
+                    </inputParameters>
+                    <name>Saisir_le_nom_de_la_nouvelle_adresse_de_collecte_CL</name>
+                </fields>
+                <fields>
+                    <name>textselectionadressedecollecte</name>
+                </fields>
+                <fields>
+                    <name>textselectionnernouvelleadressedecollecte</name>
+                </fields>
+                <name>Selection_adresse_de_collecte</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>isRequired</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectType</name>
+                        <value />
+                    </inputParameters>
+                    <name>nouvelleadresseediteeCR_CL</name>
+                </fields>
+                <fields>
+                    <name>textselectionadresseediteeCR</name>
+                </fields>
+                <name>Selection_adresse_facturation</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>isRequired</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectType</name>
+                        <value />
+                    </inputParameters>
+                    <name>Selection_MAJ_de_la_nouvelle_adresse_de_collecte_CL</name>
+                </fields>
+                <fields>
+                    <name>text2selectionmajadressecollecte</name>
+                </fields>
+                <fields>
+                    <name>textselectionmajadressecollecte</name>
+                </fields>
+                <name>Selection_mise_jour_adresse_de_collecte</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Selectionner_le_mode_d_envoi_des_resultats</name>
+                </fields>
+                <name>Selection_mode_d_envoi_des_resultats</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Selectionner_le_moyen_de_recuperation_des_prelevements</name>
+                </fields>
+                <name>Selection_moyen_de_recuperation_des_prelevements</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Voulez_vous_cr_er_une_adresse_de_collecte_partir_de_celle_du_compte_rendu</name>
+                </fields>
+                <name>Voulez_vous_cr_er_une_adresse_de_collecte</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>texteadressefacturation</name>
+                </fields>
+                <name>confirmationadressefacturation</name>
+            </screens>
+        </flows>
+        <fullName>Definir_les_adresses</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Flux_de_cochage_de_la_collecte_sur_appel</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Flux_de_cochage_de_la_collecte_systematique</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Flux_de_cochage_de_prestation_specifique</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Flux_de_cochage_du_depot_des_resultats</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Flux_de_cochage_du_depot_des_retransmissions</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Flux_de_decochage_de_prestations_de_collecte_sur_appel</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Flux_de_decochage_de_prestations_de_collecte_systematique</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Flux_de_decochage_de_prestations_de_depots_des_resultats</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Flux_de_decochage_de_prestations_de_depots_des_retransmissions</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Flux_de_decochage_de_prestations_de_specifique</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Flux_de_mise_jour_des_cases_cocher_de_collecte_systematique</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>Non</name>
+            </choices>
+            <choices>
+                <name>Oui</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>Envoi_du_materiel_une_adresse_differente_des_resultats</name>
+                </fields>
+                <name>Module_test_Adresse_materiel_differente</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>isRequired</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectType</name>
+                        <value />
+                    </inputParameters>
+                    <name>saisirnomnouvelleadressedistributionmateriel_CL</name>
+                </fields>
+                <fields>
+                    <name>textselectionadressedistributionmateriel</name>
+                </fields>
+                <name>Selection_adresse_de_distribution_du_materiel</name>
+            </screens>
+        </flows>
+        <fullName>Module_test_Adresse_materiel_differente</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_ACC_MAJ_du_code_SGL_Cerba_Vet_sur_l_etablissement</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_ACT_ACC_Type_de_creation</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_ADRE_FU_NAME</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_ADRE_FU_NomdeService</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_CA_MAJ_Proprietaire_du_CA_depuis_le_SGL_pour_Cerba_et_Cerba_Vet</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_CNT_RGPD_Anonymiser_les_donn_es_du_contact</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_Cout_MAJ_Email_N_1_N_2</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_DDE_Demande_de_d_sactivation_de_compte_Status_ferme</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_DDE_Demande_de_desactivation_de_compte</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_DDE_Demande_de_suppression_d_une_prestation_existante</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_DDE_Demande_de_suppression_modification_d_un_co_t_de_transport</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_DDE_MAJ_de_la_date_de_fin_et_date_de_derniere_MAJ_des_montant_quand_la_de</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_EVT_UpdateActivityTime</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_EVT_UpdateActivityTime_Account</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_EVT_UpdateActivityTime_Contact</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_Event_Maj_de_la_revue_de_contrat</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_Gestion_d_un_litige</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_Mens_Alerte_N_1_N_2</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_Mensualite_Cloture_d_un_litige</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_PRESTATION_Coche_de_la_collecte_systematique_sur_le_passage</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_PRESTATION_cochage_ou_decochage</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_PRES_Maj_du_nom_de_la_prestation</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_RDP_MAJ_Collecte_systematique_du_passage_si_la_RDP_Collecte_Sys_est_cochee</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>PB_Tech_By_pass_VR_CdT</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>Annuler</name>
+            </choices>
+            <choices>
+                <name>Non</name>
+            </choices>
+            <choices>
+                <name>Oui</name>
+            </choices>
+            <choices>
+                <name>Ouicreeradressecollecte</name>
+            </choices>
+            <choices>
+                <name>Ouienvoimateriel</name>
+            </choices>
+            <choices>
+                <name>Specifieruneadressedefacturationspecifique</name>
+            </choices>
+            <choices>
+                <name>Valider</name>
+            </choices>
+            <choices>
+                <name>noncreeradressecollecte</name>
+            </choices>
+            <choices>
+                <name>nonenvoimateriel</name>
+            </choices>
+            <choices>
+                <name>parametrermodesetadresses</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>Collecte_une_adresse_differente_du_CRU</name>
+                </fields>
+                <name>Collecte_adresse_differente_du_CRU</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>renseigner_un_parent</name>
+                </fields>
+                <name>Compte_etablissement_manquant</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>textincompatibilite2</name>
+                </fields>
+                <name>Incompatibilite_entre_une_collecte_directe</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>textincompatibilite</name>
+                </fields>
+                <name>Incompatibilite_mode_recuperation_envoi</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>textadressefactu</name>
+                </fields>
+                <name>Parametrage_adresses_transport_init</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>L_assistant_est_termine_Validez_vous_les_informations_saisies</name>
+                </fields>
+                <fields>
+                    <name>textcollecteadressedifferenteCRUfin</name>
+                </fields>
+                <fields>
+                    <name>textcollecteafin</name>
+                </fields>
+                <fields>
+                    <name>textdeposeresultatafin</name>
+                </fields>
+                <fields>
+                    <name>textdistributionmaterielafin</name>
+                </fields>
+                <fields>
+                    <name>textenvoimaterielaadressedifferentedesresultatsfin</name>
+                </fields>
+                <fields>
+                    <name>textfactureafin</name>
+                </fields>
+                <fields>
+                    <name>textmodeenvoiresultatsfin</name>
+                </fields>
+                <fields>
+                    <name>textmoyenderecuperationdesprelevementsfin</name>
+                </fields>
+                <name>Parametrage_des_adresses_de_transport_confirmation</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Envoi_du_materiel_a_l_adresse_de_collecte</name>
+                </fields>
+                <name>Saisie_envoi_du_materiel_a_l_adresse_de_collecte</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Envoi_du_materiel_l_adresse_de_collecte2</name>
+                </fields>
+                <name>Saisie_envoi_du_materiel_l_adresse_de_collecte2</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>isRequired</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectType</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>queryCondition</name>
+                        <value />
+                    </inputParameters>
+                    <name>Saisir_le_nom_de_la_nouvelle_adresse_de_collecte_CL</name>
+                </fields>
+                <fields>
+                    <name>textselectionadressedecollecte</name>
+                </fields>
+                <fields>
+                    <name>textselectionnernouvelleadressedecollecte</name>
+                </fields>
+                <name>Selection_adresse_de_collecte</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>isRequired</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectType</name>
+                        <value />
+                    </inputParameters>
+                    <name>Selection_MAJ_de_la_nouvelle_adresse_de_collecte_CL</name>
+                </fields>
+                <fields>
+                    <name>text2selectionmajadressecollecte</name>
+                </fields>
+                <fields>
+                    <name>textselectionmajadressecollecte</name>
+                </fields>
+                <name>Selection_mise_jour_adresse_de_collecte</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Selectionner_le_mode_d_envoi_des_resultats</name>
+                </fields>
+                <name>Selection_mode_d_envoi_des_resultats</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Selectionner_le_moyen_de_recuperation_des_prelevements</name>
+                </fields>
+                <name>Selection_moyen_de_recuperation_des_prelevements</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Voulez_vous_cr_er_une_adresse_de_collecte_partir_de_celle_du_compte_rendu</name>
+                </fields>
+                <name>Voulez_vous_cr_er_une_adresse_de_collecte</name>
+            </screens>
+        </flows>
+        <fullName>X1_TEST_D_finir_les_adresses</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>Resultats_de_la_recherche</name>
+                </fields>
+                <name>Choix_des_comptes_cibles</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>CompteMAJ</name>
+                </fields>
+                <fields>
+                    <name>Je_souhaite_relancer_le_processus</name>
+                </fields>
+                <name>Ecran_de_confirmation</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Pour_cloner_les_adresses_de_ce_compte_veuillez_saisir_le_nom_du_compte_cible</name>
+                </fields>
+                <name>Selection_du_compte</name>
+            </screens>
+        </flows>
+        <fullName>X2_TEST_Cloner_les_adresses</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>Non</name>
+            </choices>
+            <choices>
+                <name>Oui</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>Envoi_du_materiel_une_adresse_differente_des_resultats</name>
+                </fields>
+                <name>Module_test_Adresse_materiel_differente</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>isRequired</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectType</name>
+                        <value />
+                    </inputParameters>
+                    <name>saisirnomnouvelleadressedistributionmateriel_CL</name>
+                </fields>
+                <fields>
+                    <name>textselectionadressedistributionmateriel</name>
+                </fields>
+                <name>Selection_adresse_de_distribution_du_materiel</name>
+            </screens>
+        </flows>
+        <fullName>X3_TEST_Module_test_Adresse_mat_riel_diff_rente</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>modification_de_prestation_de_transport</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>suppression_de_prestation_de_transport</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <label>Status Laatst bijgewerkte datum</label>
+        </flows>
+        <fullName>Date_de_derni_re_mise_jour_du_statut</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>DemoFlow_DeepClone</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Record_Trigger_Activate_Clinics_Order_with_Compte_Rendu</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Record_Trigger_Invoice_Before_save</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Record_Trigger_Invoice_on_Creation_After_Save</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Record_Trigger_Invoice_on_update_Payment_Status</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Record_Trigger_Invoice_on_update_Posted_Clinics</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Record_Trigger_Invoice_on_update_Posted_Proprio</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Record_Trigger_OrderItem_After_Save_Created</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Record_Trigger_OrderItem_Before_Save</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Record_Trigger_Order_Before_Save</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Record_Trigger_Order_updated_Change_Country</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Record_Trigger_Revenue_Schedule_Before_Save_Created</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Record_Trigger_Revenue_Transaction_Before_Save_Created</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Schedule_Triggered_Flow_Invoice_Allocation_every_night</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Screen_Flow_Update_Order_Quick_Action</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Screen_Flow_Update_Quote_Quick_Action</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Screenflow_Quote_Cerbavet_College</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>whichExampleChoice1</name>
+            </choices>
+            <choices>
+                <name>whichExampleChoice2</name>
+            </choices>
+            <choices>
+                <name>whichExampleChoice3</name>
+            </choices>
+            <choices>
+                <name>whichExampleChoice4</name>
+            </choices>
+            <choices>
+                <name>whichExampleChoice5</name>
+            </choices>
+            <choices>
+                <name>whichExampleChoice6</name>
+            </choices>
+            <choices>
+                <name>whichExampleChoice7</name>
+            </choices>
+            <choices>
+                <name>whichExampleChoice8</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>Choose_Example</name>
+                </fields>
+                <fields>
+                    <name>SelectExampleInstructions</name>
+                </fields>
+                <name>Choose_Example_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>multiple</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>recordId</name>
+                        <value />
+                    </inputParameters>
+                    <name>file_apload_sc</name>
+                </fields>
+                <name>File_Upload_to_Attach</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Example3Details</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value />
+                    </inputParameters>
+                    <name>X3_Reply_To_Email_Address</name>
+                </fields>
+                <fields>
+                    <name>X3_Screen_Sender_Name</name>
+                </fields>
+                <fields>
+                    <name>X3_Screen_Subject</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>disabled</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>readonly</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value />
+                    </inputParameters>
+                    <name>X3_ToEmailaAdress</name>
+                </fields>
+                <name>Get_Simple_Email_Fields_Attachments</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>dispResults</name>
+                </fields>
+                <name>ScreenConsole1</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Example1Details</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>disabled</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>readonly</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value />
+                    </inputParameters>
+                    <name>X1_Screen_Email_To</name>
+                </fields>
+                <fields>
+                    <name>X1_Screen_HTML_Body</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value />
+                    </inputParameters>
+                    <name>X1_Screen_Reply_To_Email_Address</name>
+                </fields>
+                <fields>
+                    <name>X1_Screen_Sender_Name</name>
+                </fields>
+                <fields>
+                    <name>X1_Screen_Subject</name>
+                </fields>
+                <name>X1_Get_Simple_Email_Fields</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Example2Details</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value />
+                    </inputParameters>
+                    <name>X2_Reply_To_Email_Address</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>disabled</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>readonly</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value />
+                    </inputParameters>
+                    <name>X2_Screen_EmailAddress_1</name>
+                </fields>
+                <fields>
+                    <name>X2_Screen_HTML_Body</name>
+                </fields>
+                <fields>
+                    <name>X2_Screen_Sender_Name</name>
+                </fields>
+                <fields>
+                    <name>X2_Screen_Subject</name>
+                </fields>
+                <fields>
+                    <name>X2_Screen_Test_Contact_Recipient_Contains</name>
+                </fields>
+                <fields>
+                    <name>X2_Screen_Test_User_Recipient_Contains</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>readonly</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value />
+                    </inputParameters>
+                    <name>X2_Screen_ToEmailAddress2</name>
+                </fields>
+                <name>X2_Get_Simple_Email_Fields_Collections</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Example4Details</name>
+                </fields>
+                <fields>
+                    <name>X4_Related_RecordType</name>
+                    <validationRule />
+                </fields>
+                <fields>
+                    <name>X4_Screen_Email_Template_Name</name>
+                </fields>
+                <fields>
+                    <name>X4_Screen_Related_RecordId</name>
+                    <validationRule />
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value />
+                    </inputParameters>
+                    <name>X4_Screen_Reply_To_Email_Address</name>
+                </fields>
+                <fields>
+                    <name>X4_Screen_Sender_Name</name>
+                </fields>
+                <fields>
+                    <name>X4_Screen_Template_RecordId</name>
+                </fields>
+                <fields>
+                    <name>X4_Screen_Template_Target_Record_Id</name>
+                </fields>
+                <name>X4_Email_Using_Template</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Example5Details</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value />
+                    </inputParameters>
+                    <name>X5_Reply_To_Email_Address</name>
+                </fields>
+                <fields>
+                    <name>X5_Screen_Related_Record_Id_for_testing_merge_fields_5</name>
+                </fields>
+                <fields>
+                    <name>X5_Screen_Related_Record_Type</name>
+                </fields>
+                <fields>
+                    <name>X5_Screen_Sender_Name</name>
+                </fields>
+                <fields>
+                    <name>X5_Screen_Template_Language</name>
+                </fields>
+                <fields>
+                    <name>X5_Screen_Template_Name</name>
+                </fields>
+                <fields>
+                    <name>X5_Screen_Template_Target_Record_Id</name>
+                </fields>
+                <name>X5_Multi_Lingual_Using_Email_Templates</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Example6Details</name>
+                </fields>
+                <fields>
+                    <name>X6_Finished_Message_Description</name>
+                </fields>
+                <fields>
+                    <name>X6_Template_Name_Mass_Email</name>
+                </fields>
+                <name>X6_Mass_Email</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Example1Details_0</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>disabled</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>readonly</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value />
+                    </inputParameters>
+                    <name>X7_Screen_Email_To</name>
+                </fields>
+                <fields>
+                    <name>X7_Screen_HTML_Body</name>
+                </fields>
+                <fields>
+                    <name>X7_Screen_Sender_Name</name>
+                </fields>
+                <fields>
+                    <name>X7_Screen_Subject</name>
+                </fields>
+                <name>X7_Bulk_email_using_request_collection</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Example8Details</name>
+                </fields>
+                <fields>
+                    <name>MessageId_of_existing_email_if_this_is_InReplyTo</name>
+                </fields>
+                <fields>
+                    <name>X8_Screen_Email_Template_Name</name>
+                </fields>
+                <fields>
+                    <name>X8_Screen_Recipient_Record_ID</name>
+                </fields>
+                <fields>
+                    <name>X8_Screen_Related_RecordId</name>
+                    <validationRule />
+                </fields>
+                <fields>
+                    <name>X8_Screen_Related_RecordType</name>
+                    <validationRule />
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value />
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value />
+                    </inputParameters>
+                    <name>X8_Screen_Reply_To_Email_Address</name>
+                </fields>
+                <fields>
+                    <name>X8_Screen_Sender_Name</name>
+                </fields>
+                <fields>
+                    <name>X8_Screen_Template_RecordId</name>
+                </fields>
+                <fields>
+                    <name>X8_Screen_Template_Target_Record_Id</name>
+                </fields>
+                <name>X8_Email_Using_Template</name>
+            </screens>
+            <textTemplates>
+                <name>HTMLTextTemplate</name>
+            </textTemplates>
+            <textTemplates>
+                <name>plainTextBody</name>
+            </textTemplates>
+        </flows>
+        <fullName>Send_Better_Email_Testflow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Subflow_Create_payment_allocations</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Subflow_Dunning_and_Collection_Proprio</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>Mass_Email_Subject</name>
+                </fields>
+                <fields>
+                    <name>Mass_Email_Template</name>
+                </fields>
+                <name>Modify_Mass_Email_Template</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>BlankLine</name>
+                </fields>
+                <fields>
+                    <name>en_US_Body_Template</name>
+                </fields>
+                <fields>
+                    <name>en_US_Description</name>
+                </fields>
+                <fields>
+                    <name>en_US_Subject</name>
+                </fields>
+                <fields>
+                    <name>es_MX_Description</name>
+                </fields>
+                <fields>
+                    <name>es_MX_HTML_Body</name>
+                </fields>
+                <fields>
+                    <name>es_MX_Subject</name>
+                </fields>
+                <name>Modify_Templates</name>
+            </screens>
+            <textTemplates>
+                <name>TemplateBodyHTMLMassEmail</name>
+            </textTemplates>
+            <textTemplates>
+                <name>TemplateBodyHTML_en_US</name>
+            </textTemplates>
+            <textTemplates>
+                <name>TemplateBodyHTML_es_MX</name>
+            </textTemplates>
+        </flows>
+        <fullName>sendBetterEmail_Test_Create_Test_Templates_if_needed</fullName>
+    </flowDefinitions>
+    <quickActions>
+        <label><!-- APPEL_3 --></label>
+        <name>APPEL_3</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- CR Rapide --></label>
+        <name>CR_Rapide</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Follow Up --></label>
+        <name>Follow_Up</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nouveau compte --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewEvent --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Taak</label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- OLD Appel --></label>
+        <name>OLD_Appel</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Bezoeken</label>
+        <name>Visite</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Roepen</label>
+        <name>Appel</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nouveau contact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- Accounts with Invoice Lines --></description>
+        <label><!-- Accounts with Invoice Lines --></label>
+        <name>Accounts_with_Invoice_Lines</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Invoice Lines --></label>
+            <name>Invoice Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Invoices --></label>
+            <name>Invoices</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Canceled Invoices --></description>
+        <label><!-- Canceled Invoices --></label>
+        <name>Canceled_Invoices</name>
+        <sections>
+            <label><!-- Credit Note Lines --></label>
+            <name>Credit Note Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Invoice Lines --></label>
+            <name>Invoice Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Invoices --></label>
+            <name>Invoices</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Invoice with Details --></description>
+        <label><!-- Invoice with Details --></label>
+        <name>Invoice_with_Details</name>
+        <sections>
+            <label><!-- Invoice Lines --></label>
+            <name>Invoice Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Invoices --></label>
+            <name>Invoices</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Journaux d&apos;exécution d&apos;orchestration --></description>
+        <label><!-- Journaux d&apos;exécution d&apos;orchestration --></label>
+        <name>flow_orchestration_log_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Journaux d&apos;exécution d&apos;orchestration --></label>
+            <name>Journaux d&#39;exécution d&#39;orchestration</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Exécutions d&apos;orchestration --></description>
+        <label><!-- Exécutions d&apos;orchestration --></label>
+        <name>flow_orchestration_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Exécutions d&apos;orchestration --></label>
+            <name>Exécutions d&#39;orchestration</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Exécutions de phase d’orchestration --></description>
+        <label><!-- Exécutions de phase d’orchestration --></label>
+        <name>flow_orchestration_stage_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Exécutions de phase d&apos;orchestration --></label>
+            <name>Exécutions de phase d&#39;orchestration</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Exécutions d’étape d’orchestration --></description>
+        <label><!-- Exécutions d’étape d’orchestration --></label>
+        <name>flow_orchestration_step_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Exécutions d&apos;étape d&apos;orchestration --></label>
+            <name>Exécutions d&#39;étape d&#39;orchestration</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Éléments de travail d’orchestration --></description>
+        <label><!-- Éléments de travail d’orchestration --></label>
+        <name>flow_orchestration_work_item_ootb_crt_two_four_eight</name>
+        <sections>
+            <columns>
+                <label><!-- Exécution d’étape d’orchestration :Label --></label>
+                <name>Exécution d’étape d’orchestration :Label</name>
+            </columns>
+            <columns>
+                <label><!-- Exécution d’étape d’orchestration :Name --></label>
+                <name>Exécution d’étape d’orchestration :Name</name>
+            </columns>
+            <columns>
+                <label><!-- Exécution d’étape d’orchestration :Status --></label>
+                <name>Exécution d’étape d’orchestration :Status</name>
+            </columns>
+            <label><!-- Exécutions d&apos;étape d&apos;orchestration --></label>
+            <name>Exécutions d&#39;étape d&#39;orchestration</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- AttribuéeGroupe ou file d’attente --></label>
+                <name>AttribuéeGroupe ou file d’attente</name>
+            </columns>
+            <columns>
+                <label><!-- AttribuéeUser --></label>
+                <name>AttribuéeUser</name>
+            </columns>
+            <label><!-- Éléments de travail de l&apos;orchestration --></label>
+            <name>Éléments de travail de l&#39;orchestration</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- ACTIVITÉS avec des campagnes --></description>
+        <label><!-- ACTIVITÉS avec des campagnes --></label>
+        <name>ACTIVITES_avec_des_campagnes</name>
+        <sections>
+            <label><!-- Campagnes --></label>
+            <name>Campagnes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- ACTIVITÉS avec des comptes rendus --></description>
+        <label><!-- ACTIVITÉS avec des comptes rendus --></label>
+        <name>ACTIVITES_avec_des_comptes_rendus</name>
+        <sections>
+            <label><!-- Activités --></label>
+            <name>Activités</name>
+        </sections>
+        <sections>
+            <label><!-- Compte rendu --></label>
+            <name>Compte rendu</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Annexes --></description>
+        <label><!-- Annexes --></label>
+        <name>Annexes</name>
+        <sections>
+            <label><!-- Annexes --></label>
+            <name>Annexes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Code contact SGL avec CA --></description>
+        <label><!-- Code contact SGL avec CA --></label>
+        <name>Code_contact_SGL_avec_CA</name>
+        <sections>
+            <label><!-- Chiffres d&apos;affaires --></label>
+            <name>Chiffres d&#39;affaires</name>
+        </sections>
+        <sections>
+            <label><!-- Codes contacts SGL --></label>
+            <name>Codes contacts SGL</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Couts de transport avec mensualités --></description>
+        <label><!-- Couts de transport avec mensualités --></label>
+        <name>Couts_de_transport_avec_mensualites</name>
+        <sections>
+            <label><!-- Coûts de transport --></label>
+            <name>Coûts de transport</name>
+        </sections>
+        <sections>
+            <label><!-- Mensualités --></label>
+            <name>Mensualités</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Mensualités --></description>
+        <label><!-- Mensualités --></label>
+        <name>Mensualites</name>
+        <sections>
+            <label><!-- Mensualités --></label>
+            <name>Mensualités</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts avec événements --></description>
+        <label><!-- Accounts avec événements --></label>
+        <name>Accounts_avec_v_nements</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Assigned To --></label>
+            <name>Assigned To</name>
+        </sections>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Activités --></description>
+        <label><!-- Activités --></label>
+        <name>Activites</name>
+        <sections>
+            <label><!-- Activités --></label>
+            <name>Activités</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Adresses avec des passages --></description>
+        <label><!-- Adresses avec des passages --></label>
+        <name>Adresses_avec_des_passages</name>
+        <sections>
+            <label><!-- Adresses --></label>
+            <name>Adresses</name>
+        </sections>
+        <sections>
+            <label><!-- Passages --></label>
+            <name>Passages</name>
+        </sections>
+        <sections>
+            <label><!-- Raisons de passage --></label>
+            <name>Raisons de passage</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CA --></description>
+        <label><!-- CA --></label>
+        <name>CA</name>
+        <sections>
+            <label><!-- Autres parents --></label>
+            <name>Autres parents</name>
+        </sections>
+        <sections>
+            <label><!-- Chiffres d&apos;affaires --></label>
+            <name>Chiffres d&#39;affaires</name>
+        </sections>
+        <sections>
+            <label><!-- Chiffres d\&apos;affaires --></label>
+            <name>Chiffres d\&#39;affaires</name>
+        </sections>
+        <sections>
+            <label><!-- Contact --></label>
+            <name>Contact</name>
+        </sections>
+        <sections>
+            <label><!-- Infos Compte client SGL --></label>
+            <name>Infos Compte client SGL</name>
+        </sections>
+        <sections>
+            <label><!-- Parent du compte client SGL --></label>
+            <name>Parent du compte client SGL</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CA et comptes --></description>
+        <label><!-- CA et comptes --></label>
+        <name>CA_et_comptes</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Chiffres d&apos;affaires --></label>
+            <name>Chiffres d&#39;affaires</name>
+        </sections>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- COMPTES --></description>
+        <label><!-- COMPTES --></label>
+        <name>COMPTES</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Compte Parent --></label>
+            <name>Compte Parent</name>
+        </sections>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Structure --></label>
+            <name>Structure</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- COMPTES AVEC DES ACTIVITES / CR --></description>
+        <label><!-- COMPTES AVEC DES ACTIVITES / CR --></label>
+        <name>COMPTES_AVEC_DES_ACTIVITES_CR</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Activités --></label>
+            <name>Activités</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- CR --></label>
+                <name>CR</name>
+            </columns>
+            <columns>
+                <label><!-- Nom du Compte Rendu --></label>
+                <name>Nom du Compte Rendu</name>
+            </columns>
+            <label><!-- CR --></label>
+            <name>CR</name>
+        </sections>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- COMPTES AVEC DU CA --></description>
+        <label><!-- COMPTES AVEC DU CA --></label>
+        <name>COMPTES_AVEC_DU_CA</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Établissement  --></label>
+                <name>Établissement </name>
+            </columns>
+            <label><!-- Chiffres d&apos;affaires --></label>
+            <name>Chiffres d&#39;affaires</name>
+        </sections>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Nom de la Structure --></label>
+                <name>Nom de la Structure</name>
+            </columns>
+            <label><!-- Structure --></label>
+            <name>Structure</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CONTACTS --></description>
+        <label><!-- CONTACTS --></label>
+        <name>CONTACTS</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Code contact SGL --></description>
+        <label><!-- Code contact SGL --></label>
+        <name>Code_contact_SGL</name>
+        <sections>
+            <label><!-- Codes contacts SGL --></label>
+            <name>Codes contacts SGL</name>
+        </sections>
+        <sections>
+            <label><!-- Contact --></label>
+            <name>Contact</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Comptes avec des adresses avec des passages --></description>
+        <label><!-- Comptes avec des adresses avec des passages --></label>
+        <name>Comptes_avec_des_adresses_avec_des_passages</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Adresses --></label>
+            <name>Adresses</name>
+        </sections>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Passages --></label>
+            <name>Passages</name>
+        </sections>
+        <sections>
+            <label><!-- Raisons de passage --></label>
+            <name>Raisons de passage</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Comptes avec des coût avec des mensualités --></description>
+        <label><!-- Comptes avec des coût avec des mensualités --></label>
+        <name>Comptes_avec_des_cout_avec_des_mensualites</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label>Transportkosten</label>
+            <name>Coûts de transport</name>
+        </sections>
+        <sections>
+            <label><!-- Mensualités --></label>
+            <name>Mensualités</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Comptes avec fil chatter --></description>
+        <label><!-- Comptes avec fil chatter --></label>
+        <name>Comptes_avec_fil_chatter</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Fil de compte --></label>
+            <name>Fil de compte</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Comptes et users --></description>
+        <label><!-- Comptes et users --></label>
+        <name>Comptes_et_users</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Comptes (Créé par) --></label>
+            <name>Comptes (Créé par)</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+        <sections>
+            <label><!-- Utilisateurs --></label>
+            <name>Utilisateurs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Comptes et utilisateurs --></description>
+        <label><!-- Comptes et utilisateurs --></label>
+        <name>Comptes_et_utilisateurs</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+        <sections>
+            <label><!-- Utilisateurs --></label>
+            <name>Utilisateurs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Comptes rendus et comptes --></description>
+        <label><!-- Comptes rendus et comptes --></label>
+        <name>Comptes_rendus_et_comptes</name>
+        <sections>
+            <label><!-- Activités --></label>
+            <name>Activités</name>
+        </sections>
+        <sections>
+            <label><!-- Comptes rendus --></label>
+            <name>Comptes rendus</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts avec CA --></description>
+        <label><!-- Contacts avec CA --></label>
+        <name>Contacts_avec_CA</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts et activité --></description>
+        <label><!-- Contacts et activité --></label>
+        <name>Contacts_et_activite</name>
+        <sections>
+            <label><!-- Activités --></label>
+            <name>Activités</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts et utilisateurs --></description>
+        <label><!-- Contacts et utilisateurs --></label>
+        <name>Contacts_et_utilisateurs</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts (Créé par) --></label>
+            <name>Contacts (Créé par)</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+        <sections>
+            <label><!-- Utilisateurs --></label>
+            <name>Utilisateurs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contrats/convention avec des activités --></description>
+        <label><!-- Contrats/convention avec des activités --></label>
+        <name>Contrats_convention_avec_des_activites</name>
+        <sections>
+            <label><!-- Activités --></label>
+            <name>Activités</name>
+        </sections>
+        <sections>
+            <label><!-- Contrats/Conventions --></label>
+            <name>Contrats/Conventions</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Demandes de devis avec des adresses --></description>
+        <label><!-- Demandes de devis avec des adresses --></label>
+        <name>Demandes_de_devis_avec_des_adresses</name>
+        <sections>
+            <label><!-- Adresses de la demande de devis --></label>
+            <name>Adresses de la demande de devis</name>
+        </sections>
+        <sections>
+            <label><!-- Demandes --></label>
+            <name>Demandes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Doublons contacts WIP --></description>
+        <label><!-- Doublons contacts WIP --></label>
+        <name>Doublons_contacts</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Duplicate Record Items --></label>
+            <name>Duplicate Record Items</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Lightning Sync Error --></description>
+        <label><!-- Lightning Sync Error --></label>
+        <name>Lightning_Sync_Error</name>
+        <sections>
+            <label><!-- LightningSyncError --></label>
+            <name>LightningSyncError</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Quotes with Quote Documents --></description>
+        <label><!-- Opportunities with Quotes with Quote Documents --></label>
+        <name>Opportunities_with_Quotes_with_Quote_Documents</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Quotes with Quote Line Groups --></description>
+        <label><!-- Opportunities with Quotes with Quote Line Groups --></label>
+        <name>Opportunities_with_Quotes_with_Quote_Line_Groups</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Quotes with Quote Lines --></description>
+        <label><!-- Opportunities with Quotes with Quote Lines --></label>
+        <name>Opportunities_with_Quotes_with_Quote_Lines</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Quotes and Pricing Guidance Metrics --></description>
+        <label><!-- Quotes and Pricing Guidance Metrics --></label>
+        <name>Quotes_and_Pricing_Guidance_Metrics</name>
+        <sections>
+            <label><!-- Quote Line Pricing Guidance --></label>
+            <name>Quote Line Pricing Guidance</name>
+        </sections>
+        <sections>
+            <label><!-- Quote Lines --></label>
+            <name>Quote Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Quotes --></label>
+            <name>Quotes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Raisons de passages avec passages avec tournees --></description>
+        <label><!-- Raisons de passages avec passages avec tournees --></label>
+        <name>Raisons_de_passages_avec_p</name>
+        <sections>
+            <label><!-- Passages --></label>
+            <name>Passages</name>
+        </sections>
+        <sections>
+            <label><!-- Raisons de passage --></label>
+            <name>Raisons de passage</name>
+        </sections>
+        <sections>
+            <label><!-- Tournées --></label>
+            <name>Tournées</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Rapport sur les utilisateurs et les licences --></description>
+        <label><!-- Rapport sur les utilisateurs et les licences --></label>
+        <name>Rapport_sur_les_utilisateurs_et_les_licences</name>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+        <sections>
+            <label><!-- Utilisateurs --></label>
+            <name>Utilisateurs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Rubriques --></description>
+        <label><!-- Rubriques --></label>
+        <name>Rubriques</name>
+        <sections>
+            <label><!-- Attributions de rubrique --></label>
+            <name>Attributions de rubrique</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Utilisateurs avec des licences --></description>
+        <label><!-- Utilisateurs avec des licences --></label>
+        <name>Utilisateurs_avec_des_licences</name>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+        <sections>
+            <label><!-- Utilisateurs --></label>
+            <name>Utilisateurs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Comptes avec adresses avec passage --></description>
+        <label><!-- Comptes avec adresses avec passage --></label>
+        <name>comptes_adresses_passages</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Adresses --></label>
+            <name>Adresses</name>
+        </sections>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Passages --></label>
+            <name>Passages</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Flux d&apos;écran --></description>
+        <label><!-- Flux d&apos;écran --></label>
+        <name>screen_flows_prebuilt_crt</name>
+        <sections>
+            <label><!-- Entrées au journal d&apos;interview de flux --></label>
+            <name>Entrées au journal d&#39;interview de flux</name>
+        </sections>
+        <sections>
+            <label><!-- Journaux d&apos;interview de flux --></label>
+            <name>Journaux d&#39;interview de flux</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Orders and Invoices --></description>
+        <label><!-- Accounts with Orders and Invoices --></label>
+        <name>Accounts_with_Orders_and_Invoices</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Commandes --></label>
+            <name>Commandes</name>
+        </sections>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Invoices --></label>
+            <name>Invoices</name>
+        </sections>
+        <sections>
+            <label><!-- Orders --></label>
+            <name>Orders</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Commandes avec Factures --></description>
+        <label><!-- Commandes avec Factures --></label>
+        <name>Commandes_avec_Factures</name>
+        <sections>
+            <label><!-- Commandes --></label>
+            <name>Commandes</name>
+        </sections>
+        <sections>
+            <label><!-- Factures --></label>
+            <name>Factures</name>
+        </sections>
+        <sections>
+            <label><!-- Invoices --></label>
+            <name>Invoices</name>
+        </sections>
+        <sections>
+            <label><!-- Orders --></label>
+            <name>Orders</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Commandes avec Paiements --></description>
+        <label><!-- Commandes avec Paiements --></label>
+        <name>Commandes_avec_Paiements</name>
+        <sections>
+            <label><!-- Commandes --></label>
+            <name>Commandes</name>
+        </sections>
+        <sections>
+            <label><!-- Orders --></label>
+            <name>Orders</name>
+        </sections>
+        <sections>
+            <label><!-- Payments --></label>
+            <name>Payments</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Credit Notes --></description>
+        <label><!-- Credit Notes --></label>
+        <name>Credit_Notes</name>
+        <sections>
+            <label><!-- Credit Notes --></label>
+            <name>Credit Notes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Invoice Lines --></description>
+        <label><!-- Invoice Lines --></label>
+        <name>Invoice_Lines</name>
+        <sections>
+            <label><!-- Invoice Lines --></label>
+            <name>Invoice Lines</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Invoice Lines by Product --></description>
+        <label><!-- Invoice Lines by Product --></label>
+        <name>Invoice_Lines_by_Product</name>
+        <sections>
+            <label><!-- Invoice Lines --></label>
+            <name>Invoice Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Products --></label>
+            <name>Products</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Invoice Lines with Accounts --></description>
+        <label><!-- Invoice Lines with Accounts --></label>
+        <name>Invoice_Lines_with_Accounts</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Invoice Lines --></label>
+            <name>Invoice Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Invoices --></label>
+            <name>Invoices</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Invoice Lines with Accounts and Products --></description>
+        <label><!-- Invoice Lines with Accounts and Products --></label>
+        <name>Invoice_Lines_with_Accounts_and_Products</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Comptes --></label>
+            <name>Comptes</name>
+        </sections>
+        <sections>
+            <label><!-- Invoice Lines --></label>
+            <name>Invoice Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Invoices --></label>
+            <name>Invoices</name>
+        </sections>
+    </reportTypes>
+</Translations>

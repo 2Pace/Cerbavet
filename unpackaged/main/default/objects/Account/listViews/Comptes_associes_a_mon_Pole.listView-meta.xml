@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comptes_associes_a_mon_Pole</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Statut__c</columns>
+    <columns>Structure_custom_object__c</columns>
+    <columns>Structure_Pole__c</columns>
+    <columns>Structure_BU__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Associe_a_mon_Pole__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>notEqual</operation>
+        <value>Account.Compte_desactive</value>
+    </filters>
+    <label>Comptes associés à mon Pôle</label>
+</ListView>

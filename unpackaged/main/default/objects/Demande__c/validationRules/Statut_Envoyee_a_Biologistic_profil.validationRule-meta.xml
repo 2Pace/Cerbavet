@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_Envoyee_a_Biologistic_profil</fullName>
+    <active>true</active>
+    <description>Le statut : &quot;Envoyée à Biologistic&quot; ne peut passer qu&#39;au statut &quot;Répondu par Biologistic/En attente de validation&quot;.</description>
+    <errorConditionFormula>ISCHANGED(Statut__c) &amp;&amp; ISPICKVAL(PRIORVALUE(Statut__c),&quot;Envoyée à Biologistic&quot;)&amp;&amp; 
+
+
+(ISPICKVAL (Statut__c,&quot;Répondu/en attente de validation&quot;))
+
+&amp;&amp; $User.ProfileId &lt;&gt; &#39;00e1t000000uYau&#39;
+
+&amp;&amp;  $User.Tech_By_Pass_VR__c = false</errorConditionFormula>
+    <errorMessage>Merci de ne pas changer le statut de cette demande. La mise à jour du statut se fera par Biologistic.</errorMessage>
+</ValidationRule>

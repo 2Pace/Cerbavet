@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Business</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Business</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Affaire - AO - Présentation de page</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label>Kwalificatie</label>
+            <section>Qualification</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Nom de l&apos;affaire --></nameFieldLabel>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Roepen</label>
+        <name>Appel</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Appel d&apos;offre --></label>
+        <name>AO</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prospection --></label>
+        <name>Prospection</name>
+    </recordTypes>
+</CustomObjectTranslation>

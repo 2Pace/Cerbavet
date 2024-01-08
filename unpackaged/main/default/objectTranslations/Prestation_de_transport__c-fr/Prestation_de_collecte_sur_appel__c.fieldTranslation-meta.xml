@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Prestation de collecte sur appel --></label>
+        <name>Prestation_de_collecte_sur_appel__c</name>
+    </CustomFieldTranslation>

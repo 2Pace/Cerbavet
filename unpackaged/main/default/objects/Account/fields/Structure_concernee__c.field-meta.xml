@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Structure_concernee__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(BEGINS(Name,&quot;CLS-202&quot;), &quot;Cerballiance Charentes&quot;,
+IF(BEGINS(Name,&quot;CLS-203&quot;), &quot;Cerballiance Normandie&quot;,
+IF(BEGINS(Name,&quot;HEX-109&quot;), &quot;Cerballiance Loire&quot;,
+IF(BEGINS(Name,&quot;HEX-110&quot;), &quot;Cerballiance Rhône Alpes&quot;,
+IF(BEGINS(Name,&quot;HEX-111&quot;), &quot;Cerballiance Bourgogne&quot;,
+IF(BEGINS(Name,&quot;HEX-112&quot;), &quot;Cerballiance Occitanie&quot;,
+IF(BEGINS(Name,&quot;HEX-113&quot;), &quot;Cerballiance Artois&quot;,
+IF(BEGINS(Name,&quot;HEX-114&quot;), &quot;Cerballiance Somme&quot;,
+IF(BEGINS(Name,&quot;HEX-115&quot;), &quot;Cerballiance Réunion&quot;,
+IF(BEGINS(Name,&quot;HEX-118&quot;), &quot;Cerballiance Pyrénées&quot;,
+IF(BEGINS(Name,&quot;HEX-128&quot;), &quot;Cerballiance Languedoc&quot;,
+IF(BEGINS(Name,&quot;HIS-002&quot;), &quot;Cerballiance Provence&quot;,
+IF(BEGINS(Name,&quot;HIS-003&quot;), &quot;Cerballiance Hauts-de-France&quot;,
+IF(BEGINS(Name,&quot;HIS-004&quot;), &quot;Cerballiance Côte d&#39;Azur - Var&quot;,
+IF(BEGINS(Name,&quot;HIS-008&quot;), &quot;Cerballiance Côte d&#39;Azur - Alpes-Maritimes&quot;,
+IF(BEGINS(Name,&quot;NTK-005&quot;), &quot;Cerballiance Côtes d&#39;Armor&quot;,
+IF(BEGINS(Name,&quot;NTK-009&quot;), &quot;Cerballiance Finistère&quot;,
+
+&quot;N/A&quot;)))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Structure concernée</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

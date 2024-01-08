@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Icone_Statut__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF 
+( ISPICKVAL( Statut__c ,&quot;Nouvelle&quot;) 
+, 
+IMAGE(&quot;/resource/1557245962000/ICONS_Nouvelle?&quot;, &quot;Nouvelle&quot;, 30 ,30 ) 
+, 
+
+IF 
+( ISPICKVAL( Statut__c ,&quot;Envoyée à Biologistic&quot;) 
+, 
+IMAGE(&quot;/resource/1557402543000/ICONS_SEND?&quot;, &quot;Envoyée à Biologistic&quot;, 30 ,30 ) 
+, 
+
+IF 
+( ISPICKVAL( Statut__c ,&quot;Validée&quot;) 
+, 
+IMAGE(&quot;/resource/1552570497000/ICONS_ADR_Actif&quot;, &quot;Validée&quot;, 30 ,30 ) 
+, 
+
+
+IF 
+( ISPICKVAL( Statut__c ,&quot;Répondu/en attente de validation&quot;) 
+, 
+IMAGE(&quot;/resource/1556803231000/ICONS_CdT_En_attente_de_validation?&quot;, &quot;Répondu/en attente de validation&quot;, 30 ,30 ) 
+, 
+
+IF 
+( ISPICKVAL( Statut__c ,&quot;Validée par Cerba&quot;) 
+, 
+IMAGE(&quot;/resource/1557407549000/ICONS_Validee_par_CERBA?&quot;, &quot;Validée par Cerba&quot;, 30 ,30 ) 
+, 
+
+IF 
+( ISPICKVAL( Statut__c ,&quot;Confirmée par Biologistic&quot;) 
+, 
+IMAGE(&quot;/resource/1557407571000/ICONS_Confirmee_par_Biologistic?&quot;, &quot;Confirmée par Biologistic&quot;, 30 ,30 ) 
+, 
+
+IF 
+( ISPICKVAL( Statut__c ,&quot;Abandonné&quot;) 
+, 
+IMAGE(&quot;/resource/1557407307000/ICONS_Abondonee?&quot;, &quot;Abandonné&quot;, 30 ,30 ) 
+, 
+
+IF 
+( ISPICKVAL( Statut__c ,&quot;En attente d&#39;approbation&quot;) 
+, 
+IMAGE(&quot;/resource/1557408219000/ICONS_En_attente_d_approbation?&quot;, &quot;En attente d&#39;approbation&quot;, 30 ,30 ) 
+, 
+
+IF 
+( ISPICKVAL( Statut__c ,&quot;Validée par la direction commerciale&quot;) 
+, 
+IMAGE(&quot;/resource/1552570497000/ICONS_ADR_Actif?&quot;, &quot;Validée par la direction commerciale&quot;, 30 ,30 ) 
+, 
+
+IF 
+( ISPICKVAL( Statut__c ,&quot;Rejetée par la direction commerciale&quot;) 
+, 
+IMAGE(&quot;/resource/1552570520000/ICONS_ADR_Inactif&quot;, &quot;Rejetée par la direction commerciale&quot;, 30 ,30 ) 
+, 
+ 
+IF 
+( ISPICKVAL( Statut__c ,&quot;Ferme&quot;) 
+, 
+IMAGE(&quot;/resource/1551194734000/ICONS_ACC_Closed_Establishment?&quot;, &quot;Ferme&quot;, 30 ,30 ) 
+, 
+&quot;&quot; 
+) 
+) 
+)
+)
+)
+)
+)
+)
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Icône Statut</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

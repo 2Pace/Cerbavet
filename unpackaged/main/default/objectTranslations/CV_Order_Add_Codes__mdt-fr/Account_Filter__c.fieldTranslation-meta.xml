@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Account Filter --></label>
+        <name>Account_Filter__c</name>
+        <picklistValues>
+            <masterLabel>Non Régleur</masterLabel>
+            <translation><!-- Non Régleur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>deposelabofalse</masterLabel>
+            <translation><!-- deposelabofalse --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

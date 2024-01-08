@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Date de passage à &quot;Validée par Cerba&quot; --></label>
+        <name>Date_de_passage_Validee_par_Cerba__c</name>
+    </CustomFieldTranslation>

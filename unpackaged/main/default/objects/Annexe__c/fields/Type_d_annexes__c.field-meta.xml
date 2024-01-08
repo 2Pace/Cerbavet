@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_d_annexes__c</fullName>
+    <externalId>false</externalId>
+    <label>Type d&#39;annexes</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Charte qualité</fullName>
+                <default>false</default>
+                <label>Charte qualité</label>
+            </value>
+            <value>
+                <fullName>Contrat de mise à disposition</fullName>
+                <default>false</default>
+                <label>Contrat de mise à disposition</label>
+            </value>
+            <value>
+                <fullName>Contrat de partenariat</fullName>
+                <default>false</default>
+                <label>Contrat de partenariat</label>
+            </value>
+            <value>
+                <fullName>Contrat logistique</fullName>
+                <default>false</default>
+                <label>Contrat logistique</label>
+            </value>
+            <value>
+                <fullName>Contrat prescription connectée</fullName>
+                <default>false</default>
+                <label>Contrat prescription connectée</label>
+            </value>
+            <value>
+                <fullName>Convention d&#39;exercice</fullName>
+                <default>false</default>
+                <label>Convention d&#39;exercice</label>
+            </value>
+            <value>
+                <fullName>Convention de preuve</fullName>
+                <default>false</default>
+                <label>Convention de preuve</label>
+            </value>
+            <value>
+                <fullName>Convention de transport</fullName>
+                <default>false</default>
+                <label>Convention de transport</label>
+            </value>
+            <value>
+                <fullName>Convention hospitalière</fullName>
+                <default>false</default>
+                <label>Convention hospitalière</label>
+            </value>
+            <value>
+                <fullName>Mise à disposition</fullName>
+                <default>false</default>
+                <label>Mise à disposition</label>
+            </value>
+            <value>
+                <fullName>Revue de contrat</fullName>
+                <default>false</default>
+                <label>Revue de contrat</label>
+            </value>
+            <value>
+                <fullName>Autres</fullName>
+                <default>false</default>
+                <label>Autres</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

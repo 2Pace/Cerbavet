@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Prestation de dépôt des retransmissions --></label>
+        <name>Prestation_de_depot_des_retransmissions__c</name>
+    </CustomFieldTranslation>

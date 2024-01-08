@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edition_papier__c</fullName>
+    <defaultValue>&quot;Pas de papier&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Édition papier</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Courrier postal</fullName>
+                <default>false</default>
+                <label>Courrier postal</label>
+            </value>
+            <value>
+                <fullName>Routage transporteur</fullName>
+                <default>false</default>
+                <label>Routage transporteur</label>
+            </value>
+            <value>
+                <fullName>Pas de papier</fullName>
+                <default>false</default>
+                <label>Pas de papier</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

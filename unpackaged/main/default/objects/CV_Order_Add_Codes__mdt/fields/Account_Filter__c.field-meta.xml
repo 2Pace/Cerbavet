@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Filter__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Account Filter</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Non Régleur</fullName>
+                <default>true</default>
+                <label>Non Régleur</label>
+            </value>
+            <value>
+                <fullName>deposelabofalse</fullName>
+                <default>false</default>
+                <label>deposelabofalse</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

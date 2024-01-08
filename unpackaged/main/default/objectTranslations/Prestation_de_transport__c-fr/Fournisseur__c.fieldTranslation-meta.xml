@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Fournisseur --></label>
+        <lookupFilter>
+            <errorMessage><!-- Merci de sélectionner un compte fournisseur. --></errorMessage>
+        </lookupFilter>
+        <name>Fournisseur__c</name>
+        <relationshipLabel><!-- Prestations de transports (Compte fournisseur) --></relationshipLabel>
+    </CustomFieldTranslation>

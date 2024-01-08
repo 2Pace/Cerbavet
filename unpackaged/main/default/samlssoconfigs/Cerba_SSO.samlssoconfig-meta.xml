@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>FederationId</identityMapping>
+    <issuer>https://sts.windows.net/adb52084-34eb-40ce-be34-be53b586bd8f/</issuer>
+    <loginUrl>https://login.microsoftonline.com/adb52084-34eb-40ce-be34-be53b586bd8f/saml2</loginUrl>
+    <name>Cerba SSO</name>
+    <oauthTokenEndpoint>https://cerbahealthcare--fullsandb.sandbox.my.salesforce.com/services/oauth2/token?so=00D1q0000004lHE</oauthTokenEndpoint>
+    <redirectBinding>true</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P16N00000000GL</requestSigningCertId>
+    <salesforceLoginUrl>https://cerbahealthcare--fullsandb.sandbox.my.salesforce.com?so=00D1q0000004lHE</salesforceLoginUrl>
+    <samlEntityId>https://cerbahealthcare--fullsandb.sandbox.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <singleLogoutBinding>RedirectBinding</singleLogoutBinding>
+    <singleLogoutUrl>https://login.microsoftonline.com/adb52084-34eb-40ce-be34-be53b586bd8f/saml2</singleLogoutUrl>
+    <useConfigRequestMethod>false</useConfigRequestMethod>
+    <useSameDigestAlgoForSigning>true</useSameDigestAlgoForSigning>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIC8DCCAdigAwIBAgIQfx7ROWiNA5pMa8koCNDwUzANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yMzAxMDUxODA4MTRaFw0yNjAxMDUxODA4MTRaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsj9HQWpmfLwXUwnYfexd7k5AUp5tlxSBjFNufFDYOqOOgQsuzywZApzhIh1q0O/HTsOPI1YQX1bsgCCZqLY5NZiamLPb5mFGOkw3qW8R3s26aAXxz7UbhNbr3lMTiHZtUXOYlvoLObD6g4WOrkbqIOlz4gex3VFMi4QEB0xeq2osFCxrSGldVooyJadOyf0kKel+ZDzAQ8dfG4XXkjpFE8Kuo3nI2OZx472P8CuBcgLJEsmQZAjG/NUmk4NrmLYTtcNDlMrTIRNp2I+bGploQMpsVxHCLLMD0O+jXk3fZTBh2VW1/Ba7kElgfH3Tljk4TQRezsPUNzWHvldJ5vajNQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQAZaOPaRf1OHRQ2xgJ0KUJW1n/chg6NNFOxIj7JwdbqTx5mmm+0N64QIrZfVVmrgjsRVOVbDmuDBayw1OGtUUrIVMNvJ9bLinbqAA/PTXLCo6ip7lS3EpuJdOkuTRrAEe/Y4vAf/WAA6Mr8lm2FL2SiYYfXE1vo625z1+bZLDsnO6cLjJnqNBdNtuVd9AFF2FDqZTzBzHmvKar83TZVsyVeZl+7o2C1h6hLSQTAvLv/R187sL0x3mj32rM75C0VaDFoUbUWMn/UVD/Iv4GZgw/ligQh+0pZHeEbbdWcceLw37HYT1kC3GrXNN6HCmlszECODT2Z9Wc1hJq2AUI6ekfv</validationCert>
+</SamlSsoConfig>

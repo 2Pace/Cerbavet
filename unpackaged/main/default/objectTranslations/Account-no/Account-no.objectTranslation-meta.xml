@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Billing Account Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Renewal/Co-Term Information --></label>
+            <section>Renewal/Co-Term Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CPQ Account Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Renewal/Co-Term Information --></label>
+            <section>Renewal/Co-Term Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Comptes Client SGL - Cerbavet</layout>
+        <sections>
+            <label><!-- Coordonnées --></label>
+            <section>Coordonnées</section>
+        </sections>
+        <sections>
+            <label><!-- Facturation Cerba Vet --></label>
+            <section>Facturation Cerba Vet</section>
+        </sections>
+        <sections>
+            <label><!-- Transport Cerba Vet --></label>
+            <section>Transport Cerba Vet</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Comptes Client SGL BI Groupe - Présentation de page</layout>
+        <sections>
+            <label><!-- Ancienneté --></label>
+            <section>Ancienneté</section>
+        </sections>
+        <sections>
+            <label><!-- Hiérarchie de facturation --></label>
+            <section>Hiérarchie de facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Structure --></label>
+            <section>Structure</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Comptes Client SGL BI Groupe - Présentation de page (Avant MQD)</layout>
+        <sections>
+            <label><!-- Adresse Principale --></label>
+            <section>Adresse Principale</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Hiérarchie --></label>
+            <section>Hiérarchie</section>
+        </sections>
+        <sections>
+            <label><!-- Structure --></label>
+            <section>Structure</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Comptes Client SGL BI Spé - Présentation de page</layout>
+        <sections>
+            <label><!-- Ancienneté --></label>
+            <section>Ancienneté</section>
+        </sections>
+        <sections>
+            <label><!-- Ascendants analytiques CDG --></label>
+            <section>Ascendants analytiques CDG</section>
+        </sections>
+        <sections>
+            <label><!-- Coordonnées --></label>
+            <section>Coordonnées</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Données entrantes système de facturation --></label>
+            <section>Données entrantes système de facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Facturation --></label>
+            <section>Facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Facturation à paramétrer --></label>
+            <section>Facturation à paramétrer</section>
+        </sections>
+        <sections>
+            <label><!-- Liens/Rapports --></label>
+            <section>Liens/Rapports</section>
+        </sections>
+        <sections>
+            <label><!-- Médias/Résultats --></label>
+            <section>Médias/Résultats</section>
+        </sections>
+        <sections>
+            <label><!-- Structure --></label>
+            <section>Structure</section>
+        </sections>
+        <sections>
+            <label><!-- Transport/Adresses --></label>
+            <section>Transport/Adresses</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Comptes désactivés - Présentation de page</layout>
+        <sections>
+            <label><!-- Activité globale du compte --></label>
+            <section>Activité globale du compte</section>
+        </sections>
+        <sections>
+            <label><!-- Adresse --></label>
+            <section>Adresse</section>
+        </sections>
+        <sections>
+            <label><!-- Autres informations --></label>
+            <section>Autres informations</section>
+        </sections>
+        <sections>
+            <label><!-- CA --></label>
+            <section>CA</section>
+        </sections>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Général --></label>
+            <section>Général</section>
+        </sections>
+        <sections>
+            <label><!-- Hiérarchie --></label>
+            <section>Hiérarchie</section>
+        </sections>
+        <sections>
+            <label><!-- Information système --></label>
+            <section>Information système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Structure --></label>
+            <section>Structure</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Etablissements - Cerbavet</layout>
+        <sections>
+            <label><!-- Autres informations --></label>
+            <section>Autres informations</section>
+        </sections>
+        <sections>
+            <label><!-- Caractéristiques BU Cerba --></label>
+            <section>Caractéristiques BU Cerba</section>
+        </sections>
+        <sections>
+            <label><!-- Caractéristiques BU Cerba Vet --></label>
+            <section>Caractéristiques BU Cerba Vet</section>
+        </sections>
+        <sections>
+            <label><!-- Coordonnées --></label>
+            <section>Coordonnées</section>
+        </sections>
+        <sections>
+            <label><!-- Groupement réseau --></label>
+            <section>Groupement réseau</section>
+        </sections>
+        <sections>
+            <label><!-- Horaires --></label>
+            <section>Horaires</section>
+        </sections>
+        <sections>
+            <label><!-- Informations professionelles --></label>
+            <section>Informations professionelles</section>
+        </sections>
+        <sections>
+            <label><!-- Informations système --></label>
+            <section>Informations système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens/Rapports --></label>
+            <section>Liens/Rapports</section>
+        </sections>
+        <sections>
+            <label><!-- Potentiel CA groupe CHC --></label>
+            <section>Potentiel CA groupe CHC</section>
+        </sections>
+        <sections>
+            <label><!-- Structure --></label>
+            <section>Structure</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Fournisseur - Présentation de page</layout>
+        <sections>
+            <label><!-- Caractéristiques BU Spécialité --></label>
+            <section>Caractéristiques BU Spécialité</section>
+        </sections>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Coordonnées --></label>
+            <section>Coordonnées</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Informations système --></label>
+            <section>Informations système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Labo - Organisation Groupe - Présentation de page</layout>
+        <sections>
+            <label><!-- Champs --></label>
+            <section>Champs</section>
+        </sections>
+        <sections>
+            <label><!-- Hiérarchie --></label>
+            <section>Hiérarchie</section>
+        </sections>
+        <sections>
+            <label><!-- Information système --></label>
+            <section>Information système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Structure --></label>
+            <section>Structure</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Établissements- Présentation de page</layout>
+        <sections>
+            <label><!-- Activité globale du compte --></label>
+            <section>Activité globale du compte</section>
+        </sections>
+        <sections>
+            <label><!-- Autres informations --></label>
+            <section>Autres informations</section>
+        </sections>
+        <sections>
+            <label><!-- Caractéristiques BU Cerba --></label>
+            <section>Caractéristiques BU Cerba</section>
+        </sections>
+        <sections>
+            <label><!-- Caractéristiques BU Cerba Vet --></label>
+            <section>Caractéristiques BU Cerba Vet</section>
+        </sections>
+        <sections>
+            <label><!-- Coordonnées --></label>
+            <section>Coordonnées</section>
+        </sections>
+        <sections>
+            <label><!-- Groupement réseau --></label>
+            <section>Groupement réseau</section>
+        </sections>
+        <sections>
+            <label><!-- Horaires --></label>
+            <section>Horaires</section>
+        </sections>
+        <sections>
+            <label><!-- Informations professionelles --></label>
+            <section>Informations professionelles</section>
+        </sections>
+        <sections>
+            <label><!-- Informations système --></label>
+            <section>Informations système</section>
+        </sections>
+        <sections>
+            <label><!-- Liens/Rapports --></label>
+            <section>Liens/Rapports</section>
+        </sections>
+        <sections>
+            <label><!-- Potentiel CA groupe CHC --></label>
+            <section>Potentiel CA groupe CHC</section>
+        </sections>
+        <sections>
+            <label><!-- Structure --></label>
+            <section>Structure</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Appel --></label>
+        <name>Appel</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Demande de désactivation de compte --></label>
+        <name>Demande_de_desactivation_de_compte</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Désactiver le compte --></label>
+        <name>Desactiver_le_compte</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Cloner les adresses --></label>
+        <name>Cloner_les_adresses</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Définir les adresses --></label>
+        <name>Definir_les_adresses</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- MAJ sur Adresse --></label>
+        <name>MAJ_sur_Adresse</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 🎓 CerbaVet College --></label>
+        <name>CerbaVet_College</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Compte Client SGL (BI Spé) --></label>
+        <name>Compte_Client_SGL_BI</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Compte Client SGL (BI Groupe) --></label>
+        <name>Compte_Client_SGL_BI_Groupe</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Compte désactivé --></label>
+        <name>Compte_desactive</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Etablissement --></label>
+        <name>Etablissement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Fournisseur --></label>
+        <name>Fournisseur</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Labo - Organisation Groupe --></label>
+        <name>Labo_Organisation_Groupe</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas choisir de groupement réseau pour les comptes qui ne sont pas en tête de la hiérarchie --></errorMessage>
+        <name>VR_ACC_Blocage_groupement_compte_enfant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ce compte a le statut  &quot;Prospect&quot;. Merci de remplir le &quot;CA potentiel de sous traitance (prospection)&quot; --></errorMessage>
+        <name>VR_ACC_CA_potentiel_S_trait_obligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas changer le type d&apos;enregistrement du compte. Cela est réservé à l&apos;administrateur. --></errorMessage>
+        <name>VR_ACC_Changement_du_RT_bloque</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de renseigner la &quot;Date d&apos;appartenance au parent&quot; suite au changement du compte principal (Parent) --></errorMessage>
+        <name>VR_ACC_Date_Apparten_parent_obligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Mandat de prélèvement nécessaire si les conditions de réglement est &apos;Régleur en prélèvement&apos; --></errorMessage>
+        <name>VR_Account_Regleur_en_Prelevement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Si le champ &quot;Adresse de facturation spécifique&quot; est coché, merci de renseigner les champs suivants : &quot;Nom Etablissement&quot;, &quot;Service&quot;, &quot;Rue Ligne 1&quot;, &quot;Rue Ligne 2&quot;, &quot;Code Postal&quot;, &quot;Ville&quot; et &quot;Pays&quot;. --></errorMessage>
+        <name>VR_Compte_BI_Spe_Adresse_de_factu_spe</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Si vous supprimez le compte parent, merci de supprimer également la date de rattachement à ce dernier. --></errorMessage>
+        <name>VR_Compte_Compte_parent_supprime</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas modifier ce compte SGL. Vous pouvez uniquement le consulter --></errorMessage>
+        <name>VR_Compte_SGL_GR_lecture_seule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas modifier les champs &quot;Facture anonyme&quot;, &quot;Frais de dossier&quot; ou &quot;Périodicité de facturation si vous n&apos;êtes pas ADV/propriétaire/manager du propriétaire de ce compte. --></errorMessage>
+        <name>VR_Compte_SGL_SPE_champs_LS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas modifier ce compte SGL. Vous pouvez uniquement le consulter --></errorMessage>
+        <name>VR_Compte_SGL_SPE_lecture_seule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas modifier les champs FINESS et SIRET quand la source du compte provient de la base RPPS. --></errorMessage>
+        <name>VR_Compte_Source_RPPS</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CA_associe --></label>
+        <name>CA_associe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CA_specialite_par_gamme --></label>
+        <name>CA_specialite_par_gamme</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

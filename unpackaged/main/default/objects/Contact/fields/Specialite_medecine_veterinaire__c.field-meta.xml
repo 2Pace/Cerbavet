@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Specialite_medecine_veterinaire__c</fullName>
+    <externalId>false</externalId>
+    <label>Spécialité médecine vétérinaire</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CEAV Chirurgie des animaux de compagnie</fullName>
+                <default>false</default>
+                <label>CEAV Chirurgie des animaux de compagnie</label>
+            </value>
+            <value>
+                <fullName>CEAV Productions avicole et cunicole</fullName>
+                <default>false</default>
+                <label>CEAV Productions avicole et cunicole</label>
+            </value>
+            <value>
+                <fullName>CEAV Santé &amp; Qualité production porcine</fullName>
+                <default>false</default>
+                <label>CEAV Santé &amp; Qualité production porcine</label>
+            </value>
+            <value>
+                <fullName>CEAV Santé &amp; Qualité production laitière</fullName>
+                <default>false</default>
+                <label>CEAV Santé &amp; Qualité production laitière</label>
+            </value>
+            <value>
+                <fullName>CEAV Sécurité / qualité des denrées alim</fullName>
+                <default>false</default>
+                <label>CEAV Sécurité / qualité des denrées alim</label>
+            </value>
+            <value>
+                <fullName>CEAV Hygiène et technologie alimentaire</fullName>
+                <default>false</default>
+                <label>CEAV Hygiène et technologie alimentaire</label>
+            </value>
+            <value>
+                <fullName>CEAV Comportement animaux domestiques</fullName>
+                <default>false</default>
+                <label>CEAV Comportement animaux domestiques</label>
+            </value>
+            <value>
+                <fullName>CEAV Médec. interne animaux de compagnie</fullName>
+                <default>false</default>
+                <label>CEAV Médec. interne animaux de compagnie</label>
+            </value>
+            <value>
+                <fullName>CEAV Médecine et chirurgie des équidés</fullName>
+                <default>false</default>
+                <label>CEAV Médecine et chirurgie des équidés</label>
+            </value>
+            <value>
+                <fullName>CEAV Pathologie Animale régions chaudes</fullName>
+                <default>false</default>
+                <label>CEAV Pathologie Animale régions chaudes</label>
+            </value>
+            <value>
+                <fullName>CEAV Santé publique vétérinaire</fullName>
+                <default>false</default>
+                <label>CEAV Santé publique vétérinaire</label>
+            </value>
+            <value>
+                <fullName>CEAV Sciences &amp; Médecine Animaux de labo</fullName>
+                <default>false</default>
+                <label>CEAV Sciences &amp; Médecine Animaux de labo</label>
+            </value>
+            <value>
+                <fullName>DESV Anatomie pathologique vétérinaire</fullName>
+                <default>false</default>
+                <label>DESV Anatomie pathologique vétérinaire</label>
+            </value>
+            <value>
+                <fullName>DESV Chirurgie des animaux de Compagnie</fullName>
+                <default>false</default>
+                <label>DESV Chirurgie des animaux de Compagnie</label>
+            </value>
+            <value>
+                <fullName>DESV Dermatologie</fullName>
+                <default>false</default>
+                <label>DESV Dermatologie</label>
+            </value>
+            <value>
+                <fullName>DESV Elevage et pathologie des équidés</fullName>
+                <default>false</default>
+                <label>DESV Elevage et pathologie des équidés</label>
+            </value>
+            <value>
+                <fullName>DESV Gestion de la santé des bovins</fullName>
+                <default>false</default>
+                <label>DESV Gestion de la santé des bovins</label>
+            </value>
+            <value>
+                <fullName>DESV Médec. interne animaux de compagnie</fullName>
+                <default>false</default>
+                <label>DESV Médec. interne animaux de compagnie</label>
+            </value>
+            <value>
+                <fullName>DESV Méd. interne animaux compa, cardio</fullName>
+                <default>false</default>
+                <label>DESV Méd. interne animaux compa, cardio</label>
+            </value>
+            <value>
+                <fullName>DESV Ophtalmologie</fullName>
+                <default>false</default>
+                <label>DESV Ophtalmologie</label>
+            </value>
+            <value>
+                <fullName>DESV Productions animales régions chaudes</fullName>
+                <default>false</default>
+                <label>DESV Productions animales régions chaudes</label>
+            </value>
+            <value>
+                <fullName>DESV Médecine des animaux de laboratoire</fullName>
+                <default>false</default>
+                <label>DESV Médecine des animaux de laboratoire</label>
+            </value>
+            <value>
+                <fullName>ECEIM Europ Col. Equine Intern. Medicine</fullName>
+                <default>false</default>
+                <label>ECEIM Europ Col. Equine Intern. Medicine</label>
+            </value>
+            <value>
+                <fullName>ECLAM Europ Col. Labo Animal Medicine</fullName>
+                <default>false</default>
+                <label>ECLAM Europ Col. Labo Animal Medicine</label>
+            </value>
+            <value>
+                <fullName>ECVCP Europ Col. Vet Clinical Pathology</fullName>
+                <default>false</default>
+                <label>ECVCP Europ Col. Vet Clinical Pathology</label>
+            </value>
+            <value>
+                <fullName>ECVCN Europ Col. Vet Compara. Nutrition</fullName>
+                <default>false</default>
+                <label>ECVCN Europ Col. Vet Compara. Nutrition</label>
+            </value>
+            <value>
+                <fullName>ECVD Europ Col. Veterinary Dermatology</fullName>
+                <default>false</default>
+                <label>ECVD Europ Col. Veterinary Dermatology</label>
+            </value>
+            <value>
+                <fullName>ECVDI Europ Col. Vet Diagnostic Imaging</fullName>
+                <default>false</default>
+                <label>ECVDI Europ Col. Vet Diagnostic Imaging</label>
+            </value>
+            <value>
+                <fullName>ECVIM Europ Col. Vet Intern. Medicine CA</fullName>
+                <default>false</default>
+                <label>ECVIM Europ Col. Vet Intern. Medicine CA</label>
+            </value>
+            <value>
+                <fullName>ECVIM Europ Col. Vet Int. Medici. Cardio</fullName>
+                <default>false</default>
+                <label>ECVIM Europ Col. Vet Int. Medici. Cardio</label>
+            </value>
+            <value>
+                <fullName>ECVN Europ Coll. of Veterinary Neurology</fullName>
+                <default>false</default>
+                <label>ECVN Europ Coll. of Veterinary Neurology</label>
+            </value>
+            <value>
+                <fullName>ECVO Europ Coll. of Vet Ophtalmology</fullName>
+                <default>false</default>
+                <label>ECVO Europ Coll. of Vet Ophtalmology</label>
+            </value>
+            <value>
+                <fullName>ECVPH Europ Coll. of Vet Public Health</fullName>
+                <default>false</default>
+                <label>ECVPH Europ Coll. of Vet Public Health</label>
+            </value>
+            <value>
+                <fullName>ECVS Europ Coll of Veterinary Surgery CA</fullName>
+                <default>false</default>
+                <label>ECVS Europ Coll of Veterinary Surgery CA</label>
+            </value>
+            <value>
+                <fullName>ECVS Europ Coll of Veterinary Surgery LA</fullName>
+                <default>false</default>
+                <label>ECVS Europ Coll of Veterinary Surgery LA</label>
+            </value>
+            <value>
+                <fullName>EVDC Europ Veterinary Dentistry College</fullName>
+                <default>false</default>
+                <label>EVDC Europ Veterinary Dentistry College</label>
+            </value>
+            <value>
+                <fullName>CES Anatomie Pathologique Toxicologique</fullName>
+                <default>false</default>
+                <label>CES Anatomie Pathologique Toxicologique</label>
+            </value>
+            <value>
+                <fullName>CES de Dermatologie vétérinaire</fullName>
+                <default>false</default>
+                <label>CES de Dermatologie vétérinaire</label>
+            </value>
+            <value>
+                <fullName>CES de Diététique Canine et Féline</fullName>
+                <default>false</default>
+                <label>CES de Diététique Canine et Féline</label>
+            </value>
+            <value>
+                <fullName>CES d’Épidémiologie Animale</fullName>
+                <default>false</default>
+                <label>CES d’Épidémiologie Animale</label>
+            </value>
+            <value>
+                <fullName>CES Gynéco et Insémination artif. équine</fullName>
+                <default>false</default>
+                <label>CES Gynéco et Insémination artif. équine</label>
+            </value>
+            <value>
+                <fullName>CES Hématologie / Biochimie Clin animale</fullName>
+                <default>false</default>
+                <label>CES Hématologie / Biochimie Clin animale</label>
+            </value>
+            <value>
+                <fullName>CES Méthodes Alternatives en Expérim Bio</fullName>
+                <default>false</default>
+                <label>CES Méthodes Alternatives en Expérim Bio</label>
+            </value>
+            <value>
+                <fullName>CES d’Ophtalmologie vétérinaire</fullName>
+                <default>false</default>
+                <label>CES d’Ophtalmologie vétérinaire</label>
+            </value>
+            <value>
+                <fullName>CES de Pathologie Aviaire</fullName>
+                <default>false</default>
+                <label>CES de Pathologie Aviaire</label>
+            </value>
+            <value>
+                <fullName>CES Trauma OstéoArticul /Orthopédie anim</fullName>
+                <default>false</default>
+                <label>CES Trauma OstéoArticul /Orthopédie anim</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

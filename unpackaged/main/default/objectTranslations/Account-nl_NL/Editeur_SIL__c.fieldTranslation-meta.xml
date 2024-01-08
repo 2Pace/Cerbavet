@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Uitgever - medisch pakket</label>
+        <name>Editeur_SIL__c</name>
+        <picklistValues>
+            <masterLabel>AGFA</masterLabel>
+            <translation><!-- AGFA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accrimed (Corilus) </masterLabel>
+            <translation><!-- Accrimed (Corilus)  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Argos</masterLabel>
+            <translation><!-- Argos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistovet</masterLabel>
+            <translation><!-- Assistovet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autres</masterLabel>
+            <translation>Andere</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIOSYSTEM</masterLabel>
+            <translation><!-- BIOSYSTEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bourgelat</masterLabel>
+            <translation><!-- Bourgelat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CABINET RICHARD</masterLabel>
+            <translation><!-- CABINET RICHARD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CCIF</masterLabel>
+            <translation><!-- CCIF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLARISYS</masterLabel>
+            <translation><!-- CLARISYS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CODAT</masterLabel>
+            <translation><!-- CODAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPUTER ET SERVICES</masterLabel>
+            <translation>COMPUTER EN DIENSTEN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORTEX</masterLabel>
+            <translation><!-- CORTEX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CareConnect (HealthConnect) </masterLabel>
+            <translation><!-- CareConnect (HealthConnect)  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daktari (Barista Software) </masterLabel>
+            <translation><!-- Daktari (Barista Software)  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DrVeto</masterLabel>
+            <translation><!-- DrVeto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EasyVet</masterLabel>
+            <translation><!-- EasyVet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Epicure (MedicalSoft) </masterLabel>
+            <translation><!-- Epicure (MedicalSoft)  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FORTHICIME</masterLabel>
+            <translation><!-- FORTHICIME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GESPOWER</masterLabel>
+            <translation><!-- GESPOWER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROUPE TGS</masterLabel>
+            <translation><!-- GROUPE TGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GmVeT</masterLabel>
+            <translation><!-- GmVeT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gynesoft</masterLabel>
+            <translation><!-- Gynesoft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HISTONE</masterLabel>
+            <translation><!-- HISTONE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HealthOne (HDMP) </masterLabel>
+            <translation><!-- HealthOne (HDMP)  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGR</masterLabel>
+            <translation><!-- IGR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INLOG</masterLabel>
+            <translation><!-- INLOG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INTERLABO</masterLabel>
+            <translation><!-- INTERLABO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kitry</masterLabel>
+            <translation><!-- Kitry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Koudou</masterLabel>
+            <translation><!-- Koudou --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LMX/MELLE</masterLabel>
+            <translation><!-- LMX/MELLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOGIFORCE</masterLabel>
+            <translation><!-- LOGIFORCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Le Généraliste (PC Sol) </masterLabel>
+            <translation><!-- Le Généraliste (PC Sol)  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEDASYS</masterLabel>
+            <translation><!-- MEDASYS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEGABUS</masterLabel>
+            <translation><!-- MEGABUS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICROMED</masterLabel>
+            <translation><!-- MICROMED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIPS</masterLabel>
+            <translation><!-- MIPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISLAB TGS</masterLabel>
+            <translation><!-- MISLAB TGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MangeVet</masterLabel>
+            <translation><!-- MangeVet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medidoc (Corilus) </masterLabel>
+            <translation><!-- Medidoc (Corilus)  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medigest (Corilus) </masterLabel>
+            <translation><!-- Medigest (Corilus)  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medinect (OFFIMED) </masterLabel>
+            <translation><!-- Medinect (OFFIMED)  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medinote (The Virtual Circle) </masterLabel>
+            <translation><!-- Medinote (The Virtual Circle)  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NETIKA</masterLabel>
+            <translation><!-- NETIKA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPENLAB</masterLabel>
+            <translation><!-- OPENLAB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ORDILABO</masterLabel>
+            <translation><!-- ORDILABO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Omnipro (MIMS) </masterLabel>
+            <translation><!-- Omnipro (MIMS)  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PROGIMED</masterLabel>
+            <translation><!-- PROGIMED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricare (Figac) </masterLabel>
+            <translation><!-- Pricare (Figac)  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prodoc (CEGEKA)</masterLabel>
+            <translation><!-- Prodoc (CEGEKA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QSP SYSTEMS</masterLabel>
+            <translation><!-- QSP SYSTEMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>READY SOFT</masterLabel>
+            <translation><!-- READY SOFT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réalisation Maison</masterLabel>
+            <translation>Eigen uitvoering</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SARIC</masterLabel>
+            <translation><!-- SARIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SELECT INFO</masterLabel>
+            <translation><!-- SELECT INFO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SENIX NEURONE</masterLabel>
+            <translation><!-- SENIX NEURONE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIEMENS</masterLabel>
+            <translation><!-- SIEMENS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOTRAIG</masterLabel>
+            <translation><!-- SOTRAIG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ubivet</masterLabel>
+            <translation><!-- Ubivet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VISION 4 HEALTH</masterLabel>
+            <translation><!-- VISION 4 HEALTH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VetPhi</masterLabel>
+            <translation><!-- VetPhi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VetUP</masterLabel>
+            <translation><!-- VetUP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veto-Win</masterLabel>
+            <translation><!-- Veto-Win --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vetocom</masterLabel>
+            <translation><!-- Vetocom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vetopartner</masterLabel>
+            <translation><!-- Vetopartner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windoc (CompuGroup Medical Belgium bvba) </masterLabel>
+            <translation><!-- Windoc (CompuGroup Medical Belgium bvba)  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iCure (TakTik SA) </masterLabel>
+            <translation><!-- iCure (TakTik SA)  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>myVett-Apps</masterLabel>
+            <translation><!-- myVett-Apps --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

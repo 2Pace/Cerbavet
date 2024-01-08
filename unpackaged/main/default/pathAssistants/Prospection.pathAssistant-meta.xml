@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Affaire__c</entityName>
+    <fieldName>Etape__c</fieldName>
+    <masterLabel>Prospection</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;HORS CRM&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Constituer une base de données des éléments de réponse, en les classant par thématiques (présentation Cerballiance, logistique proposée etc)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;DANS LE CRM&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Planifier des visites avec les interlocuteurs (direction médicale et administrative), en précisant les objectifs de chaque réunion&lt;/li&gt;&lt;li&gt;Créer un contrat, avec les prestations et remise effectuées&lt;/li&gt;&lt;li&gt;Attribuer des tâches (via Activités) ou actions (via Chatter) avec rappel, pour le suivi des éléments de réponse à apporter&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Elaboration de la réponse</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;DANS LE CRM&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Basculer le statut du compte, de &amp;quot;prospect&amp;quot; à &amp;quot;client&amp;quot;&lt;/li&gt;&lt;li&gt;Affecter un responsable au compte (équipe gestionnaire)&lt;/li&gt;&lt;li&gt;Revoir les prestations sur le contrat créé&lt;/li&gt;&lt;li&gt;Renseigner sur le contrat la date de démarrage, le niveau de redevance, la durée du contrat, le mode de renouvellement…&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Gain</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;HORS CRM&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Effectuer une revue avec la direction de SELAS sur les raisons de la perte de l&amp;#39;AO&lt;/li&gt;&lt;li&gt;Identifier les actions à mener permettant de sécuriser les contrats en cours&lt;/li&gt;&lt;/ul&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;DANS LE CRM&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Identifier la date de fin de contrat (perdu) pour relancer une action commerciale de récupération (6 mois avant la fin du contrat en cours)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Perte</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;DANS LE CRM&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Ciblage ou prospection :&lt;ul&gt;&lt;li&gt;Récupérer les fichiers des établissements de santé, des cabinets médicaux etc&lt;/li&gt;&lt;li&gt;Récupérer les CR des salons passés&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Créer un compte au statut de prospect, le rattacher à la hiérarchie si besoin et si existante&lt;/li&gt;&lt;li&gt;Créer les contacts clés de l&amp;#39;affaire sur le compte prospect&lt;/li&gt;&lt;li&gt;Qualifier le compte avec des données clés :&lt;ul&gt;&lt;li&gt;Adresse de l&amp;#39;établissement&lt;/li&gt;&lt;li&gt;SIRET /FINESS&lt;/li&gt;&lt;li&gt;CA de l&amp;#39;activité&lt;/li&gt;&lt;li&gt;Estimation du CA biologie&lt;/li&gt;&lt;li&gt;Nombre de lits…&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Identifier la date de fin de préavis du laboratoire précédent&lt;/li&gt;&lt;/ul&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;HORS CRM&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Contacter les contacts clés pour obtenir les informations manquantes&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Qualification</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;DANS LE CRM &lt;/p&gt;&lt;ul&gt;&lt;li&gt;Créer une activité sur le compte, correspondant à la remise officielle de la réponse. Y joindre le mail ou accusé de réception de la réponse&lt;/li&gt;&lt;li&gt;Planifier une visite de présentation &amp;quot;grand oral&amp;quot; sur le compte avec rappel et ajouter une tâche pour répétition avec l&amp;#39;équipe si besoin&lt;/li&gt;&lt;li&gt;Faire le compte-rendu de la visite, en mettant en PJ les documents de référence&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Soumission de l’offre</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Prospection</recordTypeName>
+</PathAssistant>

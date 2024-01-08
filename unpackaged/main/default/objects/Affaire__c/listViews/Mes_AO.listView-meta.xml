@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mes_AO</fullName>
+    <columns>NAME</columns>
+    <columns>Etablissement__c</columns>
+    <columns>Montant__c</columns>
+    <columns>Mois__c</columns>
+    <columns>Etape__c</columns>
+    <columns>Iconeetape__c</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Etape__c</field>
+        <operation>notEqual</operation>
+        <value>Gain,Perte</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Affaire__c.AO</value>
+    </filters>
+    <label>Mes AO en cours</label>
+</ListView>

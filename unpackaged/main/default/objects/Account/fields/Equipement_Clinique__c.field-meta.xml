@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipement_Clinique__c</fullName>
+    <externalId>false</externalId>
+    <label>Equipement Clinique </label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hématologie</fullName>
+                <default>false</default>
+                <label>Hématologie</label>
+            </value>
+            <value>
+                <fullName>Biochimie</fullName>
+                <default>false</default>
+                <label>Biochimie</label>
+            </value>
+            <value>
+                <fullName>Hormonologie</fullName>
+                <default>false</default>
+                <label>Hormonologie</label>
+            </value>
+            <value>
+                <fullName>Ionogramme</fullName>
+                <default>false</default>
+                <label>Ionogramme</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

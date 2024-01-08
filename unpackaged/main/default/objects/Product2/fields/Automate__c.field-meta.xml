@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Automate__c</fullName>
+    <description>2PACE</description>
+    <externalId>false</externalId>
+    <label>Automate</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aucun</fullName>
+                <default>false</default>
+                <label>- Aucun</label>
+            </value>
+            <value>
+                <fullName>Cobas</fullName>
+                <default>false</default>
+                <label>Cobas</label>
+            </value>
+            <value>
+                <fullName>Immulite</fullName>
+                <default>false</default>
+                <label>Immulite</label>
+            </value>
+            <value>
+                <fullName>Elispeed</fullName>
+                <default>false</default>
+                <label>Elispeed</label>
+            </value>
+            <value>
+                <fullName>Stago</fullName>
+                <default>false</default>
+                <label>Stago</label>
+            </value>
+            <value>
+                <fullName>Vidas</fullName>
+                <default>false</default>
+                <label>Vidas</label>
+            </value>
+            <value>
+                <fullName>Euroblot one</fullName>
+                <default>false</default>
+                <label>Euroblot one</label>
+            </value>
+            <value>
+                <fullName>Advia 2120</fullName>
+                <default>false</default>
+                <label>Advia 2120</label>
+            </value>
+            <value>
+                <fullName>Hydrasis</fullName>
+                <default>false</default>
+                <label>Hydrasis</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Cerba</fullName>
+        <default>false</default>
+        <label>Cerba</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance</fullName>
+        <default>false</default>
+        <label>Cerballiance</label>
+    </customValue>
+    <customValue>
+        <fullName>CerbaVet</fullName>
+        <default>false</default>
+        <label>CerbaVet</label>
+    </customValue>
+    <customValue>
+        <fullName>CerbaHealthCare</fullName>
+        <default>false</default>
+        <label>CerbaHealthCare</label>
+    </customValue>
+    <customValue>
+        <fullName>Belgique</fullName>
+        <default>false</default>
+        <label>Belgique</label>
+    </customValue>
+    <customValue>
+        <fullName>Luxembourg</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Luxembourg</label>
+    </customValue>
+    <masterLabel>BU</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

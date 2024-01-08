@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Nouvelle</fullName>
+        <color>#FF0000</color>
+        <default>true</default>
+        <label>Nouvelle</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Evolution</fullName>
+        <default>false</default>
+        <label>Evolution</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>En cours</fullName>
+        <default>false</default>
+        <label>En cours</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Backlog</fullName>
+        <default>false</default>
+        <label>Backlog</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Validé</fullName>
+        <default>false</default>
+        <label>Validé</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>2PACE</fullName>
+        <default>false</default>
+        <label>2PACE</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>CERBA</fullName>
+        <default>false</default>
+        <label>CERBA</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Fixé</fullName>
+        <default>false</default>
+        <label>Fixé</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>A Déployer</fullName>
+        <default>false</default>
+        <label>A Déployer</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Training</fullName>
+        <default>false</default>
+        <label>Training</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Fermé</fullName>
+        <color>#33FF33</color>
+        <default>false</default>
+        <label>Fermé</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>false</default>
+        <label>New</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <label>On Hold</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting for Customer</fullName>
+        <default>false</default>
+        <label>Waiting for Customer</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated</fullName>
+        <default>false</default>
+        <label>Escalated</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Merged</fullName>
+        <default>false</default>
+        <label>Merged</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Response Received</fullName>
+        <default>false</default>
+        <label>Response Received</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

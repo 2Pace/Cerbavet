@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_ACC_Changement_du_RT_bloque</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+$User.Tech_By_Pass_VR__c = false, 
+ISCHANGED(RecordTypeId),
+
+NOT(
+OR
+(
+$Profile.Id = &quot;00e1t000000ufJS&quot;,
+$Profile.Id = &quot;00e1t000000LOv3&quot;
+)
+)
+
+)</errorConditionFormula>
+    <errorMessage>Merci de ne pas changer le type d&#39;enregistrement du compte. Cela est réservé à l&#39;administrateur.</errorMessage>
+</ValidationRule>

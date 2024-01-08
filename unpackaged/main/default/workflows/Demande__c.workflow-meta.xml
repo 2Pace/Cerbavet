@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>DDD_Notification_demande_de_devis_envoy_e_Biologistic</fullName>
+        <ccEmails>caroline.faure@oresys.eu</ccEmails>
+        <description>DDD.Notification demande de devis envoyée à Biologistic</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ADV_L_T_Cerba_et_Cerba_Vet</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Demande_de_devis/Email_automatique_a_envoye_Biologistic</template>
+    </alerts>
+    <alerts>
+        <fullName>DDE_Demande_de_devis_Rejetee</fullName>
+        <description>DDE.Demande de devis Rejetée</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Demande_de_devis/DDE_Demande_de_devis_Rejetee</template>
+    </alerts>
+    <alerts>
+        <fullName>DDE_Demande_de_devis_approuvee</fullName>
+        <description>DDE.Demande de devis Approuvée</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Demande_de_devis/DDE_Demande_de_devis_Approuvee</template>
+    </alerts>
+    <alerts>
+        <fullName>DDE_Modification_Facture_Approuv_e</fullName>
+        <description>DDE.Modification.Facture.Approuvée</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Demande_de_modif_facture/DDE_Modification_Facture_Approuv_e</template>
+    </alerts>
+    <alerts>
+        <fullName>DDE_Modification_Facture_Rejet_e</fullName>
+        <description>DDE.Modification.Facture.Rejetée</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Demande_de_modif_facture/DDE_Modification_Facture_Rejet_e</template>
+    </alerts>
+    <alerts>
+        <fullName>DDE_Suppression_Facture_Approuv_e</fullName>
+        <description>DDE.Suppression.Facture.Approuvée</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Suppression_facture/DDE_Suppression_Facture_Approuv_e</template>
+    </alerts>
+    <alerts>
+        <fullName>DDE_Suppression_Facture_Rejet_e</fullName>
+        <description>DDE.Suppression.Facture.Rejetée</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Suppression_facture/DDE_Suppression_Facture_Rejet_e</template>
+    </alerts>
+    <alerts>
+        <fullName>DDE_Suppression_de_facture_rejetee</fullName>
+        <description>DDE.Suppression de facture rejetée</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Suppression_facture/DDE_Suppression_Facture_Rejet_e</template>
+    </alerts>
+    <alerts>
+        <fullName>Demande_suppression_facture_approuvee</fullName>
+        <description>DDE.Suppression de facture approuvée</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Suppression_facture/DDE_Suppression_Facture_Approuv_e</template>
+    </alerts>
+    <alerts>
+        <fullName>PB_Demande_de_devis_Statut_envoyee_a_Biologistic</fullName>
+        <description>PB. Demande de devis - Statut envoyée à Biologistic</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>alix.lewandowski@cerba.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Demande_de_devis/Email_automatique_a_envoye_Biologistic</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>FU_CdT_Derniere_mise_jour_des_montants</fullName>
+        <field>Derniere_mise_jour_des_montants__c</field>
+        <formula>NOW()</formula>
+        <name>FU.CdT.Dernière mise à jour des montants</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_DDE_Derni_re_mise_jour</fullName>
+        <field>Derniere_mise_jour_des_montants__c</field>
+        <formula>TODAY()</formula>
+        <name>FU.DDE.Dernière mise à jour</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_DDE_Statut_Approuv_e</fullName>
+        <field>Statut__c</field>
+        <literalValue>Validée par la direction commerciale</literalValue>
+        <name>FU.DDE.Statut Approuvée</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_DDE_Statut_En_attente_d_approbation</fullName>
+        <field>Statut__c</field>
+        <literalValue>En attente d&#39;approbation</literalValue>
+        <name>FU.DDE.Statut.En attente d&#39;approbation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_DDE_Statut_En_attente_de_validation</fullName>
+        <field>Statut__c</field>
+        <literalValue>En attente d&#39;approbation</literalValue>
+        <name>FU.DDE.Statut.En attente de validation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_DDE_Statut_Rejete</fullName>
+        <field>Statut__c</field>
+        <literalValue>Rejetée par la direction commerciale</literalValue>
+        <name>FU.DDE.Statut Rejetée</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_DDE_Statut_Rejetee</fullName>
+        <field>Statut__c</field>
+        <literalValue>Rejetée par la direction commerciale</literalValue>
+        <name>FU.DDE.Statut Rejetée</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_DDE_Statut_Validee_par_Cerba</fullName>
+        <field>Statut__c</field>
+        <literalValue>Validée par Cerba</literalValue>
+        <name>FU.DDE.Statut Validée par Cerba</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_DDE_Statut_nouvelle</fullName>
+        <field>Statut__c</field>
+        <literalValue>Nouvelle</literalValue>
+        <name>FU.DDE.Statut nouvelle</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_MAJ_de_la_R_f_rence_de_la_demande</fullName>
+        <field>Reference_Demande__c</field>
+        <formula>Name &amp;&quot; - &quot;&amp; Client__r.Name</formula>
+        <name>FU.MAJ de la Référence de la demande</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MAJ_de_champ_date_d_envoi</fullName>
+        <field>Date_d_envoi__c</field>
+        <formula>NOW()</formula>
+        <name>MAJ de champ date d&#39;envoi</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>FU%2EDDE%2EDernière mise à jour</fullName>
+        <actions>
+            <name>FU_DDE_Derni_re_mise_jour</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Demande__c.Statut__c</field>
+            <operation>equals</operation>
+            <value>Validée par la direction commerciale</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF%2EDDE%2EMAJ de la Référence de la demande</fullName>
+        <actions>
+            <name>FU_MAJ_de_la_R_f_rence_de_la_demande</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF_DDE_Alerte_Email_MAJ_Statut_Demande_envoyée_à_biologistic</fullName>
+        <actions>
+            <name>DDD_Notification_demande_de_devis_envoy_e_Biologistic</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>MAJ_de_champ_date_d_envoi</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Demande__c.Statut__c</field>
+            <operation>equals</operation>
+            <value>Envoyée à Biologistic</value>
+        </criteriaItems>
+        <description>Une fois le statut passé à Envoyé à Biologistic, un email est envoyé et la date d&#39;envoi est mise à jour</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

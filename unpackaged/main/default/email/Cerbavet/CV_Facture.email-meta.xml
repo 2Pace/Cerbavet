@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CV_Facture</name>
+    <style>none</style>
+    <subject>Votre Facture CerbaVet</subject>
+    <textOnly>Madame, Monsieur,
+
+
+Nous avons réceptionné des analyses prescrites par //CLINVET// pour votre Animal //ANINAM//
+
+
+
+Veuillez trouver ci-joint notre facture n°//INVOICENUM// à régler, voir les modalités sur le document joint.
+
+Vous pouvez régler par carte bancaire en ligne via le lien sécurisé ci dessous:  //PAYMENTLINK//
+
+Ou par chèque à l’ordre de CERBAVET  en mentionnant la référence de la Facture à votre règlement :
+
+Chèque à adresser à l&#39;adresse suivante :
+CERBAVET
+ZAC DU MOULIN DE MASSY
+10 RUE DU SAULE TRAPU
+91300 MASSY
+
+Ou par Virement en mentionnant la référence de facture :
+
+
+CREDIT DU NORD
+IBAN :
+FR76 3007 6020 2020 6240 0020 081
+BIC :  NORDFRPP
+
+Les résultats seront rendus, à réception de votre paiement, directement à votre vétérinaire en charge de vous les communiquer.
+
+
+
+Nous restons à votre disposition pour toutes informations complémentaires, en répondant à cet email.
+
+En vous remerciant,
+cordialement
+L&#39;équipe Cerba Vet</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

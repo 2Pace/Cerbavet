@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_DDE_Coutdetransport_Statut_Vallide</fullName>
+    <active>true</active>
+    <description>Avant de faire une demande de modification ou de suppression sur un coût de transport, il faut que ce dernier soit d&#39;abord validé.</description>
+    <errorConditionFormula>AND (
+
+NOT(ISPICKVAL (Facture_directe__r.Statut__c, &quot;Validé par la direction commerciale&quot;)),
+
+OR(
+$RecordType.Name = &quot;Demande de modification d&#39;une facture&quot;, 
+$RecordType.Name = &quot;Demande de suppression d&#39;une facture&quot;
+)
+
+)</errorConditionFormula>
+    <errorMessage>Merci de soumettre pour approbation le coût de transport avant de faire une demande de modification ou de suppression dessus.</errorMessage>
+</ValidationRule>

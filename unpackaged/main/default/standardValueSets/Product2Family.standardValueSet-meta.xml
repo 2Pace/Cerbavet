@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>A définir</fullName>
+        <default>false</default>
+        <label>- A définir</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ADMINISTRATIF</fullName>
+        <default>false</default>
+        <label>ADMINISTRATIF</label>
+    </standardValue>
+    <standardValue>
+        <fullName>BACTERIOLOGIE</fullName>
+        <default>false</default>
+        <label>BACTERIOLOGIE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>BILANS</fullName>
+        <default>false</default>
+        <label>BILANS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>BIOCHIMIE</fullName>
+        <default>false</default>
+        <label>BIOCHIMIE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cerbavet College</fullName>
+        <default>false</default>
+        <label>Cerbavet College</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cerbavet Transport</fullName>
+        <default>false</default>
+        <label>Cerbavet Transport</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CODE TECHNIQUE</fullName>
+        <default>false</default>
+        <label>CODE TECHNIQUE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CYTOLOGIE</fullName>
+        <default>false</default>
+        <label>CYTOLOGIE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>DERMATOLOGIE</fullName>
+        <default>false</default>
+        <label>DERMATOLOGIE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ENDOCRINOLOGIE</fullName>
+        <default>false</default>
+        <label>ENDOCRINOLOGIE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>FROTTIS</fullName>
+        <default>false</default>
+        <label>FROTTIS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>GENETIQUE</fullName>
+        <default>false</default>
+        <label>GENETIQUE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>HEMATOLOGIE</fullName>
+        <default>false</default>
+        <label>HEMATOLOGIE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>HEMOSTASE</fullName>
+        <default>false</default>
+        <label>HEMOSTASE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>HISTOLOGIE</fullName>
+        <default>false</default>
+        <label>HISTOLOGIE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>HORMONES SEXUELLES</fullName>
+        <default>false</default>
+        <label>HORMONES SEXUELLES</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IMMUNOPATHOLOGIE</fullName>
+        <default>false</default>
+        <label>IMMUNOPATHOLOGIE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MARQUEURS TUMORAUX</fullName>
+        <default>false</default>
+        <label>MARQUEURS TUMORAUX</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MEDICAMENTS</fullName>
+        <default>false</default>
+        <label>MEDICAMENTS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OLIGO-ELEMENTS</fullName>
+        <default>false</default>
+        <label>OLIGO-ELEMENTS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PCR</fullName>
+        <default>false</default>
+        <label>PCR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SELLES</fullName>
+        <default>false</default>
+        <label>SELLES</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEROLOGIE</fullName>
+        <default>false</default>
+        <label>SEROLOGIE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TRANSPORT</fullName>
+        <default>false</default>
+        <label>TRANSPORT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>URINES</fullName>
+        <default>false</default>
+        <label>URINES</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VITAMINES</fullName>
+        <default>false</default>
+        <label>VITAMINES</label>
+    </standardValue>
+</StandardValueSet>

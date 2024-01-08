@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Cerba_HC</letterhead>
+    <name>Notification d&#39;un litige clôturé</name>
+    <style>freeForm</style>
+    <subject>Litige clôturé sur une facture directe-{!Cout_de_transport__c.Name}</subject>
+    <textOnly>Bonjour {!Cout_de_transport__c.OwnerFirstName},
+
+Nous vous informons que le litige suivant a été clôturé par le responsable achat : {!Mensualite__c.Link}.
+
+Cordialement.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

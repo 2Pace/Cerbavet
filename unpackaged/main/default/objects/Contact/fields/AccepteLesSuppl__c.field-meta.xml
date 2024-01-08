@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccepteLesSuppl__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Ce champs a été créé dans le cadre du déploiement de Activ Medical Lab Belgique</description>
+    <externalId>false</externalId>
+    <label>Accepte les suppléments ?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facture_directe_Laboratoire_ou_Transporteur</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>CL_Cout_de_transport</compactLayoutAssignment>
+    <label>Facture directe Laboratoire ou Transporteur</label>
+    <picklistValues>
+        <picklist>Categorie_de_la_facture__c</picklist>
+        <values>
+            <fullName>International et DOM-TOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Métropole</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut__c</picklist>
+        <values>
+            <fullName>Brouillon</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>En attente de validation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejeté par la direction commerciale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validé par la direction commerciale</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TVA_applicable__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_d_emetteur__c</picklist>
+        <values>
+            <fullName>Fournisseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laboratoire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_cout__c</picklist>
+        <values>
+            <fullName>L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

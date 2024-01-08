@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Cerbavet Transport Factureringscode</label>
+        <name>Code_Facturation_Transport_Cerbavet__c</name>
+        <picklistValues>
+            <masterLabel>T0 - Sans Transport</masterLabel>
+            <translation><!-- T0 - Sans Transport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T15 - Coursier Tarif normal</masterLabel>
+            <translation><!-- T15 - Coursier Tarif normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T8 - Coursier Tarif réduit</masterLabel>
+            <translation><!-- T8 - Coursier Tarif réduit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRPC - Tarif Chronopost</masterLabel>
+            <translation><!-- TRPC - Tarif Chronopost --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Compte_SGL_GR_lecture_seule</fullName>
+    <active>false</active>
+    <description>Le compte client SGL Groupe doit être en lecture seule pour le profil Cerba et biologiste
+
+Exception faite pour les utilisateurs qui ont la CAC Tech By Pass de cochée sur leur fiche utilisateur.</description>
+    <errorConditionFormula>AND(
+ $User.Tech_By_Pass_VR__c = false,
+
+
+LastModifiedDate &lt;&gt;NOW(), 
+
+RecordType.Id = &quot;0121t000000h1Ky&quot;,
+
+OR(
+$User.ProfileId = &quot;00e1t000000uQJJ&quot;,
+$User.ProfileId = &quot;00e1t000000ufJX&quot;
+)
+
+
+)</errorConditionFormula>
+    <errorMessage>Merci de ne pas modifier ce compte SGL. Vous pouvez uniquement le consulter</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Envoyé au contact de la requête lors de la création ou mise à jour de la requête</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Requête créée ou mise à jour (exemple)</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Nous avons reçu votre demande</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

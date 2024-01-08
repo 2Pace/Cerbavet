@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Plages de passage --></label>
+        <name>Plages_de_passage__c</name>
+        <picklistValues>
+            <masterLabel>Prélèvement en urgence</masterLabel>
+            <translation><!-- Prélèvement en urgence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sélecteur d’horaires en fonction des jours</masterLabel>
+            <translation><!-- Sélecteur d’horaires en fonction des jours --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

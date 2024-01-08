@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Categories__c</fullName>
+    <externalId>false</externalId>
+    <label>Catégorie</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Etablissements de Soins Privé</fullName>
+                <default>false</default>
+                <label>Etablissements de Soins Privé</label>
+            </value>
+            <value>
+                <fullName>Etablissements de Soins Publics</fullName>
+                <default>false</default>
+                <label>Etablissements de Soins Publics</label>
+            </value>
+            <value>
+                <fullName>Etablissement de Santé Privé d’Intérêt Collectif (ESPIC)</fullName>
+                <default>false</default>
+                <label>Etablissement de Santé Privé d’Intérêt Collectif (ESPIC)</label>
+            </value>
+            <value>
+                <fullName>Etablissements vétérinaires</fullName>
+                <default>false</default>
+                <label>Etablissements vétérinaires</label>
+            </value>
+            <value>
+                <fullName>Cabinets Médicaux et Paramédicaux</fullName>
+                <default>false</default>
+                <label>Cabinets Médicaux et Paramédicaux</label>
+            </value>
+            <value>
+                <fullName>Entreprises et Institutions</fullName>
+                <default>false</default>
+                <label>Entreprises et Institutions</label>
+            </value>
+            <value>
+                <fullName>Laboratoires</fullName>
+                <default>false</default>
+                <label>Laboratoires</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

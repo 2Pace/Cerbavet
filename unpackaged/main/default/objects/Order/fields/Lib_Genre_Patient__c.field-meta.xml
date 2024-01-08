@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lib_Genre_Patient__c</fullName>
+    <description>2PACE</description>
+    <externalId>false</externalId>
+    <label>Lib Genre Patient</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Femelle</fullName>
+                <default>false</default>
+                <label>Femelle</label>
+            </value>
+            <value>
+                <fullName>Mâle</fullName>
+                <default>false</default>
+                <label>Mâle</label>
+            </value>
+            <value>
+                <fullName>Inconnu</fullName>
+                <default>false</default>
+                <label>Inconnu</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

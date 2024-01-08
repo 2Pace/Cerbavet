@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>alix.lewandowski@cerba.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>Biologistic_Prestataire_de_transport</sharedTo>
+        <sharedToType>Group</sharedToType>
+    </folderShares>
+    <name>Biologstic-Demandes de devis</name>
+</ReportFolder>

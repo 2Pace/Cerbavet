@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Adresse de la demande de devis</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Adresses de la demande de devis</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Présentation Adresse de la demande de devis</layout>
+        <sections>
+            <label><!-- Commentaires --></label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas modifier les adresses de la demande de devis. --></errorMessage>
+        <name>Statut_de_la_demande_different_de_nouvel</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas modifier l&apos;action dans le cadre d&apos;une demande de devis pour une nouvelle prestation. La seule valeur possible est &quot;Ajout de point&quot; --></errorMessage>
+        <name>action_peut_pas_changee_nouvelle_presta</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas modifier l&apos;action dans le cadre d&apos;une demande de devis pour une suppression de prestation existante --></errorMessage>
+        <name>action_peut_pas_changee_suppression</name>
+    </validationRules>
+</CustomObjectTranslation>

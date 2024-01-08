@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_de_la_demande_different_de_nouvel</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISPICKVAL (Demande_de_devis__r.Statut__c,&quot;Nouvelle&quot;) )
+&amp;&amp;
+ $User.Tech_By_Pass_VR__c = false</errorConditionFormula>
+    <errorMessage>Merci de ne pas modifier les adresses de la demande de devis.</errorMessage>
+</ValidationRule>

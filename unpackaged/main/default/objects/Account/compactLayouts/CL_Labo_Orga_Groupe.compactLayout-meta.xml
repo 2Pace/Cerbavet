@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CL_Labo_Orga_Groupe</fullName>
+    <fields>Name</fields>
+    <fields>ParentId</fields>
+    <fields>Code_Structure__c</fields>
+    <fields>Description_structure__c</fields>
+    <fields>BillingAddress</fields>
+    <fields>RecordTypeId</fields>
+    <fields>Type_de_compte_icon__c</fields>
+    <label>CL.Labo Orga Groupe</label>
+</CompactLayout>

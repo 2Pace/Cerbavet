@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rapport_de_ciblage__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK( 
+
+&quot;/lightning/r/Report/00O1t0000088dn4EAA/view&quot; , 
+
+&quot;Afficher&quot; 
+, 
+&quot;Rapport de ciblage&quot; 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Rapport de ciblage</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

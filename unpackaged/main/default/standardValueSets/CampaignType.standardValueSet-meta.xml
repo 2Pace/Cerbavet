@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Newsletter</fullName>
+        <default>true</default>
+        <label>Newsletter</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Communication</fullName>
+        <default>false</default>
+        <label>Communication</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Envoi de courriers papier</fullName>
+        <default>false</default>
+        <label>Envoi de courriers papier</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Envoi d&#39;information/Actualité</fullName>
+        <default>false</default>
+        <label>Envoi d&#39;information/Actualité</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lancement de produit/Nouvelle section sur le site internet</fullName>
+        <default>false</default>
+        <label>Lancement de produit/Nouvelle section sur le site internet</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Invitation à la découverte de nouveaux contenus</fullName>
+        <default>false</default>
+        <label>Invitation à la découverte de nouveaux contenus</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Salon</fullName>
+        <default>false</default>
+        <label>Salon</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Conférence/Formation (EPU)</fullName>
+        <default>false</default>
+        <label>Conférence/Formation (EPU)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visite du plateau technique de CERBA</fullName>
+        <default>false</default>
+        <label>Visite du plateau technique de CERBA</label>
+    </standardValue>
+</StandardValueSet>

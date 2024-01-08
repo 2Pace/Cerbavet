@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Billing Product Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Laboratoire --></label>
+            <section>Informations Laboratoire</section>
+        </sections>
+        <sections>
+            <label>Preise</label>
+            <section>Pricing</section>
+        </sections>
+        <sections>
+            <label>Verlängerungen</label>
+            <section>Renewals</section>
+        </sections>
+        <sections>
+            <label>Salesforce Billing-Konfiguration</label>
+            <section>Salesforce Billing Configuration</section>
+        </sections>
+        <sections>
+            <label>Salesforce CPQ-Konfiguration</label>
+            <section>Salesforce CPQ Configuration</section>
+        </sections>
+        <sections>
+            <label>Abonnements</label>
+            <section>Subscriptions</section>
+        </sections>
+        <sections>
+            <label>Systemfelder</label>
+            <section>System Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Température et technique --></label>
+            <section>Température et technique</section>
+        </sections>
+        <sections>
+            <label>Upgrades</label>
+            <section>Upgrades</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CPQ Product Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Felder</label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>Preise</label>
+            <section>Pricing</section>
+        </sections>
+        <sections>
+            <label>Verlängerungen</label>
+            <section>Renewals</section>
+        </sections>
+        <sections>
+            <label>Salesforce CPQ-Konfiguration</label>
+            <section>Salesforce CPQ Configuration</section>
+        </sections>
+        <sections>
+            <label>Abonnements</label>
+            <section>Subscriptions</section>
+        </sections>
+        <sections>
+            <label>Upgrades</label>
+            <section>Upgrades</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Cerbavet Admin</layout>
+        <sections>
+            <label><!-- Configuration CPQ et Billing --></label>
+            <section>Configuration CPQ et Billing</section>
+        </sections>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information Facturation --></label>
+            <section>Information Facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Laboratoire --></label>
+            <section>Informations Laboratoire</section>
+        </sections>
+        <sections>
+            <label>Preise</label>
+            <section>Pricing</section>
+        </sections>
+        <sections>
+            <label>Salesforce Billing-Konfiguration</label>
+            <section>Salesforce Billing Configuration</section>
+        </sections>
+        <sections>
+            <label>Systemfelder</label>
+            <section>System Fields</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

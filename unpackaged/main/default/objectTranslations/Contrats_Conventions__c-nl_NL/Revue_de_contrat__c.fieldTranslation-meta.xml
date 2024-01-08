@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Contractherziening</label>
+        <name>Revue_de_contrat__c</name>
+        <picklistValues>
+            <masterLabel>Effectuée</masterLabel>
+            <translation>Uitgevoerd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planifiée</masterLabel>
+            <translation>Gepland</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<aura:component access="global" controller="GenerateMensualitesController" implements="flexipage:availableForAllPageTypes">
+	
+    <lightning:button variant="brand" label="Générer mensualités" title="Générer toutes les mensualités de l'année en cours" onclick="{!c.startGeneration}" 
+                      class="slds-m-left_x-small" iconName="utility:loop"></lightning:button>
+    
+</aura:component>

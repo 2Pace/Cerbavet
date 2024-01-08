@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CL_Cout_de_transport</fullName>
+    <fields>Name</fields>
+    <fields>Client__c</fields>
+    <fields>Type_de_cout__c</fields>
+    <fields>Date_de_demarrage__c</fields>
+    <fields>Date_de_fin__c</fields>
+    <fields>Cout_mensuel_attendu_TTC__c</fields>
+    <fields>Icone_Statut__c</fields>
+    <label>CL.Coût de transport</label>
+</CompactLayout>

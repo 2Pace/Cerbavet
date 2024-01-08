@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Édition papier --></label>
+        <name>Edition_papier__c</name>
+        <picklistValues>
+            <masterLabel>Courrier postal</masterLabel>
+            <translation><!-- Courrier postal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pas de papier</masterLabel>
+            <translation><!-- Pas de papier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routage transporteur</masterLabel>
+            <translation><!-- Routage transporteur --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

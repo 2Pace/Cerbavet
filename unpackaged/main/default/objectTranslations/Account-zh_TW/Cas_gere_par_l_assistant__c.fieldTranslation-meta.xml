@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Cas géré par l&apos;assistant --></label>
+        <name>Cas_gere_par_l_assistant__c</name>
+        <picklistValues>
+            <masterLabel>cas10a</masterLabel>
+            <translation><!-- cas10a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cas10b</masterLabel>
+            <translation><!-- cas10b --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cas1a</masterLabel>
+            <translation><!-- cas1a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cas1b</masterLabel>
+            <translation><!-- cas1b --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cas3a</masterLabel>
+            <translation><!-- cas3a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cas3b</masterLabel>
+            <translation><!-- cas3b --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cas5a</masterLabel>
+            <translation><!-- cas5a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cas5b</masterLabel>
+            <translation><!-- cas5b --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cas7a</masterLabel>
+            <translation><!-- cas7a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cas8a</masterLabel>
+            <translation><!-- cas8a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cas9a</masterLabel>
+            <translation><!-- cas9a --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

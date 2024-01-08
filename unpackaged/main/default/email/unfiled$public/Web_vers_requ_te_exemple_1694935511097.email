@@ -1,0 +1,1 @@
+<html><head></head><body>Bonjour,<br /><br />Merci pour votre message. Nous suivons votre demande sous le numéro de requête {{{Case.CaseNumber}}}.<br /><br />Un membre de notre équipe de service client va vous contacter. En attendant, vous pouvez répondre à cet e-mail pour poser des questions.<br /><br />Merci,<br /><br />Le Service Client de {{{Organization.Name}}}</body></html>

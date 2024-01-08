@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CerbaVet_College</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+    <columns>PRODUCT2.DESCRIPTION</columns>
+    <columns>Date_Session__c</columns>
+    <columns>PRODUCT2.FAMILY</columns>
+    <columns>SBQQ__PricingMethod__c</columns>
+    <columns>SBQQ__SubscriptionType__c</columns>
+    <columns>SBQQ__ChargeType__c</columns>
+    <columns>SBQQ__BillingFrequency__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PRODUCT2.FAMILY</field>
+        <operation>equals</operation>
+        <value>Cerbavet College</value>
+    </filters>
+    <label>CerbaVet College</label>
+</ListView>

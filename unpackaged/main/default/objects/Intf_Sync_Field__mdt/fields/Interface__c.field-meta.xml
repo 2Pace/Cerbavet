@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interface__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Interface</label>
+    <referenceTo>Intf_Interface__mdt</referenceTo>
+    <relationshipLabel>Intf_Sync_Field</relationshipLabel>
+    <relationshipName>Intf_Sync_Field</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

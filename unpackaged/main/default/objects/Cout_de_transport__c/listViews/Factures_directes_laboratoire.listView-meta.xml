@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Factures_directes_laboratoire</fullName>
+    <columns>NAME</columns>
+    <columns>Client__c</columns>
+    <columns>Type_de_cout__c</columns>
+    <columns>Icone_Statut__c</columns>
+    <columns>Derniere_mise_jour_des_montants__c</columns>
+    <columns>Cout_mensuel_attendu_TTC__c</columns>
+    <columns>Date_de_demarrage__c</columns>
+    <columns>Date_de_fin__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type_de_cout__c</field>
+        <operation>equals</operation>
+        <value>L</value>
+    </filters>
+    <label>Factures directes laboratoire</label>
+</ListView>

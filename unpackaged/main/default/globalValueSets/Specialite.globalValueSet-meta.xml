@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SCD01</fullName>
+        <default>false</default>
+        <label>Orthopédie dento-faciale (SCD)</label>
+    </customValue>
+    <customValue>
+        <fullName>SCD02</fullName>
+        <default>false</default>
+        <label>Chirurgie orale (SCD)</label>
+    </customValue>
+    <customValue>
+        <fullName>SCD03</fullName>
+        <default>false</default>
+        <label>Médecine bucco-dentaire (SCD)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM01</fullName>
+        <default>false</default>
+        <label>Anatomie et Cytologie pathologiques (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM02</fullName>
+        <default>false</default>
+        <label>Anesthésie-réanimation (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM03</fullName>
+        <default>false</default>
+        <label>Biologie médicale (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM04</fullName>
+        <default>false</default>
+        <label>Cardiologie et Maladies vasculaires (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM05</fullName>
+        <default>false</default>
+        <label>Chirurgie générale (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM06</fullName>
+        <default>false</default>
+        <label>Chirurgie maxillo-faciale (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM07</fullName>
+        <default>false</default>
+        <label>Chirurgie maxillo-faciale et Stomatologie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM08</fullName>
+        <default>false</default>
+        <label>Chirurgie orthopédique et Traumatologie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM09</fullName>
+        <default>false</default>
+        <label>Chirurgie infantile (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM10</fullName>
+        <default>false</default>
+        <label>Chirurgie plastique reconstructrice et esthétique (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM11</fullName>
+        <default>false</default>
+        <label>Chirurgie thoracique et cardio-vasculaire (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM12</fullName>
+        <default>false</default>
+        <label>Chirurgie urologique (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM13</fullName>
+        <default>false</default>
+        <label>Chirurgie vasculaire (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM14</fullName>
+        <default>false</default>
+        <label>Chirurgie viscérale et digestive (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM15</fullName>
+        <default>false</default>
+        <label>Dermatologie et Vénéréologie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM16</fullName>
+        <default>false</default>
+        <label>Endocrinologie et Métabolisme (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM17</fullName>
+        <default>false</default>
+        <label>Génétique médicale (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM18</fullName>
+        <default>false</default>
+        <label>Gériatrie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM19</fullName>
+        <default>false</default>
+        <label>Gynécologie médicale (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM20</fullName>
+        <default>false</default>
+        <label>Gynécologie-obstétrique (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM21</fullName>
+        <default>false</default>
+        <label>Hématologie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM22</fullName>
+        <default>false</default>
+        <label>Hématologie, option Maladie du sang (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM23</fullName>
+        <default>false</default>
+        <label>Hématologie, option Onco-hématologie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM24</fullName>
+        <default>false</default>
+        <label>Gastro-entérologie et Hépatologie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM25</fullName>
+        <default>false</default>
+        <label>Médecine du travail (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM26</fullName>
+        <default>false</default>
+        <label>Qualifié en Médecine générale (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM27</fullName>
+        <default>false</default>
+        <label>Médecine interne (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM28</fullName>
+        <default>false</default>
+        <label>Médecine nucléaire (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM29</fullName>
+        <default>false</default>
+        <label>Médecine physique et de réadaptation (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM30</fullName>
+        <default>false</default>
+        <label>Néphrologie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM31</fullName>
+        <default>false</default>
+        <label>Neuro-chirurgie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM32</fullName>
+        <default>false</default>
+        <label>Neurologie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM33</fullName>
+        <default>false</default>
+        <label>Neuro-psychiatrie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM34</fullName>
+        <default>false</default>
+        <label>ORL et Chirurgie cervico-faciale (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM35</fullName>
+        <default>false</default>
+        <label>Oncologie, option Onco-hématologie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM36</fullName>
+        <default>false</default>
+        <label>Oncologie, option médicale (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM37</fullName>
+        <default>false</default>
+        <label>Oncologie, option radiothérapie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM38</fullName>
+        <default>false</default>
+        <label>Ophtalmologie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM39</fullName>
+        <default>false</default>
+        <label>Oto-rhino-laryngologie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM40</fullName>
+        <default>false</default>
+        <label>Pédiatrie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM41</fullName>
+        <default>false</default>
+        <label>Pneumologie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM42</fullName>
+        <default>false</default>
+        <label>Psychiatrie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM43</fullName>
+        <default>false</default>
+        <label>Psychiatrie, option enfant et adolescent (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM44</fullName>
+        <default>false</default>
+        <label>Radio-diagnostic (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM45</fullName>
+        <default>false</default>
+        <label>Radio-thérapie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM46</fullName>
+        <default>false</default>
+        <label>Médecine intensive-réanimation (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM47</fullName>
+        <default>false</default>
+        <label>Recherche médicale (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM48</fullName>
+        <default>false</default>
+        <label>Rhumatologie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM49</fullName>
+        <default>false</default>
+        <label>Santé publique et Médecine sociale (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM50</fullName>
+        <default>false</default>
+        <label>Stomatologie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM51</fullName>
+        <default>false</default>
+        <label>Gynéco-obstétrique et Gynéco-médicale, option Gynéco-obstétrique (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM52</fullName>
+        <default>false</default>
+        <label>Gynéco-obstétrique et Gynéco-médicale, option Gynéco-médicale (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM53</fullName>
+        <default>false</default>
+        <label>Spécialiste en Médecine générale (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM54</fullName>
+        <default>false</default>
+        <label>Médecine générale (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM55</fullName>
+        <default>false</default>
+        <label>Radio-diagnostic et Radio-thérapie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM56</fullName>
+        <default>false</default>
+        <label>Chirurgie orale (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM57</fullName>
+        <default>false</default>
+        <label>Allergologie (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM58</fullName>
+        <default>false</default>
+        <label>Maladies infectieuses et tropicales (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM59</fullName>
+        <default>false</default>
+        <label>Médecine d&#39;urgence (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM60</fullName>
+        <default>false</default>
+        <label>Médecine légale et expertises médicales (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM61</fullName>
+        <default>false</default>
+        <label>Médecine vasculaire (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM62</fullName>
+        <default>false</default>
+        <label>Endocrinologie, diabetologie, nutrition (SM)</label>
+    </customValue>
+    <customValue>
+        <fullName>SP01</fullName>
+        <default>false</default>
+        <label>Radio-pharmacie (SP)</label>
+    </customValue>
+    <customValue>
+        <fullName>SP02</fullName>
+        <default>false</default>
+        <label>Hygiène (SP)</label>
+    </customValue>
+    <customValue>
+        <fullName>SP03</fullName>
+        <default>false</default>
+        <label>Pharmacovigilance (SP)</label>
+    </customValue>
+    <customValue>
+        <fullName>SP04</fullName>
+        <default>false</default>
+        <label>Hémovigilance (SP)</label>
+    </customValue>
+    <customValue>
+        <fullName>CEX22</fullName>
+        <default>false</default>
+        <label>Gynécologie médicale et Obstétrique (CEX)</label>
+    </customValue>
+    <customValue>
+        <fullName>CEX24</fullName>
+        <default>false</default>
+        <label>Gynécologie médicale (CEX)</label>
+    </customValue>
+    <customValue>
+        <fullName>CEX26</fullName>
+        <default>false</default>
+        <label>Obstétrique (CEX)</label>
+    </customValue>
+    <customValue>
+        <fullName>CEX64</fullName>
+        <default>false</default>
+        <label>Urologie (CEX)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM68</fullName>
+        <default>false</default>
+        <label>Chirurgie maxillo-faciale (réforme 2017)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM71</fullName>
+        <default>false</default>
+        <label>Hématologie (réforme 2017)</label>
+    </customValue>
+    <customValue>
+        <fullName>SM72</fullName>
+        <default>false</default>
+        <label>Médecine interne et immunologie clinique</label>
+    </customValue>
+    <customValue>
+        <fullName>PAC00</fullName>
+        <default>false</default>
+        <label>Qualification PAC</label>
+    </customValue>
+    <customValue>
+        <fullName>Génétique</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Génétique</label>
+    </customValue>
+    <masterLabel>Spécialité</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
