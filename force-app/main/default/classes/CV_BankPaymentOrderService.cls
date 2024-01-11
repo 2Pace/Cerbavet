@@ -10,6 +10,8 @@ public with sharing class CV_BankPaymentOrderService {
 
     private static final String TARGET_SYSTEM_CDN= 'CDN';
     private static final String INTERFACE_CDN = 'GeneratePayment';
+    private static final String TARGET_SYSTEM_PAYTWEAK= 'PAYTWEAK';
+    private static final String INTERFACE_PAYTWEAK = 'GeneratePayment';
 
 
     public static String getSelectionQuery(Boolean isCheckPayments) {
@@ -42,9 +44,13 @@ public with sharing class CV_BankPaymentOrderService {
 
 
     public static void checkPaymentOrders(List<blng__Invoice__c> invoices) {
-
+        // Crédit du Nord
         CV_Intf_Service.loadMDWTransformationsMap(INTERFACE_CDN);
         List<Intf_Sync_Field__mdt> syncFields = CV_Intf_Service.getActiveSyncFields(TARGET_SYSTEM_CDN);
+        
+        // Paytweak
+        CV_Intf_Service.loadMDWTransformationsMap(INTERFACE_PAYTWEAK);
+        List<Intf_Sync_Field__mdt> syncFields = CV_Intf_Service.getActiveSyncFields(TARGET_SYSTEM_PAYTWEAK);
 
         List<Object> bodyRequestMapList = new List<Object>();
         for (blng__Invoice__c invoice : invoices) {
@@ -63,9 +69,13 @@ public with sharing class CV_BankPaymentOrderService {
     }
 
     public static void generatePaymentOrderIds(List<blng__Invoice__c> invoices) {
-
+        // Crédit du Nord
         CV_Intf_Service.loadMDWTransformationsMap(INTERFACE_CDN);
         List<Intf_Sync_Field__mdt> syncFields = CV_Intf_Service.getActiveSyncFields(TARGET_SYSTEM_CDN);
+        
+        // Paytweak
+        CV_Intf_Service.loadMDWTransformationsMap(INTERFACE_PAYTWEAK);
+        List<Intf_Sync_Field__mdt> syncFields = CV_Intf_Service.getActiveSyncFields(TARGET_SYSTEM_PAYTWEAK);
 
         List<Object> bodyRequestMapList = new List<Object>();
         for (blng__Invoice__c invoice : invoices) {

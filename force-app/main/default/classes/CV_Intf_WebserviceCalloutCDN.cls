@@ -1,16 +1,16 @@
 /**
- * @description       : Class gérant le callout vers le Crédit Du Nord
+ * @description       : Class gérant le callout vers Paytweak (anciennement le Crédit Du Nord)
  * @author            : Michaël Cabaraux
  * @group             :
- * @last modified on  : 24-06-2022
- * @last modified by  : Michaël Cabaraux
+ * @last modified on  : 05-01-2022
+ * @last modified by  : Ingrid OMAR
 **/
 
 public with sharing class CV_Intf_WebserviceCalloutCDN extends CV_Intf_WebserviceCalloutAbstract implements CV_Intf_WebserviceCallout {
 
     private static final String WEBSERVICE_CREATE_ORDER = 'Charge/CreatePaymentOrder';
     private static final String WEBSERVICE_CHECK_ORDER = 'Charge/PaymentOrder/Get';
-//    public static String method;
+    // public static String method;
     public static Boolean isPaymentCheck;
 
     private static Map<String, String> statusMapping = new Map<String, String> {
@@ -111,6 +111,10 @@ public with sharing class CV_Intf_WebserviceCalloutCDN extends CV_Intf_Webservic
 
     private String setNamedCredential() {
         return isPaymentCheck ? 'CDN_Check_Payement' : 'CDN_Create_Order';
+    }
+
+    private String setPaytweakNamedCredential() {
+        return isPaymentCheck ? 'PAYTWEAK_Get_QrCode' : 'PAYTWEAK_Create_Order';
     }
 
     private String setCaller() {

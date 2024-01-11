@@ -11,7 +11,7 @@
 public abstract class CV_Intf_PaytweakJSONSchemBuilder {
 
 	public class PaymentOrder {
-		public Items items 	         			{ get; set; }
+	public Items items 	         			{ get; set; }
         public Decimal amount 	         	    { get; set; }
         public String address_customer          { get; set; }
         public String city                      { get; set; }

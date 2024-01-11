@@ -35,7 +35,7 @@ public with sharing class CV_Intf_PaytweakSchemaBuilder extends CV_Intf_Paytweak
             this.cur = CV_Intf_Service.getSObjectFieldValue(invoice, 'CDN_Invoice_Currency');
             this.reference = CV_Intf_Service.getSObjectFieldValue(invoice,'CDN_Invoice_Number');
 
-            customer = new Customer(invoice);
+            item = new InvoiceLineItem(invoice);
 
             this.order_id = CV_Intf_Service.getSObjectFieldValue(invoice, 'CDN_Invoice_Id');
             this.isPaymentCheck = isPaymentCheck;
@@ -55,7 +55,7 @@ public with sharing class CV_Intf_PaytweakSchemaBuilder extends CV_Intf_Paytweak
         public String quantity;
         public String price;
 
-        public Customer(blng__Invoice__c invoice) {
+        public InvoiceLineItem(blng__Invoice__c invoice) {
 
             this.ref = CV_Intf_Service.getRelatedSObjectFieldValue(invoice, 'CDN_Invoice_PetName');
             this.desc = CV_Intf_Service.getRelatedSObjectFieldValue(invoice, 'CDN_Invoice_PetName');
