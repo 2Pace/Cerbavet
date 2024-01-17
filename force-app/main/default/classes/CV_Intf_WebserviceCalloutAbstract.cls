@@ -86,6 +86,51 @@ public abstract class CV_Intf_WebserviceCalloutAbstract {
         }
     }
 
+    public void doCalloutPaytweak(List<String> bodyPayloadPaytweak) {
+        System.debug('============================ CV_Intf_WebserviceCalloutAbstract doCalloutPaytweak bodyPayloadPaytweak : ' + bodyPayloadPaytweak);
+        System.debug('============================ CV_Intf_WebserviceCalloutAbstract doCalloutPaytweak mode: ' + mode);
+
+        if (!bodyPayloadPaytweak.isEmpty()) {
+            switch on mode {
+                when 1 {
+                    // Direct
+                    System.debug('============================ CV_Intf_WebserviceCalloutAbstract doCalloutPaytweak Direct calls !!!');
+                    List<CV_Intf_WebserviceCalloutService.ResponseModel> responses = new List<CV_Intf_WebserviceCalloutService.ResponseModel>();
+                    for (String payload : bodyPayloadPaytweak) {
+                        System.debug('============================ CV_Intf_WebserviceCalloutAbstract doCallout System.bodyPayloadPaytweak.size(): ' + bodyPayloadPaytweak.size());
+
+                        if (System.isBatch()) {
+                            System.debug('============================ CV_Intf_WebserviceCalloutAbstract doCalloutPaytweak Batch initiated');
+                            responses = CV_Intf_WebserviceCalloutService.calloutWebserviceBatch(payload, namedCredential, caller, interfaceType, headers, method);
+
+                        } else {
+                            System.debug('============================ CV_Intf_WebserviceCalloutAbstract doCalloutPaytweak direct sending no batch');
+                            CV_Intf_WebserviceCalloutService.calloutWebservice(payload, namedCredential, caller, interfaceType, headers, method);
+                        }   
+                    }
+
+                    System.debug('============================ CV_Intf_WebserviceCalloutAbstract doCalloutPaytweak System.isBatch(): ' + System.isBatch());
+                    System.debug('============================ CV_Intf_WebserviceCalloutAbstract doCalloutPaytweak responses: ' + responses);
+
+                    if (System.isBatch() && !responses.isEmpty()) {
+                        CV_Intf_WebserviceCallout instance = (CV_Intf_WebserviceCallout)Type.forName(caller).newInstance();
+
+                        for (CV_Intf_WebserviceCalloutService.ResponseModel responseModel : responses) {
+                            instance.handleResponse(responseModel.serviceResult, responseModel.payload, responseModel.isTechnicalError);
+                            instance.registerMonitoningMessage(responseModel.payload, responseModel.responseMessage, interfaceType, responseModel.statusCode, responseModel.isError, false);
+                        }
+                    }
+                } when 2 {
+                // Future
+                System.debug('============================ CV_Intf_WebserviceCalloutAbstract doCalloutPaytweak Direct future calls !!! ');
+                for (String payload : bodyPayloadPaytweak) {
+                    CV_Intf_WebserviceCalloutService.fireFutureCallout(payload, namedCredential, caller, interfaceType, headers, tagRemap, method);
+                }
+                }
+            }
+        }
+    }
+
     public void registerMonitoningMessage(String outgoingMessage, String responseMessage, String interfaceName, Integer statusCode, Boolean isError, String transactionId, Boolean isResponse) {
 
         Interface_Monitoring__c intfMonitoring = new Interface_Monitoring__c();
@@ -121,6 +166,23 @@ public abstract class CV_Intf_WebserviceCalloutAbstract {
         }
 
         System.debug('============================ CV_Intf_WebserviceCalloutAbstract sliceListObjects slicedList: ' + slicedList);
+
+        return slicedList;
+    }
+
+    private List<List<String>> sliceListString(List<String> stringBody, integer maxItems) {
+
+        List<List<String>> slicedList = new List<List<String>>();
+
+        for(Integer i = 0 ; i < (stringBody.size() / maxItems) + 1 ; i++){
+            List<String> lstTemp = new List<String>();
+            for(Integer j=(i * maxItems); (j < (i * maxItems)+ maxItems) && j < stringBody.size(); j++){
+                lstTemp.add(JSON.serialize(stringBody.get(j)));
+            }
+            slicedList.add(lstTemp);
+        }
+
+        System.debug('============================ CV_Intf_WebserviceCalloutAbstract sliceListObjects sliceListString: ' + slicedList);
 
         return slicedList;
     }
