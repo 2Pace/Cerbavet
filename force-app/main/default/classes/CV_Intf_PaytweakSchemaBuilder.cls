@@ -28,12 +28,12 @@ public with sharing class CV_Intf_PaytweakSchemaBuilder {
         System.debug('**** IMA invoice num == ' + invNum);
 
         String billTotal = CV_Intf_Service.getSObjectFieldValue(invoice,'PAYTWEAK_Invoice_Amount');
-        amount = Decimal.valueOf(billTotal) * 100;
+        amount = Decimal.valueOf(billTotal);
         String amountFinal = String.valueOf(amount);
         cur = CV_Intf_Service.getSObjectFieldValue(invoice, 'PAYTWEAK_Invoice_Currency');
         email = CV_Intf_Service.getRelatedSObjectFieldValue(invoice, 'PAYTWEAK_Invoice_Account_Email');   
         order_id = CV_Intf_Service.getSObjectFieldValue(invoice,'PAYTWEAK_Invoice_Number');
-        String orderId = 'FACCV-20221026-0003';
+        String orderId = invoice.Numero_Facturation_Cerbavet__c;
         firstname = CV_Intf_Service.getRelatedSObjectFieldValue(invoice, 'CDN_Invoice_Firstname');
         lastname = CV_Intf_Service.getRelatedSObjectFieldValue(invoice, 'CDN_Invoice_Lastname') ;
         isPaymentCheck = isPaymentCheck;
@@ -43,6 +43,7 @@ public with sharing class CV_Intf_PaytweakSchemaBuilder {
         items = getAddress(invoice);            
         String itemsJson = JSON.serialize(items);
         System.debug('**** IMA items json value == ' + itemsJson);
+        System.debug('**** IMA orderId value == ' + orderId + ' / order_id = ' + order_id);
         Map<String, String> testImd = new Map<String, String>();
         testImd.put( 'order_id', orderId );
         testImd.put( 'amount', amountFinal );
@@ -103,21 +104,26 @@ public with sharing class CV_Intf_PaytweakSchemaBuilder {
     }
 
     public class ResponsePaymentOrder {
-
-        public String status;
-        public String ticket;
-        public String mode;
-
-        public ResponseAnswer answer;
-
-    }
-
-    public class ResponseAnswer {
         public String url;
         public String order_id;
         public String qrcode;
         public String code;
         public String message;
     }
+
+    public class ResponseError {
+        public String isSuccess;
+        public String statusCode;
+        public String errorType;
+        
+        public BodyError body;
+    }
+
+    public class BodyError {
+        public String code;
+        public String message;
+    }
+
+    
 
 }
