@@ -1,5 +1,5 @@
 /**
- * @description       : Batch pour générer les ordres de paiements du Crédit du Nord
+ * @description       : Batch pour générer les ordres de paiements du Crédit du Nord & Paytweak
  * @author            : Michaël Cabaraux
  * @group             :
  * @last modified on  : 25-06-2022
@@ -38,7 +38,7 @@ global class CV_GenerateBankPaymentOrderBatch implements Database.Batchable<sObj
     global void execute(Database.BatchableContext bc, List<blng__Invoice__c> invoices) {
 
         //Send 50 per 50 --> 100 callout per transaction
-
+        System.debug('Send 50 per 50 --> 100 callout per transaction' + invoices);
         CV_BankPaymentOrderService.generatePaymentOrderIds(invoices);
 
     }
