@@ -24,7 +24,7 @@ public with sharing class CV_Intf_WebserviceCalloutCDN extends CV_Intf_Webservic
 
 
     public void sendStructuresToCDN(List< Object> mdwStructures) {
-
+        System.debug('**** IMA mdwStructures value == ' + mdwStructures);
         executeCallout(mdwStructures);
     }
 
@@ -103,6 +103,7 @@ public with sharing class CV_Intf_WebserviceCalloutCDN extends CV_Intf_Webservic
 
     public void executeCallout(List<Object> MDWObjects) {
         super.doCallout(MDWObjects);
+        System.debug('**** IMA MDWObjects == ' +MDWObjects);
     }
 
     private String setInterfaceType() {
@@ -113,9 +114,6 @@ public with sharing class CV_Intf_WebserviceCalloutCDN extends CV_Intf_Webservic
         return isPaymentCheck ? 'CDN_Check_Payement' : 'CDN_Create_Order';
     }
 
-    private String setPaytweakNamedCredential() {
-        return isPaymentCheck ? 'PAYTWEAK_Get_QrCode' : 'PAYTWEAK_Create_Order';
-    }
 
     private String setCaller() {
         return 'CV_Intf_WebserviceCalloutCDN';
@@ -128,6 +126,7 @@ public with sharing class CV_Intf_WebserviceCalloutCDN extends CV_Intf_Webservic
         };
 
     }
+
 
     private Map<String, String> setTagRemap() {
 

@@ -98,7 +98,7 @@ public abstract class CV_Intf_WebserviceCalloutAbstract {
                     List<CV_Intf_WebserviceCalloutService.ResponseModel> responses = new List<CV_Intf_WebserviceCalloutService.ResponseModel>();
                     for (String payload : bodyPayloadPaytweak) {
                         System.debug('============================ CV_Intf_WebserviceCalloutAbstract doCallout System.bodyPayloadPaytweak.size(): ' + bodyPayloadPaytweak.size());
-
+                        
                         if (System.isBatch()) {
                             System.debug('============================ CV_Intf_WebserviceCalloutAbstract doCalloutPaytweak Batch initiated');
                             responses = CV_Intf_WebserviceCalloutService.calloutWebserviceBatch(payload, namedCredential, caller, interfaceType, headers, method);

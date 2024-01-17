@@ -60,6 +60,18 @@ global class CV_Intf_WebserviceMock implements HttpCalloutMock {
             response.setBody(JSON.serialize(responsePaymentOrder));
 
 
+        } else if(interfaceToTest == 'GETSECURITYTOKEN'){
+            String responseBody = '{"Paytweak-Security-Token": "6497e10218946dd24a61407c009b00c7381832b1f719b452"}';
+            response.setHeader('Content-Type', 'application/json');
+            response.setBody(responseBody);
+            response.setStatusCode(200);
+            
+        }  else if(interfaceToTest == 'GETTOKEN'){
+            String responseBody = '{"Paytweak-Work-Token": "0M0ATl0YI4OY"}';
+            response.setHeader('Content-Type', 'application/json');
+            response.setBody(responseBody);
+            response.setStatusCode(200);
+
         } else if (status == 403) {
             response.setStatusCode(403);
 

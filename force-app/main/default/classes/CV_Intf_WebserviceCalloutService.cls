@@ -32,6 +32,7 @@ public with sharing class CV_Intf_WebserviceCalloutService {
     public static List<CV_Intf_WebserviceCalloutService.ResponseModel> calloutWebserviceBatch(String jsonPayload, String namedCredential, String caller, String interfaceName, Map<String, String> headers, String method) {
 
         System.debug('==============================  CV_Intf_WebserviceCalloutService calloutWebserviceBatch callout Webservice Batch !!:' + namedCredential);
+
         calloutWebservice(jsonPayload, namedCredential, caller, interfaceName, headers, method);
 
         System.debug('==============================  CV_Intf_WebserviceCalloutService calloutWebserviceBatch:' + responses);
@@ -49,9 +50,16 @@ public with sharing class CV_Intf_WebserviceCalloutService {
         Boolean isTechnicalError = false;
         String responseMessage;
         Integer statusCode;
+        CV_Intf_RequestInput requestInput;
 
-        CV_Intf_RequestInput requestInput = new CV_Intf_RequestInput('callout:' +namedCredential, method, jsonPayload);
+        if(interfaceName == 'PAYTWEAK'){
+            String bodyPayload = jsonPayload;
+            requestInput = new CV_Intf_RequestInput('callout:' +namedCredential, method, bodyPayload,interfaceName);
+        } else {
+            requestInput = new CV_Intf_RequestInput('callout:' +namedCredential, method, jsonPayload,interfaceName);
+        }
 
+        
         if (headers != null && !headers.isEmpty()) {
             requestInput.headers = headers;
         }

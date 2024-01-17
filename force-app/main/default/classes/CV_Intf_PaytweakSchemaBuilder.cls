@@ -111,19 +111,8 @@ public with sharing class CV_Intf_PaytweakSchemaBuilder {
         public String message;
     }
 
-    public class ResponseError {
-        public String isSuccess;
-        public String statusCode;
-        public String errorType;
-        
-        public BodyError body;
-    }
-
     public class BodyError {
         public String code;
         public String message;
     }
-
-    
-
 }
