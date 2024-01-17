@@ -116,7 +116,7 @@ private class CV_BankPaymentOrderServiceTest {
         CV_Intf_WebserviceMock.interfaceToTest = 'CDNCHECK';
         Test.setMock(HttpCalloutMock.class, new CV_Intf_WebserviceMock());
 
-        CV_BankPaymentOrderService.checkPaymentOrders(invoices);
+        CV_BankPaymentOrderService.checkPaymentOrders(invoices, false);
 
         Test.stopTest();
 
