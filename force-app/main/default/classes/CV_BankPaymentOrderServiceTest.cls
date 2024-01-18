@@ -75,7 +75,7 @@ private class CV_BankPaymentOrderServiceTest {
     @IsTest
     static void testGeneratePayment() {
 
-        String query = CV_BankPaymentOrderService.getSelectionQuery(false);
+        String query = CV_BankPaymentOrderService.getSelectionQuery(false, false);
 
         List<blng__Invoice__c> invoices = (List<blng__Invoice__c>)Database.query(query);
 
@@ -84,7 +84,7 @@ private class CV_BankPaymentOrderServiceTest {
         CV_Intf_WebserviceMock.interfaceToTest = 'CDN';
         Test.setMock(HttpCalloutMock.class, new CV_Intf_WebserviceMock());
 
-        CV_BankPaymentOrderService.generatePaymentOrderIds(invoices);
+        CV_BankPaymentOrderService.generatePaymentOrderIds(invoices, false);
 
         Test.stopTest();
 
@@ -94,8 +94,8 @@ private class CV_BankPaymentOrderServiceTest {
         ]);
         System.assertEquals(1, interfaceMonitorings.size());
 
-        blng__Invoice__c invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c, Message_d_erreur__c, Statut_Banque__c FROM blng__Invoice__c];
-        System.assertEquals('dflsmfsfm-dfjfosf-12324', invoice.Payment_Order_Id__c);
+        blng__Invoice__c invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c,Payment_Order_Id_CDN__c, Message_d_erreur__c, Statut_Banque__c FROM blng__Invoice__c];
+        System.assertEquals('dflsmfsfm-dfjfosf-12324', invoice.Payment_Order_Id_CDN__c);
         System.assertEquals('En Cours', invoice.Statut_Banque__c);
 
     }
@@ -103,11 +103,11 @@ private class CV_BankPaymentOrderServiceTest {
     @IsTest
     static void testCheckPayments() {
 
-        blng__Invoice__c invoice = [SELECT Id, Payment_Order_Id__c FROM blng__Invoice__c];
-        invoice.Payment_Order_Id__c = 'dflsmfsfm-dfjfosf-12324';
+        blng__Invoice__c invoice = [SELECT Id, Payment_Order_Id_CDN__c FROM blng__Invoice__c];
+        invoice.Payment_Order_Id_CDN__c = 'dflsmfsfm-dfjfosf-12324';
         update invoice;
 
-        String query = CV_BankPaymentOrderService.getSelectionQuery(true);
+        String query = CV_BankPaymentOrderService.getSelectionQuery(true, false);
 
         List<blng__Invoice__c> invoices = (List<blng__Invoice__c>)Database.query(query);
 
@@ -126,8 +126,8 @@ private class CV_BankPaymentOrderServiceTest {
         ]);
         System.assertEquals(1, interfaceMonitorings.size());
 
-        invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c, Message_d_erreur__c, Statut_Banque__c FROM blng__Invoice__c];
-        System.assertEquals('dflsmfsfm-dfjfosf-12324', invoice.Payment_Order_Id__c);
+        invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c,Payment_Order_Id_CDN__c, Message_d_erreur__c, Statut_Banque__c FROM blng__Invoice__c];
+        System.assertEquals('dflsmfsfm-dfjfosf-12324', invoice.Payment_Order_Id_CDN__c);
         System.assertEquals('Payé', invoice.Statut_Banque__c);
 
     }
@@ -135,8 +135,8 @@ private class CV_BankPaymentOrderServiceTest {
     @IsTest
     static void testCheckPayment() {
 
-        blng__Invoice__c invoice = [SELECT Id, Payment_Order_Id__c, blng__PaymentStatus__c FROM blng__Invoice__c];
-        invoice.Payment_Order_Id__c = 'dflsmfsfm-dfjfosf-12324';
+        blng__Invoice__c invoice = [SELECT Id, Payment_Order_Id__c,Payment_Order_Id_CDN__c, blng__PaymentStatus__c FROM blng__Invoice__c];
+        invoice.Payment_Order_Id_CDN__c = 'dflsmfsfm-dfjfosf-12324';
         update invoice;
 
         System.debug('========================= TEST TEST TEST invoice: ' + invoice);
@@ -157,8 +157,8 @@ private class CV_BankPaymentOrderServiceTest {
         ]);
         System.assertEquals(1, interfaceMonitorings.size());
 
-        invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c, Message_d_erreur__c, Statut_Banque__c FROM blng__Invoice__c];
-        System.assertEquals('dflsmfsfm-dfjfosf-12324', invoice.Payment_Order_Id__c);
+        invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id_CDN__c,Payment_Order_Id__c, Message_d_erreur__c, Statut_Banque__c FROM blng__Invoice__c];
+        System.assertEquals('dflsmfsfm-dfjfosf-12324', invoice.Payment_Order_Id_CDN__c );
         System.assertEquals('Payé', invoice.Statut_Banque__c);
 
     }

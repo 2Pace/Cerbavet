@@ -101,6 +101,7 @@ public with sharing class CV_Intf_WebserviceCalloutPAYTWEAK extends CV_Intf_Webs
         } else {
 
             CV_Intf_PaytweakSchemaBuilder.ResponsePaymentOrder paytweakAnswer = (CV_Intf_PaytweakSchemaBuilder.ResponsePaymentOrder) JSON.deserialize(serviceResult.body, CV_Intf_PaytweakSchemaBuilder.ResponsePaymentOrder.class);
+            CV_Intf_PaytweakSchemaBuilder.ResponseCheckPaymentOrder paytweakGetAnswer = (CV_Intf_PaytweakSchemaBuilder.ResponseCheckPaymentOrder) JSON.deserialize(serviceResult.body, CV_Intf_PaytweakSchemaBuilder.ResponseCheckPaymentOrder.class);
             Map<String, Object> paytweakAnswerUntype = (Map<String, Object>)JSON.deserializeUntyped(serviceResult.body);
             String answerWebService = (String)paytweakAnswerUntype.get('webService');
 
@@ -111,11 +112,16 @@ public with sharing class CV_Intf_WebserviceCalloutPAYTWEAK extends CV_Intf_Webs
                 
                 paymentOrderId = paytweakAnswer.order_id;
                 paymentLink = paytweakAnswer.url;
+                integratioStatus = 'En Cours';
 
                 System.debug('=================================== CV_Intf_WebserviceCalloutCDN updateInvoiceSyncStatus integratioStatus: ' + integratioStatus);
-                if (isPaymentCheck && integratioStatus == '1') {
-                    registerPaiement(invoiceId);
-                    paymentAllocation = Test.isRunningTest() ? false : true;
+                if (isPaymentCheck) {
+                    integratioStatus = paytweakGetAnswer.active == '0' ? 'Expiré' : statusMapping.get(paytweakGetAnswer.paid);
+                    if(integratioStatus == 'Payé'){
+                        registerPaiement(invoiceId);
+                        paymentAllocation = Test.isRunningTest() ? false : true;
+                    }
+                    
                 }
 
             } else {
@@ -126,7 +132,7 @@ public with sharing class CV_Intf_WebserviceCalloutPAYTWEAK extends CV_Intf_Webs
 
         blng__Invoice__c invoice = new blng__Invoice__c(
                 Id = invoiceId,
-                //Statut_Banque__c =  ,
+                Statut_Banque__c = integratioStatus ,
                 Message_d_erreur__c = errorMessage,
                 Lien_Paiement__c = paymentLink,
                 Payment_Order_Id__c = paymentOrderId,

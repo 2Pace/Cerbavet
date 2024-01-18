@@ -20,49 +20,53 @@ public with sharing class CV_Intf_PaytweakSchemaBuilder {
         
         // Check If Intf is Paytweak or not 
         String isPaytweak = CV_Intf_Service.getRelatedSObjectFieldValue(invoice,'PAYTWEAK_InterfacePaytweak');
-        System.debug('**** IMA =W> Is paytweak ??? '+isPaytweak);
-
-        Items items;
-
-        String invNum = CV_Intf_Service.getSObjectFieldValue(invoice,'PAYTWEAK_Invoice_Number');
-        System.debug('**** IMA invoice num == ' + invNum);
-
-        String billTotal = CV_Intf_Service.getSObjectFieldValue(invoice,'PAYTWEAK_Invoice_Amount');
-        amount = Decimal.valueOf(billTotal);
-        String amountFinal = String.valueOf(amount);
-        cur = CV_Intf_Service.getSObjectFieldValue(invoice, 'PAYTWEAK_Invoice_Currency');
-        email = CV_Intf_Service.getRelatedSObjectFieldValue(invoice, 'PAYTWEAK_Invoice_Account_Email');   
         order_id = CV_Intf_Service.getSObjectFieldValue(invoice,'PAYTWEAK_Invoice_Number');
-        String orderId = invoice.Numero_Facturation_Cerbavet__c;
-        firstname = CV_Intf_Service.getRelatedSObjectFieldValue(invoice, 'CDN_Invoice_Firstname');
-        lastname = CV_Intf_Service.getRelatedSObjectFieldValue(invoice, 'CDN_Invoice_Lastname') ;
-        isPaymentCheck = isPaymentCheck;
+        System.debug('**** IMA =W> Is paytweak ??? '+isPaytweak + ' / OrderId = ' + order_id + ' / IsPaymentCheck val = ' + isPaymentCheck);
 
-        String invoiceId = CV_Intf_Service.getSObjectFieldValue(invoice, 'PAYTWEAK_Invoice_Id');
-        System.debug('**** IMA invoiceId Value = ' + invoiceId);
-        items = getAddress(invoice);            
-        String itemsJson = JSON.serialize(items);
-        System.debug('**** IMA items json value == ' + itemsJson);
-        System.debug('**** IMA orderId value == ' + orderId + ' / order_id = ' + order_id);
-        Map<String, String> testImd = new Map<String, String>();
-        testImd.put( 'order_id', orderId );
-        testImd.put( 'amount', amountFinal );
-        testImd.put( 'cur', cur);
-        testImd.put( 'firstname', firstname  );
-        testImd.put( 'lastname', lastname );
-        testImd.put( 'billing_address', String.valueOf(itemsJson) );
+        if(!isPaymentCheck) {
+            Items items;
+            String invNum = CV_Intf_Service.getSObjectFieldValue(invoice,'PAYTWEAK_Invoice_Number');
+            System.debug('**** IMA invoice num == ' + invNum);
+            String billTotal = CV_Intf_Service.getSObjectFieldValue(invoice,'PAYTWEAK_Invoice_Amount');
+            amount = Decimal.valueOf(billTotal);
+            String amountFinal = String.valueOf(amount);
+            cur = CV_Intf_Service.getSObjectFieldValue(invoice, 'PAYTWEAK_Invoice_Currency');
+            email = CV_Intf_Service.getRelatedSObjectFieldValue(invoice, 'PAYTWEAK_Invoice_Account_Email');  
 
-        Blob formData = CV_Intf_HttpHexFormBuilder.build()
-            .writeParam( 'order_id', orderId )
-            .writeParam( 'amount', amountFinal )
-            .writeParam( 'cur', cur )
-            .writeParam( 'firstname', firstname )
-            .writeParam( 'lastname', lastname )
-            .writeParam( 'billing_address', String.valueOf(itemsJson) )
+            firstname = CV_Intf_Service.getRelatedSObjectFieldValue(invoice, 'CDN_Invoice_Firstname');
+            lastname = CV_Intf_Service.getRelatedSObjectFieldValue(invoice, 'CDN_Invoice_Lastname') ;
+            
+
+            String invoiceId = CV_Intf_Service.getSObjectFieldValue(invoice, 'PAYTWEAK_Invoice_Id');
+            System.debug('**** IMA invoiceId Value = ' + invoiceId);
+            items = getAddress(invoice);            
+            String itemsJson = JSON.serialize(items);
+            System.debug('**** IMA items json value == ' + itemsJson);
+            System.debug('**** IMA order_id value = ' + order_id);
+
+            Blob formData = CV_Intf_HttpHexFormBuilder.build()
+                .writeParam( 'order_id', order_id )
+                .writeParam( 'amount', amountFinal )
+                .writeParam( 'cur', cur )
+                .writeParam( 'firstname', firstname )
+                .writeParam( 'lastname', lastname )
+                .writeParam( 'billing_address', String.valueOf(itemsJson) )
+                .getFormAsBlob();
+            String blobValue = formData.tostring();
+            System.debug('**** IMA blobValue blob value == ' + blobValue);
+            return blobValue;
+        } else if( isPaymentCheck) {
+            String link_id  = CV_Intf_Service.getSObjectFieldValue(invoice, 'PAYTWEAK_Invoice_Payment_Order_Id'); 
+
+            Blob formData = CV_Intf_HttpHexFormBuilder.build()
+            .writeParam( 'order_id', order_id )
+            .writeParam( 'link_id', link_id )
             .getFormAsBlob();
-        String blobValue = formData.tostring();
-        System.debug('**** IMA blobValue blob value == ' + blobValue);
-        return blobValue;
+            String blobValue = formData.tostring();
+            System.debug('**** IMA blobValue blob value == ' + blobValue);
+            return blobValue;
+        }
+        return null;
     }
 
     private static Items getAddress(blng__Invoice__c invoice){
@@ -91,24 +95,32 @@ public with sharing class CV_Intf_PaytweakSchemaBuilder {
         }
     }
 
-    public class GetPaymentOrder {
-
-        public String paymentOrderId;
-        public String salesforceId;
-
-        public GetPaymentOrder(blng__Invoice__c invoice) {
-
-            this.paymentOrderId = CV_Intf_Service.getSObjectFieldValue(invoice,'PAYTWEAK_Invoice_Payment_Order_Id');
-            this.salesforceId = CV_Intf_Service.getSObjectFieldValue(invoice, 'PAYTWEAK_Invoice_Id');
-        }
-    }
-
     public class ResponsePaymentOrder {
         public String url;
         public String order_id;
         public String qrcode;
         public String code;
         public String message;
+    }
+
+    public class ResponseCheckPaymentOrder {
+        public String id;
+        public String name;
+        public String email;
+        public String order_id;
+        public String amount;
+        public String monthly;
+        public String link_url;
+        public String msg_type;
+        public String phone;
+        public String subject;
+        public String message_text;
+        public String message_html;
+        public String user;
+        public String freetext;
+        public String clics;
+        public String paid;
+        public String active;
     }
 
     public class BodyError {

@@ -287,7 +287,7 @@ private static void setupTestData() {
 
     testInvoice = new blng__Invoice__c(
         blng__InvoiceStatus__c = 'Posted',
-        Payment_Order_Id__c = testOrder.Id,
+        Payment_Order_Id_CDN__c = testOrder.Id,
         Statut_Banque__c = 'Payé',
         blng__Account__c = testAccount.Id
     );

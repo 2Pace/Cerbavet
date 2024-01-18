@@ -92,7 +92,7 @@ public with sharing class CV_Intf_WebserviceCalloutCDN extends CV_Intf_Webservic
                 Statut_Banque__c = integratioStatus,
                 Message_d_erreur__c = errorMessage,
                 Lien_Paiement__c = paymentLink,
-                Payment_Order_Id__c = paymentOrderId,
+                Payment_Order_Id_CDN__c = paymentOrderId,
                 Allocation_lignes_de_factures__c = paymentAllocation
         );
 

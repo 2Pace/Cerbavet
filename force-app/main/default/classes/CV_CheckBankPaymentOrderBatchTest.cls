@@ -56,7 +56,7 @@ private class CV_CheckBankPaymentOrderBatchTest {
                 blng__InvoiceStatus__c = 'Posted',
                 blng__InvoiceRunCreatedBy__c = invoiceRun.Id,
                 Statut_Integration_ECV__c = 'A Envoyer',
-                Payment_Order_Id__c = 'dflsmfsfm-dfjfosf-12324',
+                Payment_Order_Id_CDN__c = 'dflsmfsfm-dfjfosf-12324',
                 Statut_Banque__c = 'En Cours'
         );
         insert testInvoice;
@@ -90,8 +90,8 @@ private class CV_CheckBankPaymentOrderBatchTest {
         ]);
         System.assertEquals(1, interfaceMonitorings.size());
 
-        blng__Invoice__c invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c, Message_d_erreur__c, Statut_Banque__c FROM blng__Invoice__c];
-        System.assertEquals('dflsmfsfm-dfjfosf-12324', invoice.Payment_Order_Id__c);
+        blng__Invoice__c invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c,Payment_Order_Id_CDN__c, Message_d_erreur__c, Statut_Banque__c FROM blng__Invoice__c];
+        System.assertEquals('dflsmfsfm-dfjfosf-12324', invoice.Payment_Order_Id_CDN__c);
         System.assertEquals('Payé', invoice.Statut_Banque__c);
 
     }

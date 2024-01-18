@@ -38,7 +38,7 @@ global class CV_CheckBankPaymentOrderBatch implements Database.Batchable<sObject
 
         //Send 50 per 50 --> 100 callout per transaction
 
-        CV_BankPaymentOrderService.checkPaymentOrders(invoices, true);
+        CV_BankPaymentOrderService.checkPaymentOrders(invoices, false);
 
     }
 

@@ -1,14 +1,14 @@
 /**
- * @description       : Batch pour générer les ordres de paiements du Crédit du Nord
- * @author            : Michaël Cabaraux
+ * @description       : Batch Verification des paiements facture proprios
+ * @author            : Ingrid OMAR
  * @group             :
- * @last modified on  : 25-06-2022
- * @last modified by  : Michaël Cabaraux
+ * @last modified on  : 02-01-2024
+ * @last modified by  : Ingrid OMAR
 **/
 
-global class CV_GenerateBankPaymentOrderBatch implements Database.Batchable<sObject>, Database.AllowsCallouts, Database.Stateful, Schedulable {
+global class CV_CheckBankPaymentOrderBatchPAYTWEAK implements Database.Batchable<sObject>, Database.AllowsCallouts, Database.Stateful, Schedulable {
 
-    private static final String CONFIGURATION_NAME = 'Payment_Order_Batch';
+    private static final String CONFIGURATION_NAME = 'Payment_Check_Batch';
 
     private CV_Batch_Settings__mdt batchSettings;
 
@@ -22,12 +22,11 @@ global class CV_GenerateBankPaymentOrderBatch implements Database.Batchable<sObj
                 WHERE DeveloperName = :CONFIGURATION_NAME
         ];
 
-        String query = CV_BankPaymentOrderService.getSelectionQuery(false);
+        String query = CV_BankPaymentOrderService.getSelectionQuery(true);
 
 //        query += ' AND id in (\'a3Y0D000000d6LoUAI\')';
-//        query += ' LIMIT 1';
 
-        System.debug('============================ CV_GenerateBankPaymentOrderBatch start query : ' + query);
+        System.debug('============================ CV_CheckBankPaymentOrderBatchPAYTWEAK start query : ' + query);
 
         Database.QueryLocator queryLocator = Database.getQueryLocator(query);
 
@@ -38,14 +37,14 @@ global class CV_GenerateBankPaymentOrderBatch implements Database.Batchable<sObj
     global void execute(Database.BatchableContext bc, List<blng__Invoice__c> invoices) {
 
         //Send 50 per 50 --> 100 callout per transaction
-        System.debug('Send 50 per 50 --> 100 callout per transaction' + invoices);
-        CV_BankPaymentOrderService.generatePaymentOrderIds(invoices, false);
+
+        CV_BankPaymentOrderService.checkPaymentOrders(invoices, true);
 
     }
 
     global void finish(Database.BatchableContext bc) {
 
-        System.debug('============================ CV_GenerateBankPaymentOrderBatch FINISHED');
+        System.debug('============================ CV_CheckBankPaymentOrderBatchPAYTWEAK FINISHED');
 
     }
 
@@ -59,7 +58,7 @@ global class CV_GenerateBankPaymentOrderBatch implements Database.Batchable<sObj
         ];
 
 
-        CV_GenerateBankPaymentOrderBatch batch = new CV_GenerateBankPaymentOrderBatch();
+        CV_CheckBankPaymentOrderBatchPAYTWEAK batch = new CV_CheckBankPaymentOrderBatchPAYTWEAK();
         Database.executeBatch(batch,Integer.valueOf(batchSettings.Batch_Scope_Size__c));
 
     }
@@ -67,10 +66,11 @@ global class CV_GenerateBankPaymentOrderBatch implements Database.Batchable<sObj
 
     global static String scheduleThis(String schedule) {
 
-        CV_GenerateBankPaymentOrderBatch job = new CV_GenerateBankPaymentOrderBatch();
-        String batchName = 'CV_GenerateBankPaymentOrderBatch - ' + DateTime.now().format('YYYYMMDDHHmmss');
+        CV_CheckBankPaymentOrderBatchPAYTWEAK job = new CV_CheckBankPaymentOrderBatchPAYTWEAK();
+        String batchName = 'CV_CheckBankPaymentOrderBatchPAYTWEAK - ' + DateTime.now().format('YYYYMMDDHHmmss');
         String jobId = System.schedule(batchName, schedule, job);
         return jobId;
 
     }
+
 }
