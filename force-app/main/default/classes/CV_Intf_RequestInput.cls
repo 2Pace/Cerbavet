@@ -8,10 +8,9 @@ public with sharing class CV_Intf_RequestInput {
     public String method                { get; set; }
     public Map<String, String> headers  { get; set; }
     public String parameters            { get; set; }
-    public Blob blobParameters          { get; set; }
+    public Map<String, String> params   { get; set; }
     public String encoding              { get; set; }
     public Integer timeout = 30000;
-    public String paytweakWorkToken = CV_Intf_PaytweakServiceToken.getWorkToken();
 
     private Map<String, String> defaultHeaders {
 
@@ -20,8 +19,7 @@ public with sharing class CV_Intf_RequestInput {
 
     private Map<String, String> paytweakHeaders {
 
-        get { return new Map<String, String> {'Content-Type' => CV_Intf_HttpHexFormBuilder.GetContentType(),
-                                              'Paytweak-Token' => paytweakWorkToken }; } //'Content-Type', 'text/xml; charset=character encoding'
+        get { return new Map<String, String> {'Content-Type' => CV_Intf_HttpHexFormBuilder.GetContentType()}; } //'Content-Type', 'text/xml; charset=character encoding'
     }
 
 
@@ -32,11 +30,12 @@ public with sharing class CV_Intf_RequestInput {
         this.headers =  intfName == 'CDN' ? this.defaultHeaders : this.paytweakHeaders;
     }
 
-    public CV_Intf_RequestInput(String urlString, String method, Blob parameters, String intfName) {
+    public CV_Intf_RequestInput(String urlString, String method, String parameters, String intfName, Map<String,String> params) {
         this.urlString = urlString;
+        this.params = params;
         this.method = method;
-        this.blobParameters = parameters;
-        this.headers =  intfName == 'CDN' ? this.defaultHeaders : this.paytweakHeaders;
+        this.parameters = parameters;
+        System.debug('this.method'+this.method + ' BODY = '+ this.parameters);
     }
 
 }
