@@ -29,6 +29,8 @@ public abstract class CV_Intf_WebserviceCalloutAbstract {
     private abstract Map<String, String> setHeaders();
     private abstract Map<String, String> setTagRemap();
 
+    public static Boolean isPaymentCheck = CV_Intf_WebserviceCalloutCDN.isPaymentCheck;
+
 
     public void doCallout(List<Object> objectPayloads) {
         System.debug('============================ CV_Intf_WebserviceCalloutAbstract doCallout Object Payloads: ' + objectPayloads);
