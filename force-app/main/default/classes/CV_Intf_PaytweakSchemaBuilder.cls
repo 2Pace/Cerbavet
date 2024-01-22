@@ -33,8 +33,8 @@ public with sharing class CV_Intf_PaytweakSchemaBuilder {
             cur = CV_Intf_Service.getSObjectFieldValue(invoice, 'PAYTWEAK_Invoice_Currency');
             email = CV_Intf_Service.getRelatedSObjectFieldValue(invoice, 'PAYTWEAK_Invoice_Account_Email');  
 
-            firstname = CV_Intf_Service.getRelatedSObjectFieldValue(invoice, 'CDN_Invoice_Firstname');
-            lastname = CV_Intf_Service.getRelatedSObjectFieldValue(invoice, 'CDN_Invoice_Lastname') ;
+            firstname = CV_Intf_Service.getRelatedSObjectFieldValue(invoice, 'PAYTWEAK_Invoice_Firstname');
+            lastname = CV_Intf_Service.getRelatedSObjectFieldValue(invoice, 'PAYTWEAK_Invoice_Lastname') ;
             
 
             String invoiceId = CV_Intf_Service.getSObjectFieldValue(invoice, 'PAYTWEAK_Invoice_Id');
@@ -50,6 +50,7 @@ public with sharing class CV_Intf_PaytweakSchemaBuilder {
                 .writeParam( 'cur', cur )
                 .writeParam( 'firstname', firstname )
                 .writeParam( 'lastname', lastname )
+                .writeParam( 'life', '90')
                 .writeParam( 'billing_address', String.valueOf(itemsJson) )
                 .getFormAsBlob();
             String blobValue = formData.tostring();
@@ -63,7 +64,7 @@ public with sharing class CV_Intf_PaytweakSchemaBuilder {
             .writeParam( 'link_id', link_id )
             .getFormAsBlob();
             String blobValue = formData.tostring();
-            System.debug('**** IMA blobValue blob value == ' + blobValue);
+            System.debug('**** IMA blobValue blob isPaymentCheck value == ' + blobValue);
             return blobValue;
         }
         return null;
@@ -104,27 +105,37 @@ public with sharing class CV_Intf_PaytweakSchemaBuilder {
     }
 
     public class ResponseCheckPaymentOrder {
-        public String id;
-        public String name;
-        public String email;
-        public String order_id;
-        public String amount;
-        public String monthly;
-        public String link_url;
-        public String msg_type;
-        public String phone;
-        public String subject;
-        public String message_text;
-        public String message_html;
-        public String user;
-        public String freetext;
-        public String clics;
-        public String paid;
-        public String active;
+        public Attributes attributes {get;set;}
+        public String code {get;set;}
+        public String message {get;set;}
+        
     }
 
     public class BodyError {
         public String code;
         public String message;
+    }
+
+    public class Attributes{
+        public String id {get; set;}
+        public String dateT {get; set;}
+        public String name {get; set;}
+        public String email {get; set;}
+        public String order_id {get; set;}
+        public String amount {get; set;}
+        public String monthly {get; set;}
+        public String link_url {get; set;}
+        public String msg_type {get; set;}
+        public String phone {get; set;}
+        public String subject {get; set;}
+        public String message_text {get; set;}
+        public String message_html {get; set;}
+        public String user {get; set;}
+        public String groupT {get; set;}
+        public String scenario {get; set;}
+        public String freetext {get; set;}
+        public String clics {get; set;}
+        public String paid {get; set;}
+        public String active {get; set;}
     }
 }
