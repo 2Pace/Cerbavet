@@ -1,11 +1,11 @@
 public with sharing class CV_Intf_WebserviceCalloutPAYTWEAK extends CV_Intf_WebserviceCalloutAbstract implements CV_Intf_WebserviceCallout {
 
-    public static Boolean isPaymentCheck;
+    public static Boolean isPaymentCheck = CV_Intf_WebserviceCalloutCDN.isPaymentCheck;
 
     private static Map<String, String> statusMapping = new Map<String, String> {
         '0' => 'En Cours',
         '1' => 'Payé'
-};
+    };
 
     public void executeCallout(List<Object> MDWObjects) {
         super.doCallout(MDWObjects);
@@ -37,11 +37,16 @@ public with sharing class CV_Intf_WebserviceCalloutPAYTWEAK extends CV_Intf_Webs
         String contentType = CV_Intf_HttpHexFormBuilder.GetContentType();
         String boundaryVal = CV_Intf_HttpHexFormBuilder.getBoundary();
         System.debug('**** IMA token value == ' +token);
-        
-        return new Map<String, String> {
+        if(isPaymentCheck){
+            return new Map<String, String> {
+                'Paytweak-Token' => token
+            };
+        } else {
+            return new Map<String, String> {
                 'Content-Type' => contentType+boundaryVal ,
                 'Paytweak-Token' => token
-        };
+            };
+        }   
     }
 
     private String setMethod() {
@@ -83,16 +88,18 @@ public with sharing class CV_Intf_WebserviceCalloutPAYTWEAK extends CV_Intf_Webs
         String invoiceExtId = getInvoiceExtId(payload);
         System.debug('***** invoiceExtId ' + invoiceExtId);
 
-        blng__Invoice__c getInvoice = [SELECT Id FROM blng__Invoice__c WHERE Numero_Facturation_Cerbavet__c = :invoiceExtId];
+        blng__Invoice__c getInvoice = [SELECT Id, Lien_Paiement__c FROM blng__Invoice__c WHERE Numero_Facturation_Cerbavet__c = :invoiceExtId];
         String invoiceId = getInvoice.Id ;
-
-        System.debug('=================================== CV_Intf_WebserviceCalloutCDN updateInvoiceSyncStatus invoiceId: ' + invoiceId + '/ invoiceExtId == '+invoiceExtId +serviceResult);
+        String linkId = getInvoice.Lien_Paiement__c;
+        linkId = linkId.replace('https://paiement-factures.cerballiance.fr/', '');
+        System.debug('=================================== CV_Intf_WebserviceCalloutCDN updateInvoiceSyncStatus invoiceId: ' + invoiceId + '/ invoiceExtId == '+invoiceExtId +serviceResult + '/ Linkid == ' + linkId);
 
         String integratioStatus;
         String errorMessage;
         String paymentLink;
         String paymentOrderId;
         Boolean paymentAllocation = false;
+        System.debug('**** IMA serviceResult.body == '+serviceResult.body);
         CV_Intf_PaytweakSchemaBuilder.BodyError paytweakError = (CV_Intf_PaytweakSchemaBuilder.BodyError) JSON.deserialize(serviceResult.body, CV_Intf_PaytweakSchemaBuilder.BodyError.class);
         System.debug('**** IMA paytweakError = '+ paytweakError);
         if (!serviceResult.isSuccess && (paytweakError.code != '200' && paytweakError.code != '201')) {
@@ -101,13 +108,17 @@ public with sharing class CV_Intf_WebserviceCalloutPAYTWEAK extends CV_Intf_Webs
         } else {
 
             CV_Intf_PaytweakSchemaBuilder.ResponsePaymentOrder paytweakAnswer = (CV_Intf_PaytweakSchemaBuilder.ResponsePaymentOrder) JSON.deserialize(serviceResult.body, CV_Intf_PaytweakSchemaBuilder.ResponsePaymentOrder.class);
-            CV_Intf_PaytweakSchemaBuilder.ResponseCheckPaymentOrder paytweakGetAnswer = (CV_Intf_PaytweakSchemaBuilder.ResponseCheckPaymentOrder) JSON.deserialize(serviceResult.body, CV_Intf_PaytweakSchemaBuilder.ResponseCheckPaymentOrder.class);
+            String body = serviceResult.body.replace('"date"','"dateT"');
+            body = body.replace('"group"','"groupT"');
+            body = body.replace(linkId, 'attributes');
+
+            CV_Intf_PaytweakSchemaBuilder.ResponseCheckPaymentOrder paytweakGetAnswer = (CV_Intf_PaytweakSchemaBuilder.ResponseCheckPaymentOrder) JSON.deserialize(body, CV_Intf_PaytweakSchemaBuilder.ResponseCheckPaymentOrder.class);
             Map<String, Object> paytweakAnswerUntype = (Map<String, Object>)JSON.deserializeUntyped(serviceResult.body);
             String answerWebService = (String)paytweakAnswerUntype.get('webService');
 
             System.debug('=================================== CV_Intf_WebserviceCalloutCDN updateInvoiceSyncStatus paytweakAnswer: ' + paytweakAnswer);
             System.debug('=================================== CV_Intf_WebserviceCalloutCDN updateInvoiceSyncStatus answerWebService: ' + answerWebService);
-
+            System.debug('=================================== CV_Intf_WebserviceCalloutCDN updateInvoiceSyncStatus paytweakGetAnswer: ' + paytweakGetAnswer);
             if (paytweakAnswer.code == 'OK') {
                 
                 paymentOrderId = paytweakAnswer.order_id;
@@ -115,8 +126,11 @@ public with sharing class CV_Intf_WebserviceCalloutPAYTWEAK extends CV_Intf_Webs
                 integratioStatus = 'En Cours';
 
                 System.debug('=================================== CV_Intf_WebserviceCalloutCDN updateInvoiceSyncStatus integratioStatus: ' + integratioStatus);
+                System.debug('**** IMA statusMapping.get(paytweakGetAnswer.paid) == ' + statusMapping.get(paytweakGetAnswer.attributes.paid));
+                System.debug('**** IMA paytweakGetAnswer.active == ' + paytweakGetAnswer.attributes.active);
                 if (isPaymentCheck) {
-                    integratioStatus = paytweakGetAnswer.active == '0' ? 'Expiré' : statusMapping.get(paytweakGetAnswer.paid);
+                    integratioStatus = paytweakGetAnswer.attributes.active == '0' ? 'Expiré' : statusMapping.get(paytweakGetAnswer.attributes.paid);
+                    System.debug('**** IMA integratioStatus checkpayment = '+ integratioStatus);
                     if(integratioStatus == 'Payé'){
                         registerPaiement(invoiceId);
                         paymentAllocation = Test.isRunningTest() ? false : true;
@@ -134,10 +148,13 @@ public with sharing class CV_Intf_WebserviceCalloutPAYTWEAK extends CV_Intf_Webs
                 Id = invoiceId,
                 Statut_Banque__c = integratioStatus ,
                 Message_d_erreur__c = errorMessage,
-                Lien_Paiement__c = paymentLink,
-                Payment_Order_Id__c = paymentOrderId,
                 Allocation_lignes_de_factures__c = paymentAllocation
         );
+
+        if(!isPaymentCheck) {
+            invoice.Lien_Paiement__c = paymentLink;
+            invoice.Payment_Order_Id__c = paymentOrderId;
+        }
 
         SBQQ.TriggerControl.disable();
         update invoice;
