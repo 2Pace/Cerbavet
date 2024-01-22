@@ -23,11 +23,11 @@ public with sharing class CV_BankPaymentOrderService {
         query += ' WHERE Facture_Proprio__c = true';
         
         if (isCheckPayments && isPaytweak ) {
-            query += ' AND Statut_Banque__c in (\'En Cours\', \'Refusé\') AND Payment_Order_Id__c <> null AND blng__PaymentStatus__c <> \'Paid\' AND blng__Account__r.TECH_InterfacePaytweak__c = true';
+            query += ' AND Statut_Banque__c in (\'En Cours\', \'Refusé\') AND Payment_Order_Id__c <> null AND blng__PaymentStatus__c <> \'Paid\' ';
         } else if (isCheckPayments && !isPaytweak ){
             query += ' AND Statut_Banque__c in (\'En Cours\', \'Refusé\') AND Payment_Order_Id_CDN__c <> null AND blng__PaymentStatus__c <> \'Paid\'';
         } else if (isPaytweak) {
-            query += ' AND Payment_Order_Id__c = null AND Numero_Facturation_Cerbavet__c != null AND blng__TotalAmount__c > 0 AND blng__Account__r.TECH_InterfacePaytweak__c = true';
+            query += ' AND Payment_Order_Id__c = null AND Numero_Facturation_Cerbavet__c != null AND blng__TotalAmount__c > 0';
         } else {
             query += ' AND Payment_Order_Id_CDN__c = null AND Numero_Facturation_Cerbavet__c != null AND blng__TotalAmount__c > 0';
         }
