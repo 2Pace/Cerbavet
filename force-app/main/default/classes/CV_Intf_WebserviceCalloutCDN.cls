@@ -88,7 +88,7 @@ public with sharing class CV_Intf_WebserviceCalloutCDN extends CV_Intf_Webservic
 
         blng__Invoice__c invoice = new blng__Invoice__c(
                 Id = invoiceId,
-                Statut_Banque__c = integratioStatus,
+                Statut_Banque_CDN__c = integratioStatus,
                 Message_d_erreur__c = errorMessage,
                 Lien_Paiement_CDN__c = paymentLink,
                 Payment_Order_Id_CDN__c = paymentOrderId,

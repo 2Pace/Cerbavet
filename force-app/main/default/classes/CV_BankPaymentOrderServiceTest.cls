@@ -94,8 +94,36 @@ private class CV_BankPaymentOrderServiceTest {
         ]);
         System.assertEquals(1, interfaceMonitorings.size());
 
-        blng__Invoice__c invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c,Payment_Order_Id_CDN__c, Message_d_erreur__c, Statut_Banque__c FROM blng__Invoice__c];
+        blng__Invoice__c invoice = [SELECT Id, blng__PaymentStatus__c,Payment_Order_Id_CDN__c, Message_d_erreur__c, Statut_Banque_CDN__c FROM blng__Invoice__c];
         System.assertEquals('dflsmfsfm-dfjfosf-12324', invoice.Payment_Order_Id_CDN__c);
+        System.assertEquals('En Cours', invoice.Statut_Banque_CDN__c);
+
+    }
+
+    @IsTest
+    static void testGeneratePaymentPaytweak() {
+
+        String query = CV_BankPaymentOrderService.getSelectionQuery(false, true);
+
+        List<blng__Invoice__c> invoices = (List<blng__Invoice__c>)Database.query(query);
+
+        Test.startTest();
+        CV_Intf_WebserviceMock.status = 200;
+        CV_Intf_WebserviceMock.interfaceToTest = 'PAYTWEAK';
+        Test.setMock(HttpCalloutMock.class, new CV_Intf_WebserviceMock());
+
+        CV_BankPaymentOrderService.generatePaymentOrderIds(invoices, true);
+
+        Test.stopTest();
+
+        List<Interface_Monitoring__c> interfaceMonitorings = new List<Interface_Monitoring__c>([
+                SELECT Id, Interface_Name__c, Status_Code__c
+                FROM Interface_Monitoring__c
+        ]);
+        System.assertEquals(1, interfaceMonitorings.size());
+
+        blng__Invoice__c invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c, Message_d_erreur__c, Statut_Banque__c FROM blng__Invoice__c];
+        System.assertEquals('dflsmfsfm-dfjfosf-12324', invoice.Payment_Order_Id__c);
         System.assertEquals('En Cours', invoice.Statut_Banque__c);
 
     }
@@ -126,9 +154,9 @@ private class CV_BankPaymentOrderServiceTest {
         ]);
         System.assertEquals(1, interfaceMonitorings.size());
 
-        invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c,Payment_Order_Id_CDN__c, Message_d_erreur__c, Statut_Banque__c FROM blng__Invoice__c];
+        invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c,Payment_Order_Id_CDN__c, Message_d_erreur__c, Statut_Banque_CDN__c FROM blng__Invoice__c];
         System.assertEquals('dflsmfsfm-dfjfosf-12324', invoice.Payment_Order_Id_CDN__c);
-        System.assertEquals('Payé', invoice.Statut_Banque__c);
+        System.assertEquals('Payé', invoice.Statut_Banque_CDN__c);
 
     }
 
@@ -157,9 +185,9 @@ private class CV_BankPaymentOrderServiceTest {
         ]);
         System.assertEquals(1, interfaceMonitorings.size());
 
-        invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id_CDN__c,Payment_Order_Id__c, Message_d_erreur__c, Statut_Banque__c FROM blng__Invoice__c];
+        invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id_CDN__c,Payment_Order_Id__c, Message_d_erreur__c, Statut_Banque_CDN__c FROM blng__Invoice__c];
         System.assertEquals('dflsmfsfm-dfjfosf-12324', invoice.Payment_Order_Id_CDN__c );
-        System.assertEquals('Payé', invoice.Statut_Banque__c);
+        System.assertEquals('Payé', invoice.Statut_Banque_CDN__c);
 
     }
 

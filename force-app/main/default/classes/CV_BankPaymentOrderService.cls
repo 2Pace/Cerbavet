@@ -25,7 +25,7 @@ public with sharing class CV_BankPaymentOrderService {
         if (isCheckPayments && isPaytweak ) {
             query += ' AND Statut_Banque__c in (\'En Cours\', \'Refusé\') AND Payment_Order_Id__c <> null AND blng__PaymentStatus__c <> \'Paid\' ';
         } else if (isCheckPayments && !isPaytweak ){
-            query += ' AND Statut_Banque__c in (\'En Cours\', \'Refusé\') AND Payment_Order_Id_CDN__c <> null AND blng__PaymentStatus__c <> \'Paid\'';
+            query += ' AND Statut_Banque_CDN__c in (\'En Cours\', \'Refusé\') AND Payment_Order_Id_CDN__c <> null AND blng__PaymentStatus__c <> \'Paid\'';
         } else if (isPaytweak) {
             query += ' AND Payment_Order_Id__c = null AND Numero_Facturation_Cerbavet__c != null AND blng__TotalAmount__c > 0';
         } else {

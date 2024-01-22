@@ -43,7 +43,7 @@ global with sharing class CV_CompteRenduInWSController {
 
             List<Order> orders = new List<Order>([
                     SELECT Id, Account.Code_compte_metier__c, Conditions_de_Reglement_Cerbavet__c, Statut_Compte_Rendu__c,
-                    (SELECT Id, blng__PaymentStatus__c, Lien_Paiement__c, Lien_Paiement_CDN__c, Statut_Banque__c, Facture_Proprio__c FROM blng__OrderInvoices__r Order By CreatedDate desc)
+                    (SELECT Id, blng__PaymentStatus__c, Lien_Paiement__c, Lien_Paiement_CDN__c, Statut_Banque__c,Statut_Banque_CDN__c, Facture_Proprio__c FROM blng__OrderInvoices__r Order By CreatedDate desc)
                     FROM Order
                     WHERE Numero__c = :compteRenduECVRequest.recordNumber
                     LIMIT 1
