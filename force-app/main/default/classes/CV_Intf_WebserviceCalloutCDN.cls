@@ -24,7 +24,6 @@ public with sharing class CV_Intf_WebserviceCalloutCDN extends CV_Intf_Webservic
 
 
     public void sendStructuresToCDN(List< Object> mdwStructures) {
-        System.debug('**** IMA mdwStructures value == ' + mdwStructures);
         executeCallout(mdwStructures);
     }
 
@@ -91,7 +90,7 @@ public with sharing class CV_Intf_WebserviceCalloutCDN extends CV_Intf_Webservic
                 Id = invoiceId,
                 Statut_Banque__c = integratioStatus,
                 Message_d_erreur__c = errorMessage,
-                Lien_Paiement__c = paymentLink,
+                Lien_Paiement_CDN__c = paymentLink,
                 Payment_Order_Id_CDN__c = paymentOrderId,
                 Allocation_lignes_de_factures__c = paymentAllocation
         );
