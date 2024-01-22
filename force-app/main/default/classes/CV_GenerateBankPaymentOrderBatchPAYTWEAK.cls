@@ -22,7 +22,7 @@ global class CV_GenerateBankPaymentOrderBatchPAYTWEAK implements Database.Batcha
                 WHERE DeveloperName = :CONFIGURATION_NAME
         ];
 
-        String query = CV_BankPaymentOrderService.getSelectionQuery(false);
+        String query = CV_BankPaymentOrderService.getSelectionQuery(false,true);
 
         System.debug('============================ CV_GenerateBankPaymentOrderBatchPAYTWEAK start query : ' + query);
 
