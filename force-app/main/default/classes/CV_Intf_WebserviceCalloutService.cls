@@ -54,7 +54,18 @@ public with sharing class CV_Intf_WebserviceCalloutService {
 
         if(interfaceName == 'PAYTWEAK'){
             String bodyPayload = jsonPayload;
-            requestInput = new CV_Intf_RequestInput('callout:' +namedCredential, method, bodyPayload,interfaceName);
+            System.debug('*** IMA Before Callout jsonPayload value == '+jsonPayload);
+            String invOrderId = getInvOrderId(jsonPayload);
+            System.debug('*** IMA Before Callout invOrderId value == '+invOrderId);
+            Map<String,String> params = new Map<String,String>();
+            Boolean isCheckPaymentsVal = CV_Intf_WebserviceCalloutCDN.isPaymentCheck;
+            System.debug('*** IMA Before Callout isCheckPaymentsVal == '+isCheckPaymentsVal);
+            if(isCheckPaymentsVal){
+                params.put('order_id',invOrderId);
+            }
+            
+            System.debug('*** IMA Before Callout url value == '+params + ' / method :== ' +method + ' /headers == ' + headers);
+            requestInput = new CV_Intf_RequestInput('callout:' +namedCredential, method, bodyPayload,interfaceName, params);
         } else {
             requestInput = new CV_Intf_RequestInput('callout:' +namedCredential, method, jsonPayload,interfaceName);
         }
@@ -147,6 +158,24 @@ public with sharing class CV_Intf_WebserviceCalloutService {
             this.payload = payload;
             this.serviceResult = serviceResult;
         }
+    }
+
+    private static string getInvOrderId(String payload) {
+        String[] playloadList = payload.split('----------------------------533330745817455354437071');
+        System.debug('***** IMA playloadList value == '+ playloadList);
+        String s1 = playloadList[1].replace('\r\n', '&');
+        System.debug('S1 Value == '+ s1);
+        playloadList = s1.split('&&');
+        System.debug('***** IMA playloadList value == '+ playloadList);
+        String orderIdKey = playloadList[0];
+        String orderIdValue = playloadList[1];
+        orderIdValue = orderIdValue.replace('&','');
+        orderIdValue = orderIdValue.replace('=','');
+        Map<String, String> mapOrderId = new Map<String, String>();
+        mapOrderId.put(orderIdKey,orderIdValue);
+        String extId = mapOrderId.get('Content-Disposition: form-data; name="order_id";');
+        System.debug('***** IMA mapOrderId value == '+ mapOrderId + ' / orderIdKey =' + orderIdKey + '/orderIdValue == ' +orderIdValue);
+        return orderIdValue;
     }
 
 }
