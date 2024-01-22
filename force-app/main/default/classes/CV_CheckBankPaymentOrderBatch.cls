@@ -22,7 +22,7 @@ global class CV_CheckBankPaymentOrderBatch implements Database.Batchable<sObject
                 WHERE DeveloperName = :CONFIGURATION_NAME
         ];
 
-        String query = CV_BankPaymentOrderService.getSelectionQuery(true);
+        String query = CV_BankPaymentOrderService.getSelectionQuery(true,false);
 
 //        query += ' AND id in (\'a3Y0D000000d6LoUAI\')';
 
