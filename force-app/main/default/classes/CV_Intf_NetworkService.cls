@@ -12,14 +12,23 @@ public with sharing class CV_Intf_NetworkService {
         request.setTimeout(requestInput.timeout);
         request.setEndpoint(requestInput.urlString);
         request.setMethod(requestInput.method);
-
         for (String key : requestInput.headers.keySet()) {
             request.setHeader(key, requestInput.headers.get(key));
         }
 
         switch on requestInput.method {
             when 'GET' {
-                request.setBody(buildQueryStrings(requestInput.headers));
+                if(requestInput.urlString == 'callout:PAYTWEAK_Create_Order') {
+                    String queryString = buildQueryStrings(requestInput.params);
+                    queryString = queryString.replace('&','');
+                    System.debug('queryString == ' + queryString + requestInput.method);
+                    String urlString = requestInput.urlString+ '?' + queryString;
+                    System.debug('Final urlString == ' + urlString );
+                    request.setEndpoint(urlString);
+                    request.setMethod('GET');
+                } else {
+                    request.setBody(buildQueryStrings(requestInput.headers));
+                }
             }
             when 'POST' {
                 request.setBody(requestInput.parameters);
@@ -28,6 +37,7 @@ public with sharing class CV_Intf_NetworkService {
 
             }
         }
+        System.debug('request val == '+request );
 
         HttpResponse response = http.send(request);
         CV_Intf_ServiceResult serviceResult = new CV_Intf_ServiceResult(response.getBody(), response.getStatusCode());
