@@ -66,6 +66,9 @@ private class CV_BankPaymentOrderServiceTest {
         orderNew.Status = 'Activated';
         update orderNew;
 
+        orderPAYTWEAK.Status = 'Activated';
+        update orderPAYTWEAK;
+
         blng__InvoiceRun__c invoiceRun = new blng__InvoiceRun__c(
                 Name = 'Cerbavet Proprio',
                 blng__TargetDate__c = Date.today()
