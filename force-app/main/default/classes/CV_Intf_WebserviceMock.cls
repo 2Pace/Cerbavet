@@ -86,44 +86,61 @@ global class CV_Intf_WebserviceMock implements HttpCalloutMock {
             }
         } else if (interfaceToTest == 'PAYTWEAKCHECK') {
 
-            if (status == 200) {
-                CV_Intf_PaytweakSchemaBuilder.ResponseCheckPaymentOrder responsePaymentOrder = new CV_Intf_PaytweakSchemaBuilder.ResponseCheckPaymentOrder();
-
-                responsePaymentOrder.attributes.id = '1ei7W';
-                responsePaymentOrder.attributes.dateT = '18/01/2024';
-                responsePaymentOrder.attributes.name = '';
-                responsePaymentOrder.attributes.email = '';
-                responsePaymentOrder.attributes.order_id = 'FACCV-20240118-0003';
-                responsePaymentOrder.attributes.amount = '14600';
-                responsePaymentOrder.attributes.monthly = '';
-                responsePaymentOrder.attributes.link_url = 'https://paiement-factures.cerballiance.fr/1ei7W';
-                responsePaymentOrder.attributes.msg_type = 'IC';
-                responsePaymentOrder.attributes.phone = '';
-                responsePaymentOrder.attributes.subject = '';
-                responsePaymentOrder.attributes.message_text = '';
-                responsePaymentOrder.attributes.message_html = '';
-                responsePaymentOrder.attributes.user = '';
-                responsePaymentOrder.attributes.groupT = '';
-                responsePaymentOrder.attributes.scenario = 'default';
-                responsePaymentOrder.attributes.freetext = '';
-                responsePaymentOrder.attributes.clics = '1';
-                responsePaymentOrder.attributes.paid = '1';
-                responsePaymentOrder.attributes.active = '1';
-                responsePaymentOrder.code = 'OK';
-                responsePaymentOrder.message = 'Process Succeeded';
-
-                response.setStatusCode(status);
-                response.setBody(JSON.serialize(responsePaymentOrder));
-                System.debug('*** IMA Response PAYTWEAKCHECK get body value == ' + response.getBody());
-
+            if (request.getHeader('Paytweak-API-KEY') != null){
+                String responseBody = '{"Paytweak-Security-Token": "PAYTWEAK-0M0ATl0YI4OY"}';
+                response.setHeader('Content-Type', 'application/json');
+                response.setBody(responseBody);
+                response.setStatusCode(200);
+                System.debug('*** IMA Response PAYTWEAKCHECK 1 post order getbody() value == ' + response.getBody());
+            } else if (request.getHeader('Paytweak-USER-TOKEN') != null){
+                String responseBody = '{"Paytweak-Work-Token": "PAYTWEAK-0M0ATl0YI4OY"}';
+                response.setHeader('Content-Type', 'application/json');
+                response.setBody(responseBody);
+                response.setStatusCode(200);
+                System.debug('*** IMA Response PAYTWEAKCHECK 2 post order getbody() value == ' + response.getBody());
             } else {
+                if (status == 200) {
+                    System.debug('*** IMA status == 200' );
+                    CV_Intf_PaytweakSchemaBuilder.ResponseCheckPaymentOrder responsePaymentOrder = new CV_Intf_PaytweakSchemaBuilder.ResponseCheckPaymentOrder();
+                    responsePaymentOrder.code = 'OK';
+                    responsePaymentOrder.message = 'Process Succeeded';
+                    CV_Intf_PaytweakSchemaBuilder.Attributes attributes = new CV_Intf_PaytweakSchemaBuilder.Attributes();
+                    
+                    attributes.id = '1ei7W';
+                    attributes.dateT = '18/01/2024';
+                    attributes.name = '';
+                    attributes.email = '';
+                    attributes.order_id = 'FACCV-20240118-0003';
+                    attributes.amount = '14600';
+                    attributes.monthly = '';
+                    attributes.link_url = 'https://paiement-factures.cerballiance.fr/1ei7W';
+                    attributes.msg_type = 'IC';
+                    attributes.phone = '';
+                    attributes.subject = '';
+                    attributes.message_text = '';
+                    attributes.message_html = '';
+                    attributes.user = '';
+                    attributes.groupT = '';
+                    attributes.scenario = 'default';
+                    attributes.freetext = '';
+                    attributes.clics = '1';
+                    attributes.paid = '1';
+                    attributes.active = '1';
+                    responsePaymentOrder.attributes = attributes;
+                    System.debug('*** IMA Response PAYTWEAKCHECK responsePaymentOrder value == ' + responsePaymentOrder);
+                    response.setStatusCode(status);
+                    response.setBody(JSON.serialize(responsePaymentOrder));
+                    System.debug('*** IMA Response PAYTWEAKCHECK get body value == ' + response.getBody());
 
-                CV_Intf_PaytweakSchemaBuilder.BodyError paytweakError = new CV_Intf_PaytweakSchemaBuilder.BodyError ();
-                paytweakError.code = '409';
-                paytweakError.message = '{CONFLICT : [order_id] :  is already used in an active link.}';
+                } else {
 
-                response.setStatusCode(409);
-                response.setBody(JSON.serialize(paytweakError));
+                    CV_Intf_PaytweakSchemaBuilder.BodyError paytweakError = new CV_Intf_PaytweakSchemaBuilder.BodyError ();
+                    paytweakError.code = '409';
+                    paytweakError.message = '{CONFLICT : [order_id] :  is already used in an active link.}';
+
+                    response.setStatusCode(409);
+                    response.setBody(JSON.serialize(paytweakError));
+                }
             }
         } else if (interfaceToTest == 'CDNCHECK') {
 
@@ -168,7 +185,6 @@ global class CV_Intf_WebserviceMock implements HttpCalloutMock {
             throw e;
 
         } else {
-
             response.setStatusCode(200);
             response.setBody('OK');
         }
