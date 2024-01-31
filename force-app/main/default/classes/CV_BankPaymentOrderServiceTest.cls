@@ -32,17 +32,6 @@ private class CV_BankPaymentOrderServiceTest {
         );
         insert orderNew;
 
-        Order orderPAYTWEAK = new Order(
-                AccountId = account.Id,
-                EffectiveDate = Date.today(),
-                Pricebook2Id = pricebook2.Id,
-                Status = 'Draft',
-                blng__BillingDayOfMonth__c = '5',
-                SBQQ__PaymentTerm__c = 'Net 30',
-                blng__InvoiceBatch__c = 'Cerbavet Analysis'
-        );
-        insert orderNew;
-
         OrderItem orderItem = new OrderItem(
                 OrderId = orderNew.Id,
                 Product2Id = normalProduct.Id,
@@ -53,21 +42,9 @@ private class CV_BankPaymentOrderServiceTest {
 
         insert orderItem;
 
-        OrderItem orderItemPaytweak = new OrderItem(
-                OrderId = orderPAYTWEAK.Id,
-                Product2Id = normalProduct.Id,
-                UnitPrice = 240,
-                Quantity = 1,
-                PricebookEntryId=pricebookEntries[0].id
-        );
-
-        insert orderItemPaytweak;
 
         orderNew.Status = 'Activated';
         update orderNew;
-
-        orderPAYTWEAK.Status = 'Activated';
-        update orderPAYTWEAK;
 
         blng__InvoiceRun__c invoiceRun = new blng__InvoiceRun__c(
                 Name = 'Cerbavet Proprio',
@@ -80,22 +57,12 @@ private class CV_BankPaymentOrderServiceTest {
                 blng__InvoiceStatus__c = 'Posted',
                 blng__InvoiceRunCreatedBy__c = invoiceRun.Id,
                 Statut_Integration_ECV__c = 'A Envoyer',
-                Numero_Facturation_Cerbavet__c ='FACCV-00001',
+                Numero_Facturation_Cerbavet__c ='FACCV-20240118-0003',
                 Statut_Banque_CDN__c = 'En Cours'
         );
         insert testInvoice;
 
-        blng__Invoice__c testInvoicePaytweak = new blng__Invoice__c(
-                blng__Account__c = account.Id,
-                blng__InvoiceStatus__c = 'Posted',
-                blng__InvoiceRunCreatedBy__c = invoiceRun.Id,
-                Statut_Integration_ECV__c = 'A Envoyer',
-                Numero_Facturation_Cerbavet__c ='FACCV-20240118-0003',
-                Statut_Banque__c = 'En Cours'
-        );
-        insert testInvoicePaytweak;
-
-        SBQQ.TriggerControl.enable();
+        SBQQ.TriggerControl.enable();   
 
         blng__InvoiceLine__c testInvoiceLine = new blng__InvoiceLine__c(
                 blng__Invoice__c = testInvoice.Id,
@@ -104,14 +71,6 @@ private class CV_BankPaymentOrderServiceTest {
                 blng__Subtotal__c = 100
         );
         insert testInvoiceLine;
-
-        blng__InvoiceLine__c testInvoiceLinePaytweak = new blng__InvoiceLine__c(
-                blng__Invoice__c = testInvoicePaytweak.Id,
-                blng__OrderProduct__c = orderItem.Id,
-                blng__Product__c = orderItem.Product2Id,
-                blng__Subtotal__c = 240
-        );
-        insert testInvoiceLinePaytweak;
 
     }
 
