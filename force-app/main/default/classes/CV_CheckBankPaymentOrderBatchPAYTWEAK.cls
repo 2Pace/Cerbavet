@@ -29,7 +29,7 @@ global class CV_CheckBankPaymentOrderBatchPAYTWEAK implements Database.Batchable
         System.debug('============================ CV_CheckBankPaymentOrderBatchPAYTWEAK start query : ' + query);
 
         Database.QueryLocator queryLocator = Database.getQueryLocator(query);
-
+        System.debug('============================ CV_CheckBankPaymentOrderBatchPAYTWEAK queryLocator : ' + queryLocator);
         return queryLocator;
     }
 
