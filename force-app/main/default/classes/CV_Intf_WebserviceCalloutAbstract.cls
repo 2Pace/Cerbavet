@@ -115,7 +115,7 @@ public abstract class CV_Intf_WebserviceCalloutAbstract {
                     System.debug('============================ CV_Intf_WebserviceCalloutAbstract doCalloutPaytweak responses: ' + responses);
 
                     if (System.isBatch() && !responses.isEmpty()) {
-                        CV_Intf_WebserviceCallout instance = (CV_Intf_WebserviceCallout)Type.forName(caller).newInstance();
+                        CV_Intf_WebserviceCalloutPAYTWEAK instance = (CV_Intf_WebserviceCalloutPAYTWEAK)Type.forName(caller).newInstance();
 
                         for (CV_Intf_WebserviceCalloutService.ResponseModel responseModel : responses) {
                             instance.handleResponse(responseModel.serviceResult, responseModel.payload, responseModel.isTechnicalError);
