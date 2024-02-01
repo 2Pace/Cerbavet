@@ -14,16 +14,25 @@ public with sharing class CV_Intf_WebserviceCalloutService {
     public static void fireFutureCallout(String jsonPayload, String namedCredential, String caller, String interfaceName, Map<String, String> headers, Map<String, String> tagRemap, String method) {
 
         CV_Intf_WebserviceCallout instance = (CV_Intf_WebserviceCallout)Type.forName(caller).newInstance();
+        List<String> payloads = new List<String>();
+        System.debug('***** IMA interfaceName value == ' + interfaceName);
+        if(interfaceName != 'PAYTWEAK') {
+            payloads = (List<String>)JSON.deserialize(jsonPayload, List<String>.class); 
+            for (String payload : payloads) {
+                String remappedPayload = remapTagInPayload(payload, tagRemap);
 
-        List<String> payloads = (List<String>)JSON.deserialize(jsonPayload, List<String>.class);
+                calloutWebservice(remappedPayload, namedCredential, caller, interfaceName, headers, method);
+            }
+        } else {
 
-        for (String payload : payloads) {
-            String remappedPayload = remapTagInPayload(payload, tagRemap);
+            System.debug('***** IMA CV_Intf_WebserviceCalloutService.fireFutureCallout PAYTWEAK ******');
+            calloutWebservice(jsonPayload, namedCredential, caller, interfaceName, headers, method);
 
-            calloutWebservice(remappedPayload, namedCredential, caller, interfaceName, headers, method);
         }
 
         for (CV_Intf_WebserviceCalloutService.ResponseModel responseModel : responses) {
+
+            System.debug('***** IMA CV_Intf_WebserviceCalloutService.fireFutureCallout CV_Intf_WebserviceCalloutService.ResponseMode PAYTWEAK response == ******' + responseModel.serviceResult); 
             instance.handleResponse(responseModel.serviceResult, responseModel.payload, responseModel.isTechnicalError);
             instance.registerMonitoningMessage(responseModel.payload, responseModel.responseMessage, interfaceName, responseModel.statusCode, responseModel.isError, false);
         }
