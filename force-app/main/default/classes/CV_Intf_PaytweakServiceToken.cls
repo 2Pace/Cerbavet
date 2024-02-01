@@ -23,7 +23,7 @@
             
             Http http = new Http();
             HTTPResponse response = http.send(req);
-
+            
             System.debug('Status ' + response.getStatus());
             System.debug('Status code ' + response.getStatusCode());
             System.debug('HttpRequest' + req);
@@ -39,6 +39,9 @@
         }
 
         public Static String getWorkToken() {
+            if(CV_BankPaymentOrderService.bypassToken == true){
+                return null;
+            }
             String securityToken = getSecurityToken();
             System.debug('*** IMA For WorkTk security token value -- ' + securityToken);
 
