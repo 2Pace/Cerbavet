@@ -11,7 +11,7 @@ public with sharing class CV_Intf_WebserviceCalloutCDN extends CV_Intf_Webservic
     private static final String WEBSERVICE_CREATE_ORDER = 'Charge/CreatePaymentOrder';
     private static final String WEBSERVICE_CHECK_ORDER = 'Charge/PaymentOrder/Get';
     // public static String method;
-    public static Boolean isPaymentCheck;
+    public static Boolean isPaymentCheck = false;
 
     private static Map<String, String> statusMapping = new Map<String, String> {
             'RUNNING' => 'En Cours',
