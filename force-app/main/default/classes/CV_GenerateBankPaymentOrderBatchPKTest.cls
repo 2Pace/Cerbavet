@@ -1,10 +1,9 @@
 /**
- * Created by Michael on 11-07-22.
+ * Created by Ingrid on 15-01-24.
  */
 
 @IsTest
-private class CV_GenerateBankPaymentOrderBatchTest {
-
+public with sharing class CV_GenerateBankPaymentOrderBatchPKTest {
     @TestSetup
     static void setupData() {
 
@@ -60,7 +59,7 @@ private class CV_GenerateBankPaymentOrderBatchTest {
                 Statut_Banque__c = 'En Cours',
                 Statut_Banque_CDN__c = 'En Cours'
         );
-        insert testInvoice;
+        insert testInvoice; 
 
         blng__InvoiceLine__c testInvoiceLine = new blng__InvoiceLine__c(
                 blng__Invoice__c = testInvoice.Id,
@@ -74,13 +73,13 @@ private class CV_GenerateBankPaymentOrderBatchTest {
 
     @IsTest
     static void testBatchBehaviour() {
-
+        CV_BankPaymentOrderService.bypassToken =true;
         Test.startTest();
         CV_Intf_WebserviceMock.status = 200;
-        CV_Intf_WebserviceMock.interfaceToTest = 'CDN';
+        CV_Intf_WebserviceMock.interfaceToTest = 'PAYTWEAK';
         Test.setMock(HttpCalloutMock.class, new CV_Intf_WebserviceMock());
 
-        CV_GenerateBankPaymentOrderBatch batch = new CV_GenerateBankPaymentOrderBatch();
+        CV_GenerateBankPaymentOrderBatchPAYTWEAK batch = new CV_GenerateBankPaymentOrderBatchPAYTWEAK();
         Database.executeBatch(batch);
 
         Test.stopTest();
@@ -89,21 +88,24 @@ private class CV_GenerateBankPaymentOrderBatchTest {
                 SELECT Id, Interface_Name__c, Status_Code__c
                 FROM Interface_Monitoring__c
         ]);
+        blng__Invoice__c invoice = [SELECT Id, blng__PaymentStatus__c,Statut_Banque__c,Payment_Order_Id__c, blng__TotalAmount__c,Message_d_erreur__c FROM blng__Invoice__c];
+        System.debug('**** IMA invoice == '+invoice);
         System.assertEquals(1, interfaceMonitorings.size());
 
-        blng__Invoice__c invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c,Payment_Order_Id_CDN__c, Message_d_erreur__c FROM blng__Invoice__c];
-        System.assertEquals('dflsmfsfm-dfjfosf-12324', invoice.Payment_Order_Id_CDN__c);
+        //blng__Invoice__c invoice = [SELECT Id, blng__PaymentStatus__c,Payment_Order_Id__c, Message_d_erreur__c FROM blng__Invoice__c];
+        System.assertEquals('FACCV-20240118-0003', invoice.Payment_Order_Id__c);
     }
 
     @IsTest
     static void testBatchBehaviourError() {
 
+        CV_BankPaymentOrderService.bypassToken =true;
         Test.startTest();
-        CV_Intf_WebserviceMock.status = 500;
-        CV_Intf_WebserviceMock.interfaceToTest = 'CDN';
+        CV_Intf_WebserviceMock.status = 409;
+        CV_Intf_WebserviceMock.interfaceToTest = 'PAYTWEAK';
         Test.setMock(HttpCalloutMock.class, new CV_Intf_WebserviceMock());
 
-        CV_GenerateBankPaymentOrderBatch batch = new CV_GenerateBankPaymentOrderBatch();
+        CV_GenerateBankPaymentOrderBatchPAYTWEAK batch = new CV_GenerateBankPaymentOrderBatchPAYTWEAK();
         Database.executeBatch(batch);
 
         Test.stopTest();
@@ -114,19 +116,22 @@ private class CV_GenerateBankPaymentOrderBatchTest {
         ]);
         System.assertEquals(1, interfaceMonitorings.size());
 
-        blng__Invoice__c invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c, Payment_Order_Id_CDN__c,Message_d_erreur__c FROM blng__Invoice__c];
-        System.assert(invoice.Message_d_erreur__c.contains('222'));
+        blng__Invoice__c invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c,Message_d_erreur__c FROM blng__Invoice__c];
+        System.assert(invoice.Message_d_erreur__c.contains('CONFLICT'));
 
     }
 
     @IsTest
     static void testSchedule() {
-
+        CV_BankPaymentOrderService.bypassToken =true;
         System.Test.startTest();
+        CV_Intf_WebserviceMock.status = 200;
+        CV_Intf_WebserviceMock.interfaceToTest = 'PAYTWEAK';
+        Test.setMock(HttpCalloutMock.class, new CV_Intf_WebserviceMock());
 
         String sch2 = '0 5 * * * ?';
 
-        String jobId = CV_GenerateBankPaymentOrderBatch.scheduleThis(sch2);
+        String jobId = CV_GenerateBankPaymentOrderBatchPAYTWEAK.scheduleThis(sch2);
 
         CronTrigger ct = [SELECT Id, CronExpression, TimesTriggered, NextFireTime FROM CronTrigger WHERE Id = :jobId];
 
