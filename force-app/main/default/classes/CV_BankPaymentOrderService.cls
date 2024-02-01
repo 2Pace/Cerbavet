@@ -12,6 +12,7 @@ public with sharing class CV_BankPaymentOrderService {
     private static final String INTERFACE_CDN = 'GeneratePayment';
     private static final String TARGET_SYSTEM_PAYTWEAK= 'PAYTWEAK';
     private static final String INTERFACE_PAYTWEAK = 'GeneratePayment';
+    public static Boolean bypassToken = false;
 
 
     public static String getSelectionQuery(Boolean isCheckPayments, Boolean isPaytweak) {
@@ -23,13 +24,14 @@ public with sharing class CV_BankPaymentOrderService {
         query += ' WHERE Facture_Proprio__c = true';
         
         if (isCheckPayments && isPaytweak ) {
+            system.debug('isCheckPayments && isPaytweak');
             query += ' AND Statut_Banque__c in (\'En Cours\', \'Refusé\') AND Payment_Order_Id__c <> null AND blng__PaymentStatus__c <> \'Paid\' ';
         } else if (isCheckPayments && !isPaytweak ){
             query += ' AND Statut_Banque_CDN__c in (\'En Cours\', \'Refusé\') AND Payment_Order_Id_CDN__c <> null AND blng__PaymentStatus__c <> \'Paid\'';
         } else if (isPaytweak) {
-            query += ' AND Payment_Order_Id__c = null AND Numero_Facturation_Cerbavet__c != null AND blng__TotalAmount__c > 0';
+            query += ' AND Payment_Order_Id__c = null AND Numero_Facturation_Cerbavet__c != null';
         } else {
-            query += ' AND Payment_Order_Id_CDN__c = null AND Numero_Facturation_Cerbavet__c != null AND blng__TotalAmount__c > 0';
+            query += ' AND Payment_Order_Id_CDN__c = null AND Numero_Facturation_Cerbavet__c != null';
         }
         System.debug('**** IMA Query == '+query);
         return query;
@@ -57,16 +59,17 @@ public with sharing class CV_BankPaymentOrderService {
             // Paytweak
             CV_Intf_Service.loadMDWTransformationsMap(INTERFACE_PAYTWEAK);
             syncFieldsPaytweak = CV_Intf_Service.getActiveSyncFields(TARGET_SYSTEM_PAYTWEAK);
-            system.debug('*** IMA Paytweak syncFields in CV_BankPaymentOrderService L54 == ' + syncFieldsPaytweak);
+            system.debug('*** IMA Paytweak syncFields in CV_BankPaymentOrderService L59 == ' + syncFieldsPaytweak);
         } else {
             // Crédit du Nord
             CV_Intf_Service.loadMDWTransformationsMap(INTERFACE_CDN);
             syncFields = CV_Intf_Service.getActiveSyncFields(TARGET_SYSTEM_CDN);
-            system.debug('*** IMA Paytweak syncFields in CV_BankPaymentOrderService L54 == ' + syncFields);
+            system.debug('*** IMA Paytweak syncFields in CV_BankPaymentOrderService L65 == ' + syncFields);
         }
         
         List<Object> bodyRequestMapList = new List<Object>();
         List<String> bodyPaytweak = new List<String>();
+        system.debug('BEFORE  for loop L70 -   invoices value == ' +invoices);
         for (blng__Invoice__c invoice : invoices) {
             CV_Intf_CreditDuNordSchemaBuilder.GetPaymentOrder bodyPayload;
             String bodyPayloadPAytweak;
@@ -76,19 +79,19 @@ public with sharing class CV_BankPaymentOrderService {
                 bodyRequestMapList.add(bodyPayload);
             } else {
                 bodyPayloadPAytweak  = CV_Intf_PaytweakSchemaBuilder.getInvoicePayload(invoice, CV_Intf_WebserviceCalloutCDN.isPaymentCheck);
-                System.debug('bodyPayloadPAytweak value == '+bodyPayloadPAytweak);
+                System.debug('**** IMA bodyPayloadPAytweak value == '+bodyPayloadPAytweak);
                 bodyPaytweak.add(bodyPayloadPAytweak);
             } 
         }
         
         if(isPaytweak && !bodyPaytweak.isEmpty()){
             // Paytweak
-            System.debug('**** IMA CDN bodyPaytweak  L78 == ' + bodyPaytweak);
+            System.debug('**** IMA bodyPaytweak  L88 == ' + bodyPaytweak);
             CV_Intf_WebserviceCalloutPAYTWEAK wsPAYTWEAKCallout = new CV_Intf_WebserviceCalloutPAYTWEAK();  
             wsPAYTWEAKCallout.sendStructuresToPaytweak(bodyPaytweak);
         } else if (!bodyRequestMapList.isEmpty()){
             // Crédit du Nord
-            System.debug('**** IMA CDN bodyRequestMapList CDN L77 == ' + bodyRequestMapList);
+            System.debug('**** IMA CDN bodyRequestMapList CDN L91 == ' + bodyRequestMapList);
             CV_Intf_WebserviceCalloutCDN wsCDNCallout = new CV_Intf_WebserviceCalloutCDN();
             wsCDNCallout.sendStructuresToCDN(bodyRequestMapList);
         }
@@ -105,12 +108,12 @@ public with sharing class CV_BankPaymentOrderService {
             // Crédit du Nord
             CV_Intf_Service.loadMDWTransformationsMap(INTERFACE_CDN);
             List<Intf_Sync_Field__mdt> syncFields = CV_Intf_Service.getActiveSyncFields(TARGET_SYSTEM_CDN);
-            system.debug('*** IMA CDN syncFields in CV_BankPaymentOrderService L105 == ' + syncFields);
+            system.debug('*** IMA CDN syncFields in CV_BankPaymentOrderService L108 == ' + syncFields);
         } else {
             // Paytweak
             CV_Intf_Service.loadMDWTransformationsMap(INTERFACE_PAYTWEAK);
             List<Intf_Sync_Field__mdt> syncFieldsPaytweak = CV_Intf_Service.getActiveSyncFields(TARGET_SYSTEM_PAYTWEAK);
-            system.debug('*** IMA Paytweak syncFieldsPaytweak in CV_BankPaymentOrderService L110 == ' + syncFieldsPaytweak);
+            system.debug('*** IMA Paytweak syncFieldsPaytweak in CV_BankPaymentOrderService L113 == ' + syncFieldsPaytweak);
         }
         
         // Loop on invoice list to assign correct format for each record
