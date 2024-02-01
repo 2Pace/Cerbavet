@@ -81,7 +81,7 @@ global class CV_Intf_WebserviceMock implements HttpCalloutMock {
     
                     response.setStatusCode(409);
                     response.setBody(JSON.serialize(paytweakError));
-                    
+                    System.debug('*** IMA Response PAYTWEAK post order getbody() error value == ' + response.getBody());
                 }
             }
         } else if (interfaceToTest == 'PAYTWEAKCHECK') {
