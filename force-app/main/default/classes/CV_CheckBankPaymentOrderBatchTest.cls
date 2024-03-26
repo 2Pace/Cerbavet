@@ -74,6 +74,11 @@ private class CV_CheckBankPaymentOrderBatchTest {
     @IsTest
     static void testBatchBehavior() {
 
+        blng__InvoiceLine__c invoiceLine = [SELECT Id, blng__Invoice__c,blng__Subtotal__c, blng__Product__c, blng__OrderProduct__c FROM blng__InvoiceLine__c];
+        System.debug('***IMA blng__InvoiceLine__c check == ' + invoiceLine);
+        invoiceLine.blng__Subtotal__c = 100;
+        update invoiceLine;
+        
         Test.startTest();
         CV_Intf_WebserviceMock.status = 200;
         CV_Intf_WebserviceMock.interfaceToTest = 'CDNCHECK';

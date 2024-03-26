@@ -10,7 +10,8 @@ public class CV_Intf_HttpHexFormBuilderTest {
                 .writeFile('file', fileName, fileContent)
                 .getFormAsBlob();
 
-        String expectedFormData = '--------------------------533330745817455354437071\r\nContent-Disposition: form-data; name="id";\r\n\r\n123\r\n--------------------------533330745817455354437071\r\nContent-Disposition: form-data; name="message";\r\n\r\nmy second paramter\r\n--------------------------533330745817455354437071\r\nContent-Disposition: form-data; name="file"; filename="file.png";\r\nContent-Type: image/png;\r\n\r\n\r\n--------------------------533330745817455354437071--';
+        String expectedFormData = '----------------------------533330745817455354437071\r\nContent-Disposition: form-data; name="id";\r\n\r\n123\r\n----------------------------533330745817455354437071\r\nContent-Disposition: form-data; name="message";\r\n\r\nmy second paramter\r\n----------------------------533330745817455354437071\r\nContent-Disposition: form-data; name="file"; filename="file.png";\r\nContent-Type: image/png;\r\n\r\n\r\n----------------------------533330745817455354437071--';
+        System.debug('***** formData.tostring() == ' + formData.tostring());
         System.assert(expectedFormData == formData.tostring());
     }
 
