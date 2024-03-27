@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>FU_ACC_MAJ_automatique_du_nom_du_compte</fullName>
+        <field>Name</field>
+        <formula>AccountNumber &amp; &quot; - &quot;&amp;  Raison_sociale__c</formula>
+        <name>FU.ACC.MAJ automatique du nom du compte</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_MAJ_ID18_TXT</fullName>
+        <field>ID18TXT__c</field>
+        <formula>CASESAFEID(Id)</formula>
+        <name>FU.MAJ ID18 TXT</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_MAJ_de_la_hi_rarchie_concat_n_e</fullName>
+        <field>Tech_Compte_Hierarchie_concatenee_TXT__c</field>
+        <formula>Tech_ID_compte_et_5_niveaux_superieurs__c
+
+&amp; &quot;&gt;&quot;&amp; BR() &amp; BR() &amp;
+
+Tech_ID_s_Niv_hierarchie_supplement__c</formula>
+        <name>FU.MAJ de la hiérarchie concaténée</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_MAJ_de_la_hierarchie_concatenee</fullName>
+        <field>Tech_Compte_Hierarchie_concatenee_TXT__c</field>
+        <formula>Tech_ID_compte_et_5_niveaux_superieurs__c
+
+&amp; &quot;&gt;&quot;&amp; BR() &amp; BR() &amp; 
+
+Tech_ID_s_Niv_hierarchie_supplement__c</formula>
+        <name>FU.MAJ de la hiérarchie concaténée</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>F%2EACC%2EMAJ ID18 TXT et hiérarchie concaténée</fullName>
+        <actions>
+            <name>FU_MAJ_ID18_TXT</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>FU_MAJ_de_la_hi_rarchie_concat_n_e</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>IF ( 				 $User.Facturation__c = True,  				False, 				True 				)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF%2EACC%2EMaj de la hiérarchie concaténée</fullName>
+        <actions>
+            <name>FU_MAJ_de_la_hierarchie_concatenee</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>IF ( 				 $User.Facturation__c = True, 				False, 				True 				)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF%2EACC_Règle de nommage automatique de compte client SGL</fullName>
+        <actions>
+            <name>FU_ACC_MAJ_automatique_du_nom_du_compte</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>IF ( 				AND ( 								  $User.Facturation__c =False, 				        OR(  				           RecordType.DeveloperName = &#39;Compte_Client_SGL_BI&#39;, 						         RecordType.DeveloperName = &#39;Compte_Client_SGL_BI_Groupe&#39; 								        ) 								), 				True, 				False 				)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF%2EFU%2EDDE%2EStatus</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Compte désactivé</value>
+        </criteriaItems>
+        <description>Statut de la demande fermé lorsque le compte passe au type d&#39;enregistrement : Compte désactivé</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

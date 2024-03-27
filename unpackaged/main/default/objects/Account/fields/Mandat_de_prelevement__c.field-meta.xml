@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mandat_de_prelevement__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>2PACE</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Cocher la case lorsque la clinique a remis le mandat de prélèvement SEPA signé.</inlineHelpText>
+    <label>Mandat de prélèvement</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

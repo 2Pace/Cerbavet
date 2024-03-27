@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Compte_BI_Spe_Adresse_de_factu_spe</fullName>
+    <active>true</active>
+    <description>Si la case à cocher &quot;Adresse de facturation spécifique&quot; est cochée, alors les champs suivants sont obligatoires : &quot;Nom Etablissement&quot;, &quot;Service&quot;, &quot;Rue Ligne 1&quot;, &quot;Rue Ligne 2&quot;, &quot;Code Postal&quot;, &quot;Ville&quot; et &quot;Pays&quot;.</description>
+    <errorConditionFormula>AND (
+$User.Tech_By_Pass_VR__c = false,
+RecordType.Id = &quot;0121t000000h1Kt&quot;,
+Adresse_de_facturation_sp_cifique__c =true,
+OR(
+ISBLANK( AdrFact_Nom__c ),
+ISBLANK( AdrFact_Serv__c ),
+ISBLANK( AdrFact_Rue1__c ),
+ISBLANK( AdrFact_Rue2__c ),
+ISBLANK( AdrFact_CP__c ),
+ISBLANK( AdrFact_Ville__c ),
+ISBLANK(TEXT( AdrFact_Pays__c ))
+)
+)</errorConditionFormula>
+    <errorDisplayField>Adresse_de_facturation_sp_cifique__c</errorDisplayField>
+    <errorMessage>Si le champ &quot;Adresse de facturation spécifique&quot; est coché, merci de renseigner les champs suivants : &quot;Nom Etablissement&quot;, &quot;Service&quot;, &quot;Rue Ligne 1&quot;, &quot;Rue Ligne 2&quot;, &quot;Code Postal&quot;, &quot;Ville&quot; et &quot;Pays&quot;.</errorMessage>
+</ValidationRule>

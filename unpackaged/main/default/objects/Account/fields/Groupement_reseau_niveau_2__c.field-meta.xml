@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Groupement_reseau_niveau_2__c</fullName>
+    <externalId>false</externalId>
+    <label>Groupement réseau niveau 2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Groupement_reseau_Niveau_1__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ACCORD CADRE ALMAVIVA</fullName>
+                <default>false</default>
+                <label>ACCORD CADRE ALMAVIVA</label>
+            </value>
+            <value>
+                <fullName>ACCORD CADRE COLISEE</fullName>
+                <default>false</default>
+                <label>ACCORD CADRE COLISEE</label>
+            </value>
+            <value>
+                <fullName>ACCORD CADRE DIAVERUM</fullName>
+                <default>false</default>
+                <label>ACCORD CADRE DIAVERUM</label>
+            </value>
+            <value>
+                <fullName>ACCORD CADRE DOMIDEP</fullName>
+                <default>false</default>
+                <label>ACCORD CADRE DOMIDEP</label>
+            </value>
+            <value>
+                <fullName>ACCORD CADRE DOMUSVI</fullName>
+                <default>false</default>
+                <label>ACCORD CADRE DOMUSVI</label>
+            </value>
+            <value>
+                <fullName>ACCORD CADRE ELSAN</fullName>
+                <default>false</default>
+                <label>ACCORD CADRE ELSAN</label>
+            </value>
+            <value>
+                <fullName>ACCORD CADRE KORIAN</fullName>
+                <default>false</default>
+                <label>ACCORD CADRE KORIAN</label>
+            </value>
+            <value>
+                <fullName>ACCORD CADRE ORPEA-CLINEA</fullName>
+                <default>false</default>
+                <label>ACCORD CADRE ORPEA-CLINEA</label>
+            </value>
+            <value>
+                <fullName>ACCORD CADRE RAMSAY SANTE</fullName>
+                <default>false</default>
+                <label>ACCORD CADRE RAMSAY SANTE</label>
+            </value>
+            <value>
+                <fullName>ACCORD CADRE VIVALTO</fullName>
+                <default>false</default>
+                <label>ACCORD CADRE VIVALTO</label>
+            </value>
+            <value>
+                <fullName>ALPIVET</fullName>
+                <default>false</default>
+                <label>ALPIVET</label>
+            </value>
+            <value>
+                <fullName>ALVEO</fullName>
+                <default>false</default>
+                <label>ALVEO</label>
+            </value>
+            <value>
+                <fullName>ANIBIO / ABIOPOLE</fullName>
+                <default>false</default>
+                <label>ANIBIO / ABIOPOLE</label>
+            </value>
+            <value>
+                <fullName>ANISERV</fullName>
+                <default>false</default>
+                <label>ANISERV</label>
+            </value>
+            <value>
+                <fullName>APEX</fullName>
+                <default>false</default>
+                <label>APEX</label>
+            </value>
+            <value>
+                <fullName>AVEROES</fullName>
+                <default>false</default>
+                <label>AVEROES</label>
+            </value>
+            <value>
+                <fullName>CDR DOUAISIS</fullName>
+                <default>false</default>
+                <label>CDR DOUAISIS</label>
+            </value>
+            <value>
+                <fullName>CLUBVET</fullName>
+                <default>false</default>
+                <label>CLUBVET</label>
+            </value>
+            <value>
+                <fullName>EDEL VET</fullName>
+                <default>false</default>
+                <label>EDEL VET</label>
+            </value>
+            <value>
+                <fullName>ELANVET</fullName>
+                <default>false</default>
+                <label>ELANVET</label>
+            </value>
+            <value>
+                <fullName>G2E</fullName>
+                <default>false</default>
+                <label>G2E</label>
+            </value>
+            <value>
+                <fullName>G5</fullName>
+                <default>false</default>
+                <label>G5</label>
+            </value>
+            <value>
+                <fullName>GIE 21</fullName>
+                <default>false</default>
+                <label>GIE 21</label>
+            </value>
+            <value>
+                <fullName>GIE 7</fullName>
+                <default>false</default>
+                <label>GIE 7</label>
+            </value>
+            <value>
+                <fullName>GIE SET</fullName>
+                <default>false</default>
+                <label>GIE SET</label>
+            </value>
+            <value>
+                <fullName>GIE SOURCES DE LA MARNE</fullName>
+                <default>false</default>
+                <label>GIE SOURCES DE LA MARNE</label>
+            </value>
+            <value>
+                <fullName>GREF</fullName>
+                <default>false</default>
+                <label>GREF</label>
+            </value>
+            <value>
+                <fullName>GROUPVET</fullName>
+                <default>false</default>
+                <label>GROUPVET</label>
+            </value>
+            <value>
+                <fullName>ID VET</fullName>
+                <default>false</default>
+                <label>ID VET</label>
+            </value>
+            <value>
+                <fullName>ISOVET</fullName>
+                <default>false</default>
+                <label>ISOVET</label>
+            </value>
+            <value>
+                <fullName>I-VETO.COM</fullName>
+                <default>false</default>
+                <label>I-VETO.COM</label>
+            </value>
+            <value>
+                <fullName>LA YOLE VET SERVICES</fullName>
+                <default>false</default>
+                <label>LA YOLE VET SERVICES</label>
+            </value>
+            <value>
+                <fullName>LBI</fullName>
+                <default>false</default>
+                <label>LBI</label>
+            </value>
+            <value>
+                <fullName>MON VETO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MON VETO</label>
+            </value>
+            <value>
+                <fullName>OVETO</fullName>
+                <default>false</default>
+                <label>OVETO</label>
+            </value>
+            <value>
+                <fullName>PICK AND GO</fullName>
+                <default>false</default>
+                <label>PICK AND GO</label>
+            </value>
+            <value>
+                <fullName>POLE VETO</fullName>
+                <default>false</default>
+                <label>POLE VETO</label>
+            </value>
+            <value>
+                <fullName>RESAH</fullName>
+                <default>false</default>
+                <label>RESAH</label>
+            </value>
+            <value>
+                <fullName>RESOLUVET</fullName>
+                <default>false</default>
+                <label>RESOLUVET</label>
+            </value>
+            <value>
+                <fullName>SAS BLUE</fullName>
+                <default>false</default>
+                <label>SAS BLUE</label>
+            </value>
+            <value>
+                <fullName>SAS BOURGELAT</fullName>
+                <default>false</default>
+                <label>SAS BOURGELAT</label>
+            </value>
+            <value>
+                <fullName>SAS BOURGELAT EQUINE</fullName>
+                <default>false</default>
+                <label>SAS BOURGELAT EQUINE</label>
+            </value>
+            <value>
+                <fullName>SASGM</fullName>
+                <default>false</default>
+                <label>SASGM</label>
+            </value>
+            <value>
+                <fullName>SERVAL</fullName>
+                <default>false</default>
+                <label>SERVAL</label>
+            </value>
+            <value>
+                <fullName>SYMBIOVETO EQUINE</fullName>
+                <default>false</default>
+                <label>SYMBIOVETO EQUINE</label>
+            </value>
+            <value>
+                <fullName>SYNERVET</fullName>
+                <default>false</default>
+                <label>SYNERVET</label>
+            </value>
+            <value>
+                <fullName>UNION VET</fullName>
+                <default>false</default>
+                <label>UNION VET</label>
+            </value>
+            <value>
+                <fullName>UNIVET 31</fullName>
+                <default>false</default>
+                <label>UNIVET 31</label>
+            </value>
+            <value>
+                <fullName>UNIVET THERMOVET</fullName>
+                <default>false</default>
+                <label>UNIVET THERMOVET</label>
+            </value>
+            <value>
+                <fullName>UVAS</fullName>
+                <default>false</default>
+                <label>UVAS</label>
+            </value>
+            <value>
+                <fullName>VET4VET</fullName>
+                <default>false</default>
+                <label>VET4VET</label>
+            </value>
+            <value>
+                <fullName>VET7</fullName>
+                <default>false</default>
+                <label>VET7</label>
+            </value>
+            <value>
+                <fullName>VET ALLIANCE</fullName>
+                <default>false</default>
+                <label>VET ALLIANCE</label>
+            </value>
+            <value>
+                <fullName>VETANIMAX</fullName>
+                <default>false</default>
+                <label>VETANIMAX</label>
+            </value>
+            <value>
+                <fullName>VETAPHARMA</fullName>
+                <default>false</default>
+                <label>VETAPHARMA</label>
+            </value>
+            <value>
+                <fullName>VETBOOST</fullName>
+                <default>false</default>
+                <label>VETBOOST</label>
+            </value>
+            <value>
+                <fullName>VETCIMES</fullName>
+                <default>false</default>
+                <label>VETCIMES</label>
+            </value>
+            <value>
+                <fullName>VETCOMPAGNY</fullName>
+                <default>false</default>
+                <label>VETCOMPAGNY</label>
+            </value>
+            <value>
+                <fullName>VET FAMILY</fullName>
+                <default>false</default>
+                <label>VET FAMILY</label>
+            </value>
+            <value>
+                <fullName>VETFIRST</fullName>
+                <default>false</default>
+                <label>VETFIRST</label>
+            </value>
+            <value>
+                <fullName>VET HARMONIE</fullName>
+                <default>false</default>
+                <label>VET HARMONIE</label>
+            </value>
+            <value>
+                <fullName>VETOCCITAN</fullName>
+                <default>false</default>
+                <label>VETOCCITAN</label>
+            </value>
+            <value>
+                <fullName>VETODISTRIBUTION</fullName>
+                <default>false</default>
+                <label>VETODISTRIBUTION</label>
+            </value>
+            <value>
+                <fullName>VETODOMBES</fullName>
+                <default>false</default>
+                <label>VETODOMBES</label>
+            </value>
+            <value>
+                <fullName>VETOFRANCE</fullName>
+                <default>false</default>
+                <label>VETOFRANCE</label>
+            </value>
+            <value>
+                <fullName>VETOGROUPE</fullName>
+                <default>false</default>
+                <label>VETOGROUPE</label>
+            </value>
+            <value>
+                <fullName>VETONE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>VETONE</label>
+            </value>
+            <value>
+                <fullName>VET ONE</fullName>
+                <default>false</default>
+                <label>VET ONE</label>
+            </value>
+            <value>
+                <fullName>VETOSOL</fullName>
+                <default>false</default>
+                <label>VETOSOL</label>
+            </value>
+            <value>
+                <fullName>VET OUTREMER</fullName>
+                <default>false</default>
+                <label>VET OUTREMER</label>
+            </value>
+            <value>
+                <fullName>VET TEAM</fullName>
+                <default>false</default>
+                <label>VET TEAM</label>
+            </value>
+            <value>
+                <fullName>VETZEN</fullName>
+                <default>false</default>
+                <label>VETZEN</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>ALPIVET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>ALVEO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>ANIBIO / ABIOPOLE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>ANISERV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>AVEROES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>CDR DOUAISIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>CLUBVET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>EDEL VET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>ELANVET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>G2E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>G5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>GIE 21</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>GIE 7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>GIE SET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>GIE SOURCES DE LA MARNE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>GREF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>GROUPVET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>ID VET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>ISOVET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>I-VETO.COM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>LA YOLE VET SERVICES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>OVETO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>PICK AND GO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>POLE VETO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>RESOLUVET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>SAS BLUE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>SAS BOURGELAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>SAS BOURGELAT EQUINE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>SASGM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>SERVAL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>SYMBIOVETO EQUINE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>SYNERVET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>UNION VET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>UNIVET 31</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>UNIVET THERMOVET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>UVAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VET4VET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VET7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VET ALLIANCE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VETANIMAX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VETAPHARMA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VETBOOST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VETCIMES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VETCOMPAGNY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VET FAMILY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VETFIRST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VET HARMONIE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VETOCCITAN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VETODISTRIBUTION</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VETODOMBES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VETOFRANCE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VETOGROUPE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VET ONE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VETOSOL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VET OUTREMER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VET TEAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement vétérinaire</controllingFieldValue>
+            <valueName>VETZEN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement de laboratoire privé</controllingFieldValue>
+            <valueName>LBI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement de laboratoire privé</controllingFieldValue>
+            <valueName>RESAH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement d&#39;établissement de soin</controllingFieldValue>
+            <valueName>ACCORD CADRE ALMAVIVA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement d&#39;établissement de soin</controllingFieldValue>
+            <valueName>ACCORD CADRE COLISEE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement d&#39;établissement de soin</controllingFieldValue>
+            <valueName>ACCORD CADRE DIAVERUM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement d&#39;établissement de soin</controllingFieldValue>
+            <valueName>ACCORD CADRE DOMIDEP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement d&#39;établissement de soin</controllingFieldValue>
+            <valueName>ACCORD CADRE DOMUSVI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement d&#39;établissement de soin</controllingFieldValue>
+            <valueName>ACCORD CADRE ELSAN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement d&#39;établissement de soin</controllingFieldValue>
+            <valueName>ACCORD CADRE KORIAN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement d&#39;établissement de soin</controllingFieldValue>
+            <valueName>ACCORD CADRE ORPEA-CLINEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement d&#39;établissement de soin</controllingFieldValue>
+            <valueName>ACCORD CADRE RAMSAY SANTE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupement d&#39;établissement de soin</controllingFieldValue>
+            <valueName>ACCORD CADRE VIVALTO</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

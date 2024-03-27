@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Associe_a_ma_BU__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF 
+(Structure_BU__c= 
+TEXT($User.BU__c) 
+,true, 
+
+false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Associé à ma BU</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

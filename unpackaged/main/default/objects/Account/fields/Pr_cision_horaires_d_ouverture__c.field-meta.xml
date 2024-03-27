@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pr_cision_horaires_d_ouverture__c</fullName>
+    <description>Champs à intégrer dans la rubrique horaire de l&#39;objet compte afin de laisser l&#39;utilisateur ajouter des infromations complémentaires aux horaires d&#39;ouverture et fermeture</description>
+    <externalId>false</externalId>
+    <label>Précision horaires d&#39;ouverture</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

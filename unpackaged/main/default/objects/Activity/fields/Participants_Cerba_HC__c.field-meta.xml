@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participants_Cerba_HC__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Participants Cerba HC</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Activites</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

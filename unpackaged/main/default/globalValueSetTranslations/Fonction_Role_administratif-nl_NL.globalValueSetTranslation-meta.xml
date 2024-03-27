@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Associé</masterLabel>
+        <translation>Partner</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cadre de santé</masterLabel>
+        <translation>Gezondheidsexpert</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chargé de clientèle</masterLabel>
+        <translation>Klantbeheerder</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Comptable</masterLabel>
+        <translation>Boekhouder</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur commercial</masterLabel>
+        <translation>Commercieël directeur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur de l’innovation</masterLabel>
+        <translation>Innovatiedirecteur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur de pôle</masterLabel>
+        <translation>Divisie directeur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur des partenariats</masterLabel>
+        <translation>Partnership directeur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur des services comptables / financiers</masterLabel>
+        <translation>CFO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur des services économiques</masterLabel>
+        <translation>Directeur Economische Services</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur des soins</masterLabel>
+        <translation>Directeur zorg</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur du développement</masterLabel>
+        <translation>Directeur ontwikkeling</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur du plateau technique</masterLabel>
+        <translation>Technisch directeur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur d’établissement</masterLabel>
+        <translation>Vestigingsdirecteur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur général</masterLabel>
+        <translation>Algemeen directeur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur marketing</masterLabel>
+        <translation>Marketing directeur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur médical</masterLabel>
+        <translation>Medisch directeur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur opérationnel</masterLabel>
+        <translation>Operationeel directeur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur prévention</masterLabel>
+        <translation>Preventiemanager</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur santé</masterLabel>
+        <translation>Directeur gezondheid</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hygiéniste</masterLabel>
+        <translation>Schoonmaker</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Informaticien(ne)</masterLabel>
+        <translation>Informaticus</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Président</masterLabel>
+        <translation>Voorzitter</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Président CME</masterLabel>
+        <translation>Voorzitter CME</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Président du CLIN</masterLabel>
+        <translation>Voorzitter CLIN</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsable de centre de tri</masterLabel>
+        <translation>Verantwoordelijke tri</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsable de la formation (continue)</masterLabel>
+        <translation>Verantwoordelijke opleidingen</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsable des achats</masterLabel>
+        <translation>Aankoop verantwoordelijke</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsable des affaires juridiques</masterLabel>
+        <translation>Juridisch verantwoordelijke</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsable des envois</masterLabel>
+        <translation>Verantwoordelijke leveringen</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsable hygiène et sécurité</masterLabel>
+        <translation>Verantwoordelijke hygiëne en veiligheid</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsable logistique</masterLabel>
+        <translation>Verantwoordelijke logistiek</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsable qualité</masterLabel>
+        <translation>Verantwoordelijke kwaliteit</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Secrétaire</masterLabel>
+        <translation>Secretaris</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Technicien(ne)</masterLabel>
+        <translation>Technieker</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

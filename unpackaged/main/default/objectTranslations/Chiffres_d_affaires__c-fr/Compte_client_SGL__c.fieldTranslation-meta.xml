@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Compte correspondant SGL --></label>
+        <name>Compte_client_SGL__c</name>
+        <relationshipLabel><!-- Chiffres d&apos;affaires --></relationshipLabel>
+    </CustomFieldTranslation>

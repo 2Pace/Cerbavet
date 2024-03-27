@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CV Clinique College</name>
+    <style>none</style>
+    <subject>Facture Mensuelle Cerbavet College</subject>
+    <textOnly>Cher(e) Adhérent(e),
+
+
+Veuillez trouver ci-joint la facture d’abonnement mensuel aux Replays pour le mois de  //INVOICE_MONTH//
+
+
+En vous remerciant et souhaitant bonne réception,
+
+Bien cordialement Cerba Vet College
+Le service comptabilité
+comptabilite@cerbavet.com
+01 81 30 00 08 - choix 2</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

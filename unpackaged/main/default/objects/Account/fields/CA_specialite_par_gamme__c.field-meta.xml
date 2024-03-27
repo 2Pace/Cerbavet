@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_specialite_par_gamme__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(
+
+&quot;http://cspe-w-vsqlp01/ReportServer/Pages/ReportViewer.aspx?%2fListe%20des%20rapports%20sur%20le%20client&amp;rs:Command=Render&amp;Client=&quot; &amp;
+
+ CASESAFEID(Id),
+
+$Label.Afficher
+,
+&quot;_new&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Rapports spécialité</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

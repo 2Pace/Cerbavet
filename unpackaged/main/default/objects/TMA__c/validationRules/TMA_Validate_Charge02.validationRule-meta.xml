@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TMA_Validate_Charge02</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(PRIORVALUE(Status__c), &#39;Validated&#39;),
+OR(ISPICKVAL(Status__c, &#39;Ongoing&#39;),ISPICKVAL(Status__c, &#39;On Hold&#39;),
+ISPICKVAL(Status__c, &#39;To be deployed to UAT&#39;),ISPICKVAL(Status__c, &#39;2PACE Testing in UAT&#39;),ISPICKVAL(Status__c, &#39;Testing&#39;),
+ISPICKVAL(Status__c, &#39;To be deployed to PROD&#39;),ISPICKVAL(Status__c, &#39;Client Testing in Prod&#39;),ISPICKVAL(Status__c, &#39;Closed&#39;),
+ISPICKVAL(Status__c, &#39;Canceled&#39;)),
+ISBLANK(Charge__c)
+)
+||
+AND(
+ISPICKVAL(PRIORVALUE(Status__c), &#39;Backlog&#39;),
+OR(ISPICKVAL(Status__c, &#39;Ongoing&#39;),ISPICKVAL(Status__c, &#39;On Hold&#39;),ISPICKVAL(Status__c, &#39;Validated&#39;),
+ISPICKVAL(Status__c, &#39;To be deployed to UAT&#39;),ISPICKVAL(Status__c, &#39;2PACE Testing in UAT&#39;),ISPICKVAL(Status__c, &#39;Testing&#39;),
+ISPICKVAL(Status__c, &#39;To be deployed to PROD&#39;),ISPICKVAL(Status__c, &#39;Client Testing in Prod&#39;),ISPICKVAL(Status__c, &#39;Closed&#39;),
+ISPICKVAL(Status__c, &#39;Canceled&#39;)),
+ISBLANK(Charge__c)
+)
+||
+AND(
+ISPICKVAL(PRIORVALUE(Status__c), &#39;Diagnosed&#39;),
+OR(ISPICKVAL(Status__c, &#39;Ongoing&#39;),ISPICKVAL(Status__c, &#39;On Hold&#39;),
+ISPICKVAL(Status__c, &#39;To be deployed to UAT&#39;),ISPICKVAL(Status__c, &#39;2PACE Testing in UAT&#39;),ISPICKVAL(Status__c, &#39;Testing&#39;),
+ISPICKVAL(Status__c, &#39;To be deployed to PROD&#39;),ISPICKVAL(Status__c, &#39;Client Testing in Prod&#39;),ISPICKVAL(Status__c, &#39;Closed&#39;),
+ISPICKVAL(Status__c, &#39;Canceled&#39;),ISPICKVAL(Status__c, &#39;Validated&#39;)),
+ISBLANK(Charge__c)
+)</errorConditionFormula>
+    <errorMessage>Estimation must be filled in before changing status to &#39;Ongoing&#39; or other status</errorMessage>
+</ValidationRule>

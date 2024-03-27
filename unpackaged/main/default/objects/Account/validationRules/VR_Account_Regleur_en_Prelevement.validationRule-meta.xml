@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Account_Regleur_en_Prelevement</fullName>
+    <active>false</active>
+    <description>2PACE
+Afin de pouvoir indiquer que le compte est en prélèvement il faut cocher la case SEPA.</description>
+    <errorConditionFormula>AND(
+$User.Tech_By_Pass_VR__c = false,
+				Mandat_de_prelevement__c = false,
+				ISPICKVAL(Conditions_de_Reglement_Cerbavet__c,&#39;Régleur en prélèvement&#39;)
+				)</errorConditionFormula>
+    <errorDisplayField>Mandat_de_prelevement__c</errorDisplayField>
+    <errorMessage>Mandat de prélèvement nécessaire si les conditions de réglement est &#39;Régleur en prélèvement&#39;</errorMessage>
+</ValidationRule>

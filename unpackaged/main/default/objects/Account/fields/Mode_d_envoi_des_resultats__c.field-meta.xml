@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mode_d_envoi_des_resultats__c</fullName>
+    <externalId>false</externalId>
+    <label>Mode d&#39;envoi des résultats</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1 - ROUTE FRANCE - 1 ENVOI/JOUR</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2 - POSTE FRANCE - ENVOI COR 02926</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3 - POSTE INTERNATIONAL - ENVOI EXPRESS</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5 - POSTE FRANCE - 1 SEUL ENVOI JOURNALIER</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>6 - POSTE - CR GROUPE</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>7 - ROUTE DOM TOM - 1 ENVOI/JOUR</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <label>8 - ROUTE - RETOUR CERBA (BIOLILLE BOUCHET)</label>
+            </value>
+            <value>
+                <fullName>D</fullName>
+                <default>false</default>
+                <label>D - POSTE DOM TOM</label>
+            </value>
+            <value>
+                <fullName>E</fullName>
+                <default>false</default>
+                <label>E - POSTE INTERNATIONAL - ENVOI ETRANGER</label>
+            </value>
+            <value>
+                <fullName>G</fullName>
+                <default>false</default>
+                <label>G - NON IMPRIME (GLARIF)</label>
+            </value>
+            <value>
+                <fullName>P</fullName>
+                <default>false</default>
+                <label>P - POSTE FRANCE</label>
+            </value>
+            <value>
+                <fullName>Y</fullName>
+                <default>false</default>
+                <label>Y - ROUTE FRANCE</label>
+            </value>
+            <value>
+                <fullName>Z</fullName>
+                <default>false</default>
+                <label>Z - NON IMPRIME - CONTROLE QUALITE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

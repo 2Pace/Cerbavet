@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Sharing_ASV_Commercial</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sharing ASV/Commercial</label>
+        <sharedTo>
+            <group>Commercial_ASV</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Commercial_ASV</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

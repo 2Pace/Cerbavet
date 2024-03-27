@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CV_Facture_Reglee</name>
+    <style>none</style>
+    <subject>Votre facture CerbaVet</subject>
+    <textOnly>Bonjour,
+
+Nous accusons bonne réception de votre paiement et vous en remercions,
+
+Veuillez trouver ci-joint la facture acquittée,
+
+Les résultats seront rendus à votre vétérinaire, dans les meilleurs délais, en charge de vous les communiquer.
+
+Vous en souhaitant bonne réception,
+
+Cordialement</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

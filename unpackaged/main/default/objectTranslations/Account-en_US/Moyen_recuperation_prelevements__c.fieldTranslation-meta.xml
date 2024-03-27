@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Moyen récupération prélèvements --></label>
+        <name>Moyen_recuperation_prelevements__c</name>
+        <picklistValues>
+            <masterLabel>Collecté chez un correspondant maître</masterLabel>
+            <translation>Collected at a master correspondent</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collecté directement</masterLabel>
+            <translation>Collected directly</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Envoi par le client</masterLabel>
+            <translation>Sending by the customer</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

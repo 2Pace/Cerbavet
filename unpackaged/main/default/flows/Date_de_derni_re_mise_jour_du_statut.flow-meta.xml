@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <name>dateheure</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW()</expression>
+    </formulas>
+    <interviewLabel>Date de dernière mise à jour du statut {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Date de dernière mise à jour du statut</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Mise_jour_date</name>
+        <label>Mise à jour date</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <inputAssignments>
+            <field>Date_de_derni_re_mise_jour_du_statut__c</field>
+            <value>
+                <elementReference>dateheure</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Mise_jour_date</targetReference>
+        </connector>
+        <filterFormula>ISCHANGED({!$Record.Statut__c}) = TRUE  || ISNEW() = TRUE</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>France</fullName>
+        <default>false</default>
+        <label>France</label>
+    </customValue>
+    <customValue>
+        <fullName>TOM - Export</fullName>
+        <default>false</default>
+        <label>TOM - Export</label>
+    </customValue>
+    <customValue>
+        <fullName>Suisse</fullName>
+        <default>false</default>
+        <label>Suisse</label>
+    </customValue>
+    <customValue>
+        <fullName>DOM</fullName>
+        <default>false</default>
+        <label>DOM</label>
+    </customValue>
+    <description>définit les produits accessibles à un client en fonction de son marché</description>
+    <masterLabel>Marché Cerba Vet</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

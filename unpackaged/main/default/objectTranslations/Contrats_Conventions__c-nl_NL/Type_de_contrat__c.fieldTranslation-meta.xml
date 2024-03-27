@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Contracttype</label>
+        <name>Type_de_contrat__c</name>
+        <picklistValues>
+            <masterLabel>AO</masterLabel>
+            <translation>Offerte aanvraag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat cadre</masterLabel>
+            <translation>Kaderovereenkomst</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contrat d’établissement</masterLabel>
+            <translation>Vestigingsovereenkomst</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etude clinique</masterLabel>
+            <translation>Klinische studie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procédure adaptée</masterLabel>
+            <translation>Aangepaste procedure</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

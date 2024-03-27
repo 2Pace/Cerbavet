@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Statut_Synchro_Jira__c</fullName>
+    <externalId>false</externalId>
+    <label>TECH Statut Synchro Jira</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Non Synchro</fullName>
+                <default>false</default>
+                <label>Non Synchro</label>
+            </value>
+            <value>
+                <fullName>Synchro</fullName>
+                <default>false</default>
+                <label>Synchro</label>
+            </value>
+            <value>
+                <fullName>Erreur Synchro</fullName>
+                <default>false</default>
+                <label>Erreur Synchro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

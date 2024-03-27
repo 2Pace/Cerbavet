@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Aantal bezoeken</label>
+        <name>Nb_de_visites__c</name>
+    </CustomFieldTranslation>

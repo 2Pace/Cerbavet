@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Gespecialiseerde diergeneeskunde</label>
+        <name>Specialite_medecine_veterinaire__c</name>
+        <picklistValues>
+            <masterLabel>CEAV Chirurgie des animaux de compagnie</masterLabel>
+            <translation><!-- CEAV Chirurgie des animaux de compagnie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEAV Comportement animaux domestiques</masterLabel>
+            <translation><!-- CEAV Comportement animaux domestiques --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEAV Hygiène et technologie alimentaire</masterLabel>
+            <translation><!-- CEAV Hygiène et technologie alimentaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEAV Médec. interne animaux de compagnie</masterLabel>
+            <translation><!-- CEAV Médec. interne animaux de compagnie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEAV Médecine et chirurgie des équidés</masterLabel>
+            <translation><!-- CEAV Médecine et chirurgie des équidés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEAV Pathologie Animale régions chaudes</masterLabel>
+            <translation><!-- CEAV Pathologie Animale régions chaudes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEAV Productions avicole et cunicole</masterLabel>
+            <translation><!-- CEAV Productions avicole et cunicole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEAV Santé &amp; Qualité production laitière</masterLabel>
+            <translation><!-- CEAV Santé &amp; Qualité production laitière --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEAV Santé &amp; Qualité production porcine</masterLabel>
+            <translation><!-- CEAV Santé &amp; Qualité production porcine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEAV Santé publique vétérinaire</masterLabel>
+            <translation><!-- CEAV Santé publique vétérinaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEAV Sciences &amp; Médecine Animaux de labo</masterLabel>
+            <translation><!-- CEAV Sciences &amp; Médecine Animaux de labo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEAV Sécurité / qualité des denrées alim</masterLabel>
+            <translation><!-- CEAV Sécurité / qualité des denrées alim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CES Anatomie Pathologique Toxicologique</masterLabel>
+            <translation><!-- CES Anatomie Pathologique Toxicologique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CES Gynéco et Insémination artif. équine</masterLabel>
+            <translation><!-- CES Gynéco et Insémination artif. équine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CES Hématologie / Biochimie Clin animale</masterLabel>
+            <translation><!-- CES Hématologie / Biochimie Clin animale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CES Méthodes Alternatives en Expérim Bio</masterLabel>
+            <translation><!-- CES Méthodes Alternatives en Expérim Bio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CES Trauma OstéoArticul /Orthopédie anim</masterLabel>
+            <translation><!-- CES Trauma OstéoArticul /Orthopédie anim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CES de Dermatologie vétérinaire</masterLabel>
+            <translation><!-- CES de Dermatologie vétérinaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CES de Diététique Canine et Féline</masterLabel>
+            <translation><!-- CES de Diététique Canine et Féline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CES de Pathologie Aviaire</masterLabel>
+            <translation><!-- CES de Pathologie Aviaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CES d’Ophtalmologie vétérinaire</masterLabel>
+            <translation><!-- CES d’Ophtalmologie vétérinaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CES d’Épidémiologie Animale</masterLabel>
+            <translation><!-- CES d’Épidémiologie Animale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DESV Anatomie pathologique vétérinaire</masterLabel>
+            <translation><!-- DESV Anatomie pathologique vétérinaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DESV Chirurgie des animaux de Compagnie</masterLabel>
+            <translation><!-- DESV Chirurgie des animaux de Compagnie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DESV Dermatologie</masterLabel>
+            <translation><!-- DESV Dermatologie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DESV Elevage et pathologie des équidés</masterLabel>
+            <translation><!-- DESV Elevage et pathologie des équidés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DESV Gestion de la santé des bovins</masterLabel>
+            <translation><!-- DESV Gestion de la santé des bovins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DESV Méd. interne animaux compa, cardio</masterLabel>
+            <translation><!-- DESV Méd. interne animaux compa, cardio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DESV Médec. interne animaux de compagnie</masterLabel>
+            <translation><!-- DESV Médec. interne animaux de compagnie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DESV Médecine des animaux de laboratoire</masterLabel>
+            <translation><!-- DESV Médecine des animaux de laboratoire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DESV Ophtalmologie</masterLabel>
+            <translation><!-- DESV Ophtalmologie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DESV Productions animales régions chaudes</masterLabel>
+            <translation><!-- DESV Productions animales régions chaudes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECEIM Europ Col. Equine Intern. Medicine</masterLabel>
+            <translation><!-- ECEIM Europ Col. Equine Intern. Medicine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECLAM Europ Col. Labo Animal Medicine</masterLabel>
+            <translation><!-- ECLAM Europ Col. Labo Animal Medicine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECVCN Europ Col. Vet Compara. Nutrition</masterLabel>
+            <translation><!-- ECVCN Europ Col. Vet Compara. Nutrition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECVCP Europ Col. Vet Clinical Pathology</masterLabel>
+            <translation><!-- ECVCP Europ Col. Vet Clinical Pathology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECVD Europ Col. Veterinary Dermatology</masterLabel>
+            <translation><!-- ECVD Europ Col. Veterinary Dermatology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECVDI Europ Col. Vet Diagnostic Imaging</masterLabel>
+            <translation><!-- ECVDI Europ Col. Vet Diagnostic Imaging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECVIM Europ Col. Vet Int. Medici. Cardio</masterLabel>
+            <translation><!-- ECVIM Europ Col. Vet Int. Medici. Cardio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECVIM Europ Col. Vet Intern. Medicine CA</masterLabel>
+            <translation><!-- ECVIM Europ Col. Vet Intern. Medicine CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECVN Europ Coll. of Veterinary Neurology</masterLabel>
+            <translation><!-- ECVN Europ Coll. of Veterinary Neurology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECVO Europ Coll. of Vet Ophtalmology</masterLabel>
+            <translation><!-- ECVO Europ Coll. of Vet Ophtalmology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECVPH Europ Coll. of Vet Public Health</masterLabel>
+            <translation><!-- ECVPH Europ Coll. of Vet Public Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECVS Europ Coll of Veterinary Surgery CA</masterLabel>
+            <translation><!-- ECVS Europ Coll of Veterinary Surgery CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECVS Europ Coll of Veterinary Surgery LA</masterLabel>
+            <translation><!-- ECVS Europ Coll of Veterinary Surgery LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EVDC Europ Veterinary Dentistry College</masterLabel>
+            <translation><!-- EVDC Europ Veterinary Dentistry College --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Nom modifiable si la source du contact est &quot;RPPS&quot; --></help>
+        <label><!-- Titre d&apos;exercice --></label>
+        <name>Titre_d_exercice__c</name>
+    </CustomFieldTranslation>

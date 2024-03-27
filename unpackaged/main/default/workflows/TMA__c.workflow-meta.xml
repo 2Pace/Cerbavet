@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>TMA_Send_Alert_to_Client_for_Testing</fullName>
+        <description>TMA_Send Alert to Client for Testing</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/TMA_Email_ClientTesting_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>TMA_Send_Alert_to_Dev_Team</fullName>
+        <ccEmails>saamiyah.khodadin@2pace.fr</ccEmails>
+        <ccEmails>leckrani.bamma@2pace.fr</ccEmails>
+        <description>TMA_Send Alert to Dev Team</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/TMA_Email_NewTicket_Alert</template>
+    </alerts>
+</Workflow>

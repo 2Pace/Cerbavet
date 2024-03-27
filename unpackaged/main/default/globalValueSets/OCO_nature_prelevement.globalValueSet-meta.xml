@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Sang</fullName>
+        <default>false</default>
+        <label>Sang</label>
+    </customValue>
+    <customValue>
+        <fullName>Sérum</fullName>
+        <default>false</default>
+        <label>Sérum</label>
+    </customValue>
+    <customValue>
+        <fullName>Plasma Hépariné</fullName>
+        <default>false</default>
+        <label>Plasma Hépariné</label>
+    </customValue>
+    <customValue>
+        <fullName>Plasma EDTA</fullName>
+        <default>false</default>
+        <label>Plasma EDTA</label>
+    </customValue>
+    <customValue>
+        <fullName>Plasma Citraté</fullName>
+        <default>false</default>
+        <label>Plasma Citraté</label>
+    </customValue>
+    <customValue>
+        <fullName>Fèces</fullName>
+        <default>false</default>
+        <label>Fèces</label>
+    </customValue>
+    <customValue>
+        <fullName>Urine</fullName>
+        <default>false</default>
+        <label>Urine</label>
+    </customValue>
+    <customValue>
+        <fullName>E-swab PCR (écouvillon)</fullName>
+        <default>false</default>
+        <label>E-swab PCR (écouvillon)</label>
+    </customValue>
+    <customValue>
+        <fullName>E-swab Bactério (écouvillon)</fullName>
+        <default>false</default>
+        <label>E-swab Bactério (écouvillon)</label>
+    </customValue>
+    <customValue>
+        <fullName>Frottis sanguin</fullName>
+        <default>false</default>
+        <label>Frottis sanguin</label>
+    </customValue>
+    <customValue>
+        <fullName>Lame de cytologie</fullName>
+        <default>false</default>
+        <label>Lame de cytologie</label>
+    </customValue>
+    <customValue>
+        <fullName>Pièce d&#39;exérèse pour histos</fullName>
+        <default>false</default>
+        <label>Pièce d&#39;exérèse pour histos</label>
+    </customValue>
+    <customValue>
+        <fullName>Liquide (épanchement, cytos liquides...)</fullName>
+        <default>false</default>
+        <label>Liquide (épanchement, cytos liquides...)</label>
+    </customValue>
+    <description>liste des nature de prélèvements utilsable dans OCO cerbavet</description>
+    <masterLabel>OCO nature prelevement</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

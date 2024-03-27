@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>CHC Belgium - CRI</masterLabel>
+        <translation>Belgium</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CHC Belgium - LBS</masterLabel>
+        <translation><!-- CHC Belgium - LBS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Centre Est</masterLabel>
+        <translation><!-- Centre Est --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Centre Ouest</masterLabel>
+        <translation><!-- Centre Ouest --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerba</masterLabel>
+        <translation><!-- Cerba --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cerba Vet</masterLabel>
+        <translation><!-- Cerba Vet --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Grand Ouest</masterLabel>
+        <translation><!-- Grand Ouest --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Grand Sud</masterLabel>
+        <translation><!-- Grand Sud --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ile-de-France</masterLabel>
+        <translation><!-- Ile-de-France --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Nord</masterLabel>
+        <translation><!-- Nord --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Nord Ouest</masterLabel>
+        <translation><!-- Nord Ouest --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Nouvelle Aquitaine</masterLabel>
+        <translation><!-- Nouvelle Aquitaine --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Outre mer</masterLabel>
+        <translation><!-- Outre mer --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

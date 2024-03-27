@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contrat/Convention</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contrats/Conventions</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Contrats/Conventions</layout>
+        <sections>
+            <label><!-- Caractéristiques du contrat --></label>
+            <section>Caractéristiques du contrat</section>
+        </sections>
+        <sections>
+            <label><!-- Commentaires --></label>
+            <section>Commentaires</section>
+        </sections>
+        <sections>
+            <label><!-- Délai de rendu de résultats --></label>
+            <section>Délai de rendu de résultats</section>
+        </sections>
+        <sections>
+            <label><!-- Facturation - Cerba --></label>
+            <section>Facturation - Cerba</section>
+        </sections>
+        <sections>
+            <label><!-- Facturation - Cerballiance --></label>
+            <section>Facturation - Cerballiance</section>
+        </sections>
+        <sections>
+            <label><!-- Flux informatiques --></label>
+            <section>Flux informatiques</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Logistique - Cabinets --></label>
+            <section>Logistique - Cabinets</section>
+        </sections>
+        <sections>
+            <label><!-- Logistique - Etablissements --></label>
+            <section>Logistique - Etablissements</section>
+        </sections>
+        <sections>
+            <label><!-- Logistique - Laboratoires --></label>
+            <section>Logistique - Laboratoires</section>
+        </sections>
+        <sections>
+            <label><!-- Prélèvements - Matériel à disposition --></label>
+            <section>Prélèvements - Matériel à disposition</section>
+        </sections>
+        <sections>
+            <label><!-- Prélèvements - Organisation --></label>
+            <section>Prélèvements - Organisation</section>
+        </sections>
+        <sections>
+            <label><!-- Prélèvements - Plages de passage --></label>
+            <section>Prélèvements - Plages de passage</section>
+        </sections>
+        <sections>
+            <label><!-- Revue de contrat --></label>
+            <section>Revue de contrat</section>
+        </sections>
+        <sections>
+            <label><!-- Résultats - Diffusion électronique --></label>
+            <section>Résultats - Diffusion électronique</section>
+        </sections>
+        <sections>
+            <label><!-- Résultats - Papier --></label>
+            <section>Résultats - Papier</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Appel --></label>
+        <name>Appel</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SFBD_DunningMethod_Clinics_CashOnInvoice__c</fullName>
+    <description>Invoice Created date +25</description>
+    <externalId>false</externalId>
+    <label>SFBD_DunningMethod_Clinics_CashOnInvoice</label>
+    <length>18</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

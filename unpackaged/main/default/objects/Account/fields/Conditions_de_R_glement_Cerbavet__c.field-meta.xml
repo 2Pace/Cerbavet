@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conditions_de_R_glement_Cerbavet__c</fullName>
+    <externalId>false</externalId>
+    <label>Conditions de Règlement Cerbavet (OLD)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Non Régleur</fullName>
+                <default>false</default>
+                <label>Non Régleur</label>
+            </value>
+            <value>
+                <fullName>Régleur</fullName>
+                <default>false</default>
+                <label>Régleur</label>
+            </value>
+            <value>
+                <fullName>Régleur en Prélèvement</fullName>
+                <default>false</default>
+                <label>Régleur en Prélèvement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

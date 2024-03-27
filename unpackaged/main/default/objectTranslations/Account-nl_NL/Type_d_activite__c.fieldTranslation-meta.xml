@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Soort activiteit</label>
+        <name>Type_d_activite__c</name>
+        <picklistValues>
+            <masterLabel>Canine</masterLabel>
+            <translation><!-- Canine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indus</masterLabel>
+            <translation><!-- Indus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixte (canin et rural)</masterLabel>
+            <translation><!-- Mixte (canin et rural) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rurale</masterLabel>
+            <translation><!-- Rurale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Équine</masterLabel>
+            <translation><!-- Équine --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

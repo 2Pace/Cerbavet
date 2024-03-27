@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Icone_Statut__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF 
+( ISPICKVAL( Statut__c ,&quot;Va&quot;) 
+, 
+IMAGE(&quot;/resource/1552570497000/ICONS_ADR_Actif&quot;, &quot;Va&quot;, 30 ,30 ) 
+, 
+
+IF 
+( ISPICKVAL( Statut__c ,&quot;EL&quot;) 
+, 
+IMAGE(&quot;/resource/1557445841000/ICONS_Litige?&quot;, &quot;EL&quot;, 30 ,30 ) 
+, 
+
+IF 
+( ISPICKVAL( Statut__c ,&quot;NR&quot;) 
+, 
+IMAGE(&quot;/resource/1557446707000/ICONS_Facture_non_recue?&quot;, &quot;NR&quot;, 30 ,30 ) 
+, 
+
+
+IF 
+( ISPICKVAL( Statut__c ,&quot;PA&quot;) 
+, 
+IMAGE(&quot;/resource/1557446403000/ICONS_Payee?&quot;, &quot;PA&quot;, 30 ,30 ) 
+, 
+&quot;&quot;
+
+))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Icone statut</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

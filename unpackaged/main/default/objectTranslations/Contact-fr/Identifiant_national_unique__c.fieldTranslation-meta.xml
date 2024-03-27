@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Non modifiable si la source du contact est &quot;RPPS&quot; --></help>
+        <label><!-- Identifiant national unique --></label>
+        <name>Identifiant_national_unique__c</name>
+    </CustomFieldTranslation>

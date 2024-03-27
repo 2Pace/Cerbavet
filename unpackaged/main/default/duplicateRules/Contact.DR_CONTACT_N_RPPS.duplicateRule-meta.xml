@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DuplicateRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionOnInsert>Block</actionOnInsert>
+    <actionOnUpdate>Block</actionOnUpdate>
+    <alertText>Utiliser l&#39;un de ces contacts ?</alertText>
+    <description xsi:nil="true" />
+    <duplicateRuleFilter>
+        <booleanFilter xsi:nil="true" />
+        <duplicateRuleFilterItems>
+            <field>Type_d_identifiant__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+            <sortOrder>1</sortOrder>
+            <table>Contact</table>
+        </duplicateRuleFilterItems>
+    </duplicateRuleFilter>
+    <duplicateRuleMatchRules>
+        <matchRuleSObjectType>Contact</matchRuleSObjectType>
+        <matchingRule>N_RPPS</matchingRule>
+        <objectMapping xsi:nil="true" />
+    </duplicateRuleMatchRules>
+    <isActive>false</isActive>
+    <masterLabel>Contact.N°RPPS</masterLabel>
+    <securityOption>EnforceSharingRules</securityOption>
+    <sortOrder>3</sortOrder>
+</DuplicateRule>

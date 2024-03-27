@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Email rejeté par le serveur de messagerie --></help>
+        <label><!-- Email 2 incorrect --></label>
+        <name>Email_2_incorrect__c</name>
+    </CustomFieldTranslation>

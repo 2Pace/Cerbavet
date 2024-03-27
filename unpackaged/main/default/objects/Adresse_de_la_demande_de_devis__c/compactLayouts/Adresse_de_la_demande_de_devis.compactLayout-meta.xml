@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adresse_de_la_demande_de_devis</fullName>
+    <fields>Name</fields>
+    <fields>Demande_de_devis__c</fields>
+    <fields>Adresse__c</fields>
+    <fields>Ville__c</fields>
+    <fields>Heure_de_debut_texte__c</fields>
+    <fields>Heure_de_fin_texte__c</fields>
+    <label>Adresse de la demande de devis</label>
+</CompactLayout>

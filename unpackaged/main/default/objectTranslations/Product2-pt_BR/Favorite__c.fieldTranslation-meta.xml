@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Champ pour mettre en avant le produit dans OCO --></help>
+        <label><!-- Favori --></label>
+        <name>Favorite__c</name>
+    </CustomFieldTranslation>

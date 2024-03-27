@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- TECH Message Synchro Jira --></label>
+        <name>TECH_Message_Synchro_Jira__c</name>
+    </CustomFieldTranslation>

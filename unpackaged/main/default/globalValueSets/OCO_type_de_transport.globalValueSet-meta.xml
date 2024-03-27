@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>COURS,Coursier,-1</fullName>
+        <default>false</default>
+        <label>Coursier</label>
+    </customValue>
+    <customValue>
+        <fullName>DEPOT,Dépose en Laboratoire,0</fullName>
+        <default>false</default>
+        <label>Dépose en Laboratoire</label>
+    </customValue>
+    <customValue>
+        <fullName>CHRON,Chronopost Cerbavet,10</fullName>
+        <default>false</default>
+        <label>Chronopost</label>
+    </customValue>
+    <customValue>
+        <fullName>CROCL,Envoi par vos propres moyens,0</fullName>
+        <default>false</default>
+        <label>Envoi par vos propres moyens</label>
+    </customValue>
+    <masterLabel>OCO type de transport</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

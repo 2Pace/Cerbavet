@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mensualité</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mensualités</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Présentation Mensualité</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Passer en litige --></label>
+        <name>Passer_en_litige</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Passer en validée --></label>
+        <name>Passer_en_validee</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Merci de ne pas saisir le montant facturé ou changer le statut de la mensualité pour les types de coûts hors Factures Directes. --></errorMessage>
+        <name>VR_MEN_Blocage_montant_hors_couts_FD</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Type collectie</label>
+        <name>Type_de_collecte__c</name>
+        <picklistValues>
+            <masterLabel>Chronopost</masterLabel>
+            <translation><!-- Chronopost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Courrier</masterLabel>
+            <translation><!-- Courrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coursier J+1</masterLabel>
+            <translation><!-- Coursier J+1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coursier J0</masterLabel>
+            <translation><!-- Coursier J0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coursier labo</masterLabel>
+            <translation><!-- Coursier labo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dépose labo</masterLabel>
+            <translation><!-- Dépose labo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Systématique</masterLabel>
+            <translation><!-- Systématique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Systématique partiel</masterLabel>
+            <translation><!-- Systématique partiel --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

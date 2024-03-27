@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Alerte_1_an_apr_s_la_date_de_d_but_du_contrat</fullName>
+        <description>Alerte 1 an après la date de début du contrat</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Contrats/ET_Alerte_1_an_apres_le_d_marrage_du_contrat</template>
+    </alerts>
+    <alerts>
+        <fullName>CTR_Alerte_email_1_an_avant_la_date_de_fin_du_contrat</fullName>
+        <description>CTR.Alerte email 1 an avant la date de fin du contrat</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Contrats/ET_Alerte_1_an_avant_la_date_de_fin_du_contrat</template>
+    </alerts>
+    <alerts>
+        <fullName>CTR_EA_Alerte_email_1_an_avant_la_date_de_fin_du_contrat</fullName>
+        <description>CTR.EA.Alerte email 1 an avant la date de fin du contrat</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Contrats/ET_Alerte_1_an_avant_la_date_de_fin_du_contrat</template>
+    </alerts>
+    <alerts>
+        <fullName>EA_Alerte_email_1an_apres_le_demarrage_du_contrat</fullName>
+        <description>EA.Alerte email 1an après le démarrage du contrat</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cerba_HC_Contrats/ET_Alerte_1_an_apres_le_d_marrage_du_contrat</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>FU_CTR_MAJ_nom_du_contrat_convention</fullName>
+        <field>Name</field>
+        <formula>IF(
+LEN(
+Nom_du_client__r.Name &amp;&quot; - &quot; &amp; TEXT(Type_de_contrat__c)) &gt;80, 
+LEFT(Nom_du_client__r.Name,15) &amp;&quot; - &quot; &amp; TEXT(Type_de_contrat__c),
+Nom_du_client__r.Name &amp;&quot; - &quot; &amp; TEXT(Type_de_contrat__c))</formula>
+        <name>FU.CTR.MAJ nom du contrat/convention</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>WF%2ECTR%2EAlerte email 1 an avant la date de fin du contrat</fullName>
+        <active>true</active>
+        <formula>ISPICKVAL(Owner:User.BU__c, &quot;CERBALLIANCE&quot;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>CTR_EA_Alerte_email_1_an_avant_la_date_de_fin_du_contrat</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Contrats_Conventions__c.Date_de_fin__c</offsetFromField>
+            <timeLength>-365</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>WF%2ECTR%2EMAJ du nom du contrat%2Fconvention</fullName>
+        <actions>
+            <name>FU_CTR_MAJ_nom_du_contrat_convention</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>True</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF%2ERappel à N%2B1 après la date de début du contrat</fullName>
+        <actions>
+            <name>Alerte_1_an_apr_s_la_date_de_d_but_du_contrat</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>ISPICKVAL ( Owner:User.BU__c , &quot;Cerballiance&quot;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <offsetFromField>Contrats_Conventions__c.Date_de_debut__c</offsetFromField>
+            <timeLength>365</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

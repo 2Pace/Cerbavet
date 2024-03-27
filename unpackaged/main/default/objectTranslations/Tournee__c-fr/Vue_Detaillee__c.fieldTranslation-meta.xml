@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Rapport externe détaillant les passages de la tournée (VPN nécessaire) --></help>
+        <label><!-- Vue Detaillée --></label>
+        <name>Vue_Detaillee__c</name>
+    </CustomFieldTranslation>

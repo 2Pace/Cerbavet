@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Datedesuppressionobligatoire</fullName>
+    <active>true</active>
+    <description>Si la prestation est supprimée alors la date de suppression est obligatoire</description>
+    <errorConditionFormula>ISPICKVAL( Statut__c, &quot;Supprimée&quot;) &amp;&amp; ISBLANK( Date_de_suppression__c ) &amp;&amp;  $User.Tech_By_Pass_VR__c = false</errorConditionFormula>
+    <errorDisplayField>Date_de_suppression__c</errorDisplayField>
+    <errorMessage>Merci de renseigner la date de suppression lorsque la prestation est supprimée</errorMessage>
+</ValidationRule>

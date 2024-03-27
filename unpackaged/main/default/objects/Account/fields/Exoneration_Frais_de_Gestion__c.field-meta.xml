@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exoneration_Frais_de_Gestion__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>2PACE</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Checkbox pour exonérer les frais de gestion sur les dossiers non régleur</inlineHelpText>
+    <label>Exonération Frais de Gestion</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

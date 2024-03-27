@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label><!-- Autres informations --></label>
+            <section>Autres informations</section>
+        </sections>
+        <sections>
+            <label><!-- Coordonnées --></label>
+            <section>Coordonnées</section>
+        </sections>
+        <sections>
+            <label><!-- Information système --></label>
+            <section>Information système</section>
+        </sections>
+        <sections>
+            <label><!-- Informations professionnelles --></label>
+            <section>Informations professionnelles</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Appel --></label>
+        <name>Appel</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- MAJ Contact --></label>
+        <name>MAJ_Contact</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- Merci de renseigner l&apos;adresse lorsque la CAC &quot;Exerce seul dans un cabinet médical&quot; est cochée. --></errorMessage>
+        <name>VR_Contact_Adresse_Postale_Obligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de renseigner le rôle administratif ou le rôle médical de ce contact. --></errorMessage>
+        <name>VR_Contact_Fonction_obligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de renseigner le prénom de ce contact. --></errorMessage>
+        <name>VR_Contact_Prenom_obligatoire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ce contact provient du référentiel RPPS National. 
+Merci de ne pas modifier les champs : Type d&apos;identification et Identifiant National Unique. --></errorMessage>
+        <name>VR_Contact_Source_RPPS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Une fois le contact enregistré, il n&apos;est plus possible de modifier la source du contact. --></errorMessage>
+        <name>VR_Contact_Source_du_contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de ne plus modifier ce contact car son statut est &quot;Inactif&quot;. --></errorMessage>
+        <name>VR_Contact_inactif_non_modifiable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de renseigner le type d&apos;identifiant, obligatoire si l&apos;Identifiant nationale unique est renseigné. --></errorMessage>
+        <name>VR_Contact_type_d_identifiant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Merci de renseigner l&apos;identifiant national unique lorsque  la &quot;Fonction / Rôle médical&quot; est &quot;Médecin&quot; ou &quot;Médecin coordinateur en EHPAD&quot; ou &quot;Infirmier&quot; ou &quot;Sage-femme&quot; ou &quot;Praticien hospitalier&quot; ou &quot;Chirurgien dentiste&quot; --></errorMessage>
+        <name>VR_Identifiant_national_Obligatoire</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

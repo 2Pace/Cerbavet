@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Anapath Veterinair Laboratorium</label>
+        <name>Laboratoire_de_sous_traitance__c</name>
+        <picklistValues>
+            <masterLabel>CCPATH (Catherine LE FOLL)</masterLabel>
+            <translation><!-- CCPATH (Catherine LE FOLL) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPC (MARINE CARLUS)</masterLabel>
+            <translation><!-- CPC (MARINE CARLUS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDEXX</masterLabel>
+            <translation><!-- IDEXX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IHP VETO</masterLabel>
+            <translation><!-- IHP VETO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAPV 57 (Michèle LEMAIRE)</masterLabel>
+            <translation><!-- LAPV 57 (Michèle LEMAIRE) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAPV AMBOISE/Vet Cyt</masterLabel>
+            <translation><!-- LAPV AMBOISE/Vet Cyt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAPVSO</masterLabel>
+            <translation><!-- LAPVSO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LPUN (Paul-Henri DUMAS)</masterLabel>
+            <translation><!-- LPUN (Paul-Henri DUMAS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ORBIO</masterLabel>
+            <translation><!-- ORBIO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VET DIAGNOSTICS</masterLabel>
+            <translation><!-- VET DIAGNOSTICS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VET HISTO</masterLabel>
+            <translation><!-- VET HISTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VETODIAG</masterLabel>
+            <translation><!-- VETODIAG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VETOPATH</masterLabel>
+            <translation><!-- VETOPATH --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

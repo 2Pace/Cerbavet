@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Remise REPLAY pour le compte --></help>
+        <label><!-- 🎓 Remise REPLAY Cerbavet College --></label>
+        <name>Remise_REPLAY_Cerbavet_College__c</name>
+    </CustomFieldTranslation>

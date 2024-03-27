@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TMA_Validate_GoLiveDate</fullName>
+    <active>true</active>
+    <description>Field Go Live Date must be filled in before changing status to DONE</description>
+    <errorConditionFormula>(ISBLANK(Go_Live_Date__c) || ISNULL(Go_Live_Date__c) ) &amp;&amp; ISPICKVAL(Status__c, &#39;Closed&#39;)</errorConditionFormula>
+    <errorMessage>Go live date must be filled in before changing status to &#39;Closed&#39;.</errorMessage>
+</ValidationRule>

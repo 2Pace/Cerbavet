@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Stap</label>
+        <name>Etape__c</name>
+        <picklistValues>
+            <masterLabel>Elaboration de la réponse</masterLabel>
+            <translation>Voorbereiding antwoord</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gain</masterLabel>
+            <translation>WIN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perte</masterLabel>
+            <translation>LOST</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualification</masterLabel>
+            <translation>Kwalificatie / Diploma</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soumission de l’offre</masterLabel>
+            <translation>Indiening van het voorstel</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

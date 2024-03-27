@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Allergologie (SM)</masterLabel>
+        <translation>Allergologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Anatomie et Cytologie pathologiques (SM)</masterLabel>
+        <translation>Pathologische anatomie en cytologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Anesthésie-réanimation (SM)</masterLabel>
+        <translation>Anesthesie-reanimatie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Biologie médicale (SM)</masterLabel>
+        <translation>Medische biologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cardiologie et Maladies vasculaires (SM)</masterLabel>
+        <translation>Cardiologie en vasculaire ziektes</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chirurgie générale (SM)</masterLabel>
+        <translation>Algemene chirurgie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chirurgie infantile (SM)</masterLabel>
+        <translation>Kinderchirurgie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chirurgie maxillo-faciale (SM)</masterLabel>
+        <translation>Maxillofaciale chirurgie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chirurgie maxillo-faciale (réforme 2017)</masterLabel>
+        <translation>Maxillofaciale chirurgie (hervorming 2017)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chirurgie maxillo-faciale et Stomatologie (SM)</masterLabel>
+        <translation>Maxillofaciale chirurgie en stomatologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chirurgie orale (SCD)</masterLabel>
+        <translation>Mondchirurgie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chirurgie orale (SM)</masterLabel>
+        <translation>Mondchirurgie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chirurgie orthopédique et Traumatologie (SM)</masterLabel>
+        <translation>Orthopedische chirurgie en Traumatologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chirurgie plastique reconstructrice et esthétique (SM)</masterLabel>
+        <translation>Reconstructieve en esthetische plastische chirurgie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chirurgie thoracique et cardio-vasculaire (SM)</masterLabel>
+        <translation>Thorax- en cardiovasculaire chirurgie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chirurgie urologique (SM)</masterLabel>
+        <translation>Urologische chirurgie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chirurgie vasculaire (SM)</masterLabel>
+        <translation>Vasculaire chirurgie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chirurgie viscérale et digestive (SM)</masterLabel>
+        <translation>Viscerale en spijsverteringschirurgie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Dermatologie et Vénéréologie (SM)</masterLabel>
+        <translation>Dermatologie en Venerologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Endocrinologie et Métabolisme (SM)</masterLabel>
+        <translation>Endocrinologie en Metabolisme</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Endocrinologie, diabetologie, nutrition (SM)</masterLabel>
+        <translation>Endocrinologie, Diabetologie en Nutritie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gastro-entérologie et Hépatologie (SM)</masterLabel>
+        <translation>Gastro-enterologie en Hepatologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gynécologie médicale (CEX)</masterLabel>
+        <translation>Medische gynaecologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gynécologie médicale et Obstétrique (CEX)</masterLabel>
+        <translation>Medische gynaecologie en Verloskunde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gynéco-obstétrique et Gynéco-médicale, option Gynéco-médicale (SM)</masterLabel>
+        <translation>Gynaeco-obstetrie en Gynaecomedie, optie Gynaecomedie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gynéco-obstétrique et Gynéco-médicale, option Gynéco-obstétrique (SM)</masterLabel>
+        <translation>Gynaeco-obstetrie en Gynaecomedie, optie Gynaecomedie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gynécologie médicale (SM)</masterLabel>
+        <translation>Medische gynaecologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gynécologie-obstétrique (SM)</masterLabel>
+        <translation>Gynaecologie - Verloskunde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Génétique médicale (SM)</masterLabel>
+        <translation>Medische Genetica</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gériatrie (SM)</masterLabel>
+        <translation>Geriatrie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hygiène (SP)</masterLabel>
+        <translation>Hygiëne</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hématologie (SM)</masterLabel>
+        <translation>Hematologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hématologie (réforme 2017)</masterLabel>
+        <translation>Hematologie (hervorming 2017)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hématologie, option Maladie du sang (SM)</masterLabel>
+        <translation>Hematologie, optie bloedziekten</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hématologie, option Onco-hématologie (SM)</masterLabel>
+        <translation>Hematologie, optie Oncohematologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hémovigilance (SP)</masterLabel>
+        <translation>Hemovigilantie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Maladies infectieuses et tropicales (SM)</masterLabel>
+        <translation>Besmettelijke- en tropische ziekten</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Médecine bucco-dentaire (SCD)</masterLabel>
+        <translation>Mond- en tandheelkunde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Médecine d&#39;urgence (SM)</masterLabel>
+        <translation>Spoedgeneeskunde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Médecine du travail (SM)</masterLabel>
+        <translation>Arbeidsgeneeskunde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Médecine générale (SM)</masterLabel>
+        <translation>Algemene geneeskunde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Médecine intensive-réanimation (SM)</masterLabel>
+        <translation>Intensive care geneeskunde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Médecine interne (SM)</masterLabel>
+        <translation>Interne geneeskunde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Médecine interne et immunologie clinique</masterLabel>
+        <translation>Interne geneeskunde en Klinische Immunologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Médecine légale et expertises médicales (SM)</masterLabel>
+        <translation>Forensische geneeskunde en medische expertise</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Médecine nucléaire (SM)</masterLabel>
+        <translation>Nucleaire geneeskunde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Médecine physique et de réadaptation (SM)</masterLabel>
+        <translation>Fysische- en Revalidatiegeneeskunde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Médecine vasculaire (SM)</masterLabel>
+        <translation>Vasculaire geneeskunde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Neuro-chirurgie (SM)</masterLabel>
+        <translation>Neuro-chirurgie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Neuro-psychiatrie (SM)</masterLabel>
+        <translation>Neuro-psychiatrie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Neurologie (SM)</masterLabel>
+        <translation>Neurologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Néphrologie (SM)</masterLabel>
+        <translation>Nefrologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ORL et Chirurgie cervico-faciale (SM)</masterLabel>
+        <translation>KNO en hoofd-hals chirurgie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Obstétrique (CEX)</masterLabel>
+        <translation>Verloskunde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Oncologie, option Onco-hématologie (SM)</masterLabel>
+        <translation>Oncologie, optie Onco-hematologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Oncologie, option médicale (SM)</masterLabel>
+        <translation>Oncologie, optie geneeskunde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Oncologie, option radiothérapie (SM)</masterLabel>
+        <translation>Oncologie, optie Radiotherapie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ophtalmologie (SM)</masterLabel>
+        <translation>Oogheelkunde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Orthopédie dento-faciale (SCD)</masterLabel>
+        <translation>Tand- en gezichtsorthopedie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Oto-rhino-laryngologie (SM)</masterLabel>
+        <translation>KNO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pharmacovigilance (SP)</masterLabel>
+        <translation>Geneesmiddelenbewaking</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pneumologie (SM)</masterLabel>
+        <translation>Pneumologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Psychiatrie (SM)</masterLabel>
+        <translation>Psychiatrie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Psychiatrie, option enfant et adolescent (SM)</masterLabel>
+        <translation>Psychiatrie, optie kind en adolescent</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pédiatrie (SM)</masterLabel>
+        <translation>Pediatrie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Qualification PAC</masterLabel>
+        <translation>PAC-kwalificatie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Qualifié en Médecine générale (SM)</masterLabel>
+        <translation>Gediplomeerd in Algemene Geneeskunde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Radio-diagnostic (SM)</masterLabel>
+        <translation>Radio-diagnostiek</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Radio-diagnostic et Radio-thérapie (SM)</masterLabel>
+        <translation>Radio-diagnostiek en Radiotherapie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Radio-pharmacie (SP)</masterLabel>
+        <translation>Radioapotheek</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Radio-thérapie (SM)</masterLabel>
+        <translation>Radiotherapie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Recherche médicale (SM)</masterLabel>
+        <translation>Medisch onderzoek</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Rhumatologie (SM)</masterLabel>
+        <translation>Reumatologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Santé publique et Médecine sociale (SM)</masterLabel>
+        <translation>Volksgezondheid en Sociale Geneeskunde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Spécialiste en Médecine générale (SM)</masterLabel>
+        <translation>Specialist in Algemene Geneeskunde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Stomatologie (SM)</masterLabel>
+        <translation>Stomatologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Urologie (CEX)</masterLabel>
+        <translation>Urologie</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

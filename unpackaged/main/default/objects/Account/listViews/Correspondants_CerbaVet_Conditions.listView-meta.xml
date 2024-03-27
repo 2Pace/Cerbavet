@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Correspondants_CerbaVet_Conditions</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Code_compte_metier__c</columns>
+    <columns>Conditions_de_Reglement_Cerbavet__c</columns>
+    <columns>Termes_de_paiements__c</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>Numero_SFA__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>startsWith</operation>
+        <value>HEX-119</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Compte_Client_SGL_BI_Groupe</value>
+    </filters>
+    <filters>
+        <field>Conditions_de_Reglement_Cerbavet__c</field>
+        <operation>equals</operation>
+        <value>Régleur,Régleur en Prélèvement</value>
+    </filters>
+    <filters>
+        <field>Termes_de_paiements__c</field>
+        <operation>equals</operation>
+        <value>Net 60</value>
+    </filters>
+    <label>Correspondants CerbaVet Conditions</label>
+</ListView>

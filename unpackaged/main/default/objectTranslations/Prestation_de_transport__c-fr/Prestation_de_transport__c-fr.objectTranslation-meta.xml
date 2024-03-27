@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Prestation de transport</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Prestations de transports</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Présentation Prestation de transport</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+        <sections>
+            <label><!-- Prestations --></label>
+            <section>Prestations</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Demande de devis (CACHÉ) --></label>
+        <name>Demande_de_devis</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Merci de renseigner la date de suppression lorsque la prestation est supprimée --></errorMessage>
+        <name>Datedesuppressionobligatoire</name>
+    </validationRules>
+</CustomObjectTranslation>

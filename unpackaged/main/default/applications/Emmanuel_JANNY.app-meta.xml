@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>logo_cerba_vet_Copie</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>true</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Cerba Vet</label>
+    <navType>Console</navType>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>maps__Maps</tabs>
+    <tabs>Tournee__c</tabs>
+    <tabs>standard-Event</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Cerba_Vet_UtilityBar</utilityBar>
+    <workspaceConfig>
+        <mappings>
+            <tab>Tournee__c</tab>
+        </mappings>
+        <mappings>
+            <tab>maps__Maps</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-Account</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-Contact</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-Event</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-home</tab>
+        </mappings>
+    </workspaceConfig>
+</CustomApplication>

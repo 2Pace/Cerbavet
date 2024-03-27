@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Interface Name --></label>
+        <name>Interface_Name__c</name>
+        <picklistValues>
+            <masterLabel>CreditNord</masterLabel>
+            <translation><!-- CreditNord --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECV</masterLabel>
+            <translation><!-- ECV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAYTWEAK</masterLabel>
+            <translation><!-- PAYTWEAK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEST</masterLabel>
+            <translation><!-- TEST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Talend</masterLabel>
+            <translation><!-- Talend --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

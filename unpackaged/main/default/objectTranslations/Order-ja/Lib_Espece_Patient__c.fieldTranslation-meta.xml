@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Lib Espèce Patient --></label>
+        <name>Lib_Espece_Patient__c</name>
+        <picklistValues>
+            <masterLabel>Ane</masterLabel>
+            <translation><!-- Ane --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bovins</masterLabel>
+            <translation><!-- Bovins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Camélidès</masterLabel>
+            <translation><!-- Camélidès --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canins</masterLabel>
+            <translation><!-- Canins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caprins</masterLabel>
+            <translation><!-- Caprins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cobayes</masterLabel>
+            <translation><!-- Cobayes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Divers</masterLabel>
+            <translation><!-- Divers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equidé (dont use)</masterLabel>
+            <translation><!-- Equidé (dont use) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equins</masterLabel>
+            <translation><!-- Equins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Felins</masterLabel>
+            <translation><!-- Felins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Furets</masterLabel>
+            <translation><!-- Furets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Humain</masterLabel>
+            <translation><!-- Humain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LapinNZW</masterLabel>
+            <translation><!-- LapinNZW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lapins</masterLabel>
+            <translation><!-- Lapins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mamifères marins</masterLabel>
+            <translation><!-- Mamifères marins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oiseaux</masterLabel>
+            <translation><!-- Oiseaux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ovins</masterLabel>
+            <translation><!-- Ovins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poissons</masterLabel>
+            <translation><!-- Poissons --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Porcin</masterLabel>
+            <translation><!-- Porcin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primates</masterLabel>
+            <translation><!-- Primates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rats</masterLabel>
+            <translation><!-- Rats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reptiles</masterLabel>
+            <translation><!-- Reptiles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rongeurs</masterLabel>
+            <translation><!-- Rongeurs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Souris</masterLabel>
+            <translation><!-- Souris --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

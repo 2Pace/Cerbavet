@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mes_mensualites</fullName>
+    <columns>NAME</columns>
+    <columns>Date_de_la_mensualite__c</columns>
+    <columns>Montant_provisionne_TTC__c</columns>
+    <columns>Cout_de_transport__c</columns>
+    <columns>Statut__c</columns>
+    <columns>Icone_Statut__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>Mes mensualités</label>
+</ListView>

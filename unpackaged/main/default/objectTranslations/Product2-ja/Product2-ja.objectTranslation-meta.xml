@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Cerbavet Admin</layout>
+        <sections>
+            <label><!-- Configuration CPQ et Billing --></label>
+            <section>Configuration CPQ et Billing</section>
+        </sections>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information Facturation --></label>
+            <section>Information Facturation</section>
+        </sections>
+        <sections>
+            <label><!-- Informations Laboratoire --></label>
+            <section>Informations Laboratoire</section>
+        </sections>
+        <sections>
+            <label>価格設定</label>
+            <section>Pricing</section>
+        </sections>
+        <sections>
+            <label>Salesforce Billing 設定</label>
+            <section>Salesforce Billing Configuration</section>
+        </sections>
+        <sections>
+            <label>システム項目</label>
+            <section>System Fields</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

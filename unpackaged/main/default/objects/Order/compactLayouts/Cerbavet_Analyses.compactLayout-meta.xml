@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cerbavet_Analyses</fullName>
+    <fields>IDDossier__c</fields>
+    <fields>AccountId</fields>
+    <fields>TotalAmount</fields>
+    <fields>blng__PendingBillings__c</fields>
+    <fields>Statut_Compte_Rendu__c</fields>
+    <fields>Conditions_de_Reglement_Cerbavet__c</fields>
+    <fields>Remise_commerciale_Total__c</fields>
+    <label>Cerbavet Analyses</label>
+</CompactLayout>

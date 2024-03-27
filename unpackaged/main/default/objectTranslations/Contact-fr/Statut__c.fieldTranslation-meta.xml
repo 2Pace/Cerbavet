@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Un contact peut devenir inactif pour cause de retraite, cessation d&apos;exercice, décès, etc. --></help>
+        <label><!-- Statut --></label>
+        <name>Statut__c</name>
+        <picklistValues>
+            <masterLabel>En activité</masterLabel>
+            <translation><!-- En activité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactif</masterLabel>
+            <translation><!-- Inactif --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Associé</masterLabel>
+        <translation><!-- Associé --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cadre de santé</masterLabel>
+        <translation>Cadre Santé EN</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chargé de clientèle</masterLabel>
+        <translation>Chargé Client EN</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Comptable</masterLabel>
+        <translation><!-- Comptable --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur commercial</masterLabel>
+        <translation><!-- Directeur commercial --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur de l’innovation</masterLabel>
+        <translation><!-- Directeur de l’innovation --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur de pôle</masterLabel>
+        <translation><!-- Directeur de pôle --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur des partenariats</masterLabel>
+        <translation><!-- Directeur des partenariats --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur des services comptables / financiers</masterLabel>
+        <translation><!-- Directeur des services comptables / financiers --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur des services économiques</masterLabel>
+        <translation><!-- Directeur des services économiques --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur des soins</masterLabel>
+        <translation><!-- Directeur des soins --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur du développement</masterLabel>
+        <translation><!-- Directeur du développement --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur du plateau technique</masterLabel>
+        <translation><!-- Directeur du plateau technique --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur d’établissement</masterLabel>
+        <translation><!-- Directeur d’établissement --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur général</masterLabel>
+        <translation><!-- Directeur général --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur marketing</masterLabel>
+        <translation><!-- Directeur marketing --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur médical</masterLabel>
+        <translation><!-- Directeur médical --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur opérationnel</masterLabel>
+        <translation><!-- Directeur opérationnel --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur prévention</masterLabel>
+        <translation><!-- Directeur prévention --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Directeur santé</masterLabel>
+        <translation><!-- Directeur santé --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hygiéniste</masterLabel>
+        <translation><!-- Hygiéniste --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Informaticien(ne)</masterLabel>
+        <translation><!-- Informaticien(ne) --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Président</masterLabel>
+        <translation><!-- Président --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Président CME</masterLabel>
+        <translation><!-- Président CME --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Président du CLIN</masterLabel>
+        <translation><!-- Président du CLIN --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsable de centre de tri</masterLabel>
+        <translation><!-- Responsable de centre de tri --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsable de la formation (continue)</masterLabel>
+        <translation><!-- Responsable de la formation (continue) --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsable des achats</masterLabel>
+        <translation><!-- Responsable des achats --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsable des affaires juridiques</masterLabel>
+        <translation><!-- Responsable des affaires juridiques --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsable des envois</masterLabel>
+        <translation><!-- Responsable des envois --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsable hygiène et sécurité</masterLabel>
+        <translation><!-- Responsable hygiène et sécurité --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsable logistique</masterLabel>
+        <translation><!-- Responsable logistique --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsable qualité</masterLabel>
+        <translation><!-- Responsable qualité --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Secrétaire</masterLabel>
+        <translation><!-- Secrétaire --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Technicien(ne)</masterLabel>
+        <translation><!-- Technicien(ne) --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

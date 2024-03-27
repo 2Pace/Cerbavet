@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1004</fullName>
+        <default>false</default>
+        <label>Aide de laboratoire</label>
+    </customValue>
+    <customValue>
+        <fullName>1010</fullName>
+        <default>false</default>
+        <label>ASV : Assistant ou auxiliaire spécialisé Vétérinaire</label>
+    </customValue>
+    <customValue>
+        <fullName>1012</fullName>
+        <default>false</default>
+        <label>Chef de service (établissement)</label>
+    </customValue>
+    <customValue>
+        <fullName>1005</fullName>
+        <default>false</default>
+        <label>Chef du pôle de biologie</label>
+    </customValue>
+    <customValue>
+        <fullName>1006</fullName>
+        <default>false</default>
+        <label>Chercheur</label>
+    </customValue>
+    <customValue>
+        <fullName>40</fullName>
+        <default>false</default>
+        <label>Chirurgien dentiste</label>
+    </customValue>
+    <customValue>
+        <fullName>1015</fullName>
+        <default>false</default>
+        <label>Conseiller en génétique</label>
+    </customValue>
+    <customValue>
+        <fullName>1011</fullName>
+        <default>false</default>
+        <label>Expert / consultant externe</label>
+    </customValue>
+    <customValue>
+        <fullName>60</fullName>
+        <default>false</default>
+        <label>Infirmier libéral</label>
+    </customValue>
+    <customValue>
+        <fullName>1002</fullName>
+        <default>false</default>
+        <label>Infirmier salarié</label>
+    </customValue>
+    <customValue>
+        <fullName>10</fullName>
+        <default>false</default>
+        <label>Médecin</label>
+    </customValue>
+    <customValue>
+        <fullName>1013</fullName>
+        <default>false</default>
+        <label>Médecin Biologiste</label>
+    </customValue>
+    <customValue>
+        <fullName>1001</fullName>
+        <default>false</default>
+        <label>Médecin coordinateur en EHPAD</label>
+    </customValue>
+    <customValue>
+        <fullName>1003</fullName>
+        <default>false</default>
+        <label>Pharmacien</label>
+    </customValue>
+    <customValue>
+        <fullName>1014</fullName>
+        <default>false</default>
+        <label>Pharmacien Biologiste</label>
+    </customValue>
+    <customValue>
+        <fullName>1008</fullName>
+        <default>false</default>
+        <label>Praticien hospitalier</label>
+    </customValue>
+    <customValue>
+        <fullName>50</fullName>
+        <default>false</default>
+        <label>Sage femme</label>
+    </customValue>
+    <customValue>
+        <fullName>1007</fullName>
+        <default>false</default>
+        <label>Surveillant</label>
+    </customValue>
+    <customValue>
+        <fullName>1009</fullName>
+        <default>false</default>
+        <label>Vétérinaire</label>
+    </customValue>
+    <masterLabel>Fonction/Rôle médical</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

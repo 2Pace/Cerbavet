@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Identifiant_SGL__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (
+ISBLANK ( Compte_client_SGL__c ), Code_contact_SGL__r.Name , Compte_client_SGL__r.Name  )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Identifiant SGL</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

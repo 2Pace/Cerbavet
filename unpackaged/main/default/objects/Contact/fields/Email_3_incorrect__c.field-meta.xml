@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_3_incorrect__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Email rejeté par le serveur de messagerie</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Email rejeté par le serveur de messagerie</inlineHelpText>
+    <label>Email 3 incorrect</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

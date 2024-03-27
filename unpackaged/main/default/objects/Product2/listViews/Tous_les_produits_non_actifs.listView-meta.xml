@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tous_les_produits_non_actifs</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+    <columns>PRODUCT2.FAMILY</columns>
+    <columns>Visible_Catalogue__c</columns>
+    <columns>SBQQ__ChargeType__c</columns>
+    <columns>PRODUCT2.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PRODUCT2.ACTIVE</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Tous les produits non actifs</label>
+</ListView>

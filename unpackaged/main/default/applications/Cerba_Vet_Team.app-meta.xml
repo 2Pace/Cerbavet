@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Compte_client_SGL_CerbaVet</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Compte_client_SGL_CerbaVet</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>cerbaVet_Logo2</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>App pour Cerba Vet</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Cerba Vet Team</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compte_client_SGL_CerbaVet</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Compte_Client_SGL_BI_Groupe</recordType>
+        <type>Flexipage</type>
+        <profile>CERBA VET - Commercial</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compte_client_SGL_CerbaVet</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Compte_Client_SGL_BI_Groupe</recordType>
+        <type>Flexipage</type>
+        <profile>CERBA VET - Commercial</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compte_client_SGL_CerbaVet</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Compte_Client_SGL_BI_Groupe</recordType>
+        <type>Flexipage</type>
+        <profile>Administrateur Système CERBA VET</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compte_client_SGL_CerbaVet</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Compte_Client_SGL_BI_Groupe</recordType>
+        <type>Flexipage</type>
+        <profile>Administrateur Système CERBA VET</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compte_client_SGL_CerbaVet</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Compte_Client_SGL_BI_Groupe</recordType>
+        <type>Flexipage</type>
+        <profile>CERBA VET -Commercial SF</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compte_client_SGL_CerbaVet</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Compte_Client_SGL_BI_Groupe</recordType>
+        <type>Flexipage</type>
+        <profile>CERBA VET -Commercial SF</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Requ_te_Page_d_enregistrement_service</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.Requete</recordType>
+        <type>Flexipage</type>
+        <profile>CERBA VET -Commercial SF</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Requ_te_Page_d_enregistrement_service</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.Requete</recordType>
+        <type>Flexipage</type>
+        <profile>CERBA VET -Commercial SF</profile>
+    </profileActionOverrides>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Event</tabs>
+    <tabs>standard-Feed</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>maps__Maps</tabs>
+    <tabs>Adresses__c</tabs>
+    <tabs>standard-Product2</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Cerba_Vet_Team_UtilityBar</utilityBar>
+</CustomApplication>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Titre_d_exercice__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Nom modifiable si la source du contact est &quot;RPPS&quot;</inlineHelpText>
+    <label>Titre d&#39;exercice</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Titre_d_exercice</valueSetName>
+    </valueSet>
+</CustomField>

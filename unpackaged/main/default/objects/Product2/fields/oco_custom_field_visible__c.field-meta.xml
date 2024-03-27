@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>oco_custom_field_visible__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicateur permettant à OCO d&#39;afficher un champ personnaliser. Si coché, remplir oco_custom_field_label</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicateur permettant à OCO d&#39;afficher un champ personnaliser. Si coché, remplir oco_custom_field_label</inlineHelpText>
+    <label>oco_custom_field_visible</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Partage_des_raisons_de_passage_avec_la_BU_Cerba</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Partage des raisons de passage avec la BU Cerba</label>
+        <sharedTo>
+            <roleAndSubordinates>Cerba_direction</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Partage_des_raisons_de_passage_avec_la_BU_Cerba_Vet</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Partage des raisons de passage avec la BU Cerba Vet</label>
+        <sharedTo>
+            <roleAndSubordinates>Cerba_Vet_direction</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

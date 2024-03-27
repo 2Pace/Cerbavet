@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commandes_Cliniques_facturer</fullName>
+    <columns>IDDossier__c</columns>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>blng__BillingAccount__c</columns>
+    <columns>ORDERS.TOTAL_AMOUNT</columns>
+    <columns>ORDERS.EFFECTIVE_DATE</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>blng__InvoiceBatch__c</columns>
+    <columns>blng__BillNow__c</columns>
+    <columns>ORDER.RECORDTYPE</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>blng__InvoiceBatch__c</field>
+        <operation>equals</operation>
+        <value>Cerbavet Analysis,Cerbavet Analysis Suisse</value>
+    </filters>
+    <filters>
+        <field>ORDER.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Order.Cerbavet_Analyses</value>
+    </filters>
+    <filters>
+        <field>ORDERS.STATUS</field>
+        <operation>equals</operation>
+        <value>Activated</value>
+    </filters>
+    <label>Commandes Cliniques à facturer</label>
+</ListView>

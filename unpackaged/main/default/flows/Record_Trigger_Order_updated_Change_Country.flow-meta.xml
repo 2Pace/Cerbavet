@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <assignments>
+        <name>Assign_Order_Product_to_List</name>
+        <label>Assign Order Product to List</label>
+        <locationX>264</locationX>
+        <locationY>695</locationY>
+        <assignmentItems>
+            <assignToReference>OrderProductList</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>OrderProduct</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>For_all_Order_Products</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_OrderProduct</name>
+        <label>Assign OrderProduct</label>
+        <locationX>264</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>OrderProduct.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>For_all_Order_Products.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>OrderProduct.blng__TaxCountry__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TaxCountryOverride</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>OrderProduct.blng__TaxRule__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TaxeRuleID</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>OrderProduct.blng__TaxTreatment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TaxeTreatmentID</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_Order_Product_to_List</targetReference>
+        </connector>
+    </assignments>
+    <description>When the billing country is changed on a order record, we have to re evaluate the tax treatment linked to all order products in the order, and apply the right one with the right rate
+Updated version for Switzerland</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Determine billing country DOM TOM France Export from Billing country on account</description>
+        <name>TaxCountryOverride</name>
+        <dataType>String</dataType>
+        <expression>IF({!$Record.BillingCountry} = &#39;French Guiana&#39;,&#39;DOM&#39;,
+IF({!$Record.BillingCountry} = &#39;Guadeloupe&#39;,&#39;DOM&#39;,
+IF({!$Record.BillingCountry} = &#39;Martinique&#39;,&#39;DOM&#39;,
+IF({!$Record.BillingCountry} = &#39;Mayotte&#39;,&#39;DOM&#39;,
+IF({!$Record.BillingCountry} = &#39;Réunion&#39;,&#39;DOM&#39;,
+IF({!$Record.BillingCountry} = &#39;French Southern Territories&#39;,&#39;TOM&#39;,
+IF({!$Record.BillingCountry} = &#39;France&#39;,&#39;France&#39;,
+IF({!$Record.BillingCountry} = &#39;Switzerland&#39;,&#39;Switzerland&#39;,
+&#39;Export&#39;))))))))</expression>
+    </formulas>
+    <formulas>
+        <name>TaxeRuleID</name>
+        <dataType>String</dataType>
+        <expression>IF({!$Record.BillingCountry} = &#39;French Guiana&#39;,{!$Setup.BillingIDs__c.TR_DOM__c},
+IF({!$Record.BillingCountry} = &#39;Guadeloupe&#39;,{!$Setup.BillingIDs__c.TR_DOM__c},
+IF({!$Record.BillingCountry} = &#39;Martinique&#39;,{!$Setup.BillingIDs__c.TR_DOM__c},
+IF({!$Record.BillingCountry} = &#39;Mayotte&#39;,{!$Setup.BillingIDs__c.TR_DOM__c},
+IF({!$Record.BillingCountry} = &#39;Réunion&#39;,{!$Setup.BillingIDs__c.TR_DOM__c},
+IF({!$Record.BillingCountry} = &#39;French Southern Territories&#39;,{!$Setup.BillingIDs__c.TR_TOM__c},
+IF({!$Record.BillingCountry} = &#39;France&#39;,{!$Setup.BillingIDs__c.TR_France_Metropolitaine__c},
+IF({!$Record.BillingCountry} = &#39;Switzerland&#39;,{!$Setup.BillingIDs__c.TR_Suisse__c},
+{!$Setup.BillingIDs__c.TR_Export__c}))))))))</expression>
+    </formulas>
+    <formulas>
+        <name>TaxeTreatmentID</name>
+        <dataType>String</dataType>
+        <expression>IF({!$Record.BillingCountry} = &#39;French Guiana&#39;,{!$Setup.BillingIDs__c.TT_DOM__c},
+IF({!$Record.BillingCountry} = &#39;Guadeloupe&#39;,{!$Setup.BillingIDs__c.TT_DOM__c},
+IF({!$Record.BillingCountry} = &#39;Martinique&#39;,{!$Setup.BillingIDs__c.TT_DOM__c},
+IF({!$Record.BillingCountry} = &#39;Mayotte&#39;,{!$Setup.BillingIDs__c.TT_DOM__c},
+IF({!$Record.BillingCountry} = &#39;Réunion&#39;,{!$Setup.BillingIDs__c.TT_DOM__c},
+IF({!$Record.BillingCountry} = &#39;French Southern Territories&#39;,{!$Setup.BillingIDs__c.TT_TOM__c},
+IF({!$Record.BillingCountry} = &#39;France&#39;,{!$Setup.BillingIDs__c.TT_France_Metropolitaine__c},
+IF({!$Record.BillingCountry} = &#39;France&#39;,{!$Setup.BillingIDs__c.TT_Suisse__c},
+{!$Setup.BillingIDs__c.TT_Export_CVC__c}))))))))</expression>
+    </formulas>
+    <interviewLabel>Record-Trigger: Order After {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Record-Trigger: Order updated Change Country</label>
+    <loops>
+        <name>For_all_Order_Products</name>
+        <label>For all Order Products</label>
+        <locationX>176</locationX>
+        <locationY>455</locationY>
+        <collectionReference>Get_All_Order_Products</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_OrderProduct</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Order_Product_List</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get all Order products from the Order</description>
+        <name>Get_All_Order_Products</name>
+        <label>Get All Order Products</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>For_all_Order_Products</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OrderId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>OrderItem</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Order_Product_List</name>
+        <label>Update Order Product List</label>
+        <locationX>176</locationX>
+        <locationY>911</locationY>
+        <inputReference>OrderProductList</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_All_Order_Products</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>BillingCountryCode</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Order</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>OrderProduct</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>OrderItem</objectType>
+    </variables>
+    <variables>
+        <name>OrderProductList</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>OrderItem</objectType>
+    </variables>
+</Flow>

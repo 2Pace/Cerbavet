@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Collecte à une adresse différente du CR --></label>
+        <name>Collecte_une_adresse_differente_du_CRU__c</name>
+    </CustomFieldTranslation>

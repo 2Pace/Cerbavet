@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Compte_Source_RPPS</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+ $User.Tech_By_Pass_VR__c = false,
+ISPICKVAL( AccountSource , &quot;RPPS&quot;),
+
+OR(
+ISCHANGED( FINESS__c ),
+ISCHANGED( SIRET__c )
+)
+)</errorConditionFormula>
+    <errorMessage>Merci de ne pas modifier les champs FINESS et SIRET quand la source du compte provient de la base RPPS.</errorMessage>
+</ValidationRule>

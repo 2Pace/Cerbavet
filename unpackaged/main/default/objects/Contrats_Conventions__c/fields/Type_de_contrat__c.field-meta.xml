@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_de_contrat__c</fullName>
+    <externalId>false</externalId>
+    <label>Type de contrat</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contrat d’établissement</fullName>
+                <default>false</default>
+                <label>Contrat d’établissement</label>
+            </value>
+            <value>
+                <fullName>Contrat cadre</fullName>
+                <default>false</default>
+                <label>Contrat cadre</label>
+            </value>
+            <value>
+                <fullName>AO</fullName>
+                <default>false</default>
+                <label>AO</label>
+            </value>
+            <value>
+                <fullName>Procédure adaptée</fullName>
+                <default>false</default>
+                <label>Procédure adaptée</label>
+            </value>
+            <value>
+                <fullName>Etude clinique</fullName>
+                <default>false</default>
+                <label>Etude clinique</label>
+            </value>
+            <value>
+                <fullName>Accord de collaboration</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Accord de collaboration</label>
+            </value>
+            <value>
+                <fullName>Accord de partenariat</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Accord de partenariat</label>
+            </value>
+            <value>
+                <fullName>Contrat de mise à disposition</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contrat de mise à disposition</label>
+            </value>
+            <value>
+                <fullName>Contrat de partenariat</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contrat de partenariat</label>
+            </value>
+            <value>
+                <fullName>Contrat logistique</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contrat logistique</label>
+            </value>
+            <value>
+                <fullName>Contrat prescription connectée</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contrat prescription connectée</label>
+            </value>
+            <value>
+                <fullName>Contrat prestation de services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contrat prestation de services</label>
+            </value>
+            <value>
+                <fullName>Convention de preuve</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Convention de preuve</label>
+            </value>
+            <value>
+                <fullName>Convention de transport</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Convention de transport</label>
+            </value>
+            <value>
+                <fullName>Convention hospitalière</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Convention hospitalière</label>
+            </value>
+            <value>
+                <fullName>Fiche de revue de contrat</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fiche de revue de contrat</label>
+            </value>
+            <value>
+                <fullName>Mise à disposition de matériel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mise à disposition de matériel</label>
+            </value>
+            <value>
+                <fullName>Mise à disposition de véhicule</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mise à disposition de véhicule</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

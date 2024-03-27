@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Categorie_de_la_facture__c</fullName>
+    <externalId>false</externalId>
+    <label>Catégorie de la facture</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Métropole</fullName>
+                <default>true</default>
+                <label>Métropole</label>
+            </value>
+            <value>
+                <fullName>International et DOM-TOM</fullName>
+                <default>false</default>
+                <label>International et DOM-TOM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

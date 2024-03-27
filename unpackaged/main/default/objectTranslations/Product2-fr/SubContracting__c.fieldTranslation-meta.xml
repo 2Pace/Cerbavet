@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Ce champ permet de mettre en avant dans l&apos;application OCO (Ordonnance Connectée) si l&apos;examen requiert une sous traitance. --></help>
+        <label><!-- Analyse Sous-traitée --></label>
+        <name>SubContracting__c</name>
+    </CustomFieldTranslation>

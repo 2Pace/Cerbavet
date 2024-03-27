@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Dépose du résultat à --></label>
+        <name>Depose_resultat__c</name>
+        <relationshipLabel><!-- Adresses (Dépose résultat à) --></relationshipLabel>
+    </CustomFieldTranslation>

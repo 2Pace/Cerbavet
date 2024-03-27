@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type of Request --></label>
+        <name>Type_of_Request__c</name>
+        <picklistValues>
+            <masterLabel>Comitologie</masterLabel>
+            <translation><!-- Comitologie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initialisation</masterLabel>
+            <translation><!-- Initialisation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUN</masterLabel>
+            <translation><!-- RUN --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

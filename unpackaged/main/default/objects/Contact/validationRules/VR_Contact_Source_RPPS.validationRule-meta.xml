@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Contact_Source_RPPS</fullName>
+    <active>true</active>
+    <description>Si la source du contact = RPPS, alors il n&#39;est pas possible de modifier manuellement le type d&#39;identifiant ou l&#39;identifiant national unique. 
+Exception faite pour les utilisateurs qui ont la CAC Tech By Pass de cochée sur leur fiche utilisateur.</description>
+    <errorConditionFormula>AND (
+ $User.Tech_By_Pass_VR__c = false,
+ISPICKVAL(Source_de_contact__c, &#39;RPPS&#39;),
+OR(
+
+ISCHANGED(Type_d_identifiant__c),
+ISCHANGED(Identifiant_national_unique__c)
+)
+)</errorConditionFormula>
+    <errorMessage>Ce contact provient du référentiel RPPS National. 
+Merci de ne pas modifier les champs : Type d&#39;identification et Identifiant National Unique.</errorMessage>
+</ValidationRule>

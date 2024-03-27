@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Cerba</fullName>
+        <default>false</default>
+        <label>Cerba</label>
+    </customValue>
+    <customValue>
+        <fullName>CerbaVet</fullName>
+        <default>false</default>
+        <label>Cerba Vet</label>
+    </customValue>
+    <customValue>
+        <fullName>Nord</fullName>
+        <default>false</default>
+        <label>Nord</label>
+    </customValue>
+    <customValue>
+        <fullName>Nord Ouest</fullName>
+        <default>false</default>
+        <label>Nord Ouest</label>
+    </customValue>
+    <customValue>
+        <fullName>Grand Ouest</fullName>
+        <default>false</default>
+        <label>Grand Ouest</label>
+    </customValue>
+    <customValue>
+        <fullName>Grand Sud</fullName>
+        <default>false</default>
+        <label>Grand Sud</label>
+    </customValue>
+    <customValue>
+        <fullName>Centre Est</fullName>
+        <default>false</default>
+        <label>Centre Est</label>
+    </customValue>
+    <customValue>
+        <fullName>Ile-de-France</fullName>
+        <default>false</default>
+        <label>Ile-de-France</label>
+    </customValue>
+    <customValue>
+        <fullName>Outre mer</fullName>
+        <default>false</default>
+        <label>Outre mer</label>
+    </customValue>
+    <customValue>
+        <fullName>CHC Belgium - CRI</fullName>
+        <default>false</default>
+        <label>CHC Belgium - CRI</label>
+    </customValue>
+    <customValue>
+        <fullName>CHC Belgium - LBS</fullName>
+        <default>false</default>
+        <label>CHC Belgium - LBS</label>
+    </customValue>
+    <customValue>
+        <fullName>Nouvelle Aquitaine</fullName>
+        <default>false</default>
+        <label>Nouvelle Aquitaine</label>
+    </customValue>
+    <customValue>
+        <fullName>Centre Ouest</fullName>
+        <default>false</default>
+        <label>Centre Ouest</label>
+    </customValue>
+    <customValue>
+        <fullName>CerbaHealthCare</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CerbaHealthCare</label>
+    </customValue>
+    <masterLabel>Pôle</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

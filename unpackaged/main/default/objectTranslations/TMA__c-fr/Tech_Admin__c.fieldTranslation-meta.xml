@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Tech_Admin --></label>
+        <name>Tech_Admin__c</name>
+        <relationshipLabel><!-- TMA (Tech_Admin) --></relationshipLabel>
+    </CustomFieldTranslation>

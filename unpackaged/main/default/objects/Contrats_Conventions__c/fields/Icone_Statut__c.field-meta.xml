@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Icone_Statut__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF 
+( ISPICKVAL( Statut__c ,&quot;EN_COURS&quot;) 
+, 
+IMAGE(&quot;/resource/1557404795000/ICONS_En_Cours?&quot;, &quot;EN_COURS&quot;, 30 ,30 ) 
+, 
+
+IF 
+( ISPICKVAL( Statut__c ,&quot;ARCHIVE&quot;) 
+, 
+IMAGE(&quot;/resource/1557443460000/ICONS_Archive_resilie?&quot;, &quot;ARCHIVE&quot;, 30 ,30 ) 
+, 
+
+
+&quot;&quot; 
+) 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Icône Statut</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Cerba HC</fullName>
+        <default>false</default>
+        <label>Cerba HealthCare</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerba</fullName>
+        <default>false</default>
+        <label>Cerba</label>
+    </customValue>
+    <customValue>
+        <fullName>CerbaVet</fullName>
+        <default>false</default>
+        <label>Cerba Vet</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Hauts-de-France</fullName>
+        <default>false</default>
+        <label>Cerballiance Hauts-de-France</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Artois</fullName>
+        <default>false</default>
+        <label>Cerballiance Artois</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Somme</fullName>
+        <default>false</default>
+        <label>Cerballiance Somme</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Oise</fullName>
+        <default>false</default>
+        <label>Cerballiance Oise</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Normandie Ouest</fullName>
+        <default>false</default>
+        <label>Cerballiance Normandie Ouest</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Bretagne</fullName>
+        <default>false</default>
+        <label>Cerballiance Bretagne</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Charentes</fullName>
+        <default>false</default>
+        <label>Cerballiance Charentes</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Centre Val-de-Loire</fullName>
+        <default>false</default>
+        <label>Cerballiance Centre Val-de-Loire</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Pyrénées</fullName>
+        <default>false</default>
+        <label>Cerballiance Pyrénées</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Occitanie</fullName>
+        <default>false</default>
+        <label>Cerballiance Occitanie</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Languedoc</fullName>
+        <default>false</default>
+        <label>Cerballiance Languedoc</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Provence</fullName>
+        <default>false</default>
+        <label>Cerballiance Provence</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Côte d&#39;Azur</fullName>
+        <default>false</default>
+        <label>Cerballiance Côte d&#39;Azur</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Auvergne Rhône Alpes</fullName>
+        <default>false</default>
+        <label>Cerballiance Auvergne Rhône Alpes</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Loire</fullName>
+        <default>false</default>
+        <label>Cerballiance Loire</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Bourgogne</fullName>
+        <default>false</default>
+        <label>Cerballiance Bourgogne</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Drôme-Ardèche</fullName>
+        <default>false</default>
+        <label>Cerballiance Drôme-Ardèche</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Paris IDF Est</fullName>
+        <default>false</default>
+        <label>Cerballiance Paris IDF Est</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance IDF Ouest</fullName>
+        <default>false</default>
+        <label>Cerballiance IDF Ouest</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance IDF Sud</fullName>
+        <default>false</default>
+        <label>Cerballiance IDF Sud</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance La Réunion</fullName>
+        <default>false</default>
+        <label>Cerballiance La Réunion</label>
+    </customValue>
+    <customValue>
+        <fullName>CHC Belgium - CRI</fullName>
+        <default>false</default>
+        <label>CHC Belgium - CRI</label>
+    </customValue>
+    <customValue>
+        <fullName>CHC Belgium - LBS</fullName>
+        <default>false</default>
+        <label>CHC Belgium - LBS</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Alpes Durance</fullName>
+        <default>false</default>
+        <label>Cerballiance Alpes Durance</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Normandie Est</fullName>
+        <default>false</default>
+        <label>Cerballiance Normandie Est</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Aquitaine Nord</fullName>
+        <default>false</default>
+        <label>Cerballiance Aquitaine Nord</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Aquitaine Sud</fullName>
+        <default>false</default>
+        <label>Cerballiance Aquitaine Sud</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Médoc</fullName>
+        <default>false</default>
+        <label>Cerballiance Médoc</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Gascogne</fullName>
+        <default>false</default>
+        <label>Cerballiance Gascogne</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Martinique</fullName>
+        <default>false</default>
+        <label>Cerballiance Martinique</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Paris Ouest</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cerballiance Paris Ouest</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Paris Nord - old</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cerballiance Paris Nord - old</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Paris</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cerballiance Paris</label>
+    </customValue>
+    <customValue>
+        <fullName>CHC Belgium - LBS-AF</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CHC Belgium - LBS-AF</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Haute Vallée</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cerballiance Haute Vallée</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Côte d&#39;Azur - Périmètre Var</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cerballiance Côte d&#39;Azur - Périmètre Var</label>
+    </customValue>
+    <customValue>
+        <fullName>CerbaHealthCare</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CerbaHealthCare</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Midi-Pyrénées</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cerballiance Midi-Pyrénées</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Réunion</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cerballiance Réunion</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Provence - Périmètre Coutanson</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cerballiance Provence - Périmètre Coutanson</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Provence - Périmètre Clairval</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cerballiance Provence - Périmètre Clairval</label>
+    </customValue>
+    <customValue>
+        <fullName>Cerballiance Paris Sud</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cerballiance Paris Sud</label>
+    </customValue>
+    <masterLabel>Structure</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

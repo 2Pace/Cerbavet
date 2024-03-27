@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tous_les_Comptes_Labos_Orga_Groupe</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ID_Externe__c</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>Numero_SFA__c</columns>
+    <columns>Code_compte_metier__c</columns>
+    <columns>Code_Structure__c</columns>
+    <columns>Description_structure__c</columns>
+    <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Labo_Organisation_Groupe</value>
+    </filters>
+    <label>Tous les comptes labos - Orga groupe</label>
+</ListView>

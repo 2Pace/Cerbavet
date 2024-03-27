@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Debut_d_application_de_la_modification__c</fullName>
+    <description>Mois de début d’application de la modification</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Mois de début d’application de la modification</inlineHelpText>
+    <label>Début d’application de la modification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

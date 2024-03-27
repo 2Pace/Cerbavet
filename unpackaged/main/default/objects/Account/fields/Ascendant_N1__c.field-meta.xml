@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ascendant_N1__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Ascendant N1</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Merci de renseigner un compte de type établissement.</errorMessage>
+        <filterItems>
+            <field>Account.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Etablissement</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Ascendant N1</relationshipLabel>
+    <relationshipName>Ascendant_N1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

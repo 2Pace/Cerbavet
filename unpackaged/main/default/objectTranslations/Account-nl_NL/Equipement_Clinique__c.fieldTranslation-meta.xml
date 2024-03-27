@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Klinische apparatuur</label>
+        <name>Equipement_Clinique__c</name>
+        <picklistValues>
+            <masterLabel>Biochimie</masterLabel>
+            <translation><!-- Biochimie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hormonologie</masterLabel>
+            <translation><!-- Hormonologie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hématologie</masterLabel>
+            <translation><!-- Hématologie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ionogramme</masterLabel>
+            <translation><!-- Ionogramme --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

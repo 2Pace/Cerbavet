@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fournisseur__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Fournisseur</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Merci de sélectionner un compte fournisseur.</errorMessage>
+        <filterItems>
+            <field>Account.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Fournisseur</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Prestations de transports (Compte fournisseur)</relationshipLabel>
+    <relationshipName>Comptefournisseur</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

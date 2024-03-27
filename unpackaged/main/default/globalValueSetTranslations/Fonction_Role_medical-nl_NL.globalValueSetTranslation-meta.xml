@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>ASV : Assistant ou auxiliaire spécialisé Vétérinaire</masterLabel>
+        <translation>Dierenartsassistent</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Aide de laboratoire</masterLabel>
+        <translation>Laboratorium hulp</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chef de service (établissement)</masterLabel>
+        <translation>Dienstchef</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chef du pôle de biologie</masterLabel>
+        <translation>Hoofd afdeling Biologie</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chercheur</masterLabel>
+        <translation>Onderzoeker</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chirurgien dentiste</masterLabel>
+        <translation>Tandenchirurg</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Conseiller en génétique</masterLabel>
+        <translation>Genetisch adviseur</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Expert / consultant externe</masterLabel>
+        <translation>Expert / externe consultant</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Infirmier libéral</masterLabel>
+        <translation>Zelfstandig verpleegkundige</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Infirmier salarié</masterLabel>
+        <translation>Verpleegkundige in loondienst</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Médecin</masterLabel>
+        <translation>Arts</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Médecin Biologiste</masterLabel>
+        <translation>Arts-bioloog</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Médecin coordinateur en EHPAD</masterLabel>
+        <translation>CRA</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pharmacien</masterLabel>
+        <translation>Apotheker</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pharmacien Biologiste</masterLabel>
+        <translation>Apotheker-bioloog</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Praticien hospitalier</masterLabel>
+        <translation>Ziekenhuisarts</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sage femme</masterLabel>
+        <translation>Vroedvrouw</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Surveillant</masterLabel>
+        <translation>Superivsor</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Vétérinaire</masterLabel>
+        <translation>Dierenarts</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

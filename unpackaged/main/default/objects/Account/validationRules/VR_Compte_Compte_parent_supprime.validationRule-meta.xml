@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Compte_Compte_parent_supprime</fullName>
+    <active>true</active>
+    <description>Si le compte parent est supprimé de la fiche compte, il faut également supprimer la date de rattachement au parent. 
+
+Exception faite pour les utilisateurs qui ont la CAC Tech By Pass de cochée sur leur fiche utilisateur.</description>
+    <errorConditionFormula>AND(
+ $User.Tech_By_Pass_VR__c = false,
+
+NOT(
+ISBLANK(Date_de_rattachement_au_parent__c))
+&amp;&amp;
+(ISBLANK( ParentId)))</errorConditionFormula>
+    <errorDisplayField>Date_de_rattachement_au_parent__c</errorDisplayField>
+    <errorMessage>Si vous supprimez le compte parent, merci de supprimer également la date de rattachement à ce dernier.</errorMessage>
+</ValidationRule>

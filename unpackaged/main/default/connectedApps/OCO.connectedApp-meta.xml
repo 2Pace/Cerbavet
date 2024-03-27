@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>emmanuel.janny@cerbavet.com</contactEmail>
+    <description>CerbaVet souhaite digitaliser sa demande d’examens laboratoires animal grâce à OCO, une plateforme d’ordonnance connectée, qui permettrait d’assurer le bon renseignement de ces demandes, à la différence de ses concurrents qui utilisent toujours des demand</description>
+    <label>OCO</label>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com</callbackUrl>
+        
+        <isAdminApproved>false</isAdminApproved>
+        <isClientCredentialEnabled>true</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <oauthClientCredentialUser>api.oco@cerbavet.com</oauthClientCredentialUser>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>zero</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Editeur_SIL__c</fullName>
+    <externalId>false</externalId>
+    <label>Éditeur</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Editeur_BU__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AGFA</fullName>
+                <default>false</default>
+                <label>AGFA</label>
+            </value>
+            <value>
+                <fullName>BIOSYSTEM</fullName>
+                <default>false</default>
+                <label>BIOSYSTEM</label>
+            </value>
+            <value>
+                <fullName>CABINET RICHARD</fullName>
+                <default>false</default>
+                <label>CABINET RICHARD</label>
+            </value>
+            <value>
+                <fullName>CCIF</fullName>
+                <default>false</default>
+                <label>CCIF</label>
+            </value>
+            <value>
+                <fullName>CLARISYS</fullName>
+                <default>false</default>
+                <label>CLARISYS</label>
+            </value>
+            <value>
+                <fullName>CODAT</fullName>
+                <default>false</default>
+                <label>CODAT</label>
+            </value>
+            <value>
+                <fullName>COMPUTER ET SERVICES</fullName>
+                <default>false</default>
+                <label>COMPUTER ET SERVICES</label>
+            </value>
+            <value>
+                <fullName>CORTEX</fullName>
+                <default>false</default>
+                <label>CORTEX</label>
+            </value>
+            <value>
+                <fullName>FORTHICIME</fullName>
+                <default>false</default>
+                <label>FORTHICIME</label>
+            </value>
+            <value>
+                <fullName>GESPOWER</fullName>
+                <default>false</default>
+                <label>GESPOWER</label>
+            </value>
+            <value>
+                <fullName>GROUPE TGS</fullName>
+                <default>false</default>
+                <label>GROUPE TGS</label>
+            </value>
+            <value>
+                <fullName>HISTONE</fullName>
+                <default>false</default>
+                <label>HISTONE</label>
+            </value>
+            <value>
+                <fullName>IGR</fullName>
+                <default>false</default>
+                <label>IGR</label>
+            </value>
+            <value>
+                <fullName>INLOG</fullName>
+                <default>false</default>
+                <label>INLOG</label>
+            </value>
+            <value>
+                <fullName>INTERLABO</fullName>
+                <default>false</default>
+                <label>INTERLABO</label>
+            </value>
+            <value>
+                <fullName>LMX/MELLE</fullName>
+                <default>false</default>
+                <label>LMX/MELLE</label>
+            </value>
+            <value>
+                <fullName>LOGIFORCE</fullName>
+                <default>false</default>
+                <label>LOGIFORCE</label>
+            </value>
+            <value>
+                <fullName>MEGABUS</fullName>
+                <default>false</default>
+                <label>MEGABUS</label>
+            </value>
+            <value>
+                <fullName>MEDASYS</fullName>
+                <default>false</default>
+                <label>MEDASYS</label>
+            </value>
+            <value>
+                <fullName>MICROMED</fullName>
+                <default>false</default>
+                <label>MICROMED</label>
+            </value>
+            <value>
+                <fullName>MIPS</fullName>
+                <default>false</default>
+                <label>MIPS</label>
+            </value>
+            <value>
+                <fullName>MISLAB TGS</fullName>
+                <default>false</default>
+                <label>MISLAB TGS</label>
+            </value>
+            <value>
+                <fullName>NETIKA</fullName>
+                <default>false</default>
+                <label>NETIKA</label>
+            </value>
+            <value>
+                <fullName>OPENLAB</fullName>
+                <default>false</default>
+                <label>OPENLAB</label>
+            </value>
+            <value>
+                <fullName>ORDILABO</fullName>
+                <default>false</default>
+                <label>ORDILABO</label>
+            </value>
+            <value>
+                <fullName>PROGIMED</fullName>
+                <default>false</default>
+                <label>PROGIMED</label>
+            </value>
+            <value>
+                <fullName>QSP SYSTEMS</fullName>
+                <default>false</default>
+                <label>QSP SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>READY SOFT</fullName>
+                <default>false</default>
+                <label>READY SOFT</label>
+            </value>
+            <value>
+                <fullName>SARIC</fullName>
+                <default>false</default>
+                <label>SARIC</label>
+            </value>
+            <value>
+                <fullName>SELECT INFO</fullName>
+                <default>false</default>
+                <label>SELECT INFO</label>
+            </value>
+            <value>
+                <fullName>SENIX NEURONE</fullName>
+                <default>false</default>
+                <label>SENIX NEURONE</label>
+            </value>
+            <value>
+                <fullName>SIEMENS</fullName>
+                <default>false</default>
+                <label>SIEMENS</label>
+            </value>
+            <value>
+                <fullName>SOTRAIG</fullName>
+                <default>false</default>
+                <label>SOTRAIG</label>
+            </value>
+            <value>
+                <fullName>VISION 4 HEALTH</fullName>
+                <default>false</default>
+                <label>VISION 4 HEALTH</label>
+            </value>
+            <value>
+                <fullName>Réalisation Maison</fullName>
+                <default>false</default>
+                <label>Réalisation Maison</label>
+            </value>
+            <value>
+                <fullName>Autres</fullName>
+                <default>false</default>
+                <label>Autres</label>
+            </value>
+            <value>
+                <fullName>Assistovet</fullName>
+                <default>false</default>
+                <label>Assistovet</label>
+            </value>
+            <value>
+                <fullName>GmVeT</fullName>
+                <default>false</default>
+                <label>GmVeT</label>
+            </value>
+            <value>
+                <fullName>VetPhi</fullName>
+                <default>false</default>
+                <label>VetPhi</label>
+            </value>
+            <value>
+                <fullName>Veto-Win</fullName>
+                <default>false</default>
+                <label>Veto-Win</label>
+            </value>
+            <value>
+                <fullName>Vetocom</fullName>
+                <default>false</default>
+                <label>Vetocom</label>
+            </value>
+            <value>
+                <fullName>VetUP</fullName>
+                <default>false</default>
+                <label>VetUP</label>
+            </value>
+            <value>
+                <fullName>Bourgelat</fullName>
+                <default>false</default>
+                <label>Bourgelat</label>
+            </value>
+            <value>
+                <fullName>DrVeto</fullName>
+                <default>false</default>
+                <label>DrVeto</label>
+            </value>
+            <value>
+                <fullName>Koudou</fullName>
+                <default>false</default>
+                <label>Koudou</label>
+            </value>
+            <value>
+                <fullName>MangeVet</fullName>
+                <default>false</default>
+                <label>MangeVet</label>
+            </value>
+            <value>
+                <fullName>Ubivet</fullName>
+                <default>false</default>
+                <label>Ubivet</label>
+            </value>
+            <value>
+                <fullName>myVett-Apps</fullName>
+                <default>false</default>
+                <label>myVett-Apps</label>
+            </value>
+            <value>
+                <fullName>Argos</fullName>
+                <default>false</default>
+                <label>Argos</label>
+            </value>
+            <value>
+                <fullName>EasyVet</fullName>
+                <default>false</default>
+                <label>EasyVet</label>
+            </value>
+            <value>
+                <fullName>Vetopartner</fullName>
+                <default>false</default>
+                <label>Vetopartner</label>
+            </value>
+            <value>
+                <fullName>CareConnect (HealthConnect) </fullName>
+                <default>false</default>
+                <label>CareConnect (HealthConnect) </label>
+            </value>
+            <value>
+                <fullName>Epicure (MedicalSoft) </fullName>
+                <default>false</default>
+                <label>Epicure (MedicalSoft) </label>
+            </value>
+            <value>
+                <fullName>HealthOne (HDMP) </fullName>
+                <default>false</default>
+                <label>HealthOne (HDMP) </label>
+            </value>
+            <value>
+                <fullName>Le Généraliste (PC Sol) </fullName>
+                <default>false</default>
+                <label>Le Généraliste (PC Sol) </label>
+            </value>
+            <value>
+                <fullName>Medidoc (Corilus) </fullName>
+                <default>false</default>
+                <label>Medidoc (Corilus) </label>
+            </value>
+            <value>
+                <fullName>Medigest (Corilus) </fullName>
+                <default>false</default>
+                <label>Medigest (Corilus) </label>
+            </value>
+            <value>
+                <fullName>Medinote (The Virtual Circle) </fullName>
+                <default>false</default>
+                <label>Medinote (The Virtual Circle) </label>
+            </value>
+            <value>
+                <fullName>Pricare (Figac) </fullName>
+                <default>false</default>
+                <label>Pricare (Figac) </label>
+            </value>
+            <value>
+                <fullName>Accrimed (Corilus) </fullName>
+                <default>false</default>
+                <label>Accrimed (Corilus) </label>
+            </value>
+            <value>
+                <fullName>Daktari (Barista Software) </fullName>
+                <default>false</default>
+                <label>Daktari (Barista Software) </label>
+            </value>
+            <value>
+                <fullName>iCure (TakTik SA) </fullName>
+                <default>false</default>
+                <label>iCure (TakTik SA) </label>
+            </value>
+            <value>
+                <fullName>Medinect (OFFIMED) </fullName>
+                <default>false</default>
+                <label>Medinect (OFFIMED) </label>
+            </value>
+            <value>
+                <fullName>Omnipro (MIMS) </fullName>
+                <default>false</default>
+                <label>Omnipro (MIMS) </label>
+            </value>
+            <value>
+                <fullName>Windoc (CompuGroup Medical Belgium bvba) </fullName>
+                <default>false</default>
+                <label>Windoc (CompuGroup Medical Belgium bvba) </label>
+            </value>
+            <value>
+                <fullName>Prodoc (CEGEKA)</fullName>
+                <default>false</default>
+                <label>Prodoc (CEGEKA)</label>
+            </value>
+            <value>
+                <fullName>Kitry</fullName>
+                <default>false</default>
+                <label>Kitry</label>
+            </value>
+            <value>
+                <fullName>Gynesoft</fullName>
+                <default>false</default>
+                <label>Gynesoft</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>AGFA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>BIOSYSTEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>CABINET RICHARD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>CCIF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>CLARISYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>CODAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>COMPUTER ET SERVICES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>CORTEX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>FORTHICIME</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>GESPOWER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>GROUPE TGS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>HISTONE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>IGR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>INLOG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>INTERLABO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>LMX/MELLE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>LOGIFORCE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>MEGABUS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>MEDASYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>MICROMED</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>MIPS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>MISLAB TGS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>NETIKA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>OPENLAB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>ORDILABO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>PROGIMED</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>QSP SYSTEMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>READY SOFT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>SARIC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>SELECT INFO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>SENIX NEURONE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>SIEMENS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>SOTRAIG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>VISION 4 HEALTH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>Réalisation Maison</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba</controllingFieldValue>
+            <valueName>Autres</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba Vet</controllingFieldValue>
+            <valueName>Assistovet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba Vet</controllingFieldValue>
+            <valueName>GmVeT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba Vet</controllingFieldValue>
+            <valueName>VetPhi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba Vet</controllingFieldValue>
+            <valueName>Veto-Win</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba Vet</controllingFieldValue>
+            <valueName>Vetocom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba Vet</controllingFieldValue>
+            <valueName>VetUP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba Vet</controllingFieldValue>
+            <valueName>Bourgelat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba Vet</controllingFieldValue>
+            <valueName>DrVeto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba Vet</controllingFieldValue>
+            <valueName>Koudou</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba Vet</controllingFieldValue>
+            <valueName>MangeVet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba Vet</controllingFieldValue>
+            <valueName>Ubivet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba Vet</controllingFieldValue>
+            <valueName>myVett-Apps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba Vet</controllingFieldValue>
+            <valueName>Argos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba Vet</controllingFieldValue>
+            <valueName>EasyVet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cerba Vet</controllingFieldValue>
+            <valueName>Vetopartner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgique</controllingFieldValue>
+            <valueName>CareConnect (HealthConnect) </valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgique</controllingFieldValue>
+            <valueName>Epicure (MedicalSoft) </valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgique</controllingFieldValue>
+            <valueName>HealthOne (HDMP) </valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgique</controllingFieldValue>
+            <valueName>Le Généraliste (PC Sol) </valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgique</controllingFieldValue>
+            <valueName>Medidoc (Corilus) </valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgique</controllingFieldValue>
+            <valueName>Medigest (Corilus) </valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgique</controllingFieldValue>
+            <valueName>Medinote (The Virtual Circle) </valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgique</controllingFieldValue>
+            <valueName>Pricare (Figac) </valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgique</controllingFieldValue>
+            <valueName>Accrimed (Corilus) </valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgique</controllingFieldValue>
+            <valueName>Daktari (Barista Software) </valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgique</controllingFieldValue>
+            <valueName>iCure (TakTik SA) </valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgique</controllingFieldValue>
+            <valueName>Medinect (OFFIMED) </valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgique</controllingFieldValue>
+            <valueName>Omnipro (MIMS) </valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgique</controllingFieldValue>
+            <valueName>Windoc (CompuGroup Medical Belgium bvba) </valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgique</controllingFieldValue>
+            <valueName>Prodoc (CEGEKA)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgique</controllingFieldValue>
+            <valueName>Kitry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belgique</controllingFieldValue>
+            <valueName>Gynesoft</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facturation_coursier__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>Facturation du coursier pour 1 dossier</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Facturation du coursier pour 1 dossier</inlineHelpText>
+    <label>Facturation coursier</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Currency</type>
+</CustomField>

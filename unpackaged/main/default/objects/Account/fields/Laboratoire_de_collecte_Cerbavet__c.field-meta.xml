@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Laboratoire_de_collecte_Cerbavet__c</fullName>
+    <description>labo qui collecte des prélèvements pour Cerbavet</description>
+    <externalId>false</externalId>
+    <label>Laboratoire de collecte Cerbavet</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Alphabio</fullName>
+                <default>false</default>
+                <label>Alphabio</label>
+            </value>
+            <value>
+                <fullName>Anabio Science</fullName>
+                <default>false</default>
+                <label>Anabio Science</label>
+            </value>
+            <value>
+                <fullName>Analysis</fullName>
+                <default>false</default>
+                <label>Analysis</label>
+            </value>
+            <value>
+                <fullName>Antagene</fullName>
+                <default>false</default>
+                <label>Antagene</label>
+            </value>
+            <value>
+                <fullName>BIO 2000</fullName>
+                <default>false</default>
+                <label>BIO 2000</label>
+            </value>
+            <value>
+                <fullName>Bio 67</fullName>
+                <default>false</default>
+                <label>Bio 67</label>
+            </value>
+            <value>
+                <fullName>BIOLIA</fullName>
+                <default>false</default>
+                <label>BIOLIA</label>
+            </value>
+            <value>
+                <fullName>Biomag</fullName>
+                <default>false</default>
+                <label>Biomag</label>
+            </value>
+            <value>
+                <fullName>Bionyval</fullName>
+                <default>false</default>
+                <label>Bionyval</label>
+            </value>
+            <value>
+                <fullName>BIORHIN</fullName>
+                <default>false</default>
+                <label>BIORHIN</label>
+            </value>
+            <value>
+                <fullName>BioSantis</fullName>
+                <default>false</default>
+                <label>BioSantis</label>
+            </value>
+            <value>
+                <fullName>CBL Narbonne</fullName>
+                <default>false</default>
+                <label>CBL Narbonne</label>
+            </value>
+            <value>
+                <fullName>Cerballiance Alpes Durance</fullName>
+                <default>false</default>
+                <label>Cerballiance Alpes Durance</label>
+            </value>
+            <value>
+                <fullName>Cerballiance Artois</fullName>
+                <default>false</default>
+                <label>Cerballiance Artois</label>
+            </value>
+            <value>
+                <fullName>Cerballiance Bourgogne</fullName>
+                <default>false</default>
+                <label>Cerballiance Bourgogne</label>
+            </value>
+            <value>
+                <fullName>Cerballiance Bretagne</fullName>
+                <default>false</default>
+                <label>Cerballiance Bretagne</label>
+            </value>
+            <value>
+                <fullName>Cerballiance Centre Val de Loire</fullName>
+                <default>false</default>
+                <label>Cerballiance Centre Val de Loire</label>
+            </value>
+            <value>
+                <fullName>Cerballiance Charentes</fullName>
+                <default>false</default>
+                <label>Cerballiance Charentes</label>
+            </value>
+            <value>
+                <fullName>Cerballiance Dep Rhône</fullName>
+                <default>false</default>
+                <label>Cerballiance Dep Rhône</label>
+            </value>
+            <value>
+                <fullName>Cerballiance Drôme Ardèche</fullName>
+                <default>false</default>
+                <label>Cerballiance Drôme Ardèche</label>
+            </value>
+            <value>
+                <fullName>CERBALLIANCE HDF</fullName>
+                <default>false</default>
+                <label>CERBALLIANCE HDF</label>
+            </value>
+            <value>
+                <fullName>Cerballiance IDF</fullName>
+                <default>false</default>
+                <label>Cerballiance IDF</label>
+            </value>
+            <value>
+                <fullName>Cerballiance Languedoc</fullName>
+                <default>false</default>
+                <label>Cerballiance Languedoc</label>
+            </value>
+            <value>
+                <fullName>Cerballiance Loire</fullName>
+                <default>false</default>
+                <label>Cerballiance Loire</label>
+            </value>
+            <value>
+                <fullName>Cerballiance Midi Pyrenees</fullName>
+                <default>false</default>
+                <label>Cerballiance Midi Pyrenees</label>
+            </value>
+            <value>
+                <fullName>Cerballiance Normandie</fullName>
+                <default>false</default>
+                <label>Cerballiance Normandie</label>
+            </value>
+            <value>
+                <fullName>Cerballiance Occitanie</fullName>
+                <default>false</default>
+                <label>Cerballiance Occitanie</label>
+            </value>
+            <value>
+                <fullName>Cerballiance Pyrenees</fullName>
+                <default>false</default>
+                <label>Cerballiance Pyrenees</label>
+            </value>
+            <value>
+                <fullName>Cerballiance Réunion</fullName>
+                <default>false</default>
+                <label>Cerballiance Réunion</label>
+            </value>
+            <value>
+                <fullName>Cerballiance Rhône Alpes</fullName>
+                <default>false</default>
+                <label>Cerballiance Rhône Alpes</label>
+            </value>
+            <value>
+                <fullName>Cerballiance Tours</fullName>
+                <default>false</default>
+                <label>Cerballiance Tours</label>
+            </value>
+            <value>
+                <fullName>ESPACE BIO</fullName>
+                <default>false</default>
+                <label>ESPACE BIO</label>
+            </value>
+            <value>
+                <fullName>Geste commercial</fullName>
+                <default>false</default>
+                <label>Geste commercial</label>
+            </value>
+            <value>
+                <fullName>Hopital de Senlis</fullName>
+                <default>false</default>
+                <label>Hopital de Senlis</label>
+            </value>
+            <value>
+                <fullName>Labm Bio Mediqual Centre</fullName>
+                <default>false</default>
+                <label>Labm Bio Mediqual Centre</label>
+            </value>
+            <value>
+                <fullName>Labm BIO VAL</fullName>
+                <default>false</default>
+                <label>Labm BIO VAL</label>
+            </value>
+            <value>
+                <fullName>Labm COURJAULT</fullName>
+                <default>false</default>
+                <label>Labm COURJAULT</label>
+            </value>
+            <value>
+                <fullName>Labm Croix Blanche</fullName>
+                <default>false</default>
+                <label>Labm Croix Blanche</label>
+            </value>
+            <value>
+                <fullName>Labm Fontvieille</fullName>
+                <default>false</default>
+                <label>Labm Fontvieille</label>
+            </value>
+            <value>
+                <fullName>Labm Forestier</fullName>
+                <default>false</default>
+                <label>Labm Forestier</label>
+            </value>
+            <value>
+                <fullName>Labm LESCAROUT</fullName>
+                <default>false</default>
+                <label>Labm LESCAROUT</label>
+            </value>
+            <value>
+                <fullName>Labm Maymat</fullName>
+                <default>false</default>
+                <label>Labm Maymat</label>
+            </value>
+            <value>
+                <fullName>Laboratoire Bonhoure</fullName>
+                <default>false</default>
+                <label>Laboratoire Bonhoure</label>
+            </value>
+            <value>
+                <fullName>Sambourg</fullName>
+                <default>false</default>
+                <label>Sambourg</label>
+            </value>
+            <value>
+                <fullName>TétraBio</fullName>
+                <default>false</default>
+                <label>TétraBio</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

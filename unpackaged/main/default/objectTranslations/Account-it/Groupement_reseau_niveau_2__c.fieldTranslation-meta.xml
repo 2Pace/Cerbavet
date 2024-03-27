@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Groupement réseau niveau 2 --></label>
+        <name>Groupement_reseau_niveau_2__c</name>
+        <picklistValues>
+            <masterLabel>ACCORD CADRE ALMAVIVA</masterLabel>
+            <translation><!-- ACCORD CADRE ALMAVIVA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACCORD CADRE COLISEE</masterLabel>
+            <translation><!-- ACCORD CADRE COLISEE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACCORD CADRE DIAVERUM</masterLabel>
+            <translation><!-- ACCORD CADRE DIAVERUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACCORD CADRE DOMIDEP</masterLabel>
+            <translation><!-- ACCORD CADRE DOMIDEP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACCORD CADRE DOMUSVI</masterLabel>
+            <translation><!-- ACCORD CADRE DOMUSVI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACCORD CADRE ELSAN</masterLabel>
+            <translation><!-- ACCORD CADRE ELSAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACCORD CADRE KORIAN</masterLabel>
+            <translation><!-- ACCORD CADRE KORIAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACCORD CADRE ORPEA-CLINEA</masterLabel>
+            <translation><!-- ACCORD CADRE ORPEA-CLINEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACCORD CADRE RAMSAY SANTE</masterLabel>
+            <translation><!-- ACCORD CADRE RAMSAY SANTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACCORD CADRE VIVALTO</masterLabel>
+            <translation><!-- ACCORD CADRE VIVALTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALPIVET</masterLabel>
+            <translation><!-- ALPIVET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALVEO</masterLabel>
+            <translation><!-- ALVEO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANIBIO / ABIOPOLE</masterLabel>
+            <translation><!-- ANIBIO / ABIOPOLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANISERV</masterLabel>
+            <translation><!-- ANISERV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APEX</masterLabel>
+            <translation><!-- APEX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AVEROES</masterLabel>
+            <translation><!-- AVEROES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDR DOUAISIS</masterLabel>
+            <translation><!-- CDR DOUAISIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLUBVET</masterLabel>
+            <translation><!-- CLUBVET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDEL VET</masterLabel>
+            <translation><!-- EDEL VET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELANVET</masterLabel>
+            <translation><!-- ELANVET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G2E</masterLabel>
+            <translation><!-- G2E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G5</masterLabel>
+            <translation><!-- G5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GIE 21</masterLabel>
+            <translation><!-- GIE 21 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GIE 7</masterLabel>
+            <translation><!-- GIE 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GIE SET</masterLabel>
+            <translation><!-- GIE SET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GIE SOURCES DE LA MARNE</masterLabel>
+            <translation><!-- GIE SOURCES DE LA MARNE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GREF</masterLabel>
+            <translation><!-- GREF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROUPVET</masterLabel>
+            <translation><!-- GROUPVET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I-VETO.COM</masterLabel>
+            <translation><!-- I-VETO.COM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID VET</masterLabel>
+            <translation><!-- ID VET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISOVET</masterLabel>
+            <translation><!-- ISOVET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA YOLE VET SERVICES</masterLabel>
+            <translation><!-- LA YOLE VET SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LBI</masterLabel>
+            <translation><!-- LBI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OVETO</masterLabel>
+            <translation><!-- OVETO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PICK AND GO</masterLabel>
+            <translation><!-- PICK AND GO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POLE VETO</masterLabel>
+            <translation><!-- POLE VETO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RESAH</masterLabel>
+            <translation><!-- RESAH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RESOLUVET</masterLabel>
+            <translation><!-- RESOLUVET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS BLUE</masterLabel>
+            <translation><!-- SAS BLUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS BOURGELAT</masterLabel>
+            <translation><!-- SAS BOURGELAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS BOURGELAT EQUINE</masterLabel>
+            <translation><!-- SAS BOURGELAT EQUINE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SASGM</masterLabel>
+            <translation><!-- SASGM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERVAL</masterLabel>
+            <translation><!-- SERVAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYMBIOVETO EQUINE</masterLabel>
+            <translation><!-- SYMBIOVETO EQUINE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYNERVET</masterLabel>
+            <translation><!-- SYNERVET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNION VET</masterLabel>
+            <translation><!-- UNION VET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNIVET 31</masterLabel>
+            <translation><!-- UNIVET 31 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNIVET THERMOVET</masterLabel>
+            <translation><!-- UNIVET THERMOVET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UVAS</masterLabel>
+            <translation><!-- UVAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VET ALLIANCE</masterLabel>
+            <translation><!-- VET ALLIANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VET FAMILY</masterLabel>
+            <translation><!-- VET FAMILY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VET HARMONIE</masterLabel>
+            <translation><!-- VET HARMONIE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VET ONE</masterLabel>
+            <translation><!-- VET ONE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VET OUTREMER</masterLabel>
+            <translation><!-- VET OUTREMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VET TEAM</masterLabel>
+            <translation><!-- VET TEAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VET4VET</masterLabel>
+            <translation><!-- VET4VET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VET7</masterLabel>
+            <translation><!-- VET7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VETANIMAX</masterLabel>
+            <translation><!-- VETANIMAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VETAPHARMA</masterLabel>
+            <translation><!-- VETAPHARMA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VETBOOST</masterLabel>
+            <translation><!-- VETBOOST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VETCIMES</masterLabel>
+            <translation><!-- VETCIMES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VETCOMPAGNY</masterLabel>
+            <translation><!-- VETCOMPAGNY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VETFIRST</masterLabel>
+            <translation><!-- VETFIRST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VETOCCITAN</masterLabel>
+            <translation><!-- VETOCCITAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VETODISTRIBUTION</masterLabel>
+            <translation><!-- VETODISTRIBUTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VETODOMBES</masterLabel>
+            <translation><!-- VETODOMBES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VETOFRANCE</masterLabel>
+            <translation><!-- VETOFRANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VETOGROUPE</masterLabel>
+            <translation><!-- VETOGROUPE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VETOSOL</masterLabel>
+            <translation><!-- VETOSOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VETZEN</masterLabel>
+            <translation><!-- VETZEN --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

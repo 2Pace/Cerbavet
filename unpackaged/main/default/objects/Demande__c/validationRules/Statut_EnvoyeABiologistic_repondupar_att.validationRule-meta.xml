@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_EnvoyeABiologistic_repondupar_att</fullName>
+    <active>true</active>
+    <description>Possibilité de passer du statut Envoyé à Biologistic à Répondu par Biologistic/En attente de validation Cerba uniquement par Biologistic</description>
+    <errorConditionFormula>ISPICKVAL(PRIORVALUE(Statut__c),&quot;Envoyée à Biologstic&quot;) 
+&amp;&amp; ISPICKVAL(Statut__c, &quot;Répondu/en attente de validation&quot;) 
+&amp;&amp; NOT( $Profile.Id =&quot;00e1t000000uYau&quot;) 
+
+&amp;&amp;  $User.Tech_By_Pass_VR__c = false</errorConditionFormula>
+    <errorDisplayField>Statut__c</errorDisplayField>
+    <errorMessage>Merci de ne pas passer du statut &quot;Envoyé à Biologistic&quot; à &quot;Répondu/en attente de validation&quot;. Cette transition est réservée uniquement à Biologistic</errorMessage>
+</ValidationRule>

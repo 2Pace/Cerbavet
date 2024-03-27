@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Catégorie --></label>
+        <name>Categories__c</name>
+        <picklistValues>
+            <masterLabel>Cabinets Médicaux et Paramédicaux</masterLabel>
+            <translation><!-- Cabinets Médicaux et Paramédicaux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entreprises et Institutions</masterLabel>
+            <translation><!-- Entreprises et Institutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etablissement de Santé Privé d’Intérêt Collectif (ESPIC)</masterLabel>
+            <translation><!-- Etablissement de Santé Privé d’Intérêt Collectif (ESPIC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etablissements de Soins Privé</masterLabel>
+            <translation><!-- Etablissements de Soins Privé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etablissements de Soins Publics</masterLabel>
+            <translation><!-- Etablissements de Soins Publics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etablissements vétérinaires</masterLabel>
+            <translation><!-- Etablissements vétérinaires --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laboratoires</masterLabel>
+            <translation><!-- Laboratoires --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

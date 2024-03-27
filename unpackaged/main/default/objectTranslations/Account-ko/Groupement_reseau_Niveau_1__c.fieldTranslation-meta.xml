@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Groupement réseau niveau 1 --></label>
+        <name>Groupement_reseau_Niveau_1__c</name>
+        <picklistValues>
+            <masterLabel>Groupement d&#39;établissement de soin</masterLabel>
+            <translation><!-- Groupement d&apos;établissement de soin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupement de laboratoire privé</masterLabel>
+            <translation><!-- Groupement de laboratoire privé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groupement vétérinaire</masterLabel>
+            <translation><!-- Groupement vétérinaire --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

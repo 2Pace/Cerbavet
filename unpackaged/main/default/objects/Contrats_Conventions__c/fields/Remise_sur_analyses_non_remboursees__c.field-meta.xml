@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remise_sur_analyses_non_remboursees__c</fullName>
+    <externalId>false</externalId>
+    <label>Remise sur analyses non remboursées</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

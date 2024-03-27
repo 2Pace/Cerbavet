@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Reclamation_compte_ou_contact</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK (
+ Compte__c )
+&amp;&amp;
+ISBLANK (Contact__c)</errorConditionFormula>
+    <errorMessage>Merci de rattacher cette réclamation à un compte ou à un contact.</errorMessage>
+</ValidationRule>

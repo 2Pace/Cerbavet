@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut__c</fullName>
+    <externalId>false</externalId>
+    <label>Statut</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Nouvelle</fullName>
+                <default>false</default>
+                <label>Nouvelle</label>
+            </value>
+            <value>
+                <fullName>Envoyée à Biologistic</fullName>
+                <default>false</default>
+                <label>Envoyée à Biologistic</label>
+            </value>
+            <value>
+                <fullName>Validée</fullName>
+                <default>false</default>
+                <label>Validée</label>
+            </value>
+            <value>
+                <fullName>Répondu/en attente de validation</fullName>
+                <default>false</default>
+                <label>Répondu/en attente de validation</label>
+            </value>
+            <value>
+                <fullName>Validée par Cerba</fullName>
+                <default>false</default>
+                <label>Validée par Cerba</label>
+            </value>
+            <value>
+                <fullName>Confirmée par Biologistic</fullName>
+                <default>false</default>
+                <label>Confirmée par Biologistic</label>
+            </value>
+            <value>
+                <fullName>Abandonné</fullName>
+                <default>false</default>
+                <label>Abandonnée</label>
+            </value>
+            <value>
+                <fullName>En attente d&#39;approbation</fullName>
+                <default>false</default>
+                <label>En attente d&#39;approbation</label>
+            </value>
+            <value>
+                <fullName>Validée par la direction commerciale</fullName>
+                <default>false</default>
+                <label>Validée par la direction commerciale</label>
+            </value>
+            <value>
+                <fullName>Rejetée par la direction commerciale</fullName>
+                <default>false</default>
+                <label>Rejetée par la direction commerciale</label>
+            </value>
+            <value>
+                <fullName>Ferme</fullName>
+                <default>false</default>
+                <label>Fermé</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

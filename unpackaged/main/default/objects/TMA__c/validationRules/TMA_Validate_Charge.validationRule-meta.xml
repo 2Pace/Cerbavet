@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TMA_Validate_Charge</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ISBLANK(Charge__c) || ISNULL(Charge__c) ) &amp;&amp; ISPICKVAL(Status__c, &#39;Closed&#39;)</errorConditionFormula>
+    <errorMessage>Estimation must be filled in before changing status to &#39;Closed&#39;.</errorMessage>
+</ValidationRule>

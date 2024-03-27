@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Moyen_recuperation_prelevements__c</fullName>
+    <externalId>false</externalId>
+    <label>Moyen récupération prélèvements</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Envoi par le client</fullName>
+                <default>false</default>
+                <label>Envoi par le client</label>
+            </value>
+            <value>
+                <fullName>Collecté directement</fullName>
+                <default>false</default>
+                <label>Collecté directement</label>
+            </value>
+            <value>
+                <fullName>Collecté chez un correspondant maître</fullName>
+                <default>false</default>
+                <label>Collecté chez un correspondant maître</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Doel van het bezoek</label>
+        <name>Objectif_de_la_visite__c</name>
+        <picklistValues>
+            <masterLabel>Campagne Marketing</masterLabel>
+            <translation>Marketingcampagne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Développement CA/ prospection</masterLabel>
+            <translation>CA ontwikkeling / prospectie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fidélisation / suivi</masterLabel>
+            <translation>Loyaliteit / opvolging</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Résolution de problème/réclamation</masterLabel>
+            <translation>Probleemoplossing/klacht</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

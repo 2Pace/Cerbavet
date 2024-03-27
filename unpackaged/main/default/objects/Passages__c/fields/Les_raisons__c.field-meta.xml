@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Les_raisons__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Passage_collecte_systematique__c = true , &quot;SY.&quot;, &quot;__.&quot;) &amp;
+IF(Passage_collecte_sur_appel__c = true , &quot;SA.&quot;, &quot;__.&quot;) &amp;
+IF(Passage_depot_retransmission__c = true , &quot;RT.&quot;, &quot;__.&quot;) &amp;
+IF(Passage_depot_resultats__c = true , &quot;RE.&quot;, &quot;__.&quot;) &amp;
+IF(Passage_specifique__c = true , &quot;SP&quot;, &quot;__.&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Les raisons</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

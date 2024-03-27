@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="Arial, sans-serif">Bonjour,</font><div><font face="Arial, sans-serif"><br></font></div><div><font face="Arial, sans-serif">Une nouvelle demande de devis a été créée par {!Demande__c.OwnerFullName}.</font></div><div><font face="Arial, sans-serif">Vous pouvez la consulter en cliquant sur le lien suivant : {!Demande__c.Link}</font></div><div><br></div><div><font face="Arial, sans-serif">Cordialement,</font></div><div><font face="Arial, sans-serif">Cerba HC</font></div>]]></td>
+</tr>
+</table>

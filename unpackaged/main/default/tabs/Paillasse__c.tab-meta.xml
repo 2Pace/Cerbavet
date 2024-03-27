@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customObject>true</customObject>
+    <description>Paramétrage de l&#39;objet support des analyses transmises à l&#39;extérieur</description>
+    <motif>Custom7: Square</motif>
+</CustomTab>

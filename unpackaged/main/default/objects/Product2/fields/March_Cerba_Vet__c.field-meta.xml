@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>March_Cerba_Vet__c</fullName>
+    <description>Définit la liste des produits accessibles pour un client en fonction son marché</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Définit la liste des produits accessibles pour un client en fonction son marché</inlineHelpText>
+    <label>Marché Cerba Vet</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Market_Cerba_Vet_oco</valueSetName>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

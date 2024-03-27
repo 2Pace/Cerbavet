@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CA_Contact_SGL</fullName>
+    <columns>NAME</columns>
+    <columns>Mois__c</columns>
+    <columns>CA_Facturable__c</columns>
+    <columns>Code_contact_SGL__c</columns>
+    <columns>Laboratoire_d_enregistrement__c</columns>
+    <columns>Code_Structure__c</columns>
+    <columns>Nom_de_structure__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Code_contact_SGL__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>CA Médecins/PDS</label>
+</ListView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Périodicité de facturation --></label>
+        <name>Periodicite_de_facturation__c</name>
+        <picklistValues>
+            <masterLabel>J00 - EDITION QUOTIDIENNE</masterLabel>
+            <translation><!-- J00 - EDITION QUOTIDIENNE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M01 - EDITION MENSUELLE</masterLabel>
+            <translation><!-- M01 - EDITION MENSUELLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S01 - EDITION HEBDOMADAIRE</masterLabel>
+            <translation><!-- S01 - EDITION HEBDOMADAIRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S02 - EDITION A LA QUINZAINE</masterLabel>
+            <translation><!-- S02 - EDITION A LA QUINZAINE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Z00 - NE PAS FACTURER</masterLabel>
+            <translation><!-- Z00 - NE PAS FACTURER --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

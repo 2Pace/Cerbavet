@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Donnees_routage_Cerba_pour_commande_SAP__c</fullName>
+    <description>Rapport permettant de consulter les données de routage pour saisie d&#39;une commande manuelle dans SAP</description>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(
+&quot;http://cspe-w-vsqlp01/ReportServer/Pages/ReportViewer.aspx?%2fActivdata%2fReports%2fDonnees_Commande_Manuelle_SAP_v3&amp;Compte=&quot; &amp; CASESAFEID(Code_compte_metier__c) , &quot;Afficher&quot;,&quot;_blank&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Données routage Cerba pour commande SAP</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

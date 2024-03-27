@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Cocher la case lorsque la clinique a remis le mandat de prélèvement SEPA signé. --></help>
+        <label><!-- Mandat de prélèvement --></label>
+        <name>Mandat_de_prelevement__c</name>
+    </CustomFieldTranslation>

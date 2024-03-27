@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etablissement</fullName>
+    <fields>Name</fields>
+    <fields>ParentId</fields>
+    <fields>Categories__c</fields>
+    <fields>Activites__c</fields>
+    <fields>Type_de_compte_icon__c</fields>
+    <fields>CA_consolide__c</fields>
+    <fields>CA_specialite_par_gamme__c</fields>
+    <label>Établissement</label>
+</CompactLayout>

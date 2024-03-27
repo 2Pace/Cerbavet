@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Depose_Labo__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>indique si le client vet dépose en laboratoire partenaire</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Ce client déposes ces prèlèvements en laboratoire (Transport gratuit)</inlineHelpText>
+    <label>Dépose Labo</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

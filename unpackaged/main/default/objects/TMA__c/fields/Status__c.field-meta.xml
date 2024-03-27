@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standby</fullName>
+                <default>false</default>
+                <label>Standby</label>
+            </value>
+            <value>
+                <fullName>Backlog</fullName>
+                <default>true</default>
+                <label>Backlog</label>
+            </value>
+            <value>
+                <fullName>Diagnosed</fullName>
+                <default>false</default>
+                <label>Diagnosed</label>
+            </value>
+            <value>
+                <fullName>Validated</fullName>
+                <default>false</default>
+                <label>Validated</label>
+            </value>
+            <value>
+                <fullName>Ongoing</fullName>
+                <default>false</default>
+                <label>Ongoing</label>
+            </value>
+            <value>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+                <label>On Hold</label>
+            </value>
+            <value>
+                <fullName>To be deployed to UAT</fullName>
+                <default>false</default>
+                <label>To be deployed to PREPROD</label>
+            </value>
+            <value>
+                <fullName>2PACE Testing in UAT</fullName>
+                <default>false</default>
+                <label>2PACE Testing in PREPROD</label>
+            </value>
+            <value>
+                <fullName>Testing</fullName>
+                <default>false</default>
+                <label>Client Testing in PREPROD</label>
+            </value>
+            <value>
+                <fullName>To be deployed to PROD</fullName>
+                <default>false</default>
+                <label>To be deployed to PROD</label>
+            </value>
+            <value>
+                <fullName>Client Testing in Prod</fullName>
+                <default>false</default>
+                <label>Client Testing in Prod</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+                <label>Canceled</label>
+            </value>
+            <value>
+                <fullName>2Pace Testing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2Pace Testing</label>
+            </value>
+            <value>
+                <fullName>Done</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Done</label>
+            </value>
+            <value>
+                <fullName>Reviewed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Reviewed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CV Clinique</name>
+    <style>none</style>
+    <subject>Facture Mensuelle Cerbavet</subject>
+    <textOnly>Bonjour,
+
+
+Veuillez trouver ci-joint la facture mensuelle du mois de //INVOICE_MONTH//
+
+
+Vous en souhaitant bonne réception.
+
+Cerba Vet
+Le service comptabilité
+comptabilite@cerbavet.com
+01 81 30 00 08 - choix 2</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

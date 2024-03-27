@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comptes_par_ville</fullName>
+    <columns>Type_de_compte_icon__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>Categories__c</columns>
+    <columns>Activites__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Etablissement</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_CITY</field>
+        <operation>equals</operation>
+        <value>antony</value>
+    </filters>
+    <label>Comptes par ville</label>
+</ListView>

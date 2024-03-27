@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comptes_SGL_BI_Sp_INTER_rattacher</fullName>
+    <booleanFilter>1 AND 4 AND (2 OR 3)</booleanFilter>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Actif__c</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Compte_Client_SGL_BI</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>CHAILLOLEAU</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>TADDEI</value>
+    </filters>
+    <filters>
+        <field>PARENT_NAME</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Comptes SGL BI Spé INTER à rattacher</label>
+</ListView>

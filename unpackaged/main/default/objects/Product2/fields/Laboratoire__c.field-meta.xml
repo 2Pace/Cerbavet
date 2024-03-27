@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Laboratoire__c</fullName>
+    <description>2PACE</description>
+    <externalId>false</externalId>
+    <label>Laboratoire</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A definir</fullName>
+                <default>true</default>
+                <label>- A définir</label>
+            </value>
+            <value>
+                <fullName>Cerba Vet MASSY</fullName>
+                <default>false</default>
+                <label>Cerba Vet MASSY</label>
+            </value>
+            <value>
+                <fullName>ANTAGENE</fullName>
+                <default>false</default>
+                <label>ANTAGENE</label>
+            </value>
+            <value>
+                <fullName>LABOKLIN</fullName>
+                <default>false</default>
+                <label>LABOKLIN</label>
+            </value>
+            <value>
+                <fullName>Cerba Spécialité</fullName>
+                <default>false</default>
+                <label>Cerba Spécialité</label>
+            </value>
+            <value>
+                <fullName>LVD 31</fullName>
+                <default>false</default>
+                <label>LVD 31</label>
+            </value>
+            <value>
+                <fullName>LABEO</fullName>
+                <default>false</default>
+                <label>LABEO</label>
+            </value>
+            <value>
+                <fullName>Cerballiance LIsieux</fullName>
+                <default>false</default>
+                <label>Cerballiance LIsieux</label>
+            </value>
+            <value>
+                <fullName>GENEFAST</fullName>
+                <default>false</default>
+                <label>GENEFAST</label>
+            </value>
+            <value>
+                <fullName>LAPVSO</fullName>
+                <default>false</default>
+                <label>LAPVSO</label>
+            </value>
+            <value>
+                <fullName>SCANELIS</fullName>
+                <default>false</default>
+                <label>SCANELIS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Facturation du coursier pour 2 dossiers ou plus --></help>
+        <label><!-- Facturation coursier réduit --></label>
+        <name>Facturation_coursier_reduit__c</name>
+    </CustomFieldTranslation>

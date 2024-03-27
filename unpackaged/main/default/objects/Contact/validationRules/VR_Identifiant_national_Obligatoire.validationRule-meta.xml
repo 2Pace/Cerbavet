@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Identifiant_national_Obligatoire</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+
+$User.Tech_By_Pass_VR__c = false, 
+OR(
+ISPICKVAL(Fonction_Role_medical__c, &quot;10&quot;),
+ISPICKVAL(Fonction_Role_medical__c, &quot;1001&quot;),
+ISPICKVAL(Fonction_Role_medical__c, &quot;60&quot;),
+
+
+
+ISPICKVAL(Fonction_Role_medical__c, &quot;50&quot;),
+ISPICKVAL(Fonction_Role_medical__c, &quot;1008&quot;),
+ISPICKVAL(Fonction_Role_medical__c, &quot;40&quot;)
+),
+ISBLANK(Identifiant_national_unique__c)
+ )</errorConditionFormula>
+    <errorMessage>Merci de renseigner l&#39;identifiant national unique lorsque  la &quot;Fonction / Rôle médical&quot; est &quot;Médecin&quot; ou &quot;Médecin coordinateur en EHPAD&quot; ou &quot;Infirmier&quot; ou &quot;Sage-femme&quot; ou &quot;Praticien hospitalier&quot; ou &quot;Chirurgien dentiste&quot;</errorMessage>
+</ValidationRule>

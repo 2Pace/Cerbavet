@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_ACC_Blocage_groupement_compte_enfant</fullName>
+    <active>false</active>
+    <description>Si un compte n&#39;a pas de compte parent, aucune valeur ne doit être renseignée dans le champ : Groupement réseau Niveau 1. 
+Exception faite pour les utilisateurs qui ont la CAC Tech By Pass de cochée sur leur fiche utilisateur.</description>
+    <errorConditionFormula>AND(
+ $User.Tech_By_Pass_VR__c = false,
+ OR(
+ISPICKVAL(Groupement_reseau_Niveau_1__c, &quot;Groupement vétérinaire&quot;),
+ISPICKVAL(Groupement_reseau_Niveau_1__c, &quot;Groupement de laboratoire privé&quot;),
+ISPICKVAL(Groupement_reseau_Niveau_1__c, &quot;Groupement d&#39;établissement de soin&quot;)),
+
+NOT(ISBLANK(ParentId))
+)</errorConditionFormula>
+    <errorMessage>Merci de ne pas choisir de groupement réseau pour les comptes qui ne sont pas en tête de la hiérarchie</errorMessage>
+</ValidationRule>

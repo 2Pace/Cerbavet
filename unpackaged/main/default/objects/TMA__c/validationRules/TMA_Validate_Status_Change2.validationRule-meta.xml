@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TMA_Validate_Status_Change2</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT(ISNEW()), $User.Title = &#39;Comptabilité Client Cerba Vet&#39;, 
+    OR(
+        AND(
+            ISPICKVAL(PRIORVALUE(Status__c), &#39;Backlog&#39;),
+            ISPICKVAL(Status__c, &#39;Diagnosed&#39;)
+            ),
+        AND(
+            ISPICKVAL(PRIORVALUE(Status__c), &#39;To be deployed to UAT&#39;),
+            OR(
+                ISPICKVAL(Status__c, &#39;2PACE Testing in UAT&#39;),
+                ISPICKVAL(Status__c, &#39;Standby&#39;),
+                ISPICKVAL(Status__c, &#39;On Hold&#39;),
+                ISPICKVAL(Status__c, &#39;Canceled&#39;)
+            )
+            
+        ),
+
+
+        AND(
+            ISPICKVAL(PRIORVALUE(Status__c), &#39;2PACE Testing in UAT&#39;),
+            OR(
+                ISPICKVAL(Status__c, &#39;To be deployed in Preprod&#39;),
+                ISPICKVAL(Status__c, &#39;Client Testing&#39;),
+                ISPICKVAL(Status__c, &#39;Ongoing&#39;),
+                ISPICKVAL(Status__c, &#39;Standby&#39;),
+                ISPICKVAL(Status__c, &#39;On Hold&#39;),
+                ISPICKVAL(Status__c, &#39;Canceled&#39;)
+            )
+            
+        ),
+        AND(
+            OR(
+            ISPICKVAL(PRIORVALUE(Status__c), &#39;Closed&#39;),
+            ISPICKVAL(PRIORVALUE(Status__c), &#39;Client Testing in Prod&#39;)
+            ),
+            OR(
+                ISPICKVAL(Status__c,&#39;Standby&#39;),
+                ISPICKVAL(Status__c,&#39;Backlog&#39;),
+                ISPICKVAL(Status__c,&#39;Diagnosed&#39;),
+                ISPICKVAL(Status__c,&#39;Validated&#39;),
+                ISPICKVAL(Status__c,&#39;Ongoing&#39;),
+                ISPICKVAL(Status__c,&#39;On Hold&#39;),
+                ISPICKVAL(Status__c,&#39;To be deployed to UAT&#39;),
+                ISPICKVAL(Status__c,&#39;2PACE Testing in UAT&#39;),
+                ISPICKVAL(Status__c,&#39;Testing&#39;),
+                ISPICKVAL(Status__c,&#39;To be deployed to PROD&#39;),
+                ISPICKVAL(Status__c,&#39;Client Testing in Prod&#39;),
+                ISPICKVAL(Status__c, &#39;Canceled&#39;)
+            )
+            
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>You cannot change to this status. Please contact an admin.</errorMessage>
+</ValidationRule>

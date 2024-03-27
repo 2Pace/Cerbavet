@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Chiffre d&#39;affaires</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Chiffres d&#39;affaires</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Présentation Chiffre d&#39;affaires</layout>
+        <sections>
+            <label><!-- Compte SGL --></label>
+            <section>Compte SGL</section>
+        </sections>
+        <sections>
+            <label><!-- Dossiers --></label>
+            <section>Dossiers</section>
+        </sections>
+        <sections>
+            <label><!-- Laboratoire d&apos;enregistrement --></label>
+            <section>Laboratoire d&#39;enregistrement</section>
+        </sections>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origine_de_la_demande__c</fullName>
+    <externalId>false</externalId>
+    <label>Origine de la demande</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>En physique</fullName>
+                <default>false</default>
+                <label>En physique</label>
+            </value>
+            <value>
+                <fullName>Téléphone</fullName>
+                <default>true</default>
+                <label>Téléphone</label>
+            </value>
+            <value>
+                <fullName>Web</fullName>
+                <default>false</default>
+                <label>Web</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

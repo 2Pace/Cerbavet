@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Invoice_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>blng__Invoice__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Invoice_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>blng__Invoice__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Compte_client_SGL_CerbaVet</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Compte_client_SGL_CerbaVet</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Order_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Order_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Product_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Product_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>Cerbavet_Admin_Homepage</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#5B0864</headerColor>
+        <logo>cerbaVet_Logo1</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Cerbavet Admin app pour CPQ et Billing</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Cerbavet Admin</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compte_client_SGL_CerbaVet</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Compte_Client_SGL_BI_Groupe</recordType>
+        <type>Flexipage</type>
+        <profile>CERBA VET - Commercial</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compte_client_SGL_CerbaVet</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Compte_Client_SGL_BI_Groupe</recordType>
+        <type>Flexipage</type>
+        <profile>CERBA VET - Commercial</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compte_client_SGL_CerbaVet</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Compte_Client_SGL_BI_Groupe</recordType>
+        <type>Flexipage</type>
+        <profile>Administrateur Système CERBA VET</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compte_client_SGL_CerbaVet</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Compte_Client_SGL_BI_Groupe</recordType>
+        <type>Flexipage</type>
+        <profile>Administrateur Système CERBA VET</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compte_client_SGL_CerbaVet</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Compte_Client_SGL_BI_Groupe</recordType>
+        <type>Flexipage</type>
+        <profile>CERBA VET -Commercial SF</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compte_client_SGL_CerbaVet</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Compte_Client_SGL_BI_Groupe</recordType>
+        <type>Flexipage</type>
+        <profile>CERBA VET -Commercial SF</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.Cerbavet_College</recordType>
+        <type>Flexipage</type>
+        <profile>Administrateur Système CERBA VET</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.Cerbavet_College</recordType>
+        <type>Flexipage</type>
+        <profile>Administrateur Système CERBA VET</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.Cerbavet_College</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.Cerbavet_College</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.Cerbavet_College</recordType>
+        <type>Flexipage</type>
+        <profile>CERBAVET Compta</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.Cerbavet_College</recordType>
+        <type>Flexipage</type>
+        <profile>CERBAVET Compta</profile>
+    </profileActionOverrides>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Case</tabs>
+    <tabs>standard-Feed</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Product2</tabs>
+    <tabs>standard-Order</tabs>
+    <tabs>blng__Invoice__c</tabs>
+    <tabs>blng__InvoiceScheduler__c</tabs>
+    <tabs>blng__Payment__c</tabs>
+    <tabs>SFBD__CollectionsPlan__c</tabs>
+    <tabs>SBQQ__Quote__c</tabs>
+    <tabs>blng__DebitNote__c</tabs>
+    <tabs>blng__CreditNote__c</tabs>
+    <tabs>blng__Refund__c</tabs>
+    <tabs>Tech_Hexalis_Order_Import__c</tabs>
+    <tabs>Tech_Hexalis_Dossier_Import__c</tabs>
+    <tabs>SBQQ__ContractedPrice__c</tabs>
+    <tabs>Interface_Monitoring__c</tabs>
+    <tabs>Interface_Parameter__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Cerbavet_Admin_UtilityBar</utilityBar>
+</CustomApplication>

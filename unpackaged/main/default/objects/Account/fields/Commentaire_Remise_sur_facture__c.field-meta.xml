@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commentaire_Remise_sur_facture__c</fullName>
+    <description>2PACE
+Champs pour indiquer la raison de la remise accordée au compte</description>
+    <externalId>false</externalId>
+    <label>Commentaire Remise sur facture</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

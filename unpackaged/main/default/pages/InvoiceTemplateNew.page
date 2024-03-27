@@ -1,0 +1,283 @@
+<apex:page renderAs="PDF" standardController="blng__Invoice__c" extensions="GetDetailInvoice">
+    <head>
+        <script>
+        window.onload = function(){
+            this.test();
+        }
+        function test(){
+            const collection = document.getElementsByClassName("dataCol");
+            for (let i = 0; i < collection.length; i++) {
+                collection[0].style.display  = "none";
+                collection[2].style.display  = "none";
+            }
+        }
+        </script>
+        <style type="text/CSS" >
+            .brdr{
+            border: 1px solid !important;
+            }
+            .txtCntr{
+            text-align: center !important;
+            }
+            .fntChng{
+            font-size: 14px;
+            font-weight: 700;
+            }
+            .padd6{
+            padding: 6px !important;
+            }
+            .fltLft{
+            float: left;
+            }
+            .fltRt{
+            float: right;
+            }
+            .brdrRit{
+            border-right: 1px solid !important;
+            }
+            .brdrLft{
+            border-left: 1px solid !important;
+            }
+            .brdrBotm{
+            border-bottom: 1px solid !important;
+            }
+            .txtUnderline{
+            text-decoration: underline !important;
+            }
+            .fntWt{
+            color: #0070c0;
+            font-weight: 700;
+            }
+            .paddLft{
+            padding-left: 4px !important;
+            }
+            .txtAlnEnd{
+            text-align: end !important;
+            }
+            .paddBtm{
+            padding-bottom: 2%;
+            }
+            .customWidth{
+            width: 994px !important;
+            }
+            .floatWidth{
+            width: 50%;
+            float: left;
+            }
+            .floatWidth35{
+            width: 50%;
+            float: left;
+            }
+            .floatWidth22{
+            float: left;
+            }
+            .dispFlx{
+            display: flex;
+            }
+            .flx1{
+            flex: 1;
+            }
+            .marginLft{
+            margin-left: 38% !important;
+            }
+            .widthFlt88{
+            width: 62%;
+            float: left;
+            }
+            .widthFlt53{
+            float: right;
+            width: 53%;
+            }
+            table {
+            border-collapse: collapse;
+            }
+            .marginNegative{
+            margin-top: -6%;
+            padding-bottom: 2%;
+            }
+            .mrgn2{
+            margin-bottom: 2%;
+            }
+            .width12{
+            width: 12%;
+            }
+            .width5{
+            width: 5%;
+            }
+        </style>
+    </head>
+    <table width="100%" cellpadding="0" cellspacing="0"  align="center"  var="TheENd">
+        <tr>
+            <th><apex:image width="300px" height="200px" id="theImage" value="{!$Resource.Clg_Logo}"/></th>
+        </tr>
+    </table>
+    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp">
+        <tr>
+            <th style="text-align:left" width="20%">N° Ordinal :</th>
+            <th style="" width="20%">{!orderName}</th>
+            <th style="padding-left: 114px;">Code correspondant :</th>
+            <th style="">-</th>
+        </tr>
+    </table>
+    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp">
+        <tr>
+            <th style="text-align:left" width="26%">CERBA VET COLLEGE</th>
+            <th style="" width="29%">- Organisme de formation</th>
+            <th width="45%" style="border-right:1px solid; border-left:1px solid; border-top:1px solid; padding:10px; text-align:center;">{!accountName}</th>
+        </tr>
+    </table>
+    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp">
+        <tr>
+            <th style="text-align:left" width="40%">N° Enregistrement : 11910836991 </th>
+            <th style="" width="15%"></th>
+            <th width="45%" style="border-right:1px solid; border-left:1px solid; padding:10px;"></th>
+        </tr>
+    </table>
+    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp">
+        <tr>
+            <th style="text-align:left" width="30%">Email : college@cerbavet.com</th>
+            <th style="" width="25%"></th>
+            <th width="45%" style="border-right:1px solid; border-left:1px solid; border-bottom:1px solid; padding:10px;"></th>
+        </tr>
+    </table>
+    <br/><br/>
+    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp">
+        <tr>
+            <th style="text-align:left" width="30%"></th>
+            <th style="" width="25%"></th>
+            <th width="45%" style="">du 
+                <apex:outputText value="{0, date,  1 MMMM','  yyyy}">
+                    <apex:param value="{!NOW()}" />
+                </apex:outputText>
+            </th>
+        </tr>
+    </table>
+    <br/><br/>
+    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp">
+        <tr>
+            <th style="text-align:left" width="30%">FACTURE N° {!invoiceNumber}</th>
+            <th style="" width="25%"></th>
+            <th width="45%" style="">REF COMMANDE : champs commentaire commande</th>
+        </tr>
+    </table>
+    <table  width="100%" cellpadding="0" cellspacing="0" align="center" var="opp">
+        <tr>
+            <th align="center" style="border:1px solid;" >REFERENCE FORMATION</th>
+            <th align="center" style="border:1px solid;" >DATE SESSION</th>
+            <th align="center" style="border:1px solid;">Qté</th>
+            <th align="center" style="border:1px solid;">MONTANT H.T.</th>
+        </tr>
+
+        <apex:repeat value="{!wrp}" var="sbQL">
+            <tr >
+                <td style="border-right:1px solid; border-left:1px solid; Padding-bottom:12px;">{!sbQL.Inline.blng__Product__r.Name}</td>
+                <td style="border-right:1px solid; border-left:1px solid; text-align:center;">
+                </td>
+                <td style="border-right:1px solid; border-left:1px solid;">{!sbQL.Inline.blng__Quantity__c}</td>
+                <td style="border-right:1px solid; border-left:1px solid;">{!sbQL.Inline.blng__Subtotal__c} {!symbol}</td>
+            </tr>
+            <apex:repeat value="{!sbQL.Qtline}" var="QL">
+                <tr >
+                <td style="border-right:1px solid; border-left:1px solid; Padding-bottom:12px;">{!QL.SBQQ__ProductName__c}</td>
+                <td style="border-right:1px solid; border-left:1px solid; text-align:center;">
+                    <apex:outputText value="{0,date,MM/dd/yy}"> <apex:param value="{!QL.Date_Session__c}" /> </apex:outputText> 
+                </td>
+                <td style="border-right:1px solid; border-left:1px solid;"></td>
+                <td style="border-right:1px solid; border-left:1px solid;"></td>
+            </tr>
+            </apex:repeat>
+        </apex:repeat>
+        
+        <tr>
+            <td style="border-bottom:1px solid !important;"></td>
+            <td style="border-bottom:1px solid !important;"></td>
+            <td style="border-bottom:1px solid !important;"></td>
+            <td style="border-bottom:1px solid !important;"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style=" border-left:1px solid; border-bottom:1px solid;">MONTANT HORS TAXE</td>
+            <td style="border-right:1px solid; border-bottom:1px solid;"></td>
+            <td style="border:1px solid; text-align: end !important;">{!totalAmount} {!symbol}</td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td style="border-left:1px solid; border-bottom:1px solid;">TVA 20%</td>
+            <td style="border-right:1px solid; border-bottom:1px solid;"></td>
+            <td style="border:1px solid; text-align: end !important;">{!totalAmountWithTVA} {!symbol}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="border-left:1px solid; border-bottom:1px solid;">MONTANT TOTAL TTC</td>
+            <td style="border-right:1px solid; border-bottom:1px solid;"></td>
+            <td style="border:1px solid; font-weight:700; text-align: end !important;">{!TVAAmount} {!symbol}</td>
+        </tr>
+    </table>
+    <table width="100%" cellpadding="0" cellspacing="0" align="center">
+        
+        <tr >
+            <td style="text-decoration: underline !important; padding:16px 0px !important;" width="20%">
+                Mode de règlement :
+            </td>
+            <td width="80%">
+                a réception de facture par chèque, virement, ou carte bancaire
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <div style="color: #0070c0; font-weight: 700;">
+                    Règlement par chèque à l'ordre de CerbaVet, à envoyer à l'adresse suivante :
+                </div>
+                <div style="color: #0070c0; font-weight: 700;">
+                    CERBAVET
+                </div>
+                <div style="color: #0070c0; font-weight: 700;">
+                    ZAC DU MOULIN DE MASSY - 10 RUE DU SAULE TRAPU
+                </div>
+                <div style="color: #0070c0; font-weight: 700;">
+                    91300 MASSY
+                </div>
+                <div Class="padd6">
+                    <p style="text-decoration: underline !important; padding-top:4px;">
+                        Par virement bancaire RIB :
+                    </p>
+                    <p Class="fntChng">
+                        CREDIT DU NORD
+                    </p>
+                    <p Class="fntChng">
+                        IBAN : FR76 3007 6020 2020 6240 0020 081
+                    </p>
+                    <p Class="fntChng">
+                        BIC : NORDFRPP
+                    </p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p Class="padd6">
+                    Toute réclamation concernant le contenu de cette facture devra être formulée sous deux mois à date de réception de la facture.
+                    Aucune réclamation ne pourra être prise en compte après cette date. 
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p Class="padd6">
+                    En cas de retard, les pénalités seront calculées sur la base de 3 fois le taux légal. Le montant de l'indemnité forfaitaire pour frais de recouvrement prévue à l'article L.411-6 alinéa 12 du code du commerce est fixé à 40 euros.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p Class="padd6">
+                    Afin d'éviter toute relance, merci d'indiquer systématiquement la référence de ce courrier dans le libellé de votre réglèment 
+                    ou au dos de votre chèque. 
+                </p>
+            </td>
+        </tr>  
+        
+    </table>
+</apex:page>

@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Bonjour {!Cout_de_transport__c.OwnerFullName},<div><br></div><div>Un litige est en cours sur la mensualité suivante :&nbsp;{!Mensualite__c.Link}.&nbsp;</div><div><br></div><div>Date de la mensualité :&nbsp;{!Mensualite__c.Date_de_la_mensualite__c}</div><div><br></div><div>Montant provisionné TTC : {!Mensualite__c.Montant_provisionne_TTC__c}</div><div><br></div><div>Montant facturé TTC :&nbsp;{!Mensualite__c.Montant_facture_TTC__c}</div><div><br></div><div>Cordialement.&nbsp;</div>]]></td>
+</tr>
+</table>

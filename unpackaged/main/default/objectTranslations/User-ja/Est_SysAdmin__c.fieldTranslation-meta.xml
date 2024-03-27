@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- True si Utilisateur est Sys Admin, champ requis pour le process de DELETE Contact en plusieurs langue --></help>
+        <label><!-- Est SysAdmin --></label>
+        <name>Est_SysAdmin__c</name>
+    </CustomFieldTranslation>

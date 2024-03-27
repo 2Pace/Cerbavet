@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Contact_Adresse_Postale_Obligatoire</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ $User.Tech_By_Pass_VR__c = false,
+ (Exerce_seul_dans_un_cabinet_medical__c  = TRUE),
+
+  
+ ISBLANK( MailingAddress )
+)</errorConditionFormula>
+    <errorMessage>Merci de renseigner l&#39;adresse lorsque la CAC &quot;Exerce seul dans un cabinet médical&quot; est cochée.</errorMessage>
+</ValidationRule>

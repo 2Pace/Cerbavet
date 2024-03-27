@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>LH_Cerba_HC</letterhead>
+    <name>Email automatique envoyé à Biologistic</name>
+    <style>freeForm</style>
+    <subject>Nouvelle demande de devis - Cerba HC</subject>
+    <textOnly>Bonjour,
+
+Une nouvelle demande de devis a été créée par {!Demande__c.OwnerFullName}.
+Vous pouvez la consulter en cliquant sur le lien suivant : {!Demande__c.Link}
+
+Cordialement,
+Cerba HC</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

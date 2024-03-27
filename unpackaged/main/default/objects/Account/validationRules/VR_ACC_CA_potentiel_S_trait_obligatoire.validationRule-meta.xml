@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_ACC_CA_potentiel_S_trait_obligatoire</fullName>
+    <active>false</active>
+    <description>Si le statut = Prospect, alors le CA potentiel de sous traitance est obligatoire. 
+Exception faite pour les utilisateurs qui ont la CAC Tech By Pass de cochée sur leur fiche utilisateur.</description>
+    <errorConditionFormula>AND(
+ $User.Tech_By_Pass_VR__c = false,
+
+ISPICKVAL(Statut__c, &quot;Prospect&quot;),
+
+ISBLANK(CA_potentiel_sous_traitance_prospection__c)
+)</errorConditionFormula>
+    <errorMessage>Ce compte a le statut  &quot;Prospect&quot;. Merci de remplir le &quot;CA potentiel de sous traitance (prospection)&quot;</errorMessage>
+</ValidationRule>

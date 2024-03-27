@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Cerba_HC</letterhead>
+    <name>DDE.Demande de devis Rejetée</name>
+    <style>freeForm</style>
+    <subject>Votre demande de devis {!Demande__c.Name} a été rejetée</subject>
+    <textOnly>Bonjour {!Demande__c.OwnerFirstName},
+
+Votre demande de devis a été refusée par votre manager.
+Voici son commentaire : {!ApprovalRequest.Comments}
+
+Vous pouvez accéder à l&#39;enregistrement en cliquant sur le lien suivant : {!Demande__c.Link}
+
+Cordialement.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

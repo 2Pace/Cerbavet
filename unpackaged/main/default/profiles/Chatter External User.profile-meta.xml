@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>Lead_Generation</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Relationship_Management</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Sales_Leadership</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Community</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Service</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>CERBA</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Cerba_HC</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Cerba_Vet</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Cerba_Vet_Team</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Cerbavet_Admin</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Emmanuel_JANNY</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Sales_Operations</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>TMA</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__AllTabSet</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__AppLauncher</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Chatter</application>
+        <default>true</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__DataManager</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Insights</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningBolt</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningInstrumentation</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningSales</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningSalesConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningService</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Marketing</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__OnlineSales</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Optimizer</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Platform</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Sales</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__ServiceConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <custom>false</custom>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>AccountContactRelation.Relationship_Strength__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Demande__c.Client__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Demande__c.Statut__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Budget_Confirmed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Discovery_Completed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Loss_Reason__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.ROI_Analysis_Completed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Prestation_de_transport__c.Biologistic_customer_group__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Prestation_de_transport__c.Date_de_reponse_souhaitee__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <layoutAssignments>
+        <layout>CampaignMemberStatus-Présentation Statut de membre de campagne</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseInteraction-Case Feed Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CommunityMemberLayout-Community Member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Global-Global Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ListEmail-Présentation E-mail de liste</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Pricebook2-Price Book Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PricebookEntry-Price Book Entry Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>S2XAdminError-LightningSyncError Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SalesforceContract-Présentation Contact Salesforce</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserAlt-User Profile Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserAppMenuItem-Application Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserProvAccount-Présentation Compte de provisionnement utilisateur</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserProvisioningLog-Présentation Journal de provisionnement d%27utilisateur</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkAccess-Access Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AccountTeamMember-Présentation Membre de l%27équipe du compte</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Address-Présentation Adresse</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssetRelationship-Asset Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssociatedLocation-Présentation Emplacement associé</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseMilestone-Présentation du jalon de requête</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CollaborationGroup-Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContentVersion-Content Version</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContractLineItem-Présentation de l%27élément de ligne de contrat</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EmailMessage-Email Message Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FeedItem-Feed Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Idea-Idea Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Location-Présentation Emplacement</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Macro-Macro Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProductConsumptionSchedule-Présentation Planification de consommation du produit</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkill-Skill Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkillEndorsement-Endorsement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkillUser-Skill User Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>QuickText-Quick Text Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quote-Quote Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>QuoteLineItem-Quote Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Scorecard-Scorecard Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ScorecardAssociation-Scorecard Association Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ScorecardMetric-Scorecard Metric Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Solution-Solution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserProvisioningRequest-Présentation Demande de provisionnement utilisateur</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkBadge-Badge Received Layout 192</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkBadgeDefinition-Badge Layout 192</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkThanks-Thanks Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Établissements- Présentation de page</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Établissements- Présentation de page</layout>
+        <recordType>Account.Compte_Client_SGL_BI</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Établissements- Présentation de page</layout>
+        <recordType>Account.Compte_Client_SGL_BI_Groupe</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Établissements- Présentation de page</layout>
+        <recordType>Account.Compte_desactive</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Établissements- Présentation de page</layout>
+        <recordType>Account.Etablissement</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Établissements- Présentation de page</layout>
+        <recordType>Account.Fournisseur</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Établissements- Présentation de page</layout>
+        <recordType>Account.Labo_Organisation_Groupe</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Interface_Monitoring__c-Interface Monitoring Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Intf_Sync_Field__mdt-Intf_Sync_Field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Intf_Transco__mdt-Intf Transco Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Order-Order Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Order-Order Layout</layout>
+        <recordType>Order.Cerbavet_Analyses</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Order-Order Layout</layout>
+        <recordType>Order.Cerbavet_College</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TMA__c-TMA Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AccountContactRelation-Account Contact Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Adresse_de_la_demande_de_devis__c-Présentation Adresse de la demande de devis</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Adresses__c-Présentation Adresse Active</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Adresses__c-Présentation Adresse Active</layout>
+        <recordType>Adresses__c.Adresse_Active</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Adresses__c-Présentation Adresse Inactive</layout>
+        <recordType>Adresses__c.Adresse_Inactive</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Affaire__c-Affaire - AO - Présentation de page</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Affaire__c-Affaire - AO - Présentation de page</layout>
+        <recordType>Affaire__c.AO</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Affaire__c-Affaire - AO - Présentation de page</layout>
+        <recordType>Affaire__c.Prospection</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Annexe__c-Présentation Annexe</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Asset-Asset Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssetAction-Présentation Action d%27actif</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssetActionSource-Présentation Source de l%27action d%27actif</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssetStatePeriod-Présentation Période d%27état d%27actif</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>BusinessBrand-Présentation Marque commerciale</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CV_Batch_Settings__mdt-CV Batch Settings Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CV_Email_Template_Mapping__mdt-CV_Email_Template_Mapping Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CV_Order_Add_Codes__mdt-CV_Order_Add_Code Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CV_Pricebook_Mapping__mdt-CV_Pricebook_Mapping Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CV_Prix_Degressif__mdt-CV_Prix_Degressif Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CV_Vf_Pdf_Mapping__mdt-CV_Vf_Pdf_Mapping Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Campaign-Campaign Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CampaignMember-Campaign Member Page Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.BUG</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.RecordType</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Requete</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+        <recordType>Case.Training</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseClose-Close Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Chiffres_d_affaires__c-Présentation Chiffre d%27affaires</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Code_contact_SGL__c-Présentation Code contact SGL</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Compte_rendu__c-Présentation Compte rendu</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ConsumptionRate-Présentation Évaluation de la consommation</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ConsumptionSchedule-Présentation Planification de consommation</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Contact Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointAddress-Présentation Adresse du point de contact</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointEmail-Présentation Adresse e-mail du point de contact</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointPhone-Présentation Téléphone du point de contact</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contract-Contract Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contrats_Conventions__c-Présentation Contrats%2FConventions</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Cout_de_transport__c-Présentation Facture directe Laboratoire ou Transporteur</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Cout_de_transport__c-Présentation Facture directe Laboratoire ou Transporteur</layout>
+        <recordType>Cout_de_transport__c.Facture_directe_Laboratoire_ou_Transporteur</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Cout_de_transport__c-Présentation Prestation transport spécifique ou Mise à disposition de véhicules</layout>
+        <recordType>Cout_de_transport__c.Prestation_transport_specifique_ou_Mise_a_disposition_de_vehicules</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer-Présentation Client</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Demande__c-Demande de désactivation d%27adresse</layout>
+        <recordType>Demande__c.Demande_de_d_sactivation_d_adresse</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Demande__c-Demande de désactivation de compte</layout>
+        <recordType>Demande__c.Demande_de_desactivation_de_compte</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Demande__c-Présentation Demande de devis</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Demande__c-Présentation Demande de devis</layout>
+        <recordType>Demande__c.Demande_de_devis</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Demande__c-Présentation Demande de modification d%27une facture</layout>
+        <recordType>Demande__c.Demande_de_modification_d_une_facture</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Demande__c-Présentation Demande de suppression d%27une facture</layout>
+        <recordType>Demande__c.Demande_de_suppression_d_une_facture</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Entitlement-Présentation de l%27autorisation</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Event-Event Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FinanceBalanceSnapshot-Présentation Cliché instantané de solde financier</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FinanceTransaction-Présentation Transaction financière</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FlowOrchestrationInstance-Orchestration Run Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FlowPersonalConfiguration__c-Flow Personal Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FlowTableViewDefinition__c-FlowTableViewDefinition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Hexalis_Code_Non_Pertinent__mdt-Hexalis_Code_Non_Pertinent Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Hexalis_Discount_Code__mdt-Hexalis_Discount_Code Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Hexalis_Specific_Bundle_Behavior__mdt-Hexalis_Specific_Bundle_Behavior Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Hierarchy_Batch_Param__mdt-Hierarchy Batch Param Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Individual-Présentation Individu</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Interface_Parameter__c-Interface Parameter Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Intf_Interface__mdt-Intf Interface Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Lead Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>LegalEntity-Présentation Entité légale</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Mensualite__c-Présentation Mensualité</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Cerbavet_College</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OpportunityLineItem-Opportunity Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderItem-Order Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Paillasse__c-Présentation Paillasse</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Passages__c-Présentation Passage</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Prestation_de_transport__c-Présentation Prestation de transport</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProcessException-Présentation Exception de traitement</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Raisons_de_passage__c-Présentation Raison de passage</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Reclamation__c-Présentation Réclamation</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Role_contact__c-Présentation Rôle contact</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Seller-Présentation Vendeur</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceContract-Présentation du contrat de service</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SocialPersona-Social Persona Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Structure__c-Présentation Structure</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TMA_Lab_Admin__c-TMA Lab Admin Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Tech_Hexalis_Dossier_Import__c-Tech Hexalis Dossier Import Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Tech_Hexalis_Order_Import__c-Tech Hexalis Order Import Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Tournee__c-Présentation Tournée</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>User-User Layout</layout>
+    </layoutAssignments>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Compte_Client_SGL_BI</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Compte_Client_SGL_BI_Groupe</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Compte_desactive</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Etablissement</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Fournisseur</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Labo_Organisation_Groupe</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Order.Cerbavet_Analyses</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Order.Cerbavet_College</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Adresses__c.Adresse_Active</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Adresses__c.Adresse_Inactive</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Affaire__c.AO</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Affaire__c.Prospection</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.BUG</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.RecordType</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Requete</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Training</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Cout_de_transport__c.Facture_directe_Laboratoire_ou_Transporteur</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Cout_de_transport__c.Prestation_transport_specifique_ou_Mise_a_disposition_de_vehicules</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Demande__c.Demande_de_d_sactivation_d_adresse</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Demande__c.Demande_de_desactivation_de_compte</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Demande__c.Demande_de_devis</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Demande__c.Demande_de_modification_d_une_facture</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Demande__c.Demande_de_suppression_d_une_facture</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Cerbavet_College</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>standard-Account</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-AppLauncher</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-AssetAction</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-AssetActionSource</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-AssetStatePeriod</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-AuthorizationForm</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-AuthorizationFormConsent</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-AuthorizationFormDataUse</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-AuthorizationFormText</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Campaign</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Case</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Chatter</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-CollaborationGroup</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-ConsumptionSchedule</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Contact</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-ContactPointTypeConsent</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Contract</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-ContractLineItem</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Dashboard</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-DataUseLegalBasis</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-DataUsePurpose</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Document</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-DuplicateRecordSet</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Entitlement</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-File</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-FinanceBalanceSnapshot</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-FinanceTransaction</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Idea</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Image</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Lead</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-LearningItem</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-LegalEntity</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-ListEmail</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Location</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-LocationTrustMeasure</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Macro</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-OmniDataPack</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-OmniDataTransform</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-OmniDataTransformItem</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-OmniESignatureTemplate</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-OmniProcess</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-OmniProcessCompilation</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-OmniProcessElement</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-OmniProcessTransientData</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-OmniScriptSavedSession</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-OmniUiCard</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Order</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-OtherUserProfile</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Pricebook2</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-ProcessException</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Product2</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-ProfilePlatformFeed</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-ProfilePlatformOverview</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-QuickText</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Quote</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Recommendation</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Scorecard</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-ServiceContract</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Solution</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-StreamingChannel</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-UserProfile</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-UserProvisioningRequest</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-home</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-report</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Adresses__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Affaire__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Annexe__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Chiffres_d_affaires__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Code_contact_SGL__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Compte_rendu__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Contrats_Conventions__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Cout_de_transport__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Cr_ation_des_valeurs_annuelles</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Demande__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Demandes</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Interface_Monitoring__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Interface_Parameter__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Mensualite__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Paillasse__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Passages__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Prestation_de_transport__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Reclamation__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Structure__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>TMA_Lab_Admin__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>TMA__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Tech_Hexalis_Dossier_Import__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Tech_Hexalis_Order_Import__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Tournee__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Asset</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-BusinessBrand</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-CommSubscription</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-CommSubscriptionChannelType</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-CommSubscriptionConsent</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-CommSubscriptionTiming</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-ContactPointConsent</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-ContactRequest</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Customer</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-EngagementChannelType</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-FlowOrchestrationInstance</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-FlowOrchestrationWorkItem</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Individual</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Opportunity</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-PartyConsent</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Seller</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <userLicense>Chatter External</userLicense>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>AddDirectMessageMembers</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ApexRestServices</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ApiEnabled</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>AssignTopics</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>BypassMFAForUiLogins</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ChatterInviteExternalUsers</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>CreateTopics</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>EditTopics</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>LightningExperienceUser</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>RemoveDirectMessageMembers</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ShowCompanyNameAsUserBadge</name>
+    </userPermissions>
+</Profile>

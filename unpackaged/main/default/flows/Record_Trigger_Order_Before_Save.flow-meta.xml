@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <assignments>
+        <name>Assignement_Payment_Term</name>
+        <label>Assignement Payment Term</label>
+        <locationX>248</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>Conditions_de_paiement</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Account.Termes_de_paiements__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Which_type_of_Order</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Order must have Payment terms for the invoicing</description>
+        <name>Does_Account_has_default_Payment_terms</name>
+        <label>Does Account has default Payment terms ?</label>
+        <locationX>380</locationX>
+        <locationY>311</locationY>
+        <defaultConnector>
+            <targetReference>Which_type_of_Order</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Payment Terms</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Payment_Term</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Termes_de_paiements__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assignement_Payment_Term</targetReference>
+            </connector>
+            <label>Yes Payment Terms</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Define if the Account pays the invoice or the pet owner does it</description>
+        <name>Is_Account_Regleur_or_Non_Regleur</name>
+        <label>Is Account Regleur or Non Regleur ?</label>
+        <locationX>974</locationX>
+        <locationY>887</locationY>
+        <defaultConnector>
+            <targetReference>Update_Order_Cerbavet_Analysis_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Account &quot;Regleur&quot;</defaultConnectorLabel>
+        <rules>
+            <name>Account_Non_Regleur</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Conditions_de_Reglement_Cerbavet__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Non Régleur</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Order_Cerbavet_Analysis_Proprio</targetReference>
+            </connector>
+            <label>Account &quot;Non Regleur&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Define if the Account pays the invoice or the pet owner does it</description>
+        <name>Is_Account_Regleur_or_Non_Regleur_0</name>
+        <label>Is Account Regleur or Non Regleur ?</label>
+        <locationX>446</locationX>
+        <locationY>887</locationY>
+        <defaultConnector>
+            <targetReference>Update_Order_Cerbavet_Analysis_0_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Account &quot;Regleur&quot;</defaultConnectorLabel>
+        <rules>
+            <name>Account_Non_Regleur_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Conditions_de_Reglement_Cerbavet__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Non Régleur</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Order_Cerbavet_Analysis_Proprio_Suisse</targetReference>
+            </connector>
+            <label>Account &quot;Non Regleur&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Which_Cerbavet_Legal_Entity</name>
+        <label>Which Cerbavet Legal Entity ?</label>
+        <locationX>710</locationX>
+        <locationY>767</locationY>
+        <defaultConnector>
+            <targetReference>Is_Account_Regleur_or_Non_Regleur</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Cerbavet France</defaultConnectorLabel>
+        <rules>
+            <name>Cerbavet_Suisse</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.BillingCountryCode</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CH</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.blng__BillingAccount__r.BillingCountryCode</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CH</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_Account_Regleur_or_Non_Regleur_0</targetReference>
+            </connector>
+            <label>Cerbavet Suisse</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Define if the order is Cerbavet Analysis or Cerbavet College</description>
+        <name>Which_type_of_Order</name>
+        <label>Which type of Order?</label>
+        <locationX>380</locationX>
+        <locationY>647</locationY>
+        <defaultConnector>
+            <targetReference>Which_Cerbavet_Legal_Entity</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Cerbavet analysis</defaultConnectorLabel>
+        <rules>
+            <name>Order_Cerbavet_college</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SBQQ__Quote__r.RecordType.Id</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.Records_ID__c.CPQ_Quote_Cerbavet_College__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Order_Cerbavet_College</targetReference>
+            </connector>
+            <label>Order Cerbavet college</label>
+        </rules>
+    </decisions>
+    <description>when an order is created fast field update
+Add Cerbavet Suisse
+Problem Cerbavet College
+Update problem Defined Invoice Batch</description>
+    <environments>Default</environments>
+    <interviewLabel>Record-Trigger: Order Before Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Record-Trigger: Order Before Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Order_Cerbavet_Analysis_0</name>
+        <label>Update Order Cerbavet Analysis</label>
+        <locationX>1106</locationX>
+        <locationY>1007</locationY>
+        <inputAssignments>
+            <field>Legal_Entity__c</field>
+            <value>
+                <elementReference>$Setup.BillingIDs__c.Legal_Entity_Cerbavet_FR__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>$Setup.Records_ID__c.CPQ_Order_Cerbavet_Analysis__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SBQQ__PaymentTerm__c</field>
+            <value>
+                <elementReference>Conditions_de_paiement</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>blng__BillingDayOfMonth__c</field>
+            <value>
+                <stringValue>1</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>blng__InvoiceBatch__c</field>
+            <value>
+                <stringValue>Cerbavet Analysis</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Order_Cerbavet_Analysis_0_0_0</name>
+        <label>Update Order Cerbavet Analysis</label>
+        <locationX>578</locationX>
+        <locationY>1007</locationY>
+        <inputAssignments>
+            <field>CurrencyIsoCode</field>
+            <value>
+                <stringValue>CHF</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Legal_Entity__c</field>
+            <value>
+                <elementReference>$Setup.BillingIDs__c.Legal_Entity_Cerbavet_CH__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>$Setup.Records_ID__c.CPQ_Order_Cerbavet_Analysis__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SBQQ__PaymentTerm__c</field>
+            <value>
+                <elementReference>Conditions_de_paiement</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>blng__BillingDayOfMonth__c</field>
+            <value>
+                <stringValue>1</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>blng__InvoiceBatch__c</field>
+            <value>
+                <stringValue>Cerbavet Analysis Suisse</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Order_Cerbavet_Analysis_Proprio</name>
+        <label>Update Order Cerbavet Analysis Proprio</label>
+        <locationX>842</locationX>
+        <locationY>1007</locationY>
+        <inputAssignments>
+            <field>Legal_Entity__c</field>
+            <value>
+                <elementReference>$Setup.BillingIDs__c.Legal_Entity_Cerbavet_FR__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PoNumber</field>
+            <value>
+                <elementReference>$Record.IDDossier__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>$Setup.Records_ID__c.CPQ_Order_Cerbavet_Analysis__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SBQQ__PaymentTerm__c</field>
+            <value>
+                <elementReference>Conditions_de_paiement</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>blng__BillingDayOfMonth__c</field>
+            <value>
+                <stringValue>1</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>blng__InvoiceBatch__c</field>
+            <value>
+                <stringValue>Cerbavet Analysis Proprio</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Order_Cerbavet_Analysis_Proprio_Suisse</name>
+        <label>Update Order Cerbavet Analysis Proprio Suisse</label>
+        <locationX>314</locationX>
+        <locationY>1007</locationY>
+        <inputAssignments>
+            <field>CurrencyIsoCode</field>
+            <value>
+                <stringValue>CHF</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Legal_Entity__c</field>
+            <value>
+                <elementReference>$Setup.BillingIDs__c.Legal_Entity_Cerbavet_CH__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PoNumber</field>
+            <value>
+                <elementReference>$Record.IDDossier__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>$Setup.Records_ID__c.CPQ_Order_Cerbavet_Analysis__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SBQQ__PaymentTerm__c</field>
+            <value>
+                <elementReference>Conditions_de_paiement</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>blng__BillingDayOfMonth__c</field>
+            <value>
+                <stringValue>1</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>blng__InvoiceBatch__c</field>
+            <value>
+                <stringValue>Cerbavet Analysis Proprio Suisse</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Order_Cerbavet_College</name>
+        <label>Update Order Cerbavet College</label>
+        <locationX>50</locationX>
+        <locationY>767</locationY>
+        <inputAssignments>
+            <field>Legal_Entity__c</field>
+            <value>
+                <elementReference>$Setup.BillingIDs__c.Legal_Entity_Cerbavet_College__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>$Setup.Records_ID__c.CPQ_Order_Cerbavet_College__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SBQQ__PaymentTerm__c</field>
+            <value>
+                <elementReference>Conditions_de_paiement</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>blng__BillingDayOfMonth__c</field>
+            <value>
+                <stringValue>1</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>blng__InvoiceBatch__c</field>
+            <value>
+                <stringValue>Cerbavet College</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Does_Account_has_default_Payment_terms</targetReference>
+        </connector>
+        <object>Order</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>Conditions_de_paiement</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

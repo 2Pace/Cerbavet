@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Juridische structuur</label>
+        <name>Structure_juridique__c</name>
+        <picklistValues>
+            <masterLabel>ASBL/VZW</masterLabel>
+            <translation><!-- ASBL/VZW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Association Loi de 1901</masterLabel>
+            <translation>Vereniging Wet van 1901</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EURL</masterLabel>
+            <translation>BV</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entreprise</masterLabel>
+            <translation>Onderneming</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GIE</masterLabel>
+            <translation>Economisch Samenwerkingsverband</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GPP</masterLabel>
+            <translation><!-- GPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GPS</masterLabel>
+            <translation><!-- GPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Holding</masterLabel>
+            <translation><!-- Holding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hôpital</masterLabel>
+            <translation>Ziekenhuis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IP</masterLabel>
+            <translation><!-- IP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR</masterLabel>
+            <translation><!-- IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Institut</masterLabel>
+            <translation>Instelling</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mutuelle</masterLabel>
+            <translation>Mutualiteit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nom propre</masterLabel>
+            <translation>In eigen naam</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organisme international</masterLabel>
+            <translation>Internationale organisatie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SA/SARL</masterLabel>
+            <translation>NV/BVBA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAM</masterLabel>
+            <translation><!-- SAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS</masterLabel>
+            <translation><!-- SAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCM</masterLabel>
+            <translation>Burgerlijke vennootschap</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCP</masterLabel>
+            <translation>NV</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SELAFA</masterLabel>
+            <translation>VZW</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SELARL</masterLabel>
+            <translation>BVBA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SELAS</masterLabel>
+            <translation><!-- SELAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SELCA</masterLabel>
+            <translation><!-- SELCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SGA</masterLabel>
+            <translation><!-- SGA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SGAM</masterLabel>
+            <translation><!-- SGAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UGM</masterLabel>
+            <translation><!-- UGM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UMG</masterLabel>
+            <translation><!-- UMG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UOP</masterLabel>
+            <translation><!-- UOP --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

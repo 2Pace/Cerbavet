@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facturation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Champs user pour bypasser workflows problématique de Viseo sur Account</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Champs user pour bypasser workflows problématique de Viseo sur Account</inlineHelpText>
+    <label>Facturation</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

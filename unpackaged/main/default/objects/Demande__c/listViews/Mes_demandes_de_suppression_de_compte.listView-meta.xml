@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mes_demandes_de_suppression_de_compte</fullName>
+    <columns>NAME</columns>
+    <columns>Statut__c</columns>
+    <columns>Icone_Statut__c</columns>
+    <columns>Proprietaire__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Demande__c.Demande_de_suppression_d_une_facture</value>
+    </filters>
+    <label>Mes demandes de suppression de facture</label>
+</ListView>

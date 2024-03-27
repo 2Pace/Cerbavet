@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Nomenclature :  Matrice ; Contenant/tube ; Température de Transport --></help>
+        <label><!-- Pré-analytique --></label>
+        <name>Preanalytique__c</name>
+    </CustomFieldTranslation>

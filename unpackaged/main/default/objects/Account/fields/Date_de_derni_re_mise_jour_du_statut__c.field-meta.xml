@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_de_derni_re_mise_jour_du_statut__c</fullName>
+    <description>Champs créé lors du déploiement belgique</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Mise à jour automatique du champs lorsque le champs statut est renseigné</inlineHelpText>
+    <label>Date de dernière mise à jour du statut</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

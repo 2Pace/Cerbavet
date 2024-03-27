@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Etablissement__c</columns>
+    <columns>Montant__c</columns>
+    <columns>Mois__c</columns>
+    <columns>Etape__c</columns>
+    <columns>Iconeetape__c</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>notContain</operation>
+        <value>test</value>
+    </filters>
+    <label>Toutes les Affaires</label>
+</ListView>

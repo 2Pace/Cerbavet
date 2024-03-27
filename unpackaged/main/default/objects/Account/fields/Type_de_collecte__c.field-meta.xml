@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_de_collecte__c</fullName>
+    <externalId>false</externalId>
+    <label>Type de collecte</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Chronopost</fullName>
+                <default>false</default>
+                <label>Chronopost</label>
+            </value>
+            <value>
+                <fullName>Courrier</fullName>
+                <default>false</default>
+                <label>Courrier</label>
+            </value>
+            <value>
+                <fullName>Coursier J+1</fullName>
+                <default>false</default>
+                <label>Coursier J+1</label>
+            </value>
+            <value>
+                <fullName>Coursier J0</fullName>
+                <default>false</default>
+                <label>Coursier J0</label>
+            </value>
+            <value>
+                <fullName>Coursier labo</fullName>
+                <default>false</default>
+                <label>Coursier labo</label>
+            </value>
+            <value>
+                <fullName>Dépose labo</fullName>
+                <default>false</default>
+                <label>Dépose labo</label>
+            </value>
+            <value>
+                <fullName>Systématique</fullName>
+                <default>false</default>
+                <label>Systématique</label>
+            </value>
+            <value>
+                <fullName>Systématique partiel</fullName>
+                <default>false</default>
+                <label>Systématique partiel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

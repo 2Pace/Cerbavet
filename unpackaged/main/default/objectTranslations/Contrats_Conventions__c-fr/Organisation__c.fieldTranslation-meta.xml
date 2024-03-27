@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Organisation --></label>
+        <name>Organisation__c</name>
+        <picklistValues>
+            <masterLabel>IDEL</masterLabel>
+            <translation><!-- IDEL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Préleveurs Cerballiance</masterLabel>
+            <translation><!-- Préleveurs Cerballiance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Préleveurs établissement</masterLabel>
+            <translation><!-- Préleveurs établissement --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

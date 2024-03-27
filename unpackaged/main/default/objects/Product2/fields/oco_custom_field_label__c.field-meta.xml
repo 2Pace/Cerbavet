@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>oco_custom_field_label__c</fullName>
+    <description>Label permettant à OCO d&#39;afficher un champ personnalisé. Si rempli, cocher oco_custom_field_visible</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Label permettant à OCO d&#39;afficher un champ personnalisé. Si rempli, cocher oco_custom_field_visible</inlineHelpText>
+    <label>oco_custom_field_label</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_d_activite__c</fullName>
+    <externalId>false</externalId>
+    <label>Type d’activité</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Canine</fullName>
+                <default>false</default>
+                <label>Canine</label>
+            </value>
+            <value>
+                <fullName>Rurale</fullName>
+                <default>false</default>
+                <label>Rurale</label>
+            </value>
+            <value>
+                <fullName>Mixte (canin et rural)</fullName>
+                <default>false</default>
+                <label>Mixte (canin et rural)</label>
+            </value>
+            <value>
+                <fullName>Équine</fullName>
+                <default>false</default>
+                <label>Équine</label>
+            </value>
+            <value>
+                <fullName>Indus</fullName>
+                <default>false</default>
+                <label>Indus</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

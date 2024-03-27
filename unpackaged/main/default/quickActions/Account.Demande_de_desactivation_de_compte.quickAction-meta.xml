@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>Statut__c</field>
+        <literalValue>Nouvelle</literalValue>
+    </fieldOverrides>
+    <label>Demande de désactivation de compte</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Client__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>Demande__c</targetObject>
+    <targetParentField>Client__c</targetParentField>
+    <targetRecordType>Demande__c.Demande_de_desactivation_de_compte</targetRecordType>
+    <type>Create</type>
+</QuickAction>

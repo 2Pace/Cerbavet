@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Mode d&apos;envoi des résultats --></label>
+        <name>Mode_d_envoi_des_resultats__c</name>
+        <picklistValues>
+            <masterLabel>1 - ROUTE FRANCE - 1 ENVOI/JOUR</masterLabel>
+            <translation><!-- 1 - ROUTE FRANCE - 1 ENVOI/JOUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - POSTE FRANCE - ENVOI COR 02926</masterLabel>
+            <translation><!-- 2 - POSTE FRANCE - ENVOI COR 02926 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - POSTE INTERNATIONAL - ENVOI EXPRESS</masterLabel>
+            <translation><!-- 3 - POSTE INTERNATIONAL - ENVOI EXPRESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - POSTE FRANCE - 1 SEUL ENVOI JOURNALIER</masterLabel>
+            <translation><!-- 5 - POSTE FRANCE - 1 SEUL ENVOI JOURNALIER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 - POSTE - CR GROUPE</masterLabel>
+            <translation><!-- 6 - POSTE - CR GROUPE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 - ROUTE DOM TOM - 1 ENVOI/JOUR</masterLabel>
+            <translation><!-- 7 - ROUTE DOM TOM - 1 ENVOI/JOUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 - ROUTE - RETOUR CERBA (BIOLILLE BOUCHET)</masterLabel>
+            <translation><!-- 8 - ROUTE - RETOUR CERBA (BIOLILLE BOUCHET) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D - POSTE DOM TOM</masterLabel>
+            <translation><!-- D - POSTE DOM TOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E - POSTE INTERNATIONAL - ENVOI ETRANGER</masterLabel>
+            <translation><!-- E - POSTE INTERNATIONAL - ENVOI ETRANGER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G - NON IMPRIME (GLARIF)</masterLabel>
+            <translation><!-- G - NON IMPRIME (GLARIF) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P - POSTE FRANCE</masterLabel>
+            <translation><!-- P - POSTE FRANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y - ROUTE FRANCE</masterLabel>
+            <translation><!-- Y - ROUTE FRANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Z - NON IMPRIME - CONTROLE QUALITE</masterLabel>
+            <translation><!-- Z - NON IMPRIME - CONTROLE QUALITE --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_Validee_par_Cerba_Profil</fullName>
+    <active>true</active>
+    <description>Le statut : &quot;Validée par Cerba&quot; ne peut passer qu&#39;au statut &quot;Confirmée par Biologistic&quot;.</description>
+    <errorConditionFormula>ISCHANGED(Statut__c) &amp;&amp;
+ISPICKVAL(PRIORVALUE(Statut__c),&quot;Validée par Cerba&quot;)&amp;&amp; 
+
+
+(ISPICKVAL (Statut__c,&quot;Confirmée par Biologistic&quot;))
+
+&amp;&amp;  $User.ProfileId &lt;&gt; &#39;00e1t000000uYau&#39;
+&amp;&amp;  $User.Tech_By_Pass_VR__c = false</errorConditionFormula>
+    <errorMessage>Le statut : &quot;Validée par Cerba&quot; ne peut passer qu&#39;au statut &quot;Confirmée par Biologistic&quot;.</errorMessage>
+</ValidationRule>

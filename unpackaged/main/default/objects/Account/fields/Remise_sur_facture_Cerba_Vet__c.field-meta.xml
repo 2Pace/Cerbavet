@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remise_sur_facture_Cerba_Vet__c</fullName>
+    <description>2PACE</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Remise globale sur la facture pour les produits remisables Cerba Vet analyses.</inlineHelpText>
+    <label>🤝  Remise sur facture Cerba Vet</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Tech ID compte + 5 niveaux supérieurs --></label>
+        <name>Tech_ID_compte_et_5_niveaux_superieurs__c</name>
+    </CustomFieldTranslation>

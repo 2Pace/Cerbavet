@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- TECH Statut Synchro Jira --></label>
+        <name>TECH_Statut_Synchro_Jira__c</name>
+        <picklistValues>
+            <masterLabel>Erreur Synchro</masterLabel>
+            <translation><!-- Erreur Synchro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Synchro</masterLabel>
+            <translation><!-- Non Synchro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Synchro</masterLabel>
+            <translation><!-- Synchro --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

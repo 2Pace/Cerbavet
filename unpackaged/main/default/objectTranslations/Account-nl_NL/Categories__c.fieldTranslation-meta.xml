@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Categorie</label>
+        <name>Categories__c</name>
+        <picklistValues>
+            <masterLabel>Cabinets Médicaux et Paramédicaux</masterLabel>
+            <translation>(Para-) Medische kabinetten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entreprises et Institutions</masterLabel>
+            <translation>Ondernemingen en instellingen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etablissement de Santé Privé d’Intérêt Collectif (ESPIC)</masterLabel>
+            <translation>Private zorginstellingen van collectief belang</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etablissements de Soins Privé</masterLabel>
+            <translation>Particuliere zorginstellingen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etablissements de Soins Publics</masterLabel>
+            <translation>Publieke zorginstellingen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Etablissements vétérinaires</masterLabel>
+            <translation>Diergeneeskundige instellingen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laboratoires</masterLabel>
+            <translation>Laboratoria</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

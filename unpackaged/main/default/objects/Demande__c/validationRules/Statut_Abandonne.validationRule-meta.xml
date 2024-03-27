@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_Abandonne</fullName>
+    <active>true</active>
+    <description>Une fois le statut Abandonné atteint, le statut ne peut pas être changé</description>
+    <errorConditionFormula>$User.Tech_By_Pass_VR__c = false &amp;&amp;
+ISCHANGED(Statut__c) &amp;&amp;
+
+ISPICKVAL(PRIORVALUE(Statut__c),&quot;Abandonné&quot;) &amp;&amp;
+ISCHANGED(Statut__c)</errorConditionFormula>
+    <errorDisplayField>Statut__c</errorDisplayField>
+    <errorMessage>Merci de ne plus changer le statut de cette demande une fois passé à &quot;Abandonnée&quot;</errorMessage>
+</ValidationRule>

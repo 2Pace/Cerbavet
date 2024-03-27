@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Checkbox pour exonérer les frais de gestion sur les dossiers non régleur --></help>
+        <label><!-- Exonération Frais de Gestion --></label>
+        <name>Exoneration_Frais_de_Gestion__c</name>
+    </CustomFieldTranslation>

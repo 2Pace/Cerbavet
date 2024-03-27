@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demande_de_devis</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>C_L_Demande_de_devis</compactLayoutAssignment>
+    <label>Demande de devis</label>
+    <picklistValues>
+        <picklist>Raison_de_desactivation__c</picklist>
+        <values>
+            <fullName>Fermé</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut__c</picklist>
+        <values>
+            <fullName>Abandonné</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confirmée par Biologistic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Envoyée à Biologistic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nouvelle</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Répondu%2Fen attente de validation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validée par Cerba</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_demande__c</picklist>
+        <values>
+            <fullName>Modification d%27une prestation existante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nouvelle prestation</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Suppression d%27une prestation existante</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

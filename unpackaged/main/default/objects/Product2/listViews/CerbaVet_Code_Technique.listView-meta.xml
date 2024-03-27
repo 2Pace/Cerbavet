@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CerbaVet_Code_Technique</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+    <columns>PRODUCT2.DESCRIPTION</columns>
+    <columns>PRODUCT2.FAMILY</columns>
+    <columns>SBQQ__NonDiscountable__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PRODUCT2.FAMILY</field>
+        <operation>equals</operation>
+        <value>CODE TECHNIQUE</value>
+    </filters>
+    <label>CerbaVet Code Technique</label>
+</ListView>

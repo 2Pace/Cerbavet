@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Fournisseur --></label>
+        <name>Fournisseur__c</name>
+        <picklistValues>
+            <masterLabel>Abaxis/Zoetis</masterLabel>
+            <translation><!-- Abaxis/Zoetis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autre</masterLabel>
+            <translation><!-- Autre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BVT Virbac</masterLabel>
+            <translation><!-- BVT Virbac --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuji</masterLabel>
+            <translation><!-- Fuji --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heska</masterLabel>
+            <translation><!-- Heska --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Idexx</masterLabel>
+            <translation><!-- Idexx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kitvia</masterLabel>
+            <translation><!-- Kitvia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mellet</masterLabel>
+            <translation><!-- Mellet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCIL</masterLabel>
+            <translation><!-- SCIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sans</masterLabel>
+            <translation><!-- Sans --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

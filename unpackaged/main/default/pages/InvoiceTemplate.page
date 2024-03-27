@@ -1,0 +1,1667 @@
+<apex:page standardController="blng__Invoice__c" extensions="GetInvoiceDetailsCpy" renderAs="{!renderType}" applyHtmlTag="false" applyBodyTag="false"
+           showHeader="false" 
+           cache="true"
+           readOnly="true">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <script>
+        window.onload = function(){
+            this.test();
+            this.updateFnt();
+        }
+        function test(){
+            console.log('InsideTest');
+            const collection = document.getElementsByClassName("dataCol");
+            for (let i = 0; i < collection.length; i++) {
+                if(i % 2 == 0){
+                    collection[i].style.display  = "none";
+                } 
+                
+            }
+        }
+        function updateFnt(){
+            Console.log('UpdateFnt');
+            var link = document.getElementsByTagName("a").length;
+            console.log(link);
+        }
+        </script>
+        <style type="text/css">
+            
+            .brdr{
+            border: 1px solid !important;
+            }
+            .txtCntr{
+            text-align: center !important;
+            }
+            .fntChng{
+            font-size: 14px;
+            font-weight: 700;
+            }
+            .padd6{
+            padding: 6px !important;
+            }
+            .fltLft{
+            float: left;
+            }
+            .fltRt{
+            float: right;
+            }
+            .brdrRit{
+            border-right: 1px solid !important;
+            }
+            .brdrTop{
+            border-top: 1px solid !important;
+            }
+            .brdrLft{
+            border-left: 1px solid !important;
+            }
+            .brdrBotm{
+            border-bottom: 1px solid !important;
+            }
+            .txtUnderline{
+            text-decoration: underline !important;
+            }
+            .fntWt{
+            color: #0070c0 !important;
+            font-weight: 700;
+            }
+            .paddLft{
+            padding-left: 4px !important;
+            }
+            .paddLft3{
+            padding-left: 3% !important;
+            }
+            .txtAlnEnd{
+            text-align: end !important;
+            }
+            .paddBtm{
+            padding-bottom: 2% !important;
+            }
+            .paddBtm5{
+            padding-bottom: 5% !important;
+            }
+            .pdBtm{
+            padding-bottom: 11% !important;
+            }
+            .wdth{
+            width: 574px !important;
+            }
+            .customWidth{
+            width: 710px !important;
+            font-size: 12px !important;
+            }
+            .floatWidth{
+            width: 50%;
+            float: left;
+            }
+            .floatWidth78{
+            width: 78%;
+            float: left;
+            }
+            .floatWidth35{
+            width: 50%;
+            float: left;
+            }
+            .floatWidth22{
+            float: left;
+            }
+            .dispFlx{
+            display: flex;
+            }
+            .flx1{
+            flex: 1;
+            }
+            .marginLft{
+            margin-left: 38% !important;
+            }
+            .widthFlt88{
+            width: 62%;
+            float: left;
+            }
+            .widthFlt53{
+            float: right;
+            width: 53%;
+            }
+            table {
+            border-collapse: collapse;
+            }
+            .marginNegative{
+            margin-top: -64px;
+            padding-bottom: 2%;
+            }
+            .mrgn2{
+            margin-bottom: 2%;
+            }
+            .width12{
+            width: 12%;
+            }
+            .width5{
+            width: 5%;
+            }
+            .paddLeftRt{
+            padding: 7px 0px;
+            }
+            .backgrndDark{
+            background: black;
+            color: white !important;
+            }
+            .updateFnt{
+            font-size: 12px !important;
+            }
+            .paddtopLefrBtm{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 4px;
+            }
+            .pd2{
+            padding: 2% 0px;
+            }
+            .pd4{
+            padding: 4px 0px;
+            }
+            .paddTop{
+            padding-top: 2%;
+            }
+            .padd2px{
+            padding: 2px;
+            }
+            .marginFlt{
+            float: right;
+            margin-top: -8px;
+            }
+            .marginEnd{
+            margin-top: -15px;
+            text-align: end;
+            }
+            .pdTop{
+            padding-top: 6%;
+            }
+            .pdTop11{
+            padding-top:11%;
+            }
+            .wdthTD{
+            width: 358px;
+            }
+            .vrtAlin{
+            vertical-align: bottom !important;
+            }
+        </style>
+    </head>
+    <body  onload="test()">
+        <div>
+            <apex:form >
+                <apex:pageBlock id="out">
+                    <apex:pageBlockSection collapsible="false" id="text">
+                        <a>
+                            <apex:outputPanel rendered="{!if((renderType != 'PDF' ),'true','false')}">
+                                <p Class="fntChng">
+                                    Kindly Select the Template
+                                </p>
+                                <apex:selectList size="1" value="{!selectedname}" multiselect="false " required="true"> 
+                                    <apex:selectOptions value="{!lstnamesel}"/>  
+                                    <apex:actionSupport oncomplete="test();"  event="onchange" reRender="text" action="{!passValueToController}"/>
+                                </apex:selectList>
+                            </apex:outputPanel>
+                            
+                        </a>
+                        <!--Clinic B2B-->
+                        
+                        <apex:outputPanel rendered="{!if((fieldValue == 'Clinic B2B' ),'true','false')}" > 
+                            <table Class="customWidth">
+                                <tr>
+                                    <td class="wdthTD"><div class="">
+                                        <apex:image id="theImags_Clg_Logo" value="{!$Resource.Logo}"/>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td Class="pdTop fntWt">Code correspondant :</td>
+                                    <td Class="pdTop fntWt txtAlnEnd">69B04</td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td style="width:51%; padding-bottom: 4%;">
+                                        <div class="fntWt floatWidth">
+                                            <p>N° Ordinal :</p>
+                                            <p>ZAC DU MOULIN DE MASSY</p>
+                                            <p>10 RUE DU SAULE TRAPU</p>
+                                            <p>91300 MASSY</p>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <div class="">
+                                            <div class="fntChng marginNegative">
+                                                <div Class="brdr mrgn2">
+                                                    <div class="txtCntr padd6">
+                                                        <p>{!accountName}</p>
+                                                    </div>
+                                                    <div class="txtCntr padd6">
+                                                        <p>{!billingStreet}</p>
+                                                    </div>
+                                                    <div class="txtCntr padd6 pdBtm">
+                                                        <p>
+                                                            {!billingCityCode}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td Class="wdth"></td>
+                                    <td class="fntChng txtAlnEnd paddLeftRt">
+                                        du 1 February 2022
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td Class="brdrTop brdrBotm brdrLft paddtopLefrBtm">
+                                        FACTURE N°
+                                    </td>
+                                    <td class="brdrTop brdrBotm brdrRit txtAlnEnd">
+                                    </td>
+                                    <td class=" fntChng paddLft3">
+                                        REF COMMANDE : champs commentaire commande
+                                    </td>
+                                    <td >
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td Class="paddtopLefrBtm">
+                                        VOS REFERENCES :
+                                    </td>
+                                    <td class="txtAlnEnd">
+                                        "champs SGL"
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td Class="paddtopLefrBtm paddBtm">
+                                        Nombre de dossier :
+                                    </td>
+                                    <td class="txtAlnEnd">
+                                        {!numberOfOrders}
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <th Class="brdr txtCntr">NOM DU PROPRIETAIRE</th>
+                                    <th Class="brdr txtCntr">ANIMAL</th>
+                                    <th Class="brdr txtCntr">N° Dossier</th>
+                                    <th Class="brdr txtCntr">Qté</th>
+                                    <th Class="brdr txtCntr">Montant Facturé HT</th>
+                                </tr>
+                                
+                                <tbody Class="brdr">
+                                    <apex:repeat value="{!orderList}" var="con">
+                                        <tr >
+                                            <td Class="brdrRit brdrLft fntChng">
+                                                <div >
+                                                    {!con.owner.name}
+                                                </div>
+                                                <apex:repeat value="{!con.OrderItems}" var="items" id="theRepeat">
+                                                    <div >
+                                                        <div > -
+                                                            <apex:outputText value="{!items.Product2.ProductCode}" /><br/>
+                                                        </div>
+                                                    </div>
+                                                </apex:repeat>                                                
+                                            </td>
+                                            <td  Class="brdrRit brdrLft fntChng"> {!con.Animal_Name__c}</td>
+                                            <td  Class="brdrRit brdrLft fntChng txtCntr">{!con.OrderNumber}</td>
+                                            <td  Class="brdrRit brdrLft fntChng txtCntr">1</td>
+                                            <td  Class="brdrRit brdrLft fntChng txtAlnEnd">{!con.TotalAmount} {!symbol}</td>
+                                        </tr>  
+                                    </apex:repeat>
+                                    <tr>
+                                        <td  Class="brdrRit brdrLft pd2">Remise commerciale accordée</td>
+                                        <td  Class="brdrRit brdrLft"></td>
+                                        <td  Class="brdrRit brdrLft txtCntr">-</td>
+                                        <td  Class="brdrRit brdrLft txtCntr">-</td>
+                                        <td  Class="brdrRit brdrLft txtAlnEnd">-{!discount} {!symbol}</td>
+                                    </tr>
+                                    <tr>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng pd2">Frais d'envoi</td>
+                                        <td  Class="brdrRit brdrLft brdrBotm"></td>
+                                        <td  Class="brdrRit brdrLft brdrBotm"></td>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng txtCntr">{!numberOfOrders}</td>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng txtAlnEnd">{!shippingCost} {!symbol}</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td ></td>
+                                        <td ></td>
+                                        <td Class="padd6 brdrLft brdrBotm fntChng"> Montant des examens HT</td>
+                                        <td Class="brdrBotm"></td>
+                                        <td Class="padd6 brdrLft brdrBotm brdrRit fntChng txtAlnEnd">{!totalAmountWithoutTVA} {!symbol}</td>
+                                    </tr>
+                                    <tr>
+                                        <td ></td>
+                                        <td ></td>
+                                        <td Class="padd6 brdrLft brdrBotm fntChng">TVA {!TVA}%</td>
+                                        <td Class="brdrBotm"></td>
+                                        <td Class="padd6 brdrLft brdrBotm brdrRit fntChng txtAlnEnd">{!TVAAmount} {!symbol}</td>
+                                    </tr>
+                                    <tr>
+                                        <td ></td>
+                                        <td ></td>
+                                        <td Class="padd6 brdrLft brdrBotm fntChng"> MONTANT TOTAL A PAYER TTC</td>
+                                        <td Class="brdrBotm"></td>
+                                        <td Class="padd6 brdrLft brdrBotm brdrRit fntChng txtAlnEnd">{!totalAmountWithTVA} {!symbol}</td>
+                                    </tr>
+                                </tbody>
+                                
+                                
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td>
+                                        <div class="paddBtm">
+                                            Paiement comptant à réception de facture
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="txtUnderline pd4">
+                                            Mode de règlement : a réception de facture par chèque, virement, ou carte bancaire
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fntWt pd4">
+                                            Règlement à adresser au service comptabilité :
+                                        </div>
+                                        <div class="fntWt pd4">
+                                            CERBAVET - ZAC DU MOULIN DE MASSY - 10 RUE DU SAULE TRAPU - 91300 MASSY
+                                        </div>
+                                        <div Class="padd6">
+                                            <p style="color: #E44600; font-weight: bold;">
+                                                ATTENTION
+                                            </p>  
+                                            <p style="color: #E44600; font-weight: bold;">
+                                                NOUVELLE COORDONNÉE BANCAIRE:
+                                            </p> 
+                                            <p Class="fntChng">
+                                                LCL
+                                            </p>
+                                            <p Class="fntChng">
+                                                IBAN :  FR21 3000 2056 8400 0007 0220 E72
+                                            </p>
+                                            <p Class="fntChng">
+                                                BIC : CRLYFRPP
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            Toute réclamation concernant le contenu de cette facture devra être formulée sous deux mois à date de réception de la facture.
+                                            Aucune réclamation ne pourra être prise en compte après cette date. 
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            En cas de retard, les pénalités seront calculées sur la base de 3 fois le taux légal. Le montant de l'indemnité forfaitaire pour frais de recouvrement prévue à l'article L.411-6 alinéa 12 du code du commerce est fixé à 40 euros.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            Afin d'éviter toute relance, merci d'indiquer systématiquement la référence de ce courrier dans le libellé de votre réglèment 
+                                            ou au dos de votre chèque. 
+                                        </p>
+                                    </td>
+                                </tr>  
+                                
+                            </table>
+                            <apex:commandButton value="Generate As PDF" action="{!renderAsPDF}" >
+                                
+                                <apex:actionSupport rerender="wrapq"/>
+                            </apex:commandButton>
+                        </apex:outputPanel>
+                        
+                        <!--Clinic B2B VAT export-->
+                        
+                        <apex:outputPanel rendered="{!if((fieldValue == 'Clinic B2B VAT export' ),'true','false')}" > 
+                            <table Class="customWidth">
+                                <tr>
+                                    <td class="wdthTD"><div class="">
+                                        <apex:image id="theImags_Clg2_Logo" value="{!$Resource.Logo}"/>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td Class="pdTop fntWt">Code correspondant :</td>
+                                    <td Class="pdTop fntWt txtAlnEnd">69B04</td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td style="width:51%; padding-bottom: 4%;">
+                                        <div class="fntWt floatWidth">
+                                            <p>N° Ordinal :</p>
+                                            <p>ZAC DU MOULIN DE MASSY</p>
+                                            <p>10 RUE DU SAULE TRAPU</p>
+                                            <p>91300 MASSY</p>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <div class="">
+                                            <div class="fntChng marginNegative">
+                                                <div Class="brdr mrgn2">
+                                                    <div class="txtCntr padd6">
+                                                        <p>{!accountName}</p>
+                                                    </div>
+                                                    <div class="txtCntr padd6">
+                                                        <p>{!billingStreet}</p>
+                                                    </div>
+                                                    <div class="txtCntr padd6 pdBtm">
+                                                        <p>
+                                                            {!billingCityCode}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td Class="wdth"></td>
+                                    <td class="fntChng txtAlnEnd paddLeftRt">
+                                        du 1 February 2022
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td Class="brdrTop brdrBotm brdrLft paddtopLefrBtm">
+                                        FACTURE N°
+                                    </td>
+                                    <td class="brdrTop brdrBotm brdrRit txtAlnEnd">
+                                    </td>
+                                    <td class=" fntChng paddLft3">
+                                        REF COMMANDE : champs commentaire commande
+                                    </td>
+                                    <td >
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td Class="paddtopLefrBtm">
+                                        VOS REFERENCES :
+                                    </td>
+                                    <td class="txtAlnEnd">
+                                        "champs SGL"
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td Class="paddtopLefrBtm paddBtm">
+                                        Nombre de dossier :
+                                    </td>
+                                    <td class="txtAlnEnd">
+                                        {!numberOfOrders}
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <th Class="brdr txtCntr">NOM DU PROPRIETAIRE</th>
+                                    <th Class="brdr txtCntr">ANIMAL</th>
+                                    <th Class="brdr txtCntr">N° Dossier</th>
+                                    <th Class="brdr txtCntr">Qté</th>
+                                    <th Class="brdr txtCntr">Montant Facturé HT</th>
+                                </tr>
+                                
+                                <tbody Class="brdr">
+                                    <apex:repeat value="{!orderList}" var="con">
+                                        <tr >
+                                            <td Class="brdrRit brdrLft fntChng">
+                                                <div >
+                                                    {!con.owner.name}
+                                                </div>
+                                                <apex:repeat value="{!con.OrderItems}" var="items" id="theRepeat">
+                                                    <div >
+                                                        <div > -
+                                                            <apex:outputText value="{!items.Product2.ProductCode}" /><br/>
+                                                        </div>
+                                                    </div>
+                                                </apex:repeat>                                                
+                                            </td>
+                                            <td  Class="brdrRit brdrLft fntChng"> {!con.Animal_Name__c}</td>
+                                            <td  Class="brdrRit brdrLft fntChng txtCntr">{!con.OrderNumber}</td>
+                                            <td  Class="brdrRit brdrLft fntChng txtCntr">1</td>
+                                            <td  Class="brdrRit brdrLft fntChng txtAlnEnd">{!con.TotalAmount} {!symbol}</td>
+                                        </tr>  
+                                    </apex:repeat>
+                                    <tr>
+                                        <td  Class="brdrRit brdrLft pd2">Remise commerciale accordée</td>
+                                        <td  Class="brdrRit brdrLft"></td>
+                                        <td  Class="brdrRit brdrLft txtCntr">-</td>
+                                        <td  Class="brdrRit brdrLft txtCntr">-</td>
+                                        <td  Class="brdrRit brdrLft txtAlnEnd">-{!discount} {!symbol}</td>
+                                    </tr>
+                                    <tr>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng pd2">Frais d'envoi</td>
+                                        <td  Class="brdrRit brdrLft brdrBotm"></td>
+                                        <td  Class="brdrRit brdrLft brdrBotm"></td>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng txtCntr">{!numberOfOrders}</td>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng txtAlnEnd">{!shippingCost} {!symbol}</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td ></td>
+                                        <td ></td>
+                                        <td Class="padd6 brdrLft brdrBotm fntChng"> MONTANT TOTAL A PAYER TTC</td>
+                                        <td Class="brdrBotm"></td>
+                                        <td Class="padd6 brdrLft brdrBotm brdrRit fntChng txtAlnEnd">{!totalAmountWithTVA} {!symbol}</td>
+                                    </tr>
+                                </tbody>
+                                
+                                
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td>
+                                        <div class="paddBtm paddTop">
+                                            Hors du champs d'application de la TVA Francaise - Article 259.1° du CGI
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="paddBtm">
+                                            Paiement comptant à réception de facture
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="txtUnderline pd4">
+                                            Mode de règlement : a réception de facture par chèque, virement, ou carte bancaire
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fntWt pd4">
+                                            Règlement à adresser au service comptabilité :
+                                        </div>
+                                        <div class="fntWt pd4">
+                                            CERBAVET - ZAC DU MOULIN DE MASSY - 10 RUE DU SAULE TRAPU - 91300 MASSY
+                                        </div>
+                                        <div Class="padd6">
+                                             <p style="text-decoration: underline !important; padding-top:4px;">
+                                                Coordonnées bancaire :
+                                            </p>
+                                            <p style="color: #E44600; font-weight: bold;">
+                                                ATTENTION
+                                            </p>  
+                                            <p style="color: #E44600; font-weight: bold;">
+                                                NOUVELLE COORDONNÉE BANCAIRE:
+                                            </p>                            
+                                            <p Class="fntChng">
+                                                LCL
+                                            </p>
+                                            <p Class="fntChng">
+                                                IBAN :  FR21 3000 2056 8400 0007 0220 E72
+                                            </p>
+                                            <p Class="fntChng">
+                                                BIC : CRLYFRPP
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            Toute réclamation concernant le contenu de cette facture devra être formulée sous deux mois à date de réception de la facture.
+                                            Aucune réclamation ne pourra être prise en compte après cette date. 
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            En cas de retard, les pénalités seront calculées sur la base de 3 fois le taux légal. Le montant de l'indemnité forfaitaire pour frais de recouvrement prévue à l'article L.411-6 alinéa 12 du code du commerce est fixé à 40 euros.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            Afin d'éviter toute relance, merci d'indiquer systématiquement la référence de ce courrier dans le libellé de votre réglèment 
+                                            ou au dos de votre chèque. 
+                                        </p>
+                                    </td>
+                                </tr>  
+                                
+                            </table>
+                            <apex:commandButton value="Generate As PDF" action="{!renderAsPDF}" >
+                                
+                                <apex:actionSupport rerender="wrapq"/>
+                            </apex:commandButton>
+                        </apex:outputPanel>
+                        
+                        <!--Invoice TO BE PAID Pet Owner B2C-->
+                        
+                        <apex:outputPanel rendered="{!if((fieldValue == 'Invoice TO BE PAID Pet Owner B2C' ),'true','false')}" > 
+                            <table Class="customWidth">
+                                <tr>
+                                    <td class="wdthTD"><div class="">
+                                        <apex:image id="theIm2ags_Clg2_Logo" value="{!$Resource.Logo}"/>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td ></td>
+                                    <td ></td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td style="width:51%; padding-bottom: 4%;">
+                                        <div class="fntWt floatWidth">
+                                            <p>N° Ordinal :</p>
+                                            <p>ZAC DU MOULIN DE MASSY</p>
+                                            <p>10 RUE DU SAULE TRAPU</p>
+                                            <p>91300 MASSY</p>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <div class="">
+                                            <div class="fntChng marginNegative">
+                                                <div Class="brdr mrgn2">
+                                                    <div class="txtCntr padd6">
+                                                        <p>{!accountName}</p>
+                                                    </div>
+                                                    <div class="txtCntr padd6 ">
+                                                        <p>{!billingStreet}</p>
+                                                    </div>
+                                                    <div class="txtCntr padd6 pdBtm">
+                                                        <p>
+                                                            {!billingCityCode}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td Class="brdr paddtopLefrBtm">
+                                        FACTURE N°
+                                    </td>
+                                    <td class="brdrTop brdrBotm brdrRit txtAlnEnd paddtopLefrBtm" style="width:150px;">
+                                        16/02/22-1-0610
+                                    </td>
+                                    <td></td>
+                                    <td style="width:300px;"></td>
+                                    <td class="fntChng txtAlnEnd paddLeftRt">
+                                        du 1 February 2022
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td Class="paddtopLefrBtm">
+                                    </td>
+                                    <td class="" style="width:150px;">
+                                    </td>
+                                    <td></td>
+                                    <td style="width:300px;"></td>
+                                    <td class="">
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                            
+                            <table Class="customWidth">
+                                <tr>
+                                    <th Class="brdr txtCntr">Propriétaire</th>
+                                    <th Class="brdr txtCntr">N° Dossier</th>
+                                    <th Class="brdr txtCntr">Qté</th>
+                                    <th Class="brdr txtCntr">Montant Facturé HT</th>
+                                </tr>
+                                <tr>
+                                    <td Class="brdrRit brdrLft "><p>
+                                        Nous avons réceptionné des analyses le 16/02/2022
+                                        </p>
+                                        <p>
+                                            prescrites par votre CLIN VET JOFFRE
+                                        </p>
+                                        <p>
+                                            pour le chien Ilky
+                                        </p>
+                                        <p>
+                                            Montant des Examens :
+                                        </p>
+                                    </td>
+                                    <td Class="fntChng brdrRit txtCntr vrtAlin"> 16/02/22-1-0610</td>
+                                    <td Class="brdrRit"></td>
+                                    <td Class="fntChng brdrRit txtAlnEnd"></td>
+                                </tr>
+                                <tbody Class="">
+                                    <apex:repeat value="{!orderList}" var="con">
+                                        <tr >
+                                            <td Class="brdrRit brdrLft fntChng">
+                                                <div >
+                                                    * code examen
+                                                </div>                                              
+                                            </td>
+                                            <td  Class="brdrRit brdrLft fntChng txtCntr"></td>
+                                            <td  Class="brdrRit brdrLft fntChng txtCntr">1</td>
+                                            <td  Class="brdrRit brdrLft fntChng txtAlnEnd">{!con.TotalAmount} {!symbol}</td>
+                                        </tr>  
+                                    </apex:repeat>
+                                    <tr>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng pd2"></td>
+                                        <td  Class="brdrRit brdrLft brdrBotm"></td>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng txtCntr"></td>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng txtAlnEnd"></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td ></td>
+                                        <td Class="padd6 brdrLft brdrBotm fntChng"> Montant HT</td>
+                                        <td Class="brdrBotm"></td>
+                                        <td Class="padd6 brdrLft brdrBotm brdrRit fntChng txtAlnEnd">{!totalAmountWithoutTVA} {!symbol}</td>
+                                    </tr>
+                                    <tr>
+                                        <td ></td>
+                                        <td Class="padd6 brdrLft brdrBotm fntChng">TVA {!TVA}%</td>
+                                        <td Class="brdrBotm"></td>
+                                        <td Class="padd6 brdrLft brdrBotm brdrRit fntChng txtAlnEnd">{!TVAAmount} {!symbol}</td>
+                                    </tr>
+                                    <tr>
+                                        <td ></td>
+                                        <td Class="padd6 brdrLft brdrBotm fntChng"> MONTANT TOTAL A PAYER TTC</td>
+                                        <td Class="brdrBotm"></td>
+                                        <td Class="padd6 brdrLft brdrBotm brdrRit fntChng txtAlnEnd">{!totalAmountWithTVA} {!symbol}</td>
+                                    </tr>
+                                </tbody>
+                                
+                                
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td>
+                                        <div class="paddBtm paddTop">
+                                            Paiement comptant à réception de facture
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="paddBtm">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="txtUnderline pd4">
+                                            Mode de règlement : a réception de facture par chèque, virement, ou carte bancaire
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            Toute réclamation concernant le contenu de cette facture devra être formulée sous deux mois à date de réception de la facture.
+                                            Aucune réclamation ne pourra être prise en compte après cette date. 
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            En cas de retard, les pénalités seront calculées sur la base de 3 fois le taux légal. Le montant de l'indemnité forfaitaire pour frais de recouvrement prévue à l'article L.411-6 alinéa 12 du code du commerce est fixé à 40 euros.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            Afin d'éviter toute relance, merci d'indiquer systématiquement la référence de ce courrier dans le libellé de votre réglèment 
+                                            ou au dos de votre chèque. 
+                                        </p>
+                                    </td>
+                                </tr>  
+                                
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td class="txtCntr fntWt pd2">
+                                        ******************COUPON REGLEMENT******************
+                                    </td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <div class="fntChng">
+                                    REFERENCE A RAPPELER : "N°facture"
+                                </div>
+                            </table>
+                            <table Class="customWidth">
+                                
+                                <tr>
+                                    <td class="txtCntr brdr backgrndDark padd2px">
+                                        <p>FLASHEZ POUR PAYER PAR</p>
+                                        <p>CARTE BANCAIRE</p>
+                                        <p>ou Appeler le 01 81 30 00 08</p>
+                                        <p>choix 2</p>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class=" brdr padd2px">
+                                        <p class="txtCntr fntChng">REGLEMENT PAR VIREMENT</p>
+                                        
+                                        <p>AttNos coordonéées bancaires :</p>
+                                        <p>LCL</p>
+                                        <p>IBAN :  FR21 3000 2056 8400 0007 0220 E72</p>
+                                        <p>BIC : CRLYFRPP</p>
+                                        <p>REFERENCE FACTURE A RAPPELER IMPERATIVEMENT</p>
+                                        
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class=" brdr padd2px">
+                                        <p Class="fntChng">REGLEMENT PAR CHEQUE A L'ORDRE DE CERBA VET</p>
+                                        <span class="">a l'adresse :</span>
+                                        <span class="marginFlt">
+                                            <p>CERBA VET</p>
+                                            <p>ZAC DU MOULIN DE MASSY</p>
+                                            <p>10 RUE DU SAULE TRAPU</p>
+                                            <p>91300 MASSY</p>
+                                            
+                                        </span>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <apex:commandButton value="Generate As PDF" action="{!renderAsPDF}" >
+                                
+                                <apex:actionSupport rerender="wrapq"/>
+                            </apex:commandButton>
+                        </apex:outputPanel>
+                        
+                        <!--Invoice PAID Pet Owner B2C-->
+                        
+                        <apex:outputPanel rendered="{!if((fieldValue == 'Invoice PAID Pet Owner B2C' ),'true','false')}" > 
+                            <table Class="customWidth">
+                                <tr>
+                                    <td class="wdthTD"><div class="">
+                                        <apex:image id="theIogo" value="{!$Resource.Logo}"/>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td ></td>
+                                    <td ></td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td style="width:51%; padding-bottom: 4%;">
+                                        <div class="fntWt floatWidth">
+                                            <p>N° Ordinal :</p>
+                                            <p>ZAC DU MOULIN DE MASSY</p>
+                                            <p>10 RUE DU SAULE TRAPU</p>
+                                            <p>91300 MASSY</p>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <div class="">
+                                            <div class="fntChng marginNegative">
+                                                <div Class="brdr mrgn2">
+                                                    <div class="txtCntr padd6">
+                                                        <p>{!accountName}</p>
+                                                    </div>
+                                                    <div class="txtCntr padd6 ">
+                                                        <p>{!billingStreet}</p>
+                                                    </div>
+                                                    <div class="txtCntr padd6 pdBtm">
+                                                        <p>
+                                                            {!billingCityCode}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td Class="brdr paddtopLefrBtm">
+                                        Status
+                                    </td>
+                                    <td class="brdrTop brdrBotm brdrRit txtAlnEnd paddtopLefrBtm" style="width:150px; ">
+                                        PAYE
+                                    </td>
+                                    <td></td>
+                                    <td style="width:300px;"></td>
+                                    <td class="fntChng txtAlnEnd paddLeftRt">
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td Class="brdr paddtopLefrBtm">
+                                        FACTURE N°
+                                    </td>
+                                    <td class="brdrTop brdrBotm brdrRit txtAlnEnd paddtopLefrBtm" style="width:150px;">
+                                        16/02/22-1-0610
+                                    </td>
+                                    <td></td>
+                                    <td style="width:300px;"></td>
+                                    <td class="fntChng txtAlnEnd paddLeftRt">
+                                        du 1 February 2022
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td Class="paddtopLefrBtm">
+                                    </td>
+                                    <td class="" style="width:150px;">
+                                    </td>
+                                    <td></td>
+                                    <td style="width:300px;"></td>
+                                    <td class="">
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                            
+                            <table Class="customWidth">
+                                <tr>
+                                    <th Class="brdr txtCntr">Propriétaire</th>
+                                    <th Class="brdr txtCntr">N° Dossier</th>
+                                    <th Class="brdr txtCntr">Qté</th>
+                                    <th Class="brdr txtCntr">Montant Facturé HT</th>
+                                </tr>
+                                <tr>
+                                    <td Class="brdrRit brdrLft "><p>
+                                        Nous avons réceptionné des analyses le 16/02/2022
+                                        </p>
+                                        <p>
+                                            prescrites par votre CLIN VET JOFFRE
+                                        </p>
+                                        <p>
+                                            pour le chien Ilky
+                                        </p>
+                                        <p>
+                                            Montant des Examens :
+                                        </p>
+                                    </td>
+                                    <td Class="fntChng brdrRit txtCntr vrtAlin"> 16/02/22-1-0610</td>
+                                    <td Class="brdrRit"></td>
+                                    <td Class="fntChng brdrRit txtAlnEnd"></td>
+                                </tr>
+                                <tbody Class="">
+                                    <apex:repeat value="{!orderList}" var="con">
+                                        <tr >
+                                            <td Class="brdrRit brdrLft fntChng">
+                                                <div >
+                                                    * code examen
+                                                </div>                                              
+                                            </td>
+                                            <td  Class="brdrRit brdrLft fntChng txtCntr"></td>
+                                            <td  Class="brdrRit brdrLft fntChng txtCntr">1</td>
+                                            <td  Class="brdrRit brdrLft fntChng txtAlnEnd">{!con.TotalAmount} {!symbol}</td>
+                                        </tr>  
+                                    </apex:repeat>
+                                    <tr>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng pd2"></td>
+                                        <td  Class="brdrRit brdrLft brdrBotm"></td>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng txtCntr"></td>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng txtAlnEnd"></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td ></td>
+                                        <td Class="padd6 brdrLft brdrBotm fntChng"> Montant HT</td>
+                                        <td Class="brdrBotm"></td>
+                                        <td Class="padd6 brdrLft brdrBotm brdrRit fntChng txtAlnEnd">{!totalAmountWithoutTVA} {!symbol}</td>
+                                    </tr>
+                                    <tr>
+                                        <td ></td>
+                                        <td Class="padd6 brdrLft brdrBotm fntChng">TVA {!TVA}%</td>
+                                        <td Class="brdrBotm"></td>
+                                        <td Class="padd6 brdrLft brdrBotm brdrRit fntChng txtAlnEnd">{!TVAAmount} {!symbol}</td>
+                                    </tr>
+                                    <tr>
+                                        <td ></td>
+                                        <td Class="padd6 brdrLft brdrBotm fntChng"> MONTANT TOTAL A PAYER TTC</td>
+                                        <td Class="brdrBotm"></td>
+                                        <td Class="padd6 brdrLft brdrBotm brdrRit fntChng txtAlnEnd">{!totalAmountWithTVA} {!symbol}</td>
+                                    </tr>
+                                </tbody>
+                                
+                                
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td>
+                                        <div class="paddBtm paddTop">
+                                            Paiement comptant à réception de facture
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="paddBtm">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="txtUnderline pd4">
+                                            Mode de règlement : a réception de facture par chèque, virement, ou carte bancaire
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            Toute réclamation concernant le contenu de cette facture devra être formulée sous deux mois à date de réception de la facture.
+                                            Aucune réclamation ne pourra être prise en compte après cette date. 
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            En cas de retard, les pénalités seront calculées sur la base de 3 fois le taux légal. Le montant de l'indemnité forfaitaire pour frais de recouvrement prévue à l'article L.411-6 alinéa 12 du code du commerce est fixé à 40 euros.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            Afin d'éviter toute relance, merci d'indiquer systématiquement la référence de ce courrier dans le libellé de votre réglèment 
+                                            ou au dos de votre chèque. 
+                                        </p>
+                                    </td>
+                                </tr>  
+                                
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td class="txtCntr fntWt pd2">
+                                        ******************COUPON REGLEMENT******************
+                                    </td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <div class="fntChng">
+                                    REFERENCE A RAPPELER : "N°facture"
+                                </div>
+                            </table>
+                            <table Class="customWidth">
+                                
+                                <tr>
+                                    <td class="txtCntr brdr backgrndDark padd2px">
+                                        <p>FLASHEZ POUR PAYER PAR</p>
+                                        <p>CARTE BANCAIRE</p>
+                                        <p>ou Appeler le 01 81 30 00 08</p>
+                                        <p>choix 2</p>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class=" brdr padd2px">
+                                        <p class="txtCntr fntChng">REGLEMENT PAR VIREMENT</p>
+                                        
+                                        <p>Nos coordonéées bancaires :</p>
+                                        <p>LCL</p>
+                                        <p>IBAN :  FR21 3000 2056 8400 0007 0220 E72</p>
+                                        <p>BIC : CRLYFRPP</p>
+                                        <p>REFERENCE FACTURE A RAPPELER IMPERATIVEMENT</p>
+                                        
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class=" brdr padd2px">
+                                        <p Class="fntChng">REGLEMENT PAR CHEQUE A L'ORDRE DE CERBA VET</p>
+                                        <span class="">a l'adresse :</span>
+                                        <span class="marginFlt">
+                                            <p>CERBA VET</p>
+                                            <p>ZAC DU MOULIN DE MASSY</p>
+                                            <p>10 RUE DU SAULE TRAPU</p>
+                                            <p>91300 MASSY</p>
+                                            
+                                        </span>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                            <apex:commandButton value="Generate As PDF" action="{!renderAsPDF}" >
+                                
+                                <apex:actionSupport rerender="wrapq"/>
+                            </apex:commandButton>
+                        </apex:outputPanel>
+                        
+                        <!--Invoice B2B Cerbavet College-->
+                        
+                        <apex:outputPanel rendered="{!if((fieldValue == 'Invoice B2B Cerbavet College' ),'true','false')}" > 
+                            <table Class="customWidth">
+                                <tr>
+                                    <td class="wdthTD"><div class="">
+                                        <apex:image id="theImags_Cwlg_Logo" width="350px;" value="{!$Resource.Clg_Logo}"/>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td Class="pdTop11 fntWt">Code correspondant :</td>
+                                    <td Class="pdTop11 fntWt txtAlnEnd">69B04</td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td style="width:51%; padding-bottom: 4%;">
+                                        <div class="fntWt floatWidth78">
+                                            <p>N° Ordinal :</p>
+                                            <p>CERBA VET COLLEGE - Organisme de formation</p>
+                                            <p>N° Enregistrement : 11910836991</p>
+                                            <p>Email : college@cerbavet.com</p>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <div class="">
+                                            <div class="fntChng marginNegative">
+                                                <div Class="brdr mrgn2">
+                                                    <div class="txtCntr padd6">
+                                                        <p>{!accountName}</p>
+                                                    </div>
+                                                    <div class="txtCntr padd6">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="txtCntr padd6 pdBtm">
+                                                        <p>
+                                                            
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td Class="wdth"></td>
+                                    <td class="fntChng txtAlnEnd paddLeftRt">
+                                        du 1 February 2022
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td Class="brdr paddtopLefrBtm">
+                                        FACTURE N°
+                                    </td>
+                                    <td class="brdrTop brdrBotm brdrRit txtAlnEnd paddtopLefrBtm" style="width:150px;">
+                                        16/02/22-1-0610
+                                    </td>
+                                    <td class=" fntChng paddLft3">
+                                        REF COMMANDE : champs commentaire commande
+                                    </td>
+                                    <td >
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td Class="paddtopLefrBtm">
+                                    </td>
+                                    <td class="txtAlnEnd">
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td Class="paddtopLefrBtm paddBtm">
+                                    </td>
+                                    <td class="txtAlnEnd">
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <th Class="brdr txtCntr">REFERENCE FORMATION</th>
+                                    <th Class="brdr txtCntr">DATE SESSION</th>
+                                    <th Class="brdr txtCntr">Qté</th>
+                                    <th Class="brdr txtCntr">Montant HT</th>
+                                </tr>
+                                
+                                <tbody Class="brdr">
+                                    <apex:repeat value="{!orderList}" var="con">
+                                        <tr >
+                                            <td Class="brdrRit brdrLft fntChng">
+                                                <div >
+                                                    {!con.owner.name}
+                                                </div>
+                                                <apex:repeat value="{!con.OrderItems}" var="items" id="theRepeat">
+                                                    <div >
+                                                        <div > -
+                                                            <apex:outputText value="{!items.Product2.ProductCode}" /><br/>
+                                                        </div>
+                                                    </div>
+                                                </apex:repeat>                                                
+                                            </td>
+                                            <td  Class="brdrRit brdrLft fntChng txtCntr">{!con.OrderNumber}</td>
+                                            <td  Class="brdrRit brdrLft fntChng txtCntr">1</td>
+                                            <td  Class="brdrRit brdrLft fntChng txtAlnEnd">{!con.TotalAmount} {!symbol}</td>
+                                        </tr>  
+                                    </apex:repeat>
+                                    <tr>
+                                        <td  Class="brdrRit brdrLft pd2">Remise commerciale accordée</td>
+                                        <td  Class="brdrRit brdrLft txtCntr">-</td>
+                                        <td  Class="brdrRit brdrLft txtCntr">-</td>
+                                        <td  Class="brdrRit brdrLft txtAlnEnd">-{!discount} {!symbol}</td>
+                                    </tr>
+                                    <tr>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng pd2">Frais d'envoi</td>
+                                        <td  Class="brdrRit brdrLft brdrBotm"></td>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng txtCntr">{!numberOfOrders}</td>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng txtAlnEnd">{!shippingCost} {!symbol}</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td ></td>
+                                        <td Class="padd6 brdrLft brdrBotm fntChng"> Montant des examens HT</td>
+                                        <td Class="brdrBotm"></td>
+                                        <td Class="padd6 brdrLft brdrBotm brdrRit fntChng txtAlnEnd">{!totalAmountWithoutTVA} {!symbol}</td>
+                                    </tr>
+                                    <tr>
+                                        <td ></td>
+                                        <td Class="padd6 brdrLft brdrBotm fntChng">TVA {!TVA}%</td>
+                                        <td Class="brdrBotm"></td>
+                                        <td Class="padd6 brdrLft brdrBotm brdrRit fntChng txtAlnEnd">{!TVAAmount} {!symbol}</td>
+                                    </tr>
+                                    <tr>
+                                        <td ></td>
+                                        <td Class="padd6 brdrLft brdrBotm fntChng"> MONTANT TOTAL A PAYER TTC</td>
+                                        <td Class="brdrBotm"></td>
+                                        <td Class="padd6 brdrLft brdrBotm brdrRit fntChng txtAlnEnd">{!totalAmountWithTVA} {!symbol}</td>
+                                    </tr>
+                                </tbody>
+                                
+                                
+                            </table>
+                            <table Class="customWidth">
+                               
+                                <tr>
+                                    <td>
+                                        <div class="txtUnderline pd4">
+                                            Mode de règlement : a réception de facture par chèque, virement, ou carte bancaire
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fntWt pd4">
+                                            Règlement à adresser au service comptabilité :
+                                        </div>
+                                        <div class="fntWt pd4">
+                                            CERBAVET - ZAC DU MOULIN DE MASSY - 10 RUE DU SAULE TRAPU - 91300 MASSY
+                                        </div>
+                                        <div Class="padd6">
+                                             <p style="text-decoration: underline !important; padding-top:4px;">
+                                                Coordonnées bancaire :
+                                            </p>
+                                            <p style="color: #E44600; font-weight: bold;">
+                                                ATTENTION
+                                            </p>  
+                                            <p style="color: #E44600; font-weight: bold;">
+                                                NOUVELLE COORDONNÉE BANCAIRE:
+                                            </p> 
+                                            <p Class="fntChng">
+                                                LCL
+                                            </p>
+                                            <p Class="fntChng">
+                                                IBAN :  FR21 3000 2056 8400 0007 0220 E72
+                                            </p>
+                                            <p Class="fntChng">
+                                                BIC : CRLYFRPP
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            Toute réclamation concernant le contenu de cette facture devra être formulée sous deux mois à date de réception de la facture.
+                                            Aucune réclamation ne pourra être prise en compte après cette date. 
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            En cas de retard, les pénalités seront calculées sur la base de 3 fois le taux légal. Le montant de l'indemnité forfaitaire pour frais de recouvrement prévue à l'article L.411-6 alinéa 12 du code du commerce est fixé à 40 euros.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            Afin d'éviter toute relance, merci d'indiquer systématiquement la référence de ce courrier dans le libellé de votre réglèment 
+                                            ou au dos de votre chèque. 
+                                        </p>
+                                    </td>
+                                </tr>  
+                                
+                            </table>
+                            <apex:commandButton value="Generate As PDF" action="{!renderAsPDF}" >
+                                
+                                <apex:actionSupport rerender="wrapq"/>
+                            </apex:commandButton>
+                        </apex:outputPanel>
+                        
+                        <!--Clinic B2B FOR Groups of Clinic-->
+                        
+                        <apex:outputPanel rendered="{!if((fieldValue == 'Clinic B2B FOR Groups of Clinic' ),'true','false')}" > 
+                            <table Class="customWidth">
+                                <tr>
+                                    <td class="wdthTD"><div class="">
+                                        <apex:image id="theIs_Clg_Logo" value="{!$Resource.Logo}"/>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td Class="pdTop fntWt">Code correspondant :</td>
+                                    <td Class="pdTop fntWt txtAlnEnd">69B04</td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td style="width:51%; padding-bottom: 4%;">
+                                        <div class="fntWt floatWidth">
+                                            <p>N° Ordinal :</p>
+                                            <p>ZAC DU MOULIN DE MASSY</p>
+                                            <p>10 RUE DU SAULE TRAPU</p>
+                                            <p>91300 MASSY</p>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <div class="">
+                                            <div class="fntChng marginNegative">
+                                                <div Class="brdr mrgn2">
+                                                    <div class="txtCntr padd6">
+                                                        <p>{!accountName}</p>
+                                                    </div>
+                                                    <div class="txtCntr padd6">
+                                                        <p>{!billingStreet}</p>
+                                                    </div>
+                                                    <div class="txtCntr padd6 pdBtm">
+                                                        <p>
+                                                            {!billingCityCode}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td Class="wdth"></td>
+                                    <td class="fntChng txtAlnEnd paddLeftRt">
+                                        du 1 February 2022
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td Class="brdrTop brdrBotm brdrLft paddtopLefrBtm">
+                                        FACTURE N°
+                                    </td>
+                                    <td class="brdrTop brdrBotm brdrRit txtAlnEnd">
+                                    </td>
+                                    <td class=" fntChng paddLft3">
+                                        REF COMMANDE : champs commentaire commande
+                                    </td>
+                                    <td >
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td Class="paddtopLefrBtm">
+                                        VOS REFERENCES :
+                                    </td>
+                                    <td class="txtAlnEnd">
+                                        "champs SGL"
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td Class="paddtopLefrBtm paddBtm">
+                                        Nombre de dossier :
+                                    </td>
+                                    <td class="txtAlnEnd">
+                                        {!numberOfOrders}
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <th Class="brdr txtCntr">NOM DU PROPRIETAIRE</th>
+                                    <th Class="brdr txtCntr">ANIMAL</th>
+                                    <th Class="brdr txtCntr">N° Dossier</th>
+                                    <th Class="brdr txtCntr">Qté</th>
+                                    <th Class="brdr txtCntr">Montant Facturé HT</th>
+                                </tr>
+                                
+                                <tbody Class="brdr">
+                                    <apex:repeat value="{!orderList}" var="con">
+                                        <tr >
+                                            <td Class="brdrRit brdrLft fntChng">
+                                                <div >
+                                                    {!con.owner.name}
+                                                </div>
+                                                <apex:repeat value="{!con.OrderItems}" var="items" id="theRepeat">
+                                                    <div >
+                                                        <div > -
+                                                            <apex:outputText value="{!items.Product2.ProductCode}" /><br/>
+                                                        </div>
+                                                    </div>
+                                                </apex:repeat>                                                
+                                            </td>
+                                            <td  Class="brdrRit brdrLft fntChng"> {!con.Animal_Name__c}</td>
+                                            <td  Class="brdrRit brdrLft fntChng txtCntr">{!con.OrderNumber}</td>
+                                            <td  Class="brdrRit brdrLft fntChng txtCntr">1</td>
+                                            <td  Class="brdrRit brdrLft fntChng txtAlnEnd">{!con.TotalAmount} {!symbol}</td>
+                                        </tr>  
+                                    </apex:repeat>
+                                    <tr>
+                                        <td  Class="brdrRit brdrLft pd2">Remise commerciale accordée</td>
+                                        <td  Class="brdrRit brdrLft"></td>
+                                        <td  Class="brdrRit brdrLft txtCntr">-</td>
+                                        <td  Class="brdrRit brdrLft txtCntr">-</td>
+                                        <td  Class="brdrRit brdrLft txtAlnEnd">-{!discount} {!symbol}</td>
+                                    </tr>
+                                    <tr>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng pd2">Frais d'envoi</td>
+                                        <td  Class="brdrRit brdrLft brdrBotm"></td>
+                                        <td  Class="brdrRit brdrLft brdrBotm"></td>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng txtCntr">{!numberOfOrders}</td>
+                                        <td  Class="brdrRit brdrLft brdrBotm fntChng txtAlnEnd">{!shippingCost} {!symbol}</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td ></td>
+                                        <td ></td>
+                                        <td Class="padd6 brdrLft brdrBotm fntChng"> Montant des examens HT</td>
+                                        <td Class="brdrBotm"></td>
+                                        <td Class="padd6 brdrLft brdrBotm brdrRit fntChng txtAlnEnd">{!totalAmountWithoutTVA} {!symbol}</td>
+                                    </tr>
+                                    <tr>
+                                        <td ></td>
+                                        <td ></td>
+                                        <td Class="padd6 brdrLft brdrBotm fntChng">TVA {!TVA}%</td>
+                                        <td Class="brdrBotm"></td>
+                                        <td Class="padd6 brdrLft brdrBotm brdrRit fntChng txtAlnEnd">{!TVAAmount} {!symbol}</td>
+                                    </tr>
+                                    <tr>
+                                        <td ></td>
+                                        <td ></td>
+                                        <td Class="padd6 brdrLft brdrBotm fntChng"> MONTANT TOTAL A PAYER TTC</td>
+                                        <td Class="brdrBotm"></td>
+                                        <td Class="padd6 brdrLft brdrBotm brdrRit fntChng txtAlnEnd">{!totalAmountWithTVA} {!symbol}</td>
+                                    </tr>
+                                </tbody>
+                                
+                                
+                            </table>
+                            <table Class="customWidth">
+                                <tr>
+                                    <td>
+                                        <div class="paddBtm">
+                                            Paiement comptant à réception de facture
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="txtUnderline pd4">
+                                            Mode de règlement : a réception de facture par chèque, virement, ou carte bancaire
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fntWt pd4">
+                                            Règlement à adresser au service comptabilité :
+                                        </div>
+                                        <div class="fntWt pd4">
+                                            CERBAVET - ZAC DU MOULIN DE MASSY - 10 RUE DU SAULE TRAPU - 91300 MASSY
+                                        </div>
+                                        <div Class="padd6">
+                                             <p style="text-decoration: underline !important; padding-top:4px;">
+                                                Coordonnées bancaire :
+                                            </p>
+                                            <p style="color: #E44600; font-weight: bold;">
+                                                ATTENTION
+                                            </p>  
+                                            <p style="color: #E44600; font-weight: bold;">
+                                                NOUVELLE COORDONNÉE BANCAIRE:
+                                            </p>                          
+                                            <p Class="fntChng">
+                                                LCL
+                                            </p>
+                                            <p Class="fntChng">
+                                                IBAN :  FR21 3000 2056 8400 0007 0220 E72
+                                            </p>
+                                            <p Class="fntChng">
+                                                BIC : CRLYFRPP
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            Toute réclamation concernant le contenu de cette facture devra être formulée sous deux mois à date de réception de la facture.
+                                            Aucune réclamation ne pourra être prise en compte après cette date. 
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            En cas de retard, les pénalités seront calculées sur la base de 3 fois le taux légal. Le montant de l'indemnité forfaitaire pour frais de recouvrement prévue à l'article L.411-6 alinéa 12 du code du commerce est fixé à 40 euros.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p Class="padd6">
+                                            Afin d'éviter toute relance, merci d'indiquer systématiquement la référence de ce courrier dans le libellé de votre réglèment 
+                                            ou au dos de votre chèque. 
+                                        </p>
+                                    </td>
+                                </tr>  
+                                
+                            </table>
+                            <apex:commandButton value="Generate As PDF" action="{!renderAsPDF}" >
+                                
+                                <apex:actionSupport rerender="wrapq"/>
+                            </apex:commandButton>
+                        </apex:outputPanel>
+                    
+                    </apex:pageBlockSection>
+                </apex:pageBlock>  
+            </apex:form>
+        </div>
+    </body>
+</apex:page>

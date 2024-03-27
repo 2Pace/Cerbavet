@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubContracting__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Ce champ permet de mettre en avant dans l&#39;application OCO (Ordonnance Connectée) si l&#39;examen requiert une sous traitance.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Ce champ permet de mettre en avant dans l&#39;application OCO (Ordonnance Connectée) si l&#39;examen requiert une sous traitance.</inlineHelpText>
+    <label>Analyse Sous-traitée</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

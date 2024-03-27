@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CL_Mensualite</fullName>
+    <fields>Name</fields>
+    <fields>Date_de_la_mensualite__c</fields>
+    <fields>Montant_provisionne_TTC__c</fields>
+    <fields>Cout_de_transport__c</fields>
+    <fields>Statut__c</fields>
+    <fields>Icone_Statut__c</fields>
+    <label>CL.Mensualité</label>
+</CompactLayout>

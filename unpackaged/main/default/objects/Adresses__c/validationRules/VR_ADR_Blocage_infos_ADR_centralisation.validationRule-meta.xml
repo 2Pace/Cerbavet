@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_ADR_Blocage_infos_ADR_centralisation</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+
+OR(
+NOT(ISBLANK(Numero_de_bureau_de_centralisation__c)),
+NOT(ISBLANK(Numero_de_tournee_de_centralisation__c))
+), 
+Est_une_adresse_de_centralisation__c = false
+)</errorConditionFormula>
+    <errorMessage>Merci de ne pas renseigner le numéro de bureau/tournée de centralisation s&#39;il ne s&#39;agit pas d&#39;une adresse de centralisation. Si c&#39;est le cas, merci de cocher la case &quot;Est une adresse de centralisation&quot; avant de renseigner ces numéros</errorMessage>
+</ValidationRule>

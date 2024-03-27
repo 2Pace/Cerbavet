@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Laboratoire --></label>
+        <name>Laboratoire__c</name>
+        <picklistValues>
+            <masterLabel>- A définir</masterLabel>
+            <translation><!-- - A définir --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANTAGENE</masterLabel>
+            <translation><!-- ANTAGENE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerba Spécialité</masterLabel>
+            <translation><!-- Cerba Spécialité --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerba Vet MASSY</masterLabel>
+            <translation><!-- Cerba Vet MASSY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cerballiance LIsieux</masterLabel>
+            <translation><!-- Cerballiance LIsieux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GENEFAST</masterLabel>
+            <translation><!-- GENEFAST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LABEO</masterLabel>
+            <translation><!-- LABEO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LABOKLIN</masterLabel>
+            <translation><!-- LABOKLIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAPVSO</masterLabel>
+            <translation><!-- LAPVSO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LVD 31</masterLabel>
+            <translation><!-- LVD 31 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCANELIS</masterLabel>
+            <translation><!-- SCANELIS --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

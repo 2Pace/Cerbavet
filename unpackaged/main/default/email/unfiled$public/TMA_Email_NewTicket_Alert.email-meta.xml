@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Cerba_HC</letterhead>
+    <name>TMA-Email_NewTicket_Alert</name>
+    <style>freeForm</style>
+    <subject>[CERBA VET] : Nouveau ticket</subject>
+    <textOnly>Hello,
+
+Un nouveau ticket a été créé.
+Voir ci-dessous pour plus de détails.
+
+Lien: https://cerbahealthcare.lightning.force.com/lightning/r/TMA__c/{!TMA__c.Id}/view
+Numéro : {!TMA__c.Name}
+Assigné à : {!TMA__c.Assigned_To__c}
+Priorité : {!TMA__c.Priority__c}
+
+Type : {!TMA__c.Type__c}
+Sujet : {!TMA__c.Subject__c}
+
+
+Merci.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

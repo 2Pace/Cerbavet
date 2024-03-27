@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mes_passages</fullName>
+    <columns>NAME</columns>
+    <columns>Tournee__c</columns>
+    <columns>Date_de_mise_en_place__c</columns>
+    <columns>Adresse__c</columns>
+    <columns>Heure_de_passage__c</columns>
+    <columns>Les_jours__c</columns>
+    <columns>Les_raisons__c</columns>
+    <columns>Statut__c</columns>
+    <columns>Icone_statut__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>Mes passages</label>
+</ListView>

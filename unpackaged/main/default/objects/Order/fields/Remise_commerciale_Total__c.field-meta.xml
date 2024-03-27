@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remise_commerciale_Total__c</fullName>
+    <description>2PACE
+roll up summary Remise commerciale sur Order Product</description>
+    <externalId>false</externalId>
+    <label>Remise commerciale Total</label>
+    <summarizedField>OrderItem.Remise_commerciale__c</summarizedField>
+    <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

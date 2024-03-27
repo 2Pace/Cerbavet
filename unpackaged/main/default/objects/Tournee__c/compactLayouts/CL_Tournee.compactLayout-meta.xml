@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CL_Tournee</fullName>
+    <fields>Name</fields>
+    <fields>Numero_bureau__c</fields>
+    <fields>Nom_bureau__c</fields>
+    <fields>Numero_tournee__c</fields>
+    <label>CL.Tournée</label>
+</CompactLayout>

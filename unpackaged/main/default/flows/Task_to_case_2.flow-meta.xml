@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Task to case 2 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Task to case 2</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_a_case</name>
+        <label>Create a case</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>$Record.WhatId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>$Record.Description</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <stringValue>0126N000000CiAxQAK</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>$Record.Description</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_a_case</targetReference>
+        </connector>
+        <filterFormula>ISNEW()&amp;&amp; TEXT({!$Record.Status})=&#39;Appel Termine&#39; ||ISCHANGED({!$Record.Status}) &amp;&amp; TEXT({!$Record.Status})=&#39;Appel Termine&#39; &amp;&amp;{!$Record.Subject} = &#39;Appel&#39;</filterFormula>
+        <object>Task</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

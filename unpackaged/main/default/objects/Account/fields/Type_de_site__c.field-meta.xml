@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_de_site__c</fullName>
+    <externalId>false</externalId>
+    <label>Type de site</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Autre type d’établissement</fullName>
+                <default>false</default>
+                <label>Autre type d’établissement</label>
+            </value>
+            <value>
+                <fullName>Antenne de prélèvement seulement</fullName>
+                <default>false</default>
+                <label>Antenne de prélèvement seulement</label>
+            </value>
+            <value>
+                <fullName>Laboratoire assurant prélèvements et techniques localement</fullName>
+                <default>false</default>
+                <label>Laboratoire assurant prélèvements et techniques localement</label>
+            </value>
+            <value>
+                <fullName>Plateau technique principal</fullName>
+                <default>false</default>
+                <label>Plateau technique principal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

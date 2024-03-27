@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Action --></label>
+        <name>Action__c</name>
+        <picklistValues>
+            <masterLabel>Ajout de point</masterLabel>
+            <translation><!-- Ajout de point --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inchangé</masterLabel>
+            <translation><!-- Inchangé --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modification de point</masterLabel>
+            <translation><!-- Modification de point --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suppression de point</masterLabel>
+            <translation><!-- Suppression de point --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>FU_MAJ_du_nom_saisi_par_l_utilisateur</fullName>
+        <field>Nom_prestation__c</field>
+        <formula>Name</formula>
+        <name>FU.MAJ du nom saisi par l&#39;utilisateur</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_PrestaTransport_Name</fullName>
+        <field>Name</field>
+        <formula>ID_de_la_prestation__c &amp; &quot; - &quot;&amp;
+
+Name</formula>
+        <name>FU.PrestaTransport.Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FU_Prestation_de_transport_Statut</fullName>
+        <field>Statut__c</field>
+        <literalValue>Supprimée</literalValue>
+        <name>FU.Prestation de transport. Statut</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>WF%2EPRE%2EMAJ du nom saisi par l%27utilisateur</fullName>
+        <actions>
+            <name>FU_MAJ_du_nom_saisi_par_l_utilisateur</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF%2EPrestaTransport%2EName</fullName>
+        <actions>
+            <name>FU_PrestaTransport_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>NOT(ISBLANK(Nom_prestation__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WF%2EPrestation de transport%2E FU statut</fullName>
+        <actions>
+            <name>FU_Prestation_de_transport_Statut</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Prestation_de_transport__c.Date_de_suppression__c</field>
+            <operation>lessOrEqual</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Prestation_de_transport__c.Date_de_suppression__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Quand la date de suppression est supérieure ou égale à la date du jour, le statut de la prestation passe automatiquement à &quot;supprimée&quot;.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

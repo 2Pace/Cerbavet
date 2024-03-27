@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Type de site --></label>
+        <name>Type_de_site__c</name>
+        <picklistValues>
+            <masterLabel>Antenne de prélèvement seulement</masterLabel>
+            <translation>Antenne EN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autre type d’établissement</masterLabel>
+            <translation>Autre Type EN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laboratoire assurant prélèvements et techniques localement</masterLabel>
+            <translation>Laboratoire EN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plateau technique principal</masterLabel>
+            <translation>Plateau EN</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

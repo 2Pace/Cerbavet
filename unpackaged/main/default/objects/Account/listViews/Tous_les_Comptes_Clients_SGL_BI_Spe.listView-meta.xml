@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tous_les_Comptes_Clients_SGL_BI_Spe</fullName>
+    <columns>Type_de_compte_icon__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>Numero_SFA__c</columns>
+    <columns>Categories__c</columns>
+    <columns>Activites__c</columns>
+    <columns>Code_SGL__c</columns>
+    <columns>Actif__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Compte_Client_SGL_BI</value>
+    </filters>
+    <label>Tous les comptes clients SGL BI Spé</label>
+</ListView>

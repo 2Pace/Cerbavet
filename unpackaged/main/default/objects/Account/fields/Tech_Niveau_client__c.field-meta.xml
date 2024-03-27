@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_Niveau_client__c</fullName>
+    <description>Champ technique permettant de calculer le niveau où se trouve le client dans la hiéarchie à laquelle il appartient</description>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK(Parent.Parent.Parent.Parent.Parent.Id))
+,
+6
+,
+IF(NOT(ISBLANK(Parent.Parent.Parent.Parent.Id))
+,
+5
+,
+IF(NOT(ISBLANK(Parent.Parent.Parent.Id))
+,
+4
+,
+IF(NOT(ISBLANK(Parent.Parent.Id))
+,
+3
+,
+IF(NOT(ISBLANK(Parent.Id))
+,
+2
+,
+1
+)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tech Niveau client</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

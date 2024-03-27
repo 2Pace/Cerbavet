@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>validee_par_cerba_sans_proposition_bio</fullName>
+    <active>true</active>
+    <description>On ne peut pas passer au statut &quot;Validée par Cerba&quot; si la case Proposition Biologistic validée jointe n&#39;est pas cochée</description>
+    <errorConditionFormula>ISPICKVAL(Statut__c , &quot;Validée par Cerba&quot;) &amp;&amp;  Proposition_Biologistic_validee_jointe__c = false &amp;&amp;  $User.Tech_By_Pass_VR__c = false</errorConditionFormula>
+    <errorDisplayField>Proposition_Biologistic_validee_jointe__c</errorDisplayField>
+    <errorMessage>Merci de joindre la proposition Biologistic validée à la demande avant que de changer son statut à &quot;Validée par Cerba&quot;.</errorMessage>
+</ValidationRule>

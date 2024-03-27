@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>TMA</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>TMA</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>TMA Layout</layout>
+        <sections>
+            <label><!-- Case Description --></label>
+            <section>Case Description</section>
+        </sections>
+        <sections>
+            <label><!-- Comment / Resolution --></label>
+            <section>Comment / Resolution</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Go live date should be filled in before changing status to &apos;Done&apos;. --></errorMessage>
+        <name>CheckGoLiveDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Acceptance Criteria should not be blank. --></errorMessage>
+        <name>TMA_AcceptanceCriteriaCheck</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Estimation must be filled in before changing status to &apos;Closed&apos;. --></errorMessage>
+        <name>TMA_Validate_Charge</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Estimation must be filled in before changing status to &apos;Ongoing&apos; or other status --></errorMessage>
+        <name>TMA_Validate_Charge02</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Go live date must be filled in before changing status to &apos;Closed&apos;. --></errorMessage>
+        <name>TMA_Validate_GoLiveDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resolution must be filled in before changing status to &apos;Closed&apos;. --></errorMessage>
+        <name>TMA_Validate_Resolution</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- YOU CANNOT CHANGE TO THIS STATUS. --></errorMessage>
+        <name>TMA_Validate_Status_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change to this status. Please contact an admin. --></errorMessage>
+        <name>TMA_Validate_Status_Change2</name>
+    </validationRules>
+</CustomObjectTranslation>

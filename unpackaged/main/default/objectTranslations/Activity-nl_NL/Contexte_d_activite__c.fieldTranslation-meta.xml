@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label>Achtergrond van het bezoek</label>
+        <name>Contexte_d_activite__c</name>
+        <picklistValues>
+            <masterLabel>EPU</masterLabel>
+            <translation><!-- EPU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revue de contrat</masterLabel>
+            <translation>Contractbeoordeling</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réunion de CLIN</masterLabel>
+            <translation>CLIN Vergadering</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Réunion de CME</masterLabel>
+            <translation>CME-vergadering</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salon / congrès</masterLabel>
+            <translation>Beurs / congres</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staff médical</masterLabel>
+            <translation>Medisch personeel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visite client sur site du groupe</masterLabel>
+            <translation>On-site klantbezoek van de groep</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visite sur site</masterLabel>
+            <translation>Bezoek ter plaatse</translation>
+        </picklistValues>
+    </CustomFieldTranslation>

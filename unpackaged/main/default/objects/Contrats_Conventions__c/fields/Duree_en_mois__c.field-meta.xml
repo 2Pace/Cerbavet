@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duree_en_mois__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(year(Date_de_fin__c)-year(Date_de_debut__c)=0,month(Date_de_fin__c)-month(Date_de_debut__c),
+
+
+
+if((year(Date_de_fin__c)-(year(Date_de_debut__c)+1))&gt;=1,
+
+
+
+(
+
+((year(Date_de_fin__c))-(year(Date_de_debut__c)+1))*12)+
+
+((12-month(Date_de_debut__c))+month(Date_de_fin__c)),
+
+
+
+(12-month(Date_de_debut__c))+month(Date_de_fin__c)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Durée en mois</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

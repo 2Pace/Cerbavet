@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_Nouvelle_EnvoyeABiologistic</fullName>
+    <active>true</active>
+    <description>Possibilité de changer le statut de Nouvelle à Envoyé à Biologistic ou Abandonnée uniquement par Cerba</description>
+    <errorConditionFormula>ISPICKVAL(PRIORVALUE(Statut__c),&quot;Nouvelle&quot;) &amp;&amp;
+ (ISPICKVAL(Statut__c, &quot;Envoyée à Biologstic&quot;) || ISPICKVAL(Statut__c, &quot;Abandonné&quot;)) 
+ &amp;&amp;  $Profile.Id&lt;&gt; &quot;00e1t000000uQJJ&quot; &amp;&amp;  $User.Tech_By_Pass_VR__c = false</errorConditionFormula>
+    <errorDisplayField>Statut__c</errorDisplayField>
+    <errorMessage>Merci de ne pas passer du statut &quot;Nouvelle&quot; au statut &quot;Envoyé à Biologistic&quot; ou &quot;Abandonnée&quot;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_CodeContactSGL_Prescripteur</fullName>
+    <active>true</active>
+    <description>Si le code contact SGL est un prescripteur, alors le Lookup contact n&#39;est pas modifiable.</description>
+    <errorConditionFormula>ISPICKVAL( Prescripteur_Preleveur__c, &quot;Prescripteur&quot;)
+&amp;&amp;  ISCHANGED (Contact__c) 
+&amp;&amp; $User.Tech_By_Pass_VR__c = false</errorConditionFormula>
+    <errorDisplayField>Contact__c</errorDisplayField>
+    <errorMessage>Merci de ne pas modifier le contact de ce prescripteur.</errorMessage>
+</ValidationRule>
