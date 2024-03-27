@@ -99,6 +99,27 @@
         <value>Détails</value>
     </labels>
     <labels>
+        <fullName>Intf_PaytweakPublic</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Intf Paytweak Public</shortDescription>
+        <value>#fa249c34ca77a83fb0d5e18222c7df0263fbeeeda98b93c2eb18c070978985f6#</value>
+    </labels>
+    <labels>
+        <fullName>Intf_PaytweakSecret</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Intf Paytweak Secret</shortDescription>
+        <value>7a5a9ff9993ef86c</value>
+    </labels>
+    <labels>
+        <fullName>Intf_PaytweakUrl</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Intf Paytweak Url</shortDescription>
+        <value>https://api.cerballiance.paytweak.com/v1/</value>
+    </labels>
+    <labels>
         <fullName>Reclamations</fullName>
         <language>en_US</language>
         <protected>false</protected>

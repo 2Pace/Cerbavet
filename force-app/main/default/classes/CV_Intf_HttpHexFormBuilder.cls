@@ -31,7 +31,7 @@ public class CV_Intf_HttpHexFormBuilder {
             return this;
         }
         
-        public CV_Intf_HttpHexFormBuilder writeFile( String key, String fileName, String fileContent ){
+        /*public CV_Intf_HttpHexFormBuilder writeFile( String key, String fileName, String fileContent ){
             String mimeType = resolveMimeType(fileName);
      
             String content = '--' + BOUNDARY;
@@ -43,7 +43,7 @@ public class CV_Intf_HttpHexFormBuilder {
      
             this.form += content;
             return this;
-        }
+        }*/
      
         public String getFormAsString() {
             this.writeFooter();
@@ -54,7 +54,7 @@ public class CV_Intf_HttpHexFormBuilder {
             return EncodingUtil.convertFromHex( this.getFormAsString() );
         }
      
-        @TestVisible private static String resolveMimeType(String fileName) {
+        /*@TestVisible private static String resolveMimeType(String fileName) {
             String fileType = fileName.substringAfterLast('.');
             String mimeType = 'image/png';
             if (fileType.equalsIgnoreCase('png')) {
@@ -69,5 +69,5 @@ public class CV_Intf_HttpHexFormBuilder {
                 mimeType = 'application/pdf';            
             }
             return mimeType;
-        }
+        }*/
     }

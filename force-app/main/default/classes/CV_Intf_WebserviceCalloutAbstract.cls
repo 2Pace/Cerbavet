@@ -29,8 +29,6 @@ public abstract class CV_Intf_WebserviceCalloutAbstract {
     private abstract Map<String, String> setHeaders();
     private abstract Map<String, String> setTagRemap();
 
-    public static Boolean isPaymentCheck = CV_Intf_WebserviceCalloutCDN.isPaymentCheck;
-
 
     public void doCallout(List<Object> objectPayloads) {
         System.debug('============================ CV_Intf_WebserviceCalloutAbstract doCallout Object Payloads: ' + objectPayloads);
@@ -100,7 +98,7 @@ public abstract class CV_Intf_WebserviceCalloutAbstract {
                     List<CV_Intf_WebserviceCalloutService.ResponseModel> responses = new List<CV_Intf_WebserviceCalloutService.ResponseModel>();
                     for (String payload : bodyPayloadPaytweak) {
                         System.debug('============================ CV_Intf_WebserviceCalloutAbstract doCallout System.bodyPayloadPaytweak.size(): ' + bodyPayloadPaytweak.size());
-                        
+
                         if (System.isBatch()) {
                             System.debug('============================ CV_Intf_WebserviceCalloutAbstract doCalloutPaytweak Batch initiated');
                             responses = CV_Intf_WebserviceCalloutService.calloutWebserviceBatch(payload, namedCredential, caller, interfaceType, headers, method);
@@ -115,7 +113,7 @@ public abstract class CV_Intf_WebserviceCalloutAbstract {
                     System.debug('============================ CV_Intf_WebserviceCalloutAbstract doCalloutPaytweak responses: ' + responses);
 
                     if (System.isBatch() && !responses.isEmpty()) {
-                        CV_Intf_WebserviceCalloutPAYTWEAK instance = (CV_Intf_WebserviceCalloutPAYTWEAK)Type.forName(caller).newInstance();
+                        CV_Intf_WebserviceCallout instance = (CV_Intf_WebserviceCallout)Type.forName(caller).newInstance();
 
                         for (CV_Intf_WebserviceCalloutService.ResponseModel responseModel : responses) {
                             instance.handleResponse(responseModel.serviceResult, responseModel.payload, responseModel.isTechnicalError);
