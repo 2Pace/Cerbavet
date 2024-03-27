@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>En Cours</fullName>
+        <default>false</default>
+        <label>En Cours</label>
+    </customValue>
+    <customValue>
+        <fullName>Payé</fullName>
+        <default>false</default>
+        <label>Payé</label>
+    </customValue>
+    <customValue>
+        <fullName>Expiré</fullName>
+        <default>false</default>
+        <label>Expiré</label>
+    </customValue>
+    <customValue>
+        <fullName>Erreur</fullName>
+        <default>false</default>
+        <label>Erreur</label>
+    </customValue>
+    <customValue>
+        <fullName>Refusé</fullName>
+        <default>false</default>
+        <label>Refusé</label>
+    </customValue>
+    <customValue>
+        <fullName>Traité</fullName>
+        <default>false</default>
+        <label>Traité</label>
+    </customValue>
+    <customValue>
+        <fullName>Annulé</fullName>
+        <default>false</default>
+        <label>Annulé</label>
+    </customValue>
+    <masterLabel>Bank Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
