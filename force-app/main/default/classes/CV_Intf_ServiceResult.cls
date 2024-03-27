@@ -13,6 +13,8 @@ public with sharing class CV_Intf_ServiceResult {
         this.body = body;
         this.isSuccess = body != null;
         this.statusCode = statusCode;
+
+        system.debug('**** IMA CV_Intf_ServiceResult body ==  ' + this.body);
     }
 
 }

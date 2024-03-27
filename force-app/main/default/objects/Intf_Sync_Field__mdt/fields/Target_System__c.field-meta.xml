@@ -20,6 +20,11 @@
                 <default>false</default>
                 <label>CDN</label>
             </value>
+            <value>
+                <fullName>PAYTWEAK</fullName>
+                <default>false</default>
+                <label>PAYTWEAK</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

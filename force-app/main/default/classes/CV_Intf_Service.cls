@@ -236,4 +236,15 @@ public with sharing class CV_Intf_Service {
         return dateFormatted;
     }
 
+    /**
+     * Return the related InvoiceLineItem
+     * @param invoiceId The string value for the invoice Id
+     * @return The list of invoiceLineItems related to the @param invoiceId 
+     */
+    public static List<blng__InvoiceLine__c> getInvoiceLineItems(String invoiceId){
+        List<blng__InvoiceLine__c> invoiceLineItems = [SELECT Id, Name,blng__TaxPercentageApplied__c,blng__TotalAmount__c, blng__Quantity__c FROM blng__InvoiceLine__c WHERE blng__Invoice__c = :invoiceId];
+        System.debug('**** IMA list of invoiceLineItems related to param Invoice == ' +invoiceLineItems);
+        return invoiceLineItems;
+    }
+
 }

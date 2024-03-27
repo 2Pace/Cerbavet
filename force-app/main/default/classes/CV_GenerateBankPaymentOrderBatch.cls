@@ -22,7 +22,7 @@ global class CV_GenerateBankPaymentOrderBatch implements Database.Batchable<sObj
                 WHERE DeveloperName = :CONFIGURATION_NAME
         ];
 
-        String query = CV_BankPaymentOrderService.getSelectionQuery(false);
+        String query = CV_BankPaymentOrderService.getSelectionQuery(false,false);
 
 //        query += ' AND id in (\'a3Y0D000000d6LoUAI\')';
 //        query += ' LIMIT 1';
@@ -38,8 +38,8 @@ global class CV_GenerateBankPaymentOrderBatch implements Database.Batchable<sObj
     global void execute(Database.BatchableContext bc, List<blng__Invoice__c> invoices) {
 
         //Send 50 per 50 --> 100 callout per transaction
-
-        CV_BankPaymentOrderService.generatePaymentOrderIds(invoices);
+        System.debug('Send 50 per 50 --> 100 callout per transaction' + invoices);
+        CV_BankPaymentOrderService.generatePaymentOrderIds(invoices, false);
 
     }
 

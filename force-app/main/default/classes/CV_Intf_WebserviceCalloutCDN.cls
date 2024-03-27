@@ -11,7 +11,7 @@ public with sharing class CV_Intf_WebserviceCalloutCDN extends CV_Intf_Webservic
     private static final String WEBSERVICE_CREATE_ORDER = 'Charge/CreatePaymentOrder';
     private static final String WEBSERVICE_CHECK_ORDER = 'Charge/PaymentOrder/Get';
     // public static String method;
-    public static Boolean isPaymentCheck;
+    public static Boolean isPaymentCheck = false;
 
     private static Map<String, String> statusMapping = new Map<String, String> {
             'RUNNING' => 'En Cours',
@@ -24,7 +24,6 @@ public with sharing class CV_Intf_WebserviceCalloutCDN extends CV_Intf_Webservic
 
 
     public void sendStructuresToCDN(List< Object> mdwStructures) {
-
         executeCallout(mdwStructures);
     }
 
@@ -89,10 +88,10 @@ public with sharing class CV_Intf_WebserviceCalloutCDN extends CV_Intf_Webservic
 
         blng__Invoice__c invoice = new blng__Invoice__c(
                 Id = invoiceId,
-                Statut_Banque__c = integratioStatus,
+                Statut_Banque_CDN__c = integratioStatus,
                 Message_d_erreur__c = errorMessage,
-                Lien_Paiement__c = paymentLink,
-                Payment_Order_Id__c = paymentOrderId,
+                Lien_Paiement_CDN__c = paymentLink,
+                Payment_Order_Id_CDN__c = paymentOrderId,
                 Allocation_lignes_de_factures__c = paymentAllocation
         );
 
@@ -103,6 +102,7 @@ public with sharing class CV_Intf_WebserviceCalloutCDN extends CV_Intf_Webservic
 
     public void executeCallout(List<Object> MDWObjects) {
         super.doCallout(MDWObjects);
+        System.debug('**** IMA MDWObjects == ' +MDWObjects);
     }
 
     private String setInterfaceType() {
@@ -113,9 +113,6 @@ public with sharing class CV_Intf_WebserviceCalloutCDN extends CV_Intf_Webservic
         return isPaymentCheck ? 'CDN_Check_Payement' : 'CDN_Create_Order';
     }
 
-    private String setPaytweakNamedCredential() {
-        return isPaymentCheck ? 'PAYTWEAK_Get_QrCode' : 'PAYTWEAK_Create_Order';
-    }
 
     private String setCaller() {
         return 'CV_Intf_WebserviceCalloutCDN';
@@ -128,6 +125,7 @@ public with sharing class CV_Intf_WebserviceCalloutCDN extends CV_Intf_Webservic
         };
 
     }
+
 
     private Map<String, String> setTagRemap() {
 

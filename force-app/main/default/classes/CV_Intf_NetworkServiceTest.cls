@@ -10,7 +10,7 @@ private class CV_Intf_NetworkServiceTest {
         Test.startTest();
         Test.setMock(HttpCalloutMock.class,new CV_Intf_WebserviceMock());
 
-        CV_Intf_RequestInput rq = new CV_Intf_RequestInput('URL', 'GET', 'PARAM');
+        CV_Intf_RequestInput rq = new CV_Intf_RequestInput('URL', 'GET', 'PARAM','CDN');
 
         CV_Intf_NetworkService ns = new CV_Intf_NetworkService();
 
@@ -25,7 +25,7 @@ private class CV_Intf_NetworkServiceTest {
         Test.startTest();
         Test.setMock(HttpCalloutMock.class,new CV_Intf_WebserviceMock());
 
-        CV_Intf_RequestInput rq = new CV_Intf_RequestInput('URL', 'POST', '{"test":"PARAM"}');
+        CV_Intf_RequestInput rq = new CV_Intf_RequestInput('URL', 'POST', '{"test":"PARAM"}', 'PAYTWEAK');
 
         CV_Intf_NetworkService ns = new CV_Intf_NetworkService();
 

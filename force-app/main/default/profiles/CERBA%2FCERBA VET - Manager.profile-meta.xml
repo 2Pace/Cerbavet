@@ -983,6 +983,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.TECH_InterfacePaytweak__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.Tech_Compte_Hierarchie_concatenee_TXT__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -5084,6 +5089,31 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Tech_Hexalis_Order_Import__c.Tech_Key__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>blng__Invoice__c.Lien_Paiement_CDN__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>blng__Invoice__c.Payment_Order_Id_CDN__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>blng__Invoice__c.Statut_Banque_CDN__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>blng__Invoice__c.TECH_AccountEmail__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>blng__Invoice__c.TECH_NombreClicsOrderPaytweak__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>

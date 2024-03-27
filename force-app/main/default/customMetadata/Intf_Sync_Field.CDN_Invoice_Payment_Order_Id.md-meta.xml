@@ -20,7 +20,7 @@
     </values>
     <values>
         <field>SFDC_API_Name__c</field>
-        <value xsi:type="xsd:string">Payment_Order_Id__c</value>
+        <value xsi:type="xsd:string">Payment_Order_Id_CDN__c</value>
     </values>
     <values>
         <field>Target_System__c</field>

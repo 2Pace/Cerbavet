@@ -364,6 +364,10 @@
                     <value>Facet-43a9cba1-9dac-449b-883f-6772bf7e8530</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>label</name>
                     <value>Information</value>
                 </componentInstanceProperties>
@@ -879,6 +883,16 @@
                 <identifier>RecordLien_Paiement_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Lien_Paiement_CDN__c</fieldItem>
+                <identifier>RecordLien_Paiement_CDN_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-f2323444-e1b0-4520-a215-e39ad331157f</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -1030,6 +1044,10 @@
                     <value>Facet-d4ad01e2-877a-4fc7-9408-5a32e2b01519</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>label</name>
                     <value>Invoice Status Information</value>
                 </componentInstanceProperties>
@@ -1042,6 +1060,10 @@
                 <componentInstanceProperties>
                     <name>columns</name>
                     <value>Facet-6ef5b9b4-1e16-4657-bcb8-9a77fd145fd3</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
@@ -1058,6 +1080,10 @@
                     <value>Facet-0774fd63-b02e-41ff-b1c1-5da4df5699dc</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>label</name>
                     <value>Payment Run Options</value>
                 </componentInstanceProperties>
@@ -1070,6 +1096,10 @@
                 <componentInstanceProperties>
                     <name>columns</name>
                     <value>Facet-3760923a-0eac-4751-a9c5-d36c397051b0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
@@ -1086,6 +1116,10 @@
                     <value>Facet-0c03b099-d8eb-4998-8a15-5791690cc457</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>label</name>
                     <value>Invoice Date Information</value>
                 </componentInstanceProperties>
@@ -1098,6 +1132,10 @@
                 <componentInstanceProperties>
                     <name>columns</name>
                     <value>Facet-e7cb499a-8d54-4552-bfec-d0dfe6b86f40</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
@@ -1114,6 +1152,10 @@
                     <value>Facet-e2242d2c-1b23-49f1-9e3e-99e96efefef4</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>label</name>
                     <value>Tax Information</value>
                 </componentInstanceProperties>
@@ -1128,6 +1170,10 @@
                     <value>Facet-d4427c6a-9219-4358-b8d7-d8c30409d85c</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>label</name>
                     <value>Information Integration</value>
                 </componentInstanceProperties>
@@ -1140,6 +1186,10 @@
                 <componentInstanceProperties>
                     <name>columns</name>
                     <value>Facet-678a0e59-7578-4715-9c24-90b08ca29c38</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>

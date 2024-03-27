@@ -55,7 +55,10 @@ private class CV_GenerateBankPaymentOrderBatchTest {
                 blng__Account__c = account.Id,
                 blng__InvoiceStatus__c = 'Posted',
                 blng__InvoiceRunCreatedBy__c = invoiceRun.Id,
-                Statut_Integration_ECV__c = 'A Envoyer'
+                Numero_Facturation_Cerbavet__c ='FACCV-20240118-0003',
+                Statut_Integration_ECV__c = 'A Envoyer',
+                Statut_Banque__c = 'En Cours',
+                Statut_Banque_CDN__c = 'En Cours'
         );
         insert testInvoice;
 
@@ -88,8 +91,8 @@ private class CV_GenerateBankPaymentOrderBatchTest {
         ]);
         System.assertEquals(1, interfaceMonitorings.size());
 
-        blng__Invoice__c invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c, Message_d_erreur__c FROM blng__Invoice__c];
-        System.assertEquals('dflsmfsfm-dfjfosf-12324', invoice.Payment_Order_Id__c);
+        blng__Invoice__c invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c,Payment_Order_Id_CDN__c, Message_d_erreur__c FROM blng__Invoice__c];
+        System.assertEquals('dflsmfsfm-dfjfosf-12324', invoice.Payment_Order_Id_CDN__c);
     }
 
     @IsTest
@@ -111,7 +114,7 @@ private class CV_GenerateBankPaymentOrderBatchTest {
         ]);
         System.assertEquals(1, interfaceMonitorings.size());
 
-        blng__Invoice__c invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c, Message_d_erreur__c FROM blng__Invoice__c];
+        blng__Invoice__c invoice = [SELECT Id, blng__PaymentStatus__c, Payment_Order_Id__c, Payment_Order_Id_CDN__c,Message_d_erreur__c FROM blng__Invoice__c];
         System.assert(invoice.Message_d_erreur__c.contains('222'));
 
     }
